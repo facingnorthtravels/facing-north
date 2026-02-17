@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 52" width="100" height="52">
+	<title>Picture Gallery</title>
+	<defs>
+		<image  width="100" height="52" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAA0CAMAAABLsm2RAAAAAXNSR0IB2cksfwAAANhQTFRFmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZ39VMHwAAAEh0Uk5TAAYLAWn1/JYDAmz7//4+efpM9MwO1SRz2BV9/R3cIWvZKyht4HrWzxbaHhclhcji1ylxREJl913n5mT4Y0hGJ99yzmocIA9L8p6XNQAAAUdJREFUeJztmMlSwkAURaNtAk3aWQwOERQFccBZcRac/v+PTN7rZEeVCw4Ly7fN4tR9fW/ldgfBmJmZHfdlYmPmwqhSZRm2Fjs3v8AyFpdcNsssYyVnrK6BDFMTHfV1kGGTOGc0NkCG2dwSxjbJUB3pDsloio7WLslIhFHfAxm2LbvaR311IN7tsAzJYJfclWnzOrx3W4ckQ73bOyIZ6t3OMcjw3u2ekIxTOfM+ylAdZySjqhk8R3VoBnsXIMNnMLy8guY6+zPdRA6e27tgQDOcu58GZBA8xDTj8akoQGHyDM1LXhd8lWu8ghYuSyla5ny9du6NpZihaoE3plpGtBYtXGQBzijvWoE/WMqQL/PTuZaUqRz9p/K3UziZ3VjhZPISVDo5/WQp6uSU1WL/Xir7XzBFtHyjEJ9K9ikqP5cwqlgYMtnnwR9EAFhy8osJWQAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<g id="Picture Gallery">
+		<use id="left arrow copy" href="#img1" x="0" y="0"/>
+	</g>
+</svg>

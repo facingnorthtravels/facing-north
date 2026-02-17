@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+	<title>Lands of discovery</title>
+	<defs>
+		<image  width="30" height="30" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAAXNSR0IB2cksfwAAAUpQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////aQ4yMwAAAG50Uk5TAALO1wUK/xcLFhiuwQTs9Am9u+rSCBHH/AMb4NQdzCIT5UkcXoRgHjnwTQ+cnhQgI+TDjo2/Lsk3MBXRxbQlJGPGtW3N6Yt1DtPd9xmMgnPu4WfAr28QJqa38ir7LYB/sEESDEeFQuLa3wa8z9z/VMBoAAABZ0lEQVR4nIWTaz8CQRTGZ8s+iUjWLYvclpRKbhEpUSrlkmy5hHJL+P5vzdprW3Je7Dwz//ObfeacGUKMwVisPeTvYAFbF9wL2LvjvvbVfgcri4FB55DiwjXMqJjDyKisxpS9mXFMuFU8yWNq2ridfQacR5/OzmGeDguLgrC0TIUXKy3pNh9D/Kv4jUCQEF/I7G8tDKxvbG4B3HaHM3GI7Ehi1wFntA0HsKfKfcTMNAocaEaAuAZYVqpJAod6bhJHKjimXlM2koag4xOkSYanIEty9HuaJwWc6fgcBeK/oOCSVsguFbKIKx2XcE1UIEce0OokAmWz9QoiqnThpu3c4i1cd5KIJ3HfoenVQSD28PhEnXrNLFOj1ajILSnRVtbqRvqcwwsdygnhtVil4g3vfp3WreA9xvQQj0ZQm30gJ8qqqVw6sYGwhj+/lF+5+ZRy6USLoUxqdL7IWrD/PoNuj4jJfjdbFn4AecAm5JbtCx0AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<g id="Lands of discovery">
+		<g id="Group 1">
+			<use id="sun" href="#img1" x="0" y="0"/>
+		</g>
+	</g>
+</svg>

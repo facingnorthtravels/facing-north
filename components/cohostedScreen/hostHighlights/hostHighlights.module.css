@@ -1,0 +1,146 @@
+.highlights_section {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #f9fafb;
+}
+
+.container {
+  max-width: 1440px;
+  width: 80.6%;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font-family: "b-ul";
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48px;
+  color: #1f2937;
+  margin: 0 0 56px 0;
+}
+
+.highlights_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.highlight_card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  padding: 22px;
+}
+
+.card_header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.highlight_icon {
+  width: 46px;
+  height: 32px;
+  flex-shrink: 0;
+}
+
+.card_header h3 {
+  font-family: "b-ul";
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 31px;
+  color: #1f2937;
+  margin: 0;
+}
+
+.highlight_description {
+  font-family: "f-m";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #374151;
+  margin: 0;
+}
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 1024px) {
+  
+  .container h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .highlights_section {
+    padding: 60px 0;
+  }
+  
+  
+  .container h2 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 40px;
+  }
+  
+  .highlights_grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .highlight_card {
+    padding: 20px;
+  }
+  
+  .card_header {
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  
+  .highlight_icon {
+    width: 38px;
+    height: 26px;
+  }
+  
+  .card_header h3 {
+    font-size: 23px;
+    line-height: 28px;
+  }
+  
+  .highlight_description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .highlights_section {
+    padding: 40px 0;
+  }
+  
+  .container {
+    width: 90.6%;
+  }
+  
+  .container h2 {
+    font-size: 28px;
+    line-height: 34px;
+    margin-bottom: 30px;
+  }
+  
+  .highlight_card {
+    padding: 16px;
+  }
+  
+  .card_header h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  
+  .highlight_description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

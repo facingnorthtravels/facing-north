@@ -1,0 +1,91 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.best_places_container {
+  width: 80.5%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  column-gap: 20px;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin: auto;
+  padding-bottom: 30px;
+  position: relative;
+  margin-bottom: 100px;
+}
+.ThirdToursDetailSection_marginTop {
+  margin-top: -100px;
+}
+.best_places_text_container {
+  width: 27%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+}
+.best_places_cards_container {
+  /* width: 78%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 20px; */
+
+  width: 70%;
+  max-width: 78%;
+  margin-bottom: 35px;
+}
+.best_places_title {
+  font-size: 50px;
+  font-weight: 200;
+  font-family: "b-ul";
+  line-height: 55px;
+}
+.best_places_description {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 22px;
+  width: 100%;
+  /* font-family: "f-l"; */
+}
+@media screen and (max-width: 1228px) {
+  .best_places_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  .best_places_text_container {
+    width: 100%;
+  }
+  .best_places_cards_container {
+    width: 100%;
+    max-width: 100%;
+    /* height: 500px; */
+  }
+}
+@media screen and (max-width: 991px) {
+  .ThirdToursDetailSection_marginTop {
+    margin-top: 0px;
+  }
+  .best_places_container {
+    margin-bottom: 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .best_places_title {
+    font-size: 35px;
+  }
+
+  .best_places_container {
+    gap: 20px;
+    padding-top: 0px;
+  }
+}

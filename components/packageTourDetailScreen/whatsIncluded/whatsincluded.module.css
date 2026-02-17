@@ -1,0 +1,116 @@
+.whats_included_section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+  width: 100%;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 200;
+  font-family: "b-ul";
+  line-height: 45px;
+  /* margin-top: 30px; */
+}
+
+.Includes_cards_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  width: 80.6%;
+  margin: auto;
+}
+
+.Includes_card,
+.Includes_card2,
+.Includes_card3 {
+  text-align: center;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 2px solid #505050;
+  border-bottom: 1px solid #505050;
+  border-left: 0px;
+  border-top: 0px;
+  padding: 0px 20px;
+  gap: 10px;
+}
+.Includes_card h5,
+.Includes_card2 h5,
+.Includes_card3 h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #286675;
+}
+.Includes_card p,
+.Includes_card2 p,
+.Includes_card3 p {
+  font-size: 14px;
+  color: #286675;
+}
+.Includes_card2,
+.Includes_card3 {
+  border-left: 2px solid #505050;
+  border-top: 1px solid #505050;
+  margin-left: -2px;
+  border-right: 0px;
+  border-bottom: 0px;
+}
+.Includes_card3 {
+  border-top: 2px solid #505050;
+}
+.end_card {
+  border-left: 0px;
+  border-right: 0px;
+}
+.whats_not_included {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80.6%;
+  gap: 10px;
+  background-color: #286675;
+  color: white;
+  padding: 20px 30px;
+  border-radius: 20px;
+}
+.whats_not_included p {
+  font-size: 14px;
+}
+.not_included_list {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  width: 80%;
+}
+@media screen and (max-width: 1023px) {
+  .Includes_cards_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .Includes_card,
+  .Includes_card2,
+  .Includes_card3 {
+    border-left: 0px;
+    border-right: 0px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .Includes_cards_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 420px) {
+  .title {
+    font-size: 40px;
+  }
+}

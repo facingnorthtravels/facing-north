@@ -1,0 +1,28 @@
+.next_icon,
+.prev_icon {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+.right_btn {
+  position: absolute;
+  /* right: 42%; */
+  right: calc(50% - 65px);
+  bottom: -23%;
+  display: block;
+}
+.left_btn {
+  left: calc(50% - 65px);
+  position: absolute;
+  /* left: 42%; */
+  bottom: -23%;
+  display: block;
+}
+/* @media screen and (max-width: 750px) {
+  .right_btn {
+    right: 30%;
+  }
+  .left_btn {
+    left: 30%;
+  }
+} */

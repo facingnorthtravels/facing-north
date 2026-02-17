@@ -1,0 +1,125 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.tour_planner_container {
+  background-color: var(--medGreen);
+  color: white;
+  padding: 70px 10%;
+}
+.tour_planner_container h2 {
+  font-size: 42px;
+  font-weight: 200;
+  font-family: "b-ul";
+  /* width: 90%; */
+  text-align: center;
+  margin-bottom: 20px;
+}
+.trip_text {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 22px;
+  text-align: center !important;
+  /* font-family: "f-l"; */
+}
+.tour_planner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 70px;
+  /* padding: 70px 10%; */
+}
+.planner_card {
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+  width: 80%;
+  gap: 30px;
+}
+.planner_card img {
+  border-radius: 80px;
+}
+.card_text {
+  text-transform: uppercase;
+}
+.card_text p {
+  font-size: 15px;
+}
+.card_text h3 {
+  font-weight: 700;
+  word-spacing: -1.5px;
+  /* margin-bottom: 16px; */
+}
+.card_text button {
+  background-color: transparent !important;
+  border: 2px solid white !important;
+  margin-top: 16px !important;
+  transition: 0.2s ease-in-out !important;
+}
+
+.card_text button:hover {
+  background-color: white !important;
+  color: var(--medGreen) !important;
+}
+.book_btn {
+  all: unset;
+  font-family: Helvetica, Arial, sans-serif;
+  display: inline-block;
+  max-width: fit-content;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* background-color: #026451; */
+  color: #fff;
+  font-size: 16px;
+  border-radius: 10px;
+  padding: 0 26px;
+  font-weight: bold;
+  border: 2px solid white !important;
+  height: 40px;
+  margin-top: 16px !important;
+  cursor: pointer;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+  text-decoration: none;
+}
+.book_btn:hover {
+  color: var(--medGreen) !important;
+  background-color: white !important;
+  transition: 0.2s ease-in-out;
+}
+@media screen and (max-width: 900px) {
+  .planner_card {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+  .card_text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .tour_planner {
+    align-items: stretch;
+  }
+}
+@media screen and (max-width: 700px) {
+  .tour_planner_container {
+    padding: 60px 10%;
+  }
+  .tour_planner_container h2 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .tour_planner {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}

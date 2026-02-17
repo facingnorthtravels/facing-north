@@ -1,0 +1,1237 @@
+/* Import Butler font for headings and use Segoe UI for text */
+@import url('https://fonts.googleapis.com/css2?family=Butler:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.container {
+  min-height: 100vh;
+  background-color: white;
+}
+
+/* Hero Section */
+.heroSection {
+  position: relative;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.27), rgba(0, 0, 0, 0.12));
+}
+
+.heroContent {
+  position: relative;
+  z-index: 10;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.heroText {
+  width: 80.6%;
+  /* max-width: 1200px; */
+}
+
+/* Hero title styles are defined in the nested h1 selector */
+
+.heroTitle h1 {
+  font-family: 'Butler', serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.heroDescription {
+  margin-bottom: 3rem;
+  max-width: 48rem;
+}
+
+.heroDescription p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: white;
+}
+
+.heroButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.primaryButton {
+  background-color: #286675;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primaryButton:hover {
+  background-color: rgba(40, 102, 117, 0.9);
+}
+
+.secondaryButton {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.secondaryButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Bottom Navigation - using same classes as package tour */
+.inquiry {
+  width: 100%;
+  height: 100px;
+  background-color: #286675;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  z-index: 250;
+  transition: 0.6s ease-out;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.6s ease-out;
+}
+
+.inquiry h4 {
+  font-size: 20.75px;
+  font-weight: 400;
+  padding-right: 20px;
+}
+
+.nav_contact_btn {
+  font-size: 15px;
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  width: 215px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+
+.nav_contact_btn:hover {
+  background: white;
+  color: #286675;
+}
+
+.nav_btns {
+  display: flex;
+  gap: 15px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.nav_link {
+  padding: 0px;
+  width: fit-content;
+  border: none;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.nav_link:hover {
+  opacity: 0.8;
+}
+
+.starting_btns {
+  display: flex;
+  gap: 20px;
+  width: fit-content;
+  align-items: center;
+}
+
+/* About Section */
+.aboutSection {
+  padding: 4rem 0;
+  background-color: #f9fafb;
+}
+
+.sectionContent {
+  max-width: 80.6%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sectionHeader h2 {
+  font-family: 'Butler', serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+}
+
+.sectionDescription {
+  max-width: 48rem;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.sectionDescription p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem 4rem;
+  margin-bottom: 2rem;
+}
+
+.featuresColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feature {
+  display: flex;
+  gap: 1rem;
+}
+
+.featureIcon {
+  width: 3rem;
+  height: 3rem;
+  background-color: #286675;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon {
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.featureContent h3 {
+  font-family: 'Butler', serif;
+  font-size: 16px;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+}
+
+.featureContent p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.sectionFooter {
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.sectionFooter p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+/* Tours Section */
+.toursSection {
+  padding: 4rem 0;
+  background-color: white;
+  scroll-margin-top:80px ;
+}
+
+.toursGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.tourCard {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.tourImageContainer {
+  position: relative;
+}
+
+.tourImage {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.tourStatus {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.preLaunch {
+  background-color: #dc2626;
+  color: white;
+}
+
+.openNow {
+  background-color: #10b981;
+  color: white;
+}
+
+.comingSoon {
+  background-color: #f59e0b;
+  color: white;
+}
+
+.tourContent {
+  padding: 1.5rem;
+}
+
+.tourHost {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.hostImage {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.tourHost h3 {
+    font-family: 'Butler', serif;
+    font-size: 18px;
+    color: #1f2937;
+}
+
+.tourDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tourDetails p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.statusPreLaunch {
+  color: #dc2626;
+}
+
+.statusOpen {
+  color: #059669;
+}
+
+.statusWaitlist {
+  color: #f59e0b;
+}
+
+.tourButton {
+  width: 100%;
+  background-color: #1f2937;
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.875rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tourButton:hover {
+  background-color: rgba(31, 41, 55, 0.9);
+}
+
+.primaryTourButton {
+  background-color: #286675;
+}
+
+.primaryTourButton:hover {
+  background-color: rgba(40, 102, 117, 0.9);
+}
+
+/* Why Join Section */
+.whyJoinSection {
+  padding: 4rem 0;
+  background: #176060;
+  position: relative;
+}
+
+.whyJoinSection .sectionHeader h2 {
+  color: white;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem 4rem;
+}
+
+.benefitsColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.benefit {
+  display: flex;
+  gap: 1rem;
+}
+
+.benefitIcon {
+  width: 3rem;
+  height: 3rem;
+  background-color:#E6F2F1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.benefitIcon .icon {
+  color: #286675;
+}
+
+.benefitContent h3 {
+  font-family: 'Butler', serif;
+  font-size: 16px;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.benefitContent p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.5;
+}
+
+/* How It Works Section */
+.howItWorksSection {
+  padding: 4rem 0;
+  background-color: #f9fafb;
+    scroll-margin-top:80px ;
+}
+
+.howItWorksSection .sectionHeader h2 {
+  color: black;
+}
+
+.highlight {
+  color: #286675;
+}
+
+.stepsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.stepsColumn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.stepNumber {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.stepSvg {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.stepCircle {
+  position: relative;
+  width: 4rem;
+  height: 4rem;
+  background-color: #286675;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.step h3 {
+  font-family: 'Butler', serif;
+  font-size: 1.125rem;
+  color: black;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.step p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.875rem;
+  color: #374151;
+  line-height: 1.5;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.stepsImage {
+  width: 100%;
+  max-width: 550px;
+  flex-shrink: 0;
+  order: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+/* Booking Section */
+.bookingSection {
+  padding: 4rem 0;
+  background-color: white;
+    scroll-margin-top:80px ;
+}
+
+.bookingGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem 4rem;
+  margin-bottom: 3rem;
+}
+
+.bookingColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.bookingItem {
+  display: flex;
+  gap: 1rem;
+}
+
+.bookingIcon {
+  width: 3rem;
+  height: 3rem;
+  background-color: rgba(40, 102, 117, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bookingIcon .icon {
+  color: #286675;
+}
+
+.bookingContent h3 {
+  font-family: 'Butler', serif;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.bookingContent p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
+
+.bookingButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+  .bookingButtons a{
+  text-align: center;
+  width: 100%;
+}
+
+.secondaryBookingButton {
+  border: 1px solid #e5e7eb;
+  background-color: white;
+  color: #4b5563;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondaryBookingButton:hover {
+  background-color: #f9fafb;
+}
+
+/* Gallery Section */
+.gallerySection {
+  padding: 4rem 0;
+  background-color: white;
+}
+
+.gallerySection .sectionHeader {
+  margin-bottom: 3.5rem;
+}
+
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr; /* mobile first */
+  grid-auto-rows: 200px; /* base row height for masonry spans */
+  gap: 3px; /* very tight gaps like reference */
+  margin: 0; /* remove side margins */
+  max-width: none; /* full width */
+}
+
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.galleryImage:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  filter: brightness(1.05);
+}
+
+/* Newsletter Section */
+.newsletterSection {
+  padding: 4rem 0;
+  background-color: white;
+  border-top: 2px solid white;
+}
+
+/* Partner Section */
+.partnerSection {
+  position: relative;
+  height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnerBackground {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* .partnerOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.48);
+} */
+
+.partnerContent {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.partnerText {
+  text-align: center;
+  max-width: 64rem;
+}
+
+.partnerText h2 {
+  margin-bottom: 1%;
+      line-height: 0.9;
+    margin-bottom: 10px;
+}
+
+.partnerTitle {
+  font-family: 'Inter', serif;
+  font-weight: 800;
+  font-size: 3rem;
+  color: white;
+  display: block;
+}
+
+.partnerSubtitle {
+  font-family: 'Inter', serif;
+  font-weight: 800;
+  font-size: 7rem;
+  color: white;
+  opacity: 0.96;
+  display: block;
+}
+
+.partnerText p {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: white;
+  margin-bottom: 2rem;
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+  .middlediv{
+    max-width: 500px;
+  }
+  .centerImage1 {
+    width: 100%;
+    height: 100%;
+    min-width: 400px;
+  }
+
+/* Responsive Design */
+@media (min-width: 640px) {
+  .heroTitle h1 {
+    font-size: 2.25rem;
+  }
+  
+  .heroButtons {
+    flex-direction: row;
+  }
+
+  
+  .sectionContent {
+    padding: 0 1.5rem;
+  }
+  
+  .bookingButtons {
+    flex-direction: row;
+  }
+    .bookingButtons a{
+  text-align: unset;
+  width: unset;
+}
+}
+
+@media (min-width: 768px) {
+  .featuresGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .toursGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .benefitsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .bookingGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stepsContainer {
+    gap: 2.5rem;
+  }
+  
+  .stepSvg {
+    width: 55px;
+    height: 55px;
+  }
+
+  /* Gallery: tablet */
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 220px;
+    gap: 4px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroTitle h1 {
+    font-size: 3rem;
+  }
+  
+  .heroDescription {
+    font-size: 1.25rem;
+  }
+  
+  .bottomNav {
+    padding: 0 13rem;
+  }
+  
+  .toursGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .stepsContainer {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    max-width: 90.6%;
+    padding: 0 1rem;
+  }
+  
+  .stepsImage {
+    width: 100%;
+    max-width: 400px;
+    order: 0;
+    flex-shrink: 0;
+    margin: 0;
+  }
+  
+  
+  .stepsColumn {
+    width: 280px;
+    flex-shrink: 0;
+    gap: 2.5rem;
+  }
+  
+  .step {
+    text-align: left;
+    align-items: flex-start;
+  }
+  
+  .stepNumber {
+    justify-content: flex-start;
+  }
+  
+  .step h3 {
+    font-size: 22px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .step p {
+    max-width: none;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .stepSvg {
+    width: 40px;
+    height: 40px;
+  }
+  .leftColumn{
+      justify-content: right;
+      direction: rtl;
+    }
+  .leftColumn p, .leftColumn h3{
+    text-align: right;
+  }
+  /* Gallery: desktop - exact percentage positioning to match reference */
+  .gallery {
+    position: relative;
+    display: block;
+    aspect-ratio: 1895 / 1170; /* maintains proportions across screen sizes */
+    max-width: 100%;
+  }
+
+  .galleryImage {
+    position: absolute;
+  }
+
+  /* Percentages derived from the original pixel layout (1895x1170) */
+  .image1 { left: 0%; top: 0%; width: 29.38%; height: 39.74%; }
+  .image2 { left: 29.96%; top: 0%; width: 29.29%; height: 49.57%; }
+  .image3 { left: 59.94%; top: 0%; width: 41.32%; height: 49.57%; }
+  .image4 { left: 0%; top: 40.60%; width: 29.38%; height: 59.40%; }
+  .image5 { left: 29.96%; top: 50.43%; width: 41.79%; height: 49.57%; }
+  .image6 { left: 72.38%; top: 50.43%; width: 28.92%; height: 49.57%; }
+  
+  .partnerTitle {
+    font-size: 4rem;
+  }
+}
+
+/* Additional responsive adjustments */
+@media (max-width: 1023px) {
+  .inquiry {
+    display: none;
+  }
+.gallery {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 375 / 812; /* Mobile aspect ratio */
+  max-width: 100%;
+  margin-bottom: -60%;
+}
+
+.galleryImage {
+  position: absolute;
+  grid-column: unset;
+  grid-row: unset;
+}
+    .centerImage1 {
+    min-width: 278px;
+  }
+/* Mobile-specific percentage positioning to match screenshot */
+.image1 { left: 0%; top: 0%; width: 49.25%; height: 13.5%; }
+.image2 { left: 50.75%; top: 0%; width: 49.25%; height: 13.5%; }
+.image3 { left: 0%; top: 14%; width: 100% !important; height: 20%; }
+.image4 { left: 0%;
+  top: 34.5%;
+  width: 49.25%;
+  height: 20%; }
+.image5 { left: 0%;
+  top: 55.5%;
+  width: 100%;
+  height: 20%; }
+.image6 { left: 50.75%;
+  top: 34.5%;
+  width: 49.25%;
+  height: 20%;}
+.image7 { left: 0%; top: 48.5%; width: 100%; height: 20%; }
+}
+@media (max-width: 550px) {
+  .heroButtons {
+    gap: 1rem;
+  }
+  .heroTitle h1 {
+  font-size:30px;
+}
+
+.heroDescription p {
+  font-size: 15px;
+}
+  .navButtons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .navButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+  }
+  
+  .partnerTitle {
+    font-size: 2rem;
+  }
+  
+  .partnerSubtitle {
+    font-size: 4rem;
+  }
+  
+  /* How It Works mobile adjustments - vertical layout */
+  .stepsContainer {
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .stepsColumn {
+    gap: 2rem;
+  }
+
+  .leftColumn{
+      justify-content: center;
+      direction: ltr;
+    }
+  .leftColumn p, .leftColumn h3{
+    text-align: center;
+  }
+  
+  .stepsImage {
+    order: 3;
+    margin: 1rem 0;
+    max-width: 280px;
+  }
+  
+  
+  .stepSvg {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .step h3 {
+    font-size: 1rem;
+  }
+  
+  .step p {
+    font-size: 0.8rem;
+    max-width: 220px;
+  }
+  
+
+}
+
+@media (max-width: 425px) {
+  .sectionContent {
+    padding: 0 0;
+     max-width: 90.6%;
+  }
+  
+  .heroContent {
+    padding: 0 0;
+  }
+  .heroText {
+    width: 90.6%;
+  }
+  .partnerContent {
+    padding: 0 0;
+  }
+  .partnerContent p{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom:10px ;
+  }
+  
+  /* Extra small screens - How It Works */
+  .stepsContainer {
+    gap: 1.5rem;
+    padding: 0 0.5rem;
+  }
+  
+  .stepsColumn {
+    gap: 1.5rem;
+  }
+  
+  
+  .stepSvg {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .step h3 {
+    font-size: 0.95rem;
+  }
+  
+  .step p {
+    font-size: 0.75rem;
+    max-width: 200px;
+  }
+}
+
+/* Traveler Information Section */
+.travelerInfoSection {
+  padding: 4rem 0;
+  background-color: #f9fafb;
+  scroll-margin-top: 80px;
+}
+
+.travelerForm {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup,
+.formGroupFull {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label,
+.formGroupFull label {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.required {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea,
+.formGroupFull input,
+.formGroupFull select,
+.formGroupFull textarea {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 0.5rem;
+  background-color: #ffffff;
+  color: #1f2937;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus,
+.formGroupFull input:focus,
+.formGroupFull select:focus,
+.formGroupFull textarea:focus {
+  border-color: #286675;
+  box-shadow: 0 0 0 3px rgba(40, 102, 117, 0.1);
+}
+
+.formGroup input::placeholder,
+.formGroup textarea::placeholder,
+.formGroupFull input::placeholder,
+.formGroupFull textarea::placeholder {
+  color: #9ca3af;
+}
+
+.formGroup select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  padding-right: 2.5rem;
+}
+
+.inputError {
+  border-color: #dc2626 !important;
+}
+
+.inputError:focus {
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1) !important;
+}
+
+.errorMessage {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.875rem;
+  color: #dc2626;
+  margin-top: -0.25rem;
+}
+
+.formGroupFull textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.formActions {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.formActions .primaryButton {
+  min-width: 200px;
+  padding: 0.875rem 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Responsive - Traveler Form */
+@media (min-width: 640px) {
+  .formGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .travelerForm {
+    padding: 3rem;
+  }
+  
+  .formGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .travelerForm {
+    padding: 1.5rem;
+  }
+  
+  .formGrid {
+    gap: 1.25rem;
+  }
+  
+  .formActions .primaryButton {
+    width: 100%;
+  }
+}

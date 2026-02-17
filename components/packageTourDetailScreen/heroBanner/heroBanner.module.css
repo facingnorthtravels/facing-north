@@ -1,0 +1,269 @@
+.hero_banner_container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../../public/assets/placeholder.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: center;
+  row-gap: 15px;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.782), rgba(0, 0, 0, 0.155));
+  position: absolute;
+  z-index: 5;
+}
+.headings_container {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  row-gap: 15px;
+  padding: 0;
+}
+.heading {
+  color: white;
+  font-size: 60px;
+  font-weight: lighter;
+  z-index: 6;
+  font-family: "b-ul";
+}
+.subheading {
+  color: white;
+  font-size: 18px;
+  font-weight: lighter;
+  width: 50%;
+  text-align: center;
+  z-index: 6;
+  line-height: 25px;
+  /* font-family: "f-l"; */
+}
+.inquiry {
+  width: 100%;
+  height: 100px;
+  background-color: #286675;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 9.7%;
+  color: white;
+  /* z-index: 6; */
+  z-index: 900;
+  transition: all 0.25s ease-in-out;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: all 0.25s ease-in-out;
+}
+.inquiry h4 {
+  font-size: 18px;
+  font-weight: 400;
+  padding-right: 15px;
+}
+.nav_contact_btn {
+  font-size: 16px;
+  background: none;
+  border: 1px solid white;
+  /* border-radius: 8px; */
+  color: white;
+  padding: 10px 18px;
+  min-width: 130px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  text-align: center;
+}
+.nav_contact_btn:hover {
+  background: white;
+  color: #286675;
+}
+.book_now_btn {
+  background: white;
+  color: #286675;
+  font-weight: 600;
+}
+.book_now_btn:hover {
+  background: #e0e0e0;
+}
+.nav_btns {
+  display: flex;
+  gap: 12px;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.nav_link {
+  padding: 0px;
+  width: fit-content;
+  border: none;
+}
+.starting_btns {
+  display: flex;
+  gap: 12px;
+  width: fit-content;
+  align-items: center;
+}
+
+/* Trip info section with date and price */
+.trip_info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  margin-right: 5px;
+}
+
+.trip_date {
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.trip_price {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Price with discount styles */
+.price_with_discount {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+}
+
+.price_with_discount .original_price {
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+.price_with_discount .original_price s {
+  text-decoration: line-through;
+}
+
+.price_with_discount .discounted_price {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1023px) {
+  .inquiry {
+    height: 80px;
+    padding: 0px 5%;
+    /* flex-direction: column; */
+    justify-content: center;
+    gap: 10px;
+  }
+  .nav_btns {
+    width: 100%;
+    /* display: none; */
+  }
+  .nav_link {
+    display: none;
+  }
+  .overview_link {
+    display: flex;
+  }
+  .nav_host_view{
+    display: none;
+  }
+  .starting_btns {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  .trip_info {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0px;
+    padding-right: 0;
+    border-right: none;
+    margin-right: auto;
+    flex: 1;
+  }
+  .trip_date {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .trip_price {
+    font-size: 14px;
+  }
+  .price_with_discount {
+    gap: 6px;
+  }
+  .price_with_discount .original_price {
+    font-size: 12px;
+  }
+  .price_with_discount .discounted_price {
+    font-size: 14px;
+  }
+  .nav_contact_btn {
+    font-size: 12px;
+    padding: 8px 12px;
+    min-width: 100px;
+  }
+  .book_now_btn {
+    min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .heading {
+    font-size: 32px;
+  }
+  .subheading {
+    font-size: 14px;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav_contact_btn {
+    min-width: 85px;
+  }
+  .inquiry {
+    padding: 10px 4%;
+  }
+  .starting_btns {
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+  .trip_info {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+  .trip_date {
+    font-size: 12px;
+    white-space: normal;
+  }
+  .trip_price {
+    font-size: 13px;
+  }
+  .price_with_discount .original_price {
+    font-size: 11px;
+  }
+  .price_with_discount .discounted_price {
+    font-size: 13px;
+  }
+  .nav_contact_btn {
+    font-size: 11px;
+    padding: 8px 10px;
+  }
+}

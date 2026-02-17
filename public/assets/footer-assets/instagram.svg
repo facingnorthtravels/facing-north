@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" width="22" height="22">
+	<title>Footer</title>
+	<defs>
+		<image  width="22" height="22" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAMAAADzapwJAAAAAXNSR0IB2cksfwAAASlQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////znvV+gAAAGN0Uk5TAAU+W2BZNwIBc+//5V+q8cbAyPeO/XsHDpJa7npVlRmb3z0GNVwrA/uJGv4yxTTRwiJE5vb5xMvqH+DSHSzdsjYcGGZkw+NCIz8U1Ck65NXb4iix5/QJJFBMhaeLD6LW0NlnuJpdOwAAARZJREFUeJxVkWlfgkAQh6fERP8FWtFBh1TmWliZRGSXhd1F933n9/8QMYC5Pa9mn9/szOwOUUhPb0pJSPdlKEbN5iDRPxBbDdDzhYTBIWCYdRbGyCj9MTYOmGHdCUx2JU1NFy3MqDQLfS6qVVLmyyQqWFi0UaUUltgur3C72qqWq5ODNCkosF2Du+4Z2GiEh00osc5swdsm2tlFU9Z7cPe5VAm2L+lWVClKrEv6AIexPsKxpKuonLA9hXEmadXD+QVRcAlNbkllHfbVNXDjJ9pEnq/f1vg5d0WO78NPCfDwGHV7en6JhqQGEJBw8Er/eIMjeGa8f3Sl/wm0OLAA9+s74ccArDih7chLc9qdiyIwOys2A8HmF8PqJWRz1FkwAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<g id="Footer">
+		<g id="social media icons">
+			<use id="Web Icons_instagram" href="#img1" x="0" y="0"/>
+		</g>
+	</g>
+</svg>

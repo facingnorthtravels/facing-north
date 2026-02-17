@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+	<title>Reviews</title>
+	<defs>
+		<image  width="16" height="16" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IB2cksfwAAAJZQTFRFKGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1KGZ1xvKcogAAADJ0Uk5TAE5Axro8/zW0sCv+KgIgSXKb2d6jf1gzDqgGsqUDuBojOEhgifyYjPiesbYfyqxFMK1X8ajWAAAAfklEQVR4nFXO2RaCMAwE0CA4qLigVpEioiLgrvz/z1lOUw+Zh7ZzH5IS2XgDkvED2YdAKGAEjPt9AiCa2vdsvoiXKwNYq8022VEKEUU66/d9TkKyvJuiD/+u7dzCwZGXnhycGUoHMcMFqOrmCtwY7niYXz5V9GJ4f+z9bc3xAwMXB8fWTYoLAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<g id="Reviews">
+		<g id="Group 1">
+			<g id="stars">
+				<use id="star copy 3" href="#img1" x="0" y="0"/>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,0 +1,216 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 70px;
+  row-gap: 80px;
+  background-color: #eaeeef;
+}
+.top_section {
+  width: 80.6%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.title {
+  font-size: 50px;
+  font-weight: 200;
+  font-family: "b-ul";
+  line-height: 45px;
+  width: 100%;
+}
+.title span {
+  /* font-family: "f-l"; */
+}
+.description {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 22px;
+  width: 100%;
+  text-align: center;
+}
+.single_slide {
+  height: 300px;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100% !important;
+  /* width: calc(100% - 20px)  !important; */
+
+  margin: auto;
+  background-color: white;
+}
+.single_slide img {
+  width: 30%;
+  max-width: 240px;
+  height: 100%;
+  object-fit: cover;
+}
+.slide_content_container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+  row-gap: 30px;
+}
+.testimonial {
+  font-size: 18px;
+  width: 80%;
+  color: grey;
+  text-align: left;
+  line-height: 22px;
+  /* font-family: "f-l"; */
+}
+.person_name {
+  font-size: 18px;
+  width: 80%;
+  text-align: left;
+  line-height: 22px;
+  font-family: "f-b";
+}
+.testimonial_container {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  column-gap: 20px;
+  align-items: center;
+}
+.card_section {
+  width: calc(70% - 50px);
+  width: 70%;
+  height: fit-content;
+  flex-direction: row;
+}
+.arrow_container img {
+  z-index: 850 !important;
+}
+@media screen and (max-width: 1150px) {
+  .card_section {
+    width: calc(70% - 50px);
+  }
+}
+@media screen and (max-width: 1034px) {
+  .card_body {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img_container img {
+    height: 40%;
+  }
+  .testimonial {
+    font-size: 16px !important;
+  }
+  .content_container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    row-gap: 10px;
+  }
+  .content_container h2 {
+    font-size: 25px;
+  }
+  /* .slide_content_container {
+    padding-left: 20px;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+  } */
+  /* .testimonial {
+    width: 95%;
+    font-size: 13px;
+    margin-top: 40px;
+  } */
+  /* .top_section {
+    width: 97%;
+  } */
+  /* .single_slide {
+    height: 300px;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+  }
+  .single_slide img {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 20%;
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 240px;
+    height: 30%;
+    object-fit: cover;
+  } */
+}
+@media screen and (max-width: 991px) {
+  .card_section {
+    width: calc(100% - 50px);
+  }
+  .single_slide {
+    /* height: 100%; */
+    height: 650px;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .single_slide img {
+    width: 100%;
+    max-width: unset;
+    height: 350px;
+    object-fit: cover;
+  }
+  .slide_content_container {
+    padding: 20px 0px;
+    padding-left: 50px;
+    row-gap: 30px;
+  }
+  .container {
+    padding-bottom: 140px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .card_section {
+    width: calc(90% - 50px);
+  }
+  .title {
+    font-size: 40px;
+  }
+  .single_slide {
+    height: 580px !important;
+  }
+  .single_slide img {
+    height: 250px;
+  }
+  .slide_content_container {
+    row-gap: 12px;
+  }
+  .testimonial {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .slide_content_container {
+    padding-left: 20px;
+  }
+  .single_slide {
+    height: 515px !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .top_section {
+    width: 90%;
+  }
+  .single_slide {
+    height: 545px !important;
+  }
+}

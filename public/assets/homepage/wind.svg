@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 24" width="30" height="24">
+	<title>Lands of discovery</title>
+	<defs>
+		<image  width="30" height="24" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAYCAMAAADat72NAAAAAXNSR0IB2cksfwAAATJQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Y4jS+QAAAGZ0Uk5TAAd1uLl5DRTa/+McwvF4680pMSL4M0jWYU17bSBZLBj1OMdzJVpSLTZu4QLZr8tOI1fyLp+Wzs/DhROarQk0uzAIChARBRI73L3588qxGRoeHw6Jv8C0aGljOkV8Sf0nzOlmG4DRSVajvAAAAQpJREFUeJx90VdTwkAUBeAjKnpARbFgW3tBBRsKdlTshWILir38/7/gbgLOhmz8Hu59OJm5mzmApiHQ2NQchI+WVkqhsE/cxvaOQISd5rSLjALdPew1xn2kWjH2qzUwODTszsWIHKNjHJdzQj1jEpgS08IxMxsXYm6eMWAhQSYXySWwXmQZWOFqClhjAuvpTFqzsbklL2xzR85d5zFee9m4nPsqPnA5zB1JOEbu5PSMSZx7jisX9rwM48oY259cqx/PF/KaQrFUVbzx60Zze3eve6gr1HPSXWjUKluOx6eKZT37FoqXEv4ptMJXtaqFeqTIt1qhJu/8KH/ahRp9hWqFmgW/Mz92oX9+AXrpMuxLSnfWAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<g id="Lands of discovery">
+		<g id="Group 1">
+			<use id="wind" href="#img1" x="0" y="0"/>
+		</g>
+	</g>
+</svg>

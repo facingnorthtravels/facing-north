@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 52" width="48" height="52">
+	<title>Video Banner</title>
+	<defs>
+		<image  width="48" height="52" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAA0CAMAAAD7TUujAAAAAXNSR0IB2cksfwAAAOdQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////2zCQUAAAAE10Uk5TAmbo9qsoAQAs9//wig9a4GINXtZStDj0jx3+3XUb1Qn4ujn9pDXsjhBhzT6+L5nqbhXkVwXGQKIm44cgbQr8xEi2AxRNrynMT5q8TOfmOJWnAAABD0lEQVR4nLXWWU9CMRCG4YJy0E8EXBAUZTsqoLigbIoLIqAi///32BATLuCQvgnMdZ+k7bQzY0wovLEZ8aKuYba2Je3Edp1BXNNIJPccwb7+4+DQaV8zIKWODANKZ44Z0En29AwBG7lkngEViiUGJP/8ggHpslxhwJJqwFGCgPyr64WJDAT2jms3CxK5BNhE3s5nZSmQ7u7rDEgPjw0GpGarwYAK7Q4D0tNzlwH7I19eGdDbe89DwOb+o9VHwBaXdp0Be8WfEGiwbgC3BA/tD0feGhMHnwZ8fPR5ww/09Y2+KCwCsMzAQkZLJSzGsNz7P92g5atoWawp0rZLGzscHca/bsMJHn/wgGVCEzTC/QFIWWe+IisQuAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<g id="Video Banner">
+		<use id="play" href="#img1" x="0" y="0"/>
+	</g>
+</svg>

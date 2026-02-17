@@ -1,0 +1,27 @@
+.experience_container {
+  margin-bottom: calc(14% + 100px);
+  background: url("../../../public/assets/package_tour_assets/Layer 100.png");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.experience_text {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 10%;
+  justify-content: center;
+  color: white;
+  max-width: 80.6%;
+}
+.experience_text ul {
+  padding: 0px;
+  /* font-size: 18px; */
+}
+.experience_text h3 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-family: "b-ul";
+}

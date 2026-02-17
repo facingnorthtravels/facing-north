@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 26" width="24" height="26">
+	<title>CTA sidebar</title>
+	<defs>
+		<image  width="24" height="26" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAaCAMAAACaYWzBAAAAAXNSR0IB2cksfwAAATtQTFRFmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZCz5+1QAAAGl0Uk5TAIXj8slOq/9SSPMGkC17HBu3TOjDDUfZ+KwC3/b97c5bv2JmFdZ2CvejEqQQ9KG6DLS8saAsCxYhYdq4ZNFsJAhor/nFp8L7oqWo6ZlZ6ibe/mrbu7AFqmluZ60DtjSpAYZyiTElU5gHoBO4IQAAARVJREFUeJxtkGk7w0AUha/1WEprK6pF0aLVICiilFQRe4Xaq3b//xeY6UyHSXo/5GTe90nuSYjUNDW3tLaRf9rBp8PHO2scXd1eERACPV7RK0XQK0KC9/mX9w8wPjjUoFZ4eGQ00oAHxqKx8YlJH4/L5VMePo36zOgioURS47NzSsxrIvUn0ppYyChh6E8ojkVNLC2bprmyyi7m/+VrWZHrIjZCdZERX7UZFUdrS/IcErXcxg6PPLDLYs+wC8C+UTQOgEP7yDk+ASznlM5kmXOZsrdFdHHJsnRFuRhLN0XXnDv8nTf8LkvlEotbojt+DPPfBNgW7ukB7iPwRC6e4+C9Ki8Vqr4mq2/vEfoofpbTX6zR988v4bcipNY+AYoAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<g id="CTA sidebar">
+		<use id="expert" href="#img1" x="0" y="0"/>
+	</g>
+</svg>

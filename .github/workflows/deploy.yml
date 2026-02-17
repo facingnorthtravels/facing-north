@@ -1,0 +1,51 @@
+name: Facing North
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    strategy:
+      matrix:
+        node-version: [20.19.4]
+    env:
+      NEXT_PUBLIC_FACEBOOK_PIXEL_ID: ${{ secrets.NEXT_PUBLIC_FACEBOOK_PIXEL_ID }}
+      NEXT_PUBLIC_SITE_URL: ${{ secrets.NEXT_PUBLIC_SITE_URL }}
+      REVOLUT_SECRET_KEY: ${{ secrets.REVOLUT_SECRET_KEY }}
+      NEXT_PUBLIC_REVOLUT_PUBLIC_KEY: ${{ secrets.NEXT_PUBLIC_REVOLUT_PUBLIC_KEY }}
+      NEXT_PUBLIC_REVOLUT_ENV: ${{ secrets.NEXT_PUBLIC_REVOLUT_ENV }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: "npm"
+
+      - name: Create .env file from GitHub Secrets
+        run: |
+          echo "NEXT_PUBLIC_FACEBOOK_PIXEL_ID=$NEXT_PUBLIC_FACEBOOK_PIXEL_ID" >> .env
+          echo "NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL" >> .env
+          echo "REVOLUT_SECRET_KEY=$REVOLUT_SECRET_KEY" >> .env
+          echo "NEXT_PUBLIC_REVOLUT_PUBLIC_KEY=$NEXT_PUBLIC_REVOLUT_PUBLIC_KEY" >> .env
+          echo "NEXT_PUBLIC_REVOLUT_ENV=$NEXT_PUBLIC_REVOLUT_ENV" >> .env
+          echo "RESEND_API_KEY=$RESEND_API_KEY" >> .env
+          echo "ADMIN_EMAIL=$ADMIN_EMAIL" >> .env
+      - name: Debug env
+        run: printenv | grep -E 'NEXT_PUBLIC_SITE_URL|ADMIN_EMAIL'
+
+      - name: Show .env file
+        run: cat .env
+      
+      - run: npm install --legacy-peer-deps
+      - run: npm run build --if-present
+      - name: Start app
+        run: pm2 reload facingnorth

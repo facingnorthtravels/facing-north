@@ -1,0 +1,119 @@
+.container {
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.single_row {
+  width: 78.6%;
+  height: fit-content;
+  z-index: 10;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.single_row_feature {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 25px;
+}
+.single_row_feature p {
+  font-family: "b-b";
+  color: rgb(52, 106, 100);
+  font-size: 20px !important;
+}
+.single_row_feature img {
+  width: 24px;
+}
+.heading {
+  font-size: 50px;
+  font-weight: 200;
+  font-family: "b-ul";
+  width: 100%;
+  text-align: center;
+  margin-top: 70px;
+}
+.left_panel {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+  height: 100%;
+  justify-content: center;
+  /* background-color: blue; */
+}
+.left_panel h2 {
+  font-size: 52px;
+  font-weight: 200;
+  font-family: "b-ul";
+  width: 90%;
+}
+.left_panel p {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 22px;
+  /* font-family: "f-l"; */
+}
+.right_panel {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: center;
+}
+.img_container {
+  width: 550px;
+  height: 400px;
+}
+.img_container_2 {
+  height: 250px;
+  width: 100%;
+  margin-top: 20px;
+}
+.img1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.img2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .single_row {
+    width: initial;
+    width: 90%;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .left_panel {
+    width: 100%;
+  }
+  .right_panel {
+    width: 100%;
+  }
+  .left_panel h2 {
+    font-size: 42px;
+  }
+  .left_panel p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .single_row {
+    margin-top: 50px;
+  }
+  .left_panel h2 {
+    font-size: 35px;
+  }
+}

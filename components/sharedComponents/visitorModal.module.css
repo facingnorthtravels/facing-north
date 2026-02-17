@@ -1,0 +1,242 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+.modalContent {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 600px;
+    overflow-y: auto;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    display: flex;
+    flex-direction: column;
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    z-index: 10;
+    transition: color 0.2s;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.header {
+    padding: 30px 40px 10px 40px;
+    text-align: center;
+}
+
+.title {
+    font-family: "b-b", serif;
+    /* Butler Bold from globals */
+    font-size: 24px;
+    color: var(--deepGreen);
+    /* fallback or defined in globals */
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+    font-family: "f-m", sans-serif;
+    /* Futura Medium */
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.form {
+    padding: 20px 40px 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px 16px;
+}
+
+.row {
+    display: flex;
+    gap: 16px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 6px;
+}
+
+.label {
+    font-size: 12px;
+    text-transform: capitalize;
+    color: #444;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.input,
+.select {
+    padding: 7px 14px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-family: "f-l", sans-serif;
+    /* Futura Light */
+    font-size: 15px;
+    transition: all 0.2s ease;
+    background-color: #f9f9f9;
+    outline: none;
+}
+
+.input:focus,
+.select:focus {
+    border-color: #176060;
+    /* medGreen */
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(23, 96, 96, 0.1);
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.submitButton {
+    margin-top: 10px;
+    background-color: #176060;
+    /* medGreen from globals */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-family: "f-b", sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.submitButton:hover {
+    background-color: #181e1e;
+    /* deepGreen */
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.submitButton:active {
+    transform: translateY(0);
+}
+
+.submitButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.neverShowButton {
+    background: none;
+    border: none;
+    color: #888;
+    font-family: "f-m", sans-serif;
+    font-size: 11px;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 10px;
+    align-self: center;
+    padding: 5px;
+    transition: color 0.2s;
+}
+
+.neverShowButton:hover {
+    color: #444;
+
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1.0);
+    }
+}
+
+/* Scrollbar styling for modal content */
+.modalContent::-webkit-scrollbar {
+    display: none;
+}
+
+/*.modalContent::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.modalContent::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
+
+.modalContent::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
+}*/
+
+@media (max-width: 600px) {
+    .modalContent {
+        width: 95%;
+        max-height: 95vh;
+    }
+
+    .header {
+        padding: 25px 20px 5px 20px;
+    }
+
+    .form {
+        padding: 15px 20px 30px 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}

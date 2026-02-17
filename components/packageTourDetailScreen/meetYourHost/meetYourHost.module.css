@@ -1,0 +1,406 @@
+.container {
+  width: 100%;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 80px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(40, 102, 117, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.textSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #286675 0%, #1e4f5c 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  width: fit-content;
+  box-shadow: 0 4px 12px rgba(40, 102, 117, 0.2);
+}
+
+.badge svg {
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: "Butler", serif;
+  font-size: 42px;
+  font-weight: 700;
+  color: #2e2e2e;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.hostInfo {
+  margin-top: 10px;
+}
+
+.hostName {
+  font-family: "Butler", serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #286675;
+  margin: 0 0 8px 0;
+}
+
+.hostTitle {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin: 0;
+  max-width: 550px;
+}
+
+.stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statNumber {
+  font-family: "Butler", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #286675;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.starIcon {
+  color: #FFD700;
+  font-size: 24px;
+}
+
+.statLabel {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.profileButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #286675;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+  margin-top: 10px;
+  box-shadow: 0 4px 16px rgba(40, 102, 117, 0.3);
+}
+
+.profileButton:hover {
+  background: #1e4f5c;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(40, 102, 117, 0.4);
+}
+
+.profileButton svg {
+  transition: transform 0.3s ease;
+}
+
+.profileButton:hover svg {
+  transform: translateX(4px);
+}
+
+.imageSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.imageWrapper {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  aspect-ratio: 3/3;
+}
+
+.hostImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.imageWrapper:hover .hostImage {
+  transform: scale(1.05);
+}
+
+.verifiedBadge {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 12px 20px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.verifiedBadge span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #286675;
+}
+
+.trustBadges {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.trustBadge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-size: 14px;
+  font-weight: 600;
+  color: #2e2e2e;
+}
+
+.trustBadge svg {
+  flex-shrink: 0;
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 60px 20px;
+  }
+
+  .content {
+    gap: 40px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .hostName {
+    font-size: 24px;
+  }
+
+  .statNumber {
+    font-size: 28px;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 50px 16px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .textSection {
+    order: 2;
+  }
+
+  .imageSection {
+    order: 1;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .hostName {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 15px;
+    max-width: 100%;
+  }
+
+  .stats {
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  .statNumber {
+    font-size: 24px;
+  }
+
+  .statLabel {
+    font-size: 13px;
+  }
+
+  .profileButton {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 28px;
+  }
+
+  .imageWrapper {
+    aspect-ratio: 4/5;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .trustBadges {
+    gap: 12px;
+  }
+
+  .trustBadge {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .verifiedBadge {
+    bottom: 16px;
+    left: 16px;
+    padding: 10px 16px;
+  }
+
+  .verifiedBadge span {
+    font-size: 13px;
+  }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 40px 16px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .hostName {
+    font-size: 20px;
+  }
+
+  .hostTitle {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+
+  .badge svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .stats {
+    gap: 20px;
+  }
+
+  .statNumber {
+    font-size: 22px;
+  }
+
+  .starIcon {
+    font-size: 20px;
+  }
+
+  .statLabel {
+    font-size: 12px;
+  }
+
+  .profileButton {
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+
+  .trustBadge {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .trustBadge svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .verifiedBadge {
+    padding: 8px 14px;
+    bottom: 12px;
+    left: 12px;
+  }
+
+  .verifiedBadge span {
+    font-size: 12px;
+  }
+
+  .verifiedBadge svg {
+    width: 20px;
+    height: 20px;
+  }
+}

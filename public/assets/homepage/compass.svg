@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30">
+	<title>Lands of discovery</title>
+	<defs>
+		<image  width="30" height="30" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAAXNSR0IB2cksfwAAAkNQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////DLEJdAAAAMF0Uk5TAA5pt9ri5bhtEp/s25dHExFEk9nrpRZr+MoqNIyNbjciwvl0s/9JMbrq2MSamMPX6b86Qfu+zfX0GPHGtv0hwRTPDS/vaIfTZTB4C4ZFSlcmFaffydA+vcu5CSy13ONqzKwemeF9m2FQGoXOQHZCKeRzwOatiZKoW/peBCimlSV1VO1GigjIi93HPENdJN6WO/B8AYHScOjUMvMcoQqEGQMrF7DVWlixD2QbYNHFsqmQBjaOSC56/LyAoIMQrjMCf5mlrk0AAAJkSURBVHicXZL9P9NRFMc/zWYP1hRDeciUQ5FvZKYyVqYkSbZZxbZKSgkpRRMmsqhUiqz0IOlJKj2p6OlP6359fWdzfrjnc+77dc8959wLiLZCEiKVhYbKpHKFEstNqQpTr9SEA6tWR0Rqo6KDacyatbFAXEx8wrpEQJe0fkMgTaYUpG7clJa+OYPbkpm1Fdn6nCVqyAVytkWxc+HbWQ7VjjxAKxWpMR8FZNrJy6xd/FooJzOKkgS6m6CjPYLmigW/l0pA+3hVShrQ/sVEZQcWXPlBCSGRKpi0WGGrDGrDHkIKHIrE4SNAFemqqSoAVjic5GKeEpWkxFEtjh0PoPG58ppM/ooTatSehOkU9LF+WBcmOw2VlZdn9Kg/i9oGs9M/2eS0RqCadAuRtelcLZqrzttEfIHK2dpyUYhsl+BEKFozdJa2MhZfdtdRO8rpCtBkaetI6ISU4Yguj8PIF0PdaKerPSw/eh3G2GsWhpv7Gr1Csutufi7UL141EM+Sy27ECcMvpJvALYN3UMS3NR4X0u/A7eGjdA53K4fu+XuM1t8fHsGDUfiiWPTw0dhjfeeTpfm0umB9ynI+i6Nx9ubkG3geOHnKLqUJ4IUPkxxeku1V0Lu8boGJY/4N2UEKz9uFzabeRSqhPjNN8aqbkErvhF3TtOAVlA3xi7wfYvxDHy85H7+Of6QGyEbEe9SjrLSwrg5gYgzwzGgnP6F/dKkOE32G3at1cjNfTGqt4Su+uQ2Bdc5+/8G+cNnPubn5FOCXI78+qA3U/O4pnv/zl6mS4eki4yCW29Qs51RLpWpn3r8C/+Z/TiOEWsupz7QAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<g id="Lands of discovery">
+		<g id="Group 1">
+			<use id="compass" href="#img1" x="0" y="0"/>
+		</g>
+	</g>
+</svg>

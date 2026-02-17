@@ -1,0 +1,116 @@
+.tooltip_container {
+  width: 82px;
+  height: 82px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 15px;
+  padding: 1.5px;
+  position: fixed;
+  left: 2vw;
+  top: 120px;
+  z-index: 100000;
+  box-shadow: 0px 10px 43px 0px rgba(11, 78, 85, 0.503);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+  padding-bottom: 6px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
+  border-right: 2px solid rgb(240, 240, 240);
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+
+.tooltip_container:hover {
+  height: auto;
+}
+
+.icons_body_wrapper{
+  /* max-height: calc(100vh - 40px); */
+  overflow-y: auto;
+  overflow-x: clip;
+  display: flex;
+}
+
+.icons_body_wrapper::-webkit-scrollbar {
+  width: 2px;
+}
+.icons_body_wrapper::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.icons_body_wrapper::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 6px;
+}
+.icons_body_wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #808080;
+}
+
+
+.icons_body {
+  height: fit-content;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  /* overflow-y: auto; */
+  /* overflow-x: clip; */
+  /* padding-bottom: 80px; */
+}
+
+.tooltip_body {
+  min-width: 79px;
+  min-height: 79px;
+  background-color: #286675;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.single_icon_container {
+  min-width: 69px;
+  min-height: 69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 10px;
+  border-radius: 8px;
+  padding: 4px;
+  transition: ease-in-out 200ms;
+  z-index: 2;
+}
+.single_icon_container:hover {
+  background-color: #3697af2b;
+  transition: ease-in-out 200ms;
+  cursor: pointer;
+}
+.tooltip_container:hover p {
+  opacity: 1;
+  transition: ease-in-out 200ms;
+}
+.tooltip_container:hover img {
+  opacity: 1;
+  transition: ease-in-out 200ms;
+}
+.single_icon_container p {
+  font-size: 9px;
+  text-align: center;
+  color: #286675;
+  opacity: 0;
+  transition: ease-in-out 200ms;
+  font-family: "f-m" !important;
+}
+.single_icon_container img {
+  height: 24px;
+  opacity: 0;
+  transition: ease-in-out 200ms;
+}
+@media screen and (max-width: 1200px) {
+  .tooltip_container {
+    left: 1vw;
+  }
+}

@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" width="18" height="18">
+	<title>Footer</title>
+	<defs>
+		<image  width="18" height="18" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAMAAABhEH5lAAAAAXNSR0IB2cksfwAAAMBQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////is+prwAAAEB0Uk5TBZ7NZwCk/0fygWb3IzpfDwIECSY7K3Tm5Sp8sBmz0z2NNJfxFy+K/e2Dyh8Kerzp4fAeziDP7IwzlnjuLIC03zVrgoUAAACjSURBVHicjc/JFsFAEAXQFuURc0wJQsQYswgxBPn/v1LNpttKLV6duot3uoXIGFnSRuQA5HUqMJk6FYFSWSeqVGs/Xd9Vt6wGUbPVltSxHadLPdvuuwOuHXokRrx9GgMTB5+ZCpNzRnN5LAKZS4VW682W104hn6v3wEEhl8kAQoWOTBEQKHRiOgPxn3Th40o3Tvl5+VxxD4PkQc8wiWX9K02jN9JdEiXl4WO4AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+	</style>
+	<g id="Footer">
+		<g id="social media icons">
+			<use id="linkedin" href="#img1" x="0" y="0"/>
+		</g>
+	</g>
+</svg>

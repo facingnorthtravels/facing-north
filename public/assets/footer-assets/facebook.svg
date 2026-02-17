@@ -1,0 +1,13 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 17" width="8" height="17">
+	<title>Footer</title>
+	<defs>
+		<image  width="8" height="17" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAARCAMAAADXCB3qAAAAAXNSR0IB2cksfwAAAFpQTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////Y2SxRAAAAB50Uk5TACqZwJY59//QtttRPGEtQNySUDi9oYULEGoFYLpCuPwkjAAAAExJREFUeJyVyscRgDAQQ1HBArLJGZP6bxMNgwtAl/8OAoAkNcvUvCDpBM8PJemrWnBko7RdTw7jBOO7OWKJWLEFZQ+H7sIJ/MVldgMPG38D4xUQKwYAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<g id="Footer">
+		<g id="social media icons">
+			<use id="Web Icons_Facebook" href="#img1" x="0" y="0"/>
+		</g>
+	</g>
+</svg>

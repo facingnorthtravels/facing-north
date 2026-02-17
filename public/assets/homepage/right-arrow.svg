@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 19" width="37" height="19">
+	<title>1</title>
+	<defs>
+		<image  width="37" height="19" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAATCAMAAAAgYzSBAAAAAXNSR0IB2cksfwAAAI1QTFRF////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////v6aiKwAAAC90Uk5TAA3LchD/XB/tXhz1IPRdHvAaYMwzUlE5cWL8R2ppVHy6beZwEeAU5Q/nbhPeDtBqS17gAAAAfElEQVR4nI3RSRKCQBBE0QJMZEaUQVFoHFDA4f7HM1jADjr/qiL6RdWiRRYzTGv5cW4D2ATbOnAJ5vkUC0JEBIt31LbEx55gchiPplmWr1UcgZNAWwnI+VKtViuA+IMGV60xbrhr0aMlNj1fBOp6DFr0/hCoA3FOvj81jX+oKwwWZxOfqAAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<g id="1">
+		<use id="right-arrow copy 2" href="#img1" x="0" y="0"/>
+	</g>
+</svg>

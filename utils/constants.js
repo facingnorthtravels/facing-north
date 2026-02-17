@@ -1,0 +1,2 @@
+export const ADVANCE_PAYMENT_PERCENTAGE = "100%";
+export const ADDITIONAL_OCCUPANCY_FEE = 600;

@@ -1,0 +1,43 @@
+.next_icon,
+.prev_icon {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+}
+.right_btn {
+  position: absolute;
+  left: -30%;
+  bottom: 12%;
+  display: block;
+}
+.left_btn {
+  position: absolute;
+  left: -43%;
+  bottom: 12%;
+  display: block;
+}
+@media screen and (max-width: 1228px) {
+  .right_btn {
+    position: absolute;
+    /* left: 50% !important; */
+    right: calc(50% - 65px);
+    left: unset;
+    bottom: -15% !important;
+    display: block;
+  }
+  .left_btn {
+    position: absolute;
+    display: block;
+    left: calc(50% - 65px);
+    /* left: 40% !important; */
+    bottom: -15% !important;
+  }
+}
+/* @media screen and (max-width: 750px) {
+  .right_btn {
+    right: 30%;
+  }
+  .left_btn {
+    left: 30%;
+  }
+} */

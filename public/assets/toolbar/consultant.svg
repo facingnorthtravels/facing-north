@@ -1,0 +1,11 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 22" width="24" height="22">
+	<title>CTA sidebar</title>
+	<defs>
+		<image  width="24" height="22" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAWCAMAAADto6y6AAAAAXNSR0IB2cksfwAAAMNQTFRFmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZjbg34AAAAEF0Uk5TAKb/vhceG/0gGDQH4Ir39odxZuflUQHzQ7evn90j8e9QaWjk0m1kEneTdhWJTDml4fKkOIaEdG4TgGuRuaOysWDoYXXeAAAArElEQVR4nHWQ1xaCMBBE1xXsDRt2DIq9IPaG/v9XKUFhCTBPk7mZkzkB8JRAoqSfSxiQD+Q4kErHgExUI5uTIF8Ig2IJyxWh4uQKd9XgXgfUuKtDQwBNlTsVWmKjzV0HuiTvOaA/+DpNhiHT2QhxbOhsMnXXzuaLpTsccQWRUtbksNmaO9Pahy4dfu8dhfzkLTkHcvoRFwquBNwosAi4U/Ag4EmBYb/+st8k/wCoMQ1T3XPJMgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+	</style>
+	<g id="CTA sidebar">
+		<use id="consultant-services" href="#img1" x="0" y="0"/>
+	</g>
+</svg>
