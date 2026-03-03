@@ -101,4 +101,55 @@ const blogs = [
   },
 ];
 
+  {
+    id: 7,
+    title: "Pakistan Visa Guide for UK Citizens: Everything You Need to Know (2025)",
+    slug: "pakistan-visa-guide-uk-citizens-2025",
+    img: blog_exploring_the_rich_flavors_and_cultural_arts_of_pakistan,
+    publishedDate: "2025-01-15",
+    modifiedDate: "2025-10-01",
+    paras: [
+      "Pakistan is now one of the most talked-about adventure travel destinations in the world — and for good reason. For UK citizens, getting there is easier than ever. The Pakistan e-Visa, available to British passport holders, allows you to apply entirely online without visiting an embassy. Here is everything you need to know about the Pakistan visa process for UK citizens in 2025.",
+      { heading: "Do UK Citizens Need a Visa for Pakistan?", para: "Yes. UK passport holders require a visa to enter Pakistan. British nationals are eligible for the Pakistan e-Visa, applied for online through the NADRA portal at visa.nadra.gov.pk. There is no need to visit the Pakistan High Commission in London for standard tourist applications." },
+      { heading: "How to Apply for a Pakistan e-Visa from the UK", para: "Visit visa.nadra.gov.pk and select Tourist Visa. Upload your UK passport bio-data page and a passport photograph, then pay the fee (approximately £12–25 GBP). Processing typically takes 5–14 working days. Express processing is sometimes available." },
+      { heading: "Letter of Invitation (LOI) — What Is It?", para: "A Letter of Invitation is a supporting document from a registered Pakistan travel company confirming your travel arrangements. Facing North Adventures provides free LOIs to all clients — send us your passport scan and we'll have your LOI ready within 48 hours. An LOI strengthens your e-Visa application and reduces processing delays." },
+      { heading: "Pakistan e-Visa: Key Details for UK Travellers", para: "The standard tourist e-Visa is valid for 30–90 days (single or multiple entry). The visa fee is approximately PKR 4,000–8,000 (£12–£25 GBP). Your passport must be valid for at least six months beyond your travel dates." },
+      { heading: "How Far in Advance Should UK Travellers Apply?", para: "Apply at least 6–8 weeks before departure. While processing is usually 1–2 weeks, early application gives time to resolve any issues. Facing North clients receive LOI support as soon as they confirm their tour booking." },
+      { heading: "Is Pakistan Safe for UK Tourists?", para: "Northern Pakistan — including Hunza Valley, Skardu, Swat Valley, and Gilgit-Baltistan — is widely considered safe. These regions receive thousands of British and international visitors annually. Travelling with an experienced registered local operator significantly enhances your safety and peace of mind." },
+    ],
+  },
+  {
+    id: 8,
+    title: "Best Pakistan Tours for British Travellers: A Complete 2025 Guide",
+    slug: "best-pakistan-tours-british-travellers-2025",
+    img: blog_discovering_the_rich_tapestry_of_culture_and_heritage_in_pakistan,
+    publishedDate: "2025-02-01",
+    modifiedDate: "2025-10-15",
+    paras: [
+      "Pakistan is fast becoming one of the most exciting destinations for British adventurers. With direct flights from London Heathrow and Manchester, a straightforward e-Visa, and some of the most dramatic mountain scenery on earth — Northern Pakistan offers a once-in-a-lifetime experience that rivals Nepal and Bhutan at a fraction of the price.",
+      { heading: "Why UK Travellers Are Choosing Pakistan", para: "Northern Pakistan is home to five of the world's fourteen 8,000-metre peaks, hundreds of glaciers, ancient Silk Road forts, and some of the most hospitable people on the planet. The Karakoram Highway — one of the world's greatest road journeys — connects Islamabad to the Chinese border through Hunza and Gilgit-Baltistan. UK visitor numbers to Pakistan have grown over 40% since 2022." },
+      { heading: "Best Time to Visit Northern Pakistan from the UK", para: "For UK travellers, the ideal window is May to October. July and August align with UK school summer holidays. June sees Hunza Valley at its lushest. October brings stunning autumn foliage in Hunza with fewer crowds. May and September are excellent shoulder months with great weather and better availability." },
+      { heading: "Top Destinations for British Visitors", para: "Hunza Valley is the jewel of Northern Pakistan — a 2,438-metre valley framed by Rakaposhi (7,788m) and Ultar Sar (7,388m). Skardu is the gateway to K2 base camp treks and the Deosai Plateau at 4,115m. Fairy Meadows offers stunning views of Nanga Parbat (8,126m). Swat Valley — called the Switzerland of Pakistan — has emerald rivers and ancient Buddhist ruins. Chitral is home to the Kalash people, an ancient pre-Islamic culture unique to Pakistan." },
+      { heading: "How Much Does a Pakistan Tour Cost from the UK?", para: "Return flights from London to Islamabad cost approximately £350–£700. Tour packages with Facing North Adventures start from $800 USD (around £630 GBP) for shorter tours, with 10–14 day Northern Pakistan itineraries typically costing £950–£2,000 including accommodation, meals, local transport, and guides. Pakistan is considerably more affordable than comparable destinations in Nepal or the Alps." },
+      { heading: "Practical Tips for UK Visitors", para: "Pakistan uses the Pakistani Rupee (PKR). Bring USD or GBP cash to exchange in Islamabad before heading north — UK cards are not widely accepted outside cities. Pakistan runs on GMT+5. Mobile coverage in remote northern valleys is limited — Telenor Pakistan generally has the best coverage. UK roaming is available on Pakistani networks." },
+    ],
+  },
+  {
+    id: 9,
+    title: "Flights to Pakistan from the UK: Airlines, Routes & Money-Saving Tips (2025)",
+    slug: "flights-to-pakistan-from-uk-2025",
+    img: blog_wellness_and_yoga_retreats_in_the_north_areas_of_pakstan,
+    publishedDate: "2025-03-01",
+    modifiedDate: "2025-10-20",
+    paras: [
+      "Getting to Pakistan from the UK is more straightforward than many travellers expect. Multiple airlines offer direct and one-stop flights from London, Manchester, and Birmingham to Islamabad and Lahore. Here is everything British travellers need to know about flights to Pakistan in 2025 — airlines, routes, and tips for finding cheap fares.",
+      { heading: "Which UK Airports Fly to Pakistan?", para: "London Heathrow (LHR) is the main hub, with PIA (Pakistan International Airlines) operating direct flights to Islamabad (ISB) approximately 8–8.5 hours. Manchester Airport (MAN) and Birmingham Airport (BHX) also have PIA direct services to Islamabad. For indirect flights, Emirates via Dubai, Qatar Airways via Doha, and Turkish Airlines via Istanbul offer competitive fares from most UK airports." },
+      { heading: "Direct vs Indirect Flights", para: "PIA direct flights are the most convenient — 8–8.5 hours from London, Manchester, or Birmingham with no connection. Indirect flights via Dubai or Doha take 11–14 hours total but can be significantly cheaper, especially when booked well in advance." },
+      { heading: "Which Airport to Fly Into for Northern Pakistan?", para: "For Northern Pakistan tours (Hunza, Skardu, Swat, Chitral, Gilgit-Baltistan), fly into Islamabad International Airport (ISB). All Facing North Adventures tours depart from Islamabad. It is approximately 1 hour from the airport to central Islamabad, and the Karakoram Highway north begins roughly 2 hours from the city." },
+      { heading: "How Much Are Flights from the UK?", para: "Return flights from London to Islamabad typically cost £350–£500 on PIA when booked 2–3 months in advance. Last-minute fares can exceed £700. Via Emirates or Qatar Airways, expect £400–£700. July and August are the most expensive months — book by March for the best summer fares." },
+      { heading: "Top Tips for Cheap Flights", para: "Set price alerts on Google Flights or Skyscanner for Heathrow or Manchester to Islamabad. PIA frequently offers promotional fares through UK travel agents. Consider flying mid-week for lower fares. Booking 8–12 weeks in advance gives the best combination of price and availability for summer travel. Travelling in May, June, September, or October provides excellent weather and lower airfares than peak July–August." },
+    ],
+  },
+];
+
 export { blogs };

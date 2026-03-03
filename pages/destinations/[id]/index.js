@@ -43,23 +43,28 @@ export default function DestinationDetail({ destinationData }) {
 
   const slug = `${destinationData?.id}-${destinationData?.title?.toLowerCase().replace(/\s+/g, '-')}`;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "TouristDestination",
-    "name": destinationData?.title,
-    "description": descriptionText,
-    "image": metadata.openGraph?.image,
-    "url": `https://facingnorthtravels.com/destinations/${slug}`,
-    "touristType": "Adventure Traveler",
-    "geo": {
-      "@type": "GeoCoordinates",
-      "addressCountry": "PK"
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "TouristDestination",
+      "name": destinationData?.title,
+      "description": descriptionText,
+      "image": metadata.openGraph?.image,
+      "url": `https://facingnorthtravels.com/destinations/${slug}`,
+      "touristType": "Adventure Traveler",
+      "geo": { "@type": "GeoCoordinates", "addressCountry": "PK" },
+      "containedInPlace": { "@type": "Country", "name": "Pakistan" }
     },
-    "containedInPlace": {
-      "@type": "Country",
-      "name": "Pakistan"
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://facingnorthtravels.com" },
+        { "@type": "ListItem", "position": 2, "name": "Destinations", "item": "https://facingnorthtravels.com/destinations" },
+        { "@type": "ListItem", "position": 3, "name": destinationData?.title, "item": `https://facingnorthtravels.com/destinations/${slug}` }
+      ]
     }
-  };
+  ];
 
   return (
     <div className={styles.container}>

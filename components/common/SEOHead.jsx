@@ -61,13 +61,20 @@ const SEOHead = ({ metadata, jsonLd }) => {
       <meta name="revisit-after" content="7 days" />
       <meta name="author" content={DEFAULT_SEO.siteName} />
 
-      {/* JSON-LD Structured Data */}
-      {jsonLd && (
+      {/* hreflang — target English globally, UK specifically, and x-default */}
+      <link rel="alternate" hreflang="en" href={canonical} />
+      <link rel="alternate" hreflang="en-GB" href={canonical} />
+      <link rel="alternate" hreflang="en-PK" href={canonical} />
+      <link rel="alternate" hreflang="x-default" href={canonical} />
+
+      {/* JSON-LD Structured Data — accepts single object or array */}
+      {jsonLd && (Array.isArray(jsonLd) ? jsonLd : [jsonLd]).map((schema, i) => (
         <script
+          key={i}
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
-      )}
+      ))}
     </Head>
   );
 };

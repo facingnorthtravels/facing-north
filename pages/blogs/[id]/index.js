@@ -14,33 +14,34 @@ function Blog({ blog }) {
     ? (typeof blog.paras[0] === 'string' ? blog.paras[0] : blog.paras[0]?.para || '')
     : '';
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": blog?.title,
-    "description": excerpt.substring(0, 200),
-    "image": metadata.openGraph?.image,
-    "url": `https://facingnorthtravels.com/blogs/${blog?.id}`,
-    "datePublished": blog?.publishedDate || undefined,
-    "dateModified": blog?.modifiedDate || blog?.publishedDate || undefined,
-    "author": {
-      "@type": "Organization",
-      "name": "Facing North Adventures",
-      "url": "https://facingnorthtravels.com"
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": blog?.title,
+      "description": excerpt.substring(0, 200),
+      "image": metadata.openGraph?.image,
+      "url": `https://facingnorthtravels.com/blogs/${blog?.id}`,
+      "datePublished": blog?.publishedDate || undefined,
+      "dateModified": blog?.modifiedDate || blog?.publishedDate || undefined,
+      "author": { "@type": "Organization", "name": "Facing North Adventures", "url": "https://facingnorthtravels.com" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Facing North Adventures",
+        "logo": { "@type": "ImageObject", "url": "https://facingnorthtravels.com/logo.png" }
+      },
+      "mainEntityOfPage": { "@type": "WebPage", "@id": `https://facingnorthtravels.com/blogs/${blog?.id}` }
     },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Facing North Adventures",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://facingnorthtravels.com/logo.png"
-      }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": `https://facingnorthtravels.com/blogs/${blog?.id}`
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://facingnorthtravels.com" },
+        { "@type": "ListItem", "position": 2, "name": "Travel Blog", "item": "https://facingnorthtravels.com/blogs" },
+        { "@type": "ListItem", "position": 3, "name": blog?.title, "item": `https://facingnorthtravels.com/blogs/${blog?.id}` }
+      ]
     }
-  };
+  ];
 
   return (
     <div className={classes.container}>

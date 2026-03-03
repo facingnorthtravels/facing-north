@@ -13,6 +13,8 @@ const staticPages = [
   { url: '/services',              changefreq: 'monthly', priority: '0.7' },
   { url: '/contact',               changefreq: 'monthly', priority: '0.6' },
   { url: '/faq',                   changefreq: 'monthly', priority: '0.6' },
+  { url: '/uk-pakistan-tours',     changefreq: 'weekly',  priority: '0.9' },
+  { url: '/best-pakistan-tour-operators', changefreq: 'monthly', priority: '0.8' },
 ];
 
 function generateSiteMap() {

@@ -52,28 +52,39 @@ export default function PackageTour({ tourDetailData, hostData: initialHostData 
   // Generate metadata from static props
   const metadata = getTourPackageMetadata(tourDetailData);
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": tourDetailData?.title,
-    "description": Array.isArray(tourDetailData?.description)
-      ? tourDetailData.description.join(' ').substring(0, 300)
-      : (tourDetailData?.description || '').substring(0, 300),
-    "image": metadata.openGraph?.image,
-    "url": `https://facingnorthtravels.com/package-tour/${tourDetailData?.id}`,
-    "brand": { "@type": "Brand", "name": "Facing North Adventures" },
-    "offers": {
-      "@type": "Offer",
-      "price": tourDetailData?.price?.replace(/[^0-9.]/g, '') || undefined,
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "url": `https://facingnorthtravels.com/package-tour/${tourDetailData?.id}`
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": tourDetailData?.title,
+      "description": Array.isArray(tourDetailData?.description)
+        ? tourDetailData.description.join(' ').substring(0, 300)
+        : (tourDetailData?.description || '').substring(0, 300),
+      "image": metadata.openGraph?.image,
+      "url": `https://facingnorthtravels.com/package-tour/${tourDetailData?.id}`,
+      "brand": { "@type": "Brand", "name": "Facing North Adventures" },
+      "offers": {
+        "@type": "Offer",
+        "price": tourDetailData?.price?.replace(/[^0-9.]/g, '') || undefined,
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": `https://facingnorthtravels.com/package-tour/${tourDetailData?.id}`
+      },
+      "additionalProperty": [
+        { "@type": "PropertyValue", "name": "Duration", "value": `${tourDetailData?.days} days` },
+        { "@type": "PropertyValue", "name": "Location", "value": tourDetailData?.overview?.location || tourDetailData?.provincesCovered }
+      ]
     },
-    "additionalProperty": [
-      { "@type": "PropertyValue", "name": "Duration", "value": `${tourDetailData?.days} days` },
-      { "@type": "PropertyValue", "name": "Location", "value": tourDetailData?.overview?.location || tourDetailData?.provincesCovered }
-    ]
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://facingnorthtravels.com" },
+        { "@type": "ListItem", "position": 2, "name": "Tour Packages", "item": "https://facingnorthtravels.com/package-tour" },
+        { "@type": "ListItem", "position": 3, "name": tourDetailData?.title, "item": `https://facingnorthtravels.com/package-tour/${tourDetailData?.id}` }
+      ]
+    }
+  ];
 
   return (
     <div className={styles.container}>
