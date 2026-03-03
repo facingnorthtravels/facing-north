@@ -54,6 +54,31 @@ export default function Document() {
 
         {/* <!-- Theme Color for Mobile --> */}
         <meta name="theme-color" content="#000000"></meta>
+
+        {/* <!-- Organization + TravelAgency Schema --> */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": ["TravelAgency", "LocalBusiness"],
+              "name": "Facing North Adventures",
+              "url": "https://facingnorthtravels.com",
+              "logo": "https://facingnorthtravels.com/logo.png",
+              "image": "https://facingnorthtravels.com/assets/og-image.jpeg",
+              "description": "Explore the breathtaking beauty of Northern Pakistan. Plan your next journey with curated adventures, expert guides, and unforgettable experiences.",
+              "areaServed": {
+                "@type": "Country",
+                "name": "Pakistan"
+              },
+              "knowsAbout": ["Adventure Travel", "Northern Pakistan", "Hunza", "Skardu", "Gilgit-Baltistan", "Mountain Trekking"],
+              "sameAs": [
+                "https://www.instagram.com/facingnorthadventures",
+                "https://www.facebook.com/facingnorthadventures"
+              ]
+            })
+          }}
+        />
       </Head>
       <body>
         {/* <!-- Google Tag Manager (noscript) --> */}

@@ -10,9 +10,41 @@ function Blog({ blog }) {
   // Generate metadata from static props
   const metadata = getBlogMetadata(blog);
 
+  const excerpt = Array.isArray(blog?.paras)
+    ? (typeof blog.paras[0] === 'string' ? blog.paras[0] : blog.paras[0]?.para || '')
+    : '';
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": blog?.title,
+    "description": excerpt.substring(0, 200),
+    "image": metadata.openGraph?.image,
+    "url": `https://facingnorthtravels.com/blogs/${blog?.id}`,
+    "datePublished": blog?.publishedDate || undefined,
+    "dateModified": blog?.modifiedDate || blog?.publishedDate || undefined,
+    "author": {
+      "@type": "Organization",
+      "name": "Facing North Adventures",
+      "url": "https://facingnorthtravels.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Facing North Adventures",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://facingnorthtravels.com/logo.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://facingnorthtravels.com/blogs/${blog?.id}`
+    }
+  };
+
   return (
     <div className={classes.container}>
-      <SEOHead metadata={metadata} />
+      <SEOHead metadata={metadata} jsonLd={jsonLd} />
       <div className={classes.content_container}>
         <div className={classes.banner_container}>
           <div className={classes.overlay} />

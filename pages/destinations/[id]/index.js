@@ -37,9 +37,33 @@ export default function DestinationDetail({ destinationData }) {
   // Generate metadata from static props
   const metadata = getDestinationMetadata(destinationData);
 
+  const descriptionText = Array.isArray(destinationData?.detailed_description)
+    ? destinationData.detailed_description.join(' ').substring(0, 300)
+    : (destinationData?.detailed_description || '').substring(0, 300);
+
+  const slug = `${destinationData?.id}-${destinationData?.title?.toLowerCase().replace(/\s+/g, '-')}`;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "TouristDestination",
+    "name": destinationData?.title,
+    "description": descriptionText,
+    "image": metadata.openGraph?.image,
+    "url": `https://facingnorthtravels.com/destinations/${slug}`,
+    "touristType": "Adventure Traveler",
+    "geo": {
+      "@type": "GeoCoordinates",
+      "addressCountry": "PK"
+    },
+    "containedInPlace": {
+      "@type": "Country",
+      "name": "Pakistan"
+    }
+  };
+
   return (
     <div className={styles.container}>
-      <SEOHead metadata={metadata} />
+      <SEOHead metadata={metadata} jsonLd={jsonLd} />
       <div>
         <HeroBanner
           heading={destinationData?.title}

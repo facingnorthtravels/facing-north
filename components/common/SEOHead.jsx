@@ -7,7 +7,7 @@ import { DEFAULT_SEO } from '../../utils/seo';
  * 
  * @param {Object} metadata - Metadata object from seo.js utility functions
  */
-const SEOHead = ({ metadata }) => {
+const SEOHead = ({ metadata, jsonLd }) => {
   const {
     title,
     description,
@@ -60,6 +60,14 @@ const SEOHead = ({ metadata }) => {
       <meta name="language" content="English" />
       <meta name="revisit-after" content="7 days" />
       <meta name="author" content={DEFAULT_SEO.siteName} />
+
+      {/* JSON-LD Structured Data */}
+      {jsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      )}
     </Head>
   );
 };
