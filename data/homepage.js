@@ -6,9 +6,9 @@ import landscape from "/public/assets/IMAGES/Home/welcome-section/landscape.jpg"
 
 export const HOMEPAGE_FIRST_SLIDER = [
   {
-    title: "Welcome to Pakistan",
+    title: "What Is Facing North?",
     detailed_description:
-      "More than travel, a chance to find our true north. Facing North invites you to experience the magic of Pakistan with responsible and sustainable adventures. We journey through stunning landscapes, encounter welcoming communities, and immerse ourselves in ancient cultures, contributing to sustainable tourism practices. Choose your expedition – trekking across glaciers, delving into historical sites, or simply soaking in the serene beauty – and let us guide you to experiences that will connect you to the heart of this enchanting land.",
+      "Facing North is a UK-registered global experiential travel company. We don't sell packaged tours — we engineer raw, community-driven adventures across Pakistan, Central Asia, and beyond. Every guide is handpicked. Every route is ground-tested. Every experience is designed to be unrepeatable.",
     img: WelcomePak.src,
   },
   {

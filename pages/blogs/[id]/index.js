@@ -94,9 +94,11 @@ function Blog({ blog }) {
 
 // Generate paths for all blogs at build time
 export async function getStaticPaths() {
-  const paths = blogs.map((blog) => ({
-    params: { id: String(blog.id) },
-  }));
+  const paths = blogs.flatMap((blog) => {
+    const paths = [{ params: { id: String(blog.id) } }];
+    if (blog.slug) paths.push({ params: { id: blog.slug } });
+    return paths;
+  });
 
   return {
     paths,
@@ -107,7 +109,9 @@ export async function getStaticPaths() {
 // Fetch blog data at build time
 export async function getStaticProps({ params }) {
   const decodedId = decodeURIComponent(params.id || "");
-  const blog = blogs.find((b) => String(b.id) === decodedId);
+  const blog = blogs.find(
+    (b) => String(b.id) === decodedId || b.slug === decodedId
+  );
 
   if (!blog) {
     return {

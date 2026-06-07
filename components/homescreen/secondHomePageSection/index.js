@@ -52,6 +52,22 @@ function SecondHomePageSection() {
             <p data-aos="fade-down" className="animate-text">
               {HOMEPAGE_FIRST_SLIDER[activeSlide].detailed_description}
             </p>
+            {activeSlide === 0 && (
+              <div data-aos="fade-up" className={classes.stats_row}>
+                <div className={classes.stat}>
+                  <span className={classes.stat_number}>500+</span>
+                  <span className={classes.stat_label}>Travelers</span>
+                </div>
+                <div className={classes.stat}>
+                  <span className={classes.stat_number}>4</span>
+                  <span className={classes.stat_label}>Active Countries</span>
+                </div>
+                <div className={classes.stat}>
+                  <span className={classes.stat_number}>100%</span>
+                  <span className={classes.stat_label}>Local Partnerships</span>
+                </div>
+              </div>
+            )}
           </div>
           <div className={classes.right_panel}>
             <div className={classes.right_panel_container}>

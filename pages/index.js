@@ -42,12 +42,16 @@ export default function Home() {
       <div>
         <HeroBanner
           backgroundImg={"/assets/placeholder.webp"}
-          heading={"Where adventure finds its compass."}
+          heading={"Where the map runs out."}
           subheading1={
-            "Discover Pakistan's Cultural and Natural Wonders in Style with Our Exclusive Tours"
+            "Pakistan. Kazakhstan. Kyrgyzstan. Uzbekistan. Raw adventure. Real culture. No shortcuts."
           }
           subheading2={""}
           video={"/assets/Chitral/Chitral_banner.mp4"}
+          ctas={[
+            { label: "Explore Destinations", href: "/destinations" },
+            { label: "Join a Community Trip", href: "/community-trips" },
+          ]}
         />
       </div>
       <div style={{ scrollMarginTop: "98px" }}>

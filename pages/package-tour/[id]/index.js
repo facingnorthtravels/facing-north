@@ -11,8 +11,10 @@ import TopDestinations from "../../../components/packageTourScreen/topDestinatio
 import ContactNow from "../../../components/common/contactNow";
 import WhatsIncluded from "../../../components/packageTourDetailScreen/whatsIncluded";
 import { getCohostedProfileById } from "../../../data/cohosted-profiles";
+import { getSpecialistProfileBySlug } from "../../../data/specialist-profiles";
 import MeetYourHost from "../../../components/packageTourDetailScreen/meetYourHost";
 import InternationalFlightSection from "../../../components/packageTourDetailScreen/internationalFlightSection";
+import SpecialistAttributionStrip from "../../../components/specialistScreen/attributionStrip";
 import SEOHead from "../../../components/common/SEOHead";
 import { getTourPackageMetadata } from "../../../utils/seo";
 
@@ -25,12 +27,21 @@ export default function PackageTour({ tourDetailData, hostData: initialHostData 
   
   // Host state - fetched from query params
   const [hostData, setHostData] = useState(initialHostData);
+  const [specialistData, setSpecialistData] = useState(null);
 
   // Fetch host data from query params
   useEffect(() => {
     if (router?.query?.host) {
       const hostProfile = getCohostedProfileById(router.query.host);
       setHostData(hostProfile);
+    }
+    if (router?.query?.specialist) {
+      const specialistProfile = getSpecialistProfileBySlug(
+        router.query.specialist
+      );
+      setSpecialistData(specialistProfile);
+    } else {
+      setSpecialistData(null);
     }
   }, [router?.query]);
 
@@ -102,6 +113,10 @@ export default function PackageTour({ tourDetailData, hostData: initialHostData 
         couponResult={couponResult}
         hostItineraryDate={getHostItineraryDate()}
       />
+      {/* Specialist attribution strip — only when ?specialist= present */}
+      {specialistData && (
+        <SpecialistAttributionStrip specialist={specialistData} />
+      )}
       {/* Meet Your Host Section - Only shows if host exists */}
       {hostData && <MeetYourHost host={hostData} />}
       <SecondHomePageSection

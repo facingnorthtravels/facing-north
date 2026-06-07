@@ -90,6 +90,7 @@ const VisitorModal = ({ isOpen, onClose, onPermanentDismiss }) => {
 
         <div className={classes.header}>
           <h2 className={classes.title}>Plan Your Dream Trip</h2>
+          <span className={classes.titleAccent} />
           <p className={classes.subtitle}>
             Tell us a bit about your travel plans and we'll help you curate the perfect experience.
           </p>

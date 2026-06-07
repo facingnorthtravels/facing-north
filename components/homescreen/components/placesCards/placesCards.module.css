@@ -55,7 +55,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 35px;
+  column-gap: 22px;
+  row-gap: 8px;
+  flex-wrap: wrap;
   justify-content: flex-start;
   transition: ease-out 200ms;
 }
@@ -131,6 +133,11 @@
   width: 100% !important;
   font-family: "b-ul";
   margin-bottom: 50px;
+  line-height: 1.15;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .province_name {
   font-size: 13px !important;

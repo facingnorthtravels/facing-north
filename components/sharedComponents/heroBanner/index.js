@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import classes from "./heroBanner.module.css";
 import { motion } from "framer-motion";
 
@@ -11,6 +12,7 @@ function HeroBanner({
   height,
   style,
   video,
+  ctas,
 }) {
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -81,6 +83,15 @@ function HeroBanner({
             {subheading1}
             <br />
             {subheading2}
+          </motion.li>
+        )}
+        {ctas && ctas.length > 0 && (
+          <motion.li className={classes.cta_row} variants={item}>
+            {ctas.map((cta, idx) => (
+              <Link key={idx} href={cta.href} className={classes.cta_btn}>
+                {cta.label}
+              </Link>
+            ))}
           </motion.li>
         )}
       </motion.ul>

@@ -17,7 +17,7 @@
 .left_column {
   display: flex;
   flex-direction: column;
-  flex: 70%;
+  flex: 1 1 45%;
 }
 
 .content_section {
@@ -28,7 +28,7 @@
 
 .main_heading {
   font-family: "b-ul";
-  font-size:40px;
+  font-size: 40px;
   font-weight: 400;
   color: black;
   line-height: 1.2;
@@ -80,8 +80,8 @@
 }
 
 .feature_description {
-    font-family: 'segoe ui', sans-serif;
-    color: #3C3C3C;
+  font-family: 'segoe ui', sans-serif;
+  color: #3C3C3C;
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
@@ -130,26 +130,191 @@
   color: #2F706B;
 }
 
-/* Right Column Styles */
+/* Right Column - Creator Card (matches itinerary card aesthetic) */
 .right_column {
-    width: 100%;
-    /* height: 500px; */
-    flex: 50%;
-    display: flex;
-    justify-content: flex-end;
+  flex: 0 0 380px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
-.single_image_container {
-  width: 100% !important;
-  /* height: 500px; */
-  border-radius: 12px;
-  /* overflow: hidden; */
+.creator_card {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  min-height: 480px;
+  position: relative;
+  overflow: hidden;
+  transition: ease-out 200ms;
+  cursor: pointer;
 }
 
-.single_image {
-  border-radius: 12px;
+.creator_image {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  position: relative !important;
+  object-position: center top;
+  display: block;
+  transition: ease-out 200ms;
+}
+
+.creator_card:hover .creator_image {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 96, 103, 0.15) 0%,
+    rgba(0, 96, 103, 0) 35%,
+    rgba(0, 96, 103, 0.55) 70%,
+    rgb(0, 96, 103) 100%
+  );
+  z-index: 10;
+  transition: ease-out 200ms;
+  pointer-events: none;
+}
+
+.creator_card:hover .overlay {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 96, 103, 0.2) 0%,
+    rgba(0, 96, 103, 0.05) 25%,
+    rgba(0, 96, 103, 0.65) 60%,
+    rgb(0, 96, 103) 100%
+  );
+}
+
+.category_badge {
+  position: absolute;
+  top: 24px;
+  left: 35px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+  font-family: 'segoe ui', sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  z-index: 20;
+  backdrop-filter: blur(4px);
+}
+
+.info_container {
+  z-index: 20;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: 35px;
+  margin-left: 35px;
+  margin-right: 35px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+.creator_name {
+  font-size: 36px;
+  font-weight: lighter;
+  color: white;
+  font-family: "b-ul";
+  margin: 0;
+  line-height: 1.15;
+}
+
+.creator_title {
+  font-family: 'segoe ui', sans-serif;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 18px 0;
+}
+
+.indicators {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 35px;
+}
+
+.single_indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 4px;
+}
+
+.indicator_label {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 11px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  font-family: 'segoe ui', sans-serif;
+}
+
+.indicator_value {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'segoe ui', sans-serif;
+}
+
+.nav_btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  z-index: 25;
+  padding: 0;
+}
+
+.nav_btn:hover {
+  background-color: #ffffff;
+  color: rgb(0, 96, 103);
+}
+
+.nav_prev {
+  left: 16px;
+}
+
+.nav_next {
+  right: 16px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 25;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.dot_active {
+  background-color: #ffffff;
+  transform: scale(1.25);
 }
 
 /* Responsive Design */
@@ -158,17 +323,25 @@
     flex-direction: column-reverse;
     gap: 40px;
   }
-  
+
   .left_column {
     flex: none;
     width: 100%;
   }
-  
+
   .right_column {
     flex: none;
     width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    justify-content: center;
   }
-  
+
+  .creator_card {
+    aspect-ratio: 3 / 4;
+    min-height: 460px;
+  }
+
   .main_heading {
     font-size: 2.5rem;
   }
@@ -178,43 +351,60 @@
   .container {
     padding: 40px 0;
   }
-  
+
   .content_wrapper {
     width: 90.6%;
   }
-  
+
   .main_heading {
     font-size: 2rem;
   }
-  
+
   .buttons_container {
     flex-direction: column;
     gap: 15px;
   }
-  
+
   .primary_button,
   .secondary_button {
     text-align: center;
     padding: 16px 24px;
   }
-  
+
+  .creator_name {
+    font-size: 28px;
+  }
+
+  .info_container {
+    margin-left: 22px;
+    margin-right: 22px;
+    margin-bottom: 28px;
+  }
+
+  .category_badge {
+    left: 22px;
+    top: 18px;
+  }
+
+  .indicators {
+    column-gap: 22px;
+  }
 }
 
 @media (max-width: 480px) {
   .main_heading {
     font-size: 1.8rem;
   }
-  
+
   .intro_paragraph {
     font-size: 1rem;
   }
-  
+
   .feature_title {
     font-size: 1.1rem;
   }
-  
+
   .feature_description {
     font-size: 0.9rem;
   }
-  
 }

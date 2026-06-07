@@ -1,0 +1,204 @@
+.gallery_section {
+  width: 100%;
+  padding: 80px 0;
+  background: #f9fafb;
+}
+
+.container {
+  max-width: 1440px;
+  width: 80.6%;
+  margin: 0 auto;
+}
+
+.container h2 {
+  font-family: "b-ul";
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 48px;
+  color: #1f2937;
+  margin: 0 0 40px 0;
+}
+
+.masonry {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.tile {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: 0 0 20px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  break-inside: avoid;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.tile img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.tile:hover img { transform: scale(1.03); }
+
+.caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 18px 20px 14px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), transparent);
+  color: white;
+  font-family: "f-m", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  text-align: left;
+}
+
+.tile:hover .caption,
+.tile:focus-visible .caption { opacity: 1; }
+
+.editorial_quote {
+  margin: 56px auto 0;
+  max-width: 780px;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.editorial_quote blockquote {
+  margin: 0 0 16px;
+  font-family: "b-ul", "Segoe UI", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 38px;
+  color: #1f2937;
+}
+
+.editorial_quote figcaption {
+  font-family: "f-m", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #176060;
+}
+
+.show_more_wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.show_more {
+  background: transparent;
+  border: 1px solid #176060;
+  color: #176060;
+  padding: 12px 32px;
+  font-family: "b-r", sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.show_more:hover { background: #176060; color: white; }
+
+/* Lightbox */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 23, 0.94);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.lightbox_inner {
+  margin: 0;
+  max-width: min(1100px, 90vw);
+  max-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.lightbox_inner img {
+  max-width: 100%;
+  max-height: 78vh;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.lightbox_inner figcaption {
+  color: #d1d5db;
+  font-family: "f-m", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.lightbox_close,
+.lightbox_prev,
+.lightbox_next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.lightbox_close {
+  top: 28px;
+  right: 28px;
+  transform: none;
+  font-size: 22px;
+}
+
+.lightbox_prev { left: 28px; }
+.lightbox_next { right: 28px; }
+
+.lightbox_close:hover,
+.lightbox_prev:hover,
+.lightbox_next:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+@media screen and (max-width: 1024px) {
+  .container h2 { font-size: 36px; line-height: 44px; }
+  .masonry { column-count: 2; }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery_section { padding: 60px 0; }
+  .container h2 { font-size: 32px; line-height: 38px; margin-bottom: 30px; }
+  .editorial_quote blockquote { font-size: 22px; line-height: 32px; }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery_section { padding: 48px 0; }
+  .container { width: 90.6%; }
+  .container h2 { font-size: 28px; line-height: 34px; }
+  .masonry { column-count: 1; column-gap: 0; }
+  .lightbox { padding: 16px; }
+  .lightbox_prev, .lightbox_next { width: 40px; height: 40px; font-size: 22px; }
+}

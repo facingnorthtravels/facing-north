@@ -175,6 +175,25 @@ export const getCohostedProfileMetadata = (profile) => {
 };
 
 /**
+ * Generate travel specialist profile metadata
+ */
+export const getSpecialistProfileMetadata = (profile) => {
+  if (!profile) return generateMetadata({});
+
+  const destinations = profile?.highlight_destinations || "Pakistan";
+
+  return generateMetadata({
+    title: `${profile.specialist_name} - Travel Specialist | Facing North Travels`,
+    description:
+      profile.meta_description ||
+      `Meet ${profile.specialist_name}, a Facing North verified Travel Specialist. Expert-led small group trips across ${destinations} — browse itineraries and book your place.`,
+    image: profile?.specialist_og_image || profile?.specialist_photo,
+    url: `/specialist-profile/${profile.specialist_slug || profile.id}`,
+    keywords: `${profile.specialist_name}, travel specialist Pakistan, ${destinations}, guided expeditions, ${profile.specialisation_type || ""}`,
+  });
+};
+
+/**
  * Static page metadata configurations
  */
 export const STATIC_PAGES_METADATA = {

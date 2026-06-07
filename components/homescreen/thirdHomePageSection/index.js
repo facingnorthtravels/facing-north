@@ -14,6 +14,45 @@ import "aos/dist/aos.css";
 import { LANDSCAPES_DESCRIPTIONS } from "../../../data/third_homePg";
 import { CATEGORIES, TOUR_PAKAGE } from "../../../data/tours-pakages";
 
+const HOME_ITINERARIES = [
+  {
+    title: "The Land of Infinite Meadows",
+    country: "Kazakhstan",
+    days: "10",
+    weather: "Mild",
+    overview: { bestTime: "Jun → Sep" },
+    service_img:
+      "/assets/IMAGES/tour-packages/journey-around-karakoram-paki-10/Day_7.jpg",
+  },
+  {
+    title: "Journey Around the Karakorams",
+    country: "Pakistan",
+    days: "11",
+    weather: "Cool",
+    overview: { bestTime: "May → Oct" },
+    service_img:
+      "/assets/IMAGES/tour-packages/journey-around-karakoram-paki-10/banner-2.jpg",
+  },
+  {
+    title: "Enchanting Pamir Valleys",
+    country: "Kyrgyzstan",
+    days: "9",
+    weather: "Cool",
+    overview: { bestTime: "Jul → Sep" },
+    service_img:
+      "/assets/IMAGES/tour-packages/journey-to-silk-route-pk23-01/h-attabad.jpg",
+  },
+  {
+    title: "The Heart of the Silk Route",
+    country: "Uzbekistan",
+    days: "8",
+    weather: "Warm",
+    overview: { bestTime: "Apr → Oct" },
+    service_img:
+      "/assets/IMAGES/tour-packages/air-journey-to-silk-route-pk23-02/h-heritage.jpg",
+  },
+];
+
 const itineraries_ids = [
   "swat-valley-pk-09",
   "pakistan-food-journey",
@@ -29,8 +68,38 @@ const itineraries_ids = [
   "br-around-karakoram-pk24-10"
 ]
 
+function getItinerariesForCountry(countryName) {
+  if (countryName === "Pakistan") {
+    const featured = itineraries_ids
+      .map((id) => TOUR_PAKAGE.find((t) => t.id === id))
+      .filter(Boolean);
+    if (featured.length > 0) return featured;
+  }
+  return HOME_ITINERARIES.filter((i) => i.country === countryName);
+}
+
 function ThirdHomePageSection() {
   const [location, setLocation] = useState(LANDSCAPES_DESCRIPTIONS[0]);
+  const [itineraryIndex, setItineraryIndex] = useState(0);
+
+  const countryItineraries = getItinerariesForCountry(location.place_name);
+  const currentItinerary = countryItineraries[itineraryIndex] || null;
+
+  const prevItinerary = () => {
+    if (!countryItineraries.length) return;
+    setItineraryIndex(
+      (i) => (i - 1 + countryItineraries.length) % countryItineraries.length
+    );
+  };
+  const nextItinerary = () => {
+    if (!countryItineraries.length) return;
+    setItineraryIndex((i) => (i + 1) % countryItineraries.length);
+  };
+
+  const handleCountryChange = (e) => {
+    setLocation(e);
+    setItineraryIndex(0);
+  };
 
   useEffect(() => {
     AOS.init({
@@ -175,7 +244,7 @@ function ThirdHomePageSection() {
     <div className={classes.container}>
       <div className={classes.title_section}>
         <h2 data-aos="fade-down" className={classes.title}>
-          Explore Our Top Itineraries
+          Explore Our Top Travel Destinations
         </h2>
         <div className={classes.cards_container}>
           <Carousel
@@ -189,7 +258,7 @@ function ThirdHomePageSection() {
             customLeftArrow={<CustomLeftArrow />}
             className="third-start-slider"
           >
-            {TOUR_PAKAGE.filter((i) =>  i?.category?.includes(CATEGORIES.home)).map((p, index) => (
+            {HOME_ITINERARIES.map((p, index) => (
               <div
                 key={index}
                 data-aos="fade-up"
@@ -203,75 +272,114 @@ function ThirdHomePageSection() {
       </div>
 
       <div className={classes.last_section}>
-        <div className={classes.last_section_text}>
-          <h2 data-aos="fade-right" className={classes.title}>
-            Find Your True North
-          </h2>
-          <div className={classes.row}>
-            {LANDSCAPES_DESCRIPTIONS.map((e) => {
-              return (
-                <p
-                  onClick={() => {
-                    setLocation(e);
-                  }}
-                  key={e?.id}
-                  style={{
-                    borderBottom:
-                      location?.id === e.id ? "2px solid black" : "none",
-                  }}
-                >
-                  {e?.place_name}
-                </p>
-              );
-            })}
-          </div>
-          <p data-aos="fade-right" className={`${classes.description}`}>
-            {location?.desc}
-          </p>
-        </div>
-        <div className={classes.last_section_glob}>
-          <img
-            data-aos="fade-right"
-            src={globe.src}
-            className={classes.globe}
-          />
-          <div data-aos="fade-left" className={classes.location_container}>
-            <div className={classes.content_container}>
-              <div className={classes.info_container}>
-                <p className={classes.place_area_name}>{location.place_name}</p>
-                <div className={classes.indicators}>
-                  <div className={classes.single_indicator}>
-                    <img className={classes.indicator_img} src={compass.src} />
-                    <p>{location.direction}</p>
-                  </div>
-                  <div className={classes.single_indicator}>
-                    <img className={classes.indicator_img} src={wind.src} />
-                    <p>{location.wind}</p>
-                  </div>
-                  <div className={classes.single_indicator}>
-                    <img className={classes.indicator_img} src={sun.src} />
-                    <p>{location.temp}</p>
-                  </div>
-                </div>
-              </div>
+        <div className={classes.unified_panel}>
+          <div className={classes.unified_left}>
+            <p className={classes.unified_eyebrow}>Destinations</p>
+            <h2 data-aos="fade-right" className={classes.unified_title}>
+              Find your true north
+            </h2>
 
-              <div className="homepage_location_pic_container">
-                <Carousel
-                  infinite={true}
-                  autoPlay={false}
-                  autoPlaySpeed={6000}
-                  responsive={responsive_location_carousel}
-                  swipeable={true}
-                  draggable={true}
-                  showDots={false}
-                  customRightArrow={<CustomRightArrowLocation />}
-                  customLeftArrow={<CustomLeftArrowLocation />}
-                >
-                  {location?.places.map((h, i) => {
-                    return <img src={h.img.src} key={i} alt={i} />;
-                  })}
-                </Carousel>
-              </div>
+            <div className={classes.unified_tabs}>
+              {LANDSCAPES_DESCRIPTIONS.map((e) => {
+                const isActive = location?.id === e.id;
+                return (
+                  <button
+                    type="button"
+                    onClick={() => handleCountryChange(e)}
+                    key={e?.id}
+                    className={`${classes.unified_tab} ${isActive ? classes.unified_tab_active : ""}`}
+                  >
+                    <span className={classes.unified_tab_label}>{e?.place_name}</span>
+                    {isActive && (
+                      <>
+                        <span className={classes.unified_tab_desc}>{e?.desc}</span>
+                        <div className={classes.unified_tab_indicators}>
+                          <div className={classes.single_indicator}>
+                            <img className={classes.indicator_img} src={compass.src} />
+                            <p>{e.direction}</p>
+                          </div>
+                          <div className={classes.single_indicator}>
+                            <img className={classes.indicator_img} src={wind.src} />
+                            <p>{e.wind}</p>
+                          </div>
+                          <div className={classes.single_indicator}>
+                            <img className={classes.indicator_img} src={sun.src} />
+                            <p>{e.temp}</p>
+                          </div>
+                        </div>
+                      </>
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          <div className={classes.unified_right}>
+            <div
+              className={classes.itinerary_slot}
+              onClick={() => {
+                if (currentItinerary?.id) {
+                  window.location.href = `/package-tour/${currentItinerary.id}`;
+                }
+              }}
+              style={{ cursor: currentItinerary?.id ? "pointer" : "default" }}
+            >
+                {currentItinerary ? (
+                  <>
+                    <img
+                      className={classes.itinerary_bg}
+                      src={
+                        currentItinerary?.service_img?.src
+                          ? currentItinerary.service_img.src
+                          : currentItinerary.service_img
+                      }
+                      alt={currentItinerary?.title}
+                    />
+                    <div className={classes.itinerary_gradient} />
+                    <div className={classes.itinerary_info}>
+                      <p className={classes.itinerary_eyebrow}>Featured Itinerary</p>
+                      <h3 className={classes.itinerary_title}>{currentItinerary?.title}</h3>
+                      <div className={classes.itinerary_meta}>
+                        {currentItinerary?.days && (
+                          <span>{currentItinerary.days} days</span>
+                        )}
+                        {currentItinerary?.overview?.bestTime && (
+                          <span>{currentItinerary.overview.bestTime}</span>
+                        )}
+                      </div>
+                    </div>
+                    {countryItineraries.length > 1 && (
+                      <>
+                        <div
+                          className={classes.itinerary_nav_left}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            prevItinerary();
+                          }}
+                        >
+                          <img src={left_arrow.src} alt="Previous" />
+                        </div>
+                        <div
+                          className={classes.itinerary_nav_right}
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            nextItinerary();
+                          }}
+                        >
+                          <img src={right_arrow.src} alt="Next" />
+                        </div>
+                        <div className={classes.itinerary_counter}>
+                          {String(itineraryIndex + 1).padStart(2, "0")} / {String(countryItineraries.length).padStart(2, "0")}
+                        </div>
+                      </>
+                    )}
+                  </>
+                ) : (
+                  <div className={classes.itinerary_empty}>
+                    More itineraries coming soon.
+                  </div>
+                )}
             </div>
           </div>
         </div>

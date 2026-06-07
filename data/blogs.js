@@ -99,8 +99,6 @@ const blogs = [
       "In addition to these sites, there are many other Buddhist monuments and temples located throughout Pakistan that are of great significance to the Buddhist religion. Whether you're a historian, a religious pilgrim, or simply a curious traveler, a visit to Pakistan's Buddhist heritage sites is sure to be an enlightening and enriching experience. With its rich cultural and religious history, and its stunning landscapes, Pakistan is a truly unique and fascinating destination that offers something for everyone.",
     ],
   },
-];
-
   {
     id: 7,
     title: "Pakistan Visa Guide for UK Citizens: Everything You Need to Know (2025)",

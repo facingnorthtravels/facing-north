@@ -62,6 +62,34 @@
   opacity: 0.5;
   max-width: 500px;
 }
+.stats_row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 48px;
+  margin-top: 10px;
+  max-width: 500px;
+}
+.stat {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+.stat_number {
+  font-family: "b-ul";
+  font-size: 44px;
+  font-weight: 200;
+  line-height: 1;
+  color: rgb(6, 82, 66);
+}
+.stat_label {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #3C3C3C;
+  opacity: 0.7;
+}
 .right_panel {
   width: 50%;
 }
@@ -158,5 +186,17 @@
   }
   .container {
     padding-bottom: 30px;
+  }
+  .stats_row {
+    gap: 28px;
+  }
+  .stat_number {
+    font-size: 34px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .stats_row {
+    flex-wrap: wrap;
+    gap: 24px;
   }
 }

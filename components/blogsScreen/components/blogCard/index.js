@@ -4,7 +4,7 @@ import classes from "./blogCard.module.css";
 
 function BlogCard({ pic, blogDetails }) {
   return (
-    <Link href={"/blogs/"+blogDetails?.id} passHref>
+    <Link href={"/blogs/" + (blogDetails?.slug || blogDetails?.id)} passHref>
       <div className={classes.card_body}>
         <div className={classes.img_container} >
           <img src={pic.src} className={classes.img} />

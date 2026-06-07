@@ -2,28 +2,37 @@ import React from "react";
 import classes from "./placesCards.module.css";
 import calendar from "../../../../public/assets/places_card/calendar.svg";
 import time from "../../../../public/assets/places_card/time.svg";
+import globe from "../../../../public/assets/homepage/globe.png";
+import sun from "../../../../public/assets/homepage/sun.svg";
 import { useRouter } from "next/router";
 
-function PlacesCards({ p, className }) {
+function PlacesCards({ p, className, fitParent }) {
   const router = useRouter();
+  const handleClick = () => {
+    if (p?.id) router.push(`/package-tour/${p.id}`);
+  };
+  const inlineStyle = {
+    ...(fitParent
+      ? { width: "100%", height: "100%", minHeight: 0 }
+      : {}),
+    ...(!p?.id ? { cursor: "default" } : {}),
+  };
   return (
     <div
-      onClick={() => router.push(`/package-tour/${p?.id}`)}
-      className={`${classes.card_body} ${className}`}
+      onClick={handleClick}
+      className={`${classes.card_body} ${className || ""}`}
+      style={inlineStyle}
     >
       <div className={classes.overlay} />
       <div className={classes.info_container}>
-        <p className={`${classes.city_name} text-one-line`}>{p?.title}</p>
-        {/* <p className={`${classes.province_name} text-one-line`}>
-          {p?.overview?.location || p?.provincesCovered}
-        </p> */}
+        <p className={classes.city_name}>{p?.title}</p>
         <div className={classes.indicators}>
-          {/* {p?.provincesCovered && (
+          {p?.country && (
             <div className={classes.single_indicator}>
-              <img className={classes.indicator_img} src={location.src} />
-              <p>{p?.provincesCovered}</p>
+              <img className={classes.indicator_img} src={globe.src} />
+              <p>{p.country}</p>
             </div>
-          )} */}
+          )}
           {p?.days && (
             <div
               className={`${classes.single_indicator} ${classes.single_indicator_2}`}
@@ -32,22 +41,22 @@ function PlacesCards({ p, className }) {
               <p>{p?.days} days</p>
             </div>
           )}
-          {/* <div className={classes.single_indicator}>
-            <img className={classes.indicator_img} src={wind.src} />
-            <p>3 mgh</p>
-          </div> */}
-          <div className={classes.single_indicator}>
-            <img className={classes.indicator_img} src={calendar.src} />
-            <p>{p?.overview?.bestTime}</p>
-          </div>
+          {p?.overview?.bestTime && (
+            <div className={classes.single_indicator}>
+              <img className={classes.indicator_img} src={calendar.src} />
+              <p>{p?.overview?.bestTime}</p>
+            </div>
+          )}
+          {p?.weather && (
+            <div className={classes.single_indicator}>
+              <img className={classes.indicator_img} src={sun.src} />
+              <p>{p.weather}</p>
+            </div>
+          )}
         </div>
       </div>
       <div className={classes.info_section}></div>
       <img className={classes.bg_img} src={p?.service_img?.src ? p.service_img?.src : p.service_img} />
-      {/* <p className={classes.description}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et finibus
-        urna. In ut justo quis metus rhoncus cursus quis vitae magna.
-      </p> */}
     </div>
   );
 }

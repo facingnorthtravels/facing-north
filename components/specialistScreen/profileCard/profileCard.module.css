@@ -1,0 +1,161 @@
+.profile_section {
+  width: 100%;
+  padding: 80px 0 0;
+  background-color: white;
+}
+
+.container {
+  max-width: 1440px;
+  width: 80.6%;
+  margin: 0 auto;
+}
+
+.profile_card {
+  margin: 0 auto;
+  background: white;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 40px;
+}
+
+.profile_content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.profile_image_container { flex-shrink: 0; }
+
+.profile_image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile_image_placeholder {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: #e5e7eb;
+}
+
+.profile_details { flex: 1; min-width: 0; }
+
+.name_section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.name_section h2 {
+  font-family: "b-ul";
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 38px;
+  color: #1f2937;
+  margin: 0;
+}
+
+.verified_icon { width: 22px; height: 22px; flex-shrink: 0; }
+
+.title_line {
+  font-family: "f-m", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  color: #176060;
+  margin: 0 0 24px 0;
+  text-transform: uppercase;
+}
+
+.about_section h3 {
+  font-family: "b-ul";
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 28px;
+  color: #1f2937;
+  margin: 0 0 14px 0;
+}
+
+.about_section p {
+  font-family: "f-m";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #4b5563;
+  margin: 0 0 28px 0;
+}
+
+.usp_block {
+  margin: 0 0 28px 0;
+  padding: 8px 0 8px 28px;
+  border-left: 2px solid #176060;
+}
+
+.usp_label {
+  display: block;
+  font-family: "f-m", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #176060;
+  margin-bottom: 12px;
+}
+
+.usp_quote {
+  margin: 0;
+  font-family: "b-ul", "Segoe UI", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 19px;
+  line-height: 30px;
+  color: #1f2937;
+}
+
+.pro_links {
+  display: flex;
+  gap: 8px;
+}
+
+.pro_link {
+  width: 36px;
+  height: 36px;
+  background: #e6f2f1;
+  border-radius: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #176060;
+  transition: background-color 0.2s ease;
+}
+
+.pro_link:hover { background: #d1e7e5; }
+
+@media screen and (max-width: 1024px) {
+  .container { padding: 0 24px; width: 100%; max-width: 100%; }
+}
+
+@media screen and (max-width: 768px) {
+  .profile_content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+  .profile_image, .profile_image_placeholder { width: 140px; height: 140px; }
+  .name_section { justify-content: center; }
+  .name_section h2 { font-size: 28px; line-height: 32px; }
+  .pro_links { justify-content: center; }
+  .usp_block { padding: 4px 0 4px 20px; text-align: left; }
+}
+
+@media screen and (max-width: 480px) {
+  .profile_section { padding: 40px 0 0; }
+  .container { width: 90.6%; }
+  .profile_card { padding: 28px 22px; }
+  .name_section h2 { font-size: 24px; line-height: 28px; }
+  .about_section p { font-size: 15px; line-height: 24px; }
+  .usp_quote { font-size: 17px; line-height: 26px; }
+}
