@@ -8273,7 +8273,7 @@ export const TOUR_PAKAGE = [
       {
         name: "Najma Mehmood",
         role: "Cultural Curator & Community Host",
-        bio: "UK-based cultural curator and community host dedicated to sharing the heritage, landscape, and warmth of Pakistan. Deep passion for creating restorative, nature-based spaces for women.",
+        bio: "I'm Najma, a UK-based community host and cultural curator with a deep love for culture, heritage and meaningful travel. My work is rooted in curating thoughtful journeys that bring people closer to places, history and themselves through connection, adventure and shared experience.",
       },
       {
         name: "Kehkashan Nadeem",
@@ -8446,7 +8446,7 @@ export const TOUR_PAKAGE = [
       {
         name: "Najma Mehmood",
         role: "Cultural Curator & Community Host",
-        bio: "UK-based cultural curator and community host dedicated to sharing the heritage, landscape, and warmth of Pakistan. This cultural & adventure itinerary is crafted as a welcoming, social, and relaxed journey through Pakistan's breathtaking North.",
+        bio: "I'm Najma, a UK-based community host and cultural curator with a deep love for culture, heritage and meaningful travel. My work is rooted in curating thoughtful journeys that bring people closer to places, history and themselves through connection, adventure and shared experience.",
       },
     ],
   },

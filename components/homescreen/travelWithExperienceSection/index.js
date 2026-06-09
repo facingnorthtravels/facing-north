@@ -4,6 +4,25 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { getAllCohostedProfiles } from "../../../data/cohosted-profiles";
+import { getSpecialistProfileBySlug } from "../../../data/specialist-profiles";
+
+// Najma is a Travel Specialist (not a cohost) — build a card entry for her
+// that matches the carousel's shape and links to her specialist profile.
+function buildNajmaCard() {
+  const najma = getSpecialistProfileBySlug("najma-mehmood-pakistan");
+  if (!najma) return null;
+  return {
+    id: najma.specialist_slug,
+    name: najma.specialist_name,
+    title: najma.specialisation_type
+      ? `${najma.specialisation_type} Specialist`
+      : "Travel Specialist",
+    profileImage: najma.specialist_photo,
+    href: `/specialist-profile/${najma.specialist_slug}`,
+    category: "Women-Led",
+    upcomingCount: (najma.itineraries || []).length,
+  };
+}
 
 function deriveCategory(profile) {
   const t = (profile?.title || "").toLowerCase();
@@ -24,7 +43,10 @@ function countUpcomingTrips(profile) {
 }
 
 function TravelWithExperienceSection() {
-  const profiles = getAllCohostedProfiles();
+  const cohosts = getAllCohostedProfiles();
+  const najmaCard = buildNajmaCard();
+  // Najma first, then the existing cohosts
+  const profiles = najmaCard ? [najmaCard, ...cohosts] : cohosts;
   const router = useRouter();
   const [index, setIndex] = useState(0);
   const current = profiles[index];
@@ -38,8 +60,13 @@ function TravelWithExperienceSection() {
     setIndex((i) => (i + 1) % profiles.length);
   };
 
-  const category = deriveCategory(current);
-  const upcomingCount = countUpcomingTrips(current);
+  // Najma's card carries its own category/count/href; cohosts derive theirs
+  const category = current?.category || deriveCategory(current);
+  const upcomingCount =
+    current?.upcomingCount != null
+      ? current.upcomingCount
+      : countUpcomingTrips(current);
+  const cardHref = current?.href || `/cohosted-profile/${current.id}`;
 
   return (
     <div className={classes.container}>
@@ -119,7 +146,7 @@ function TravelWithExperienceSection() {
         <div className={classes.right_column}>
           <div
             className={classes.creator_card}
-            onClick={() => router.push(`/cohosted-profile/${current.id}`)}
+            onClick={() => router.push(cardHref)}
           >
             <img
               src={current.profileImage}

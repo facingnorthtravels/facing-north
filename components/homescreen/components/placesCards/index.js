@@ -2,7 +2,6 @@ import React from "react";
 import classes from "./placesCards.module.css";
 import calendar from "../../../../public/assets/places_card/calendar.svg";
 import time from "../../../../public/assets/places_card/time.svg";
-import globe from "../../../../public/assets/homepage/globe.png";
 import sun from "../../../../public/assets/homepage/sun.svg";
 import { useRouter } from "next/router";
 
@@ -25,14 +24,7 @@ function PlacesCards({ p, className, fitParent }) {
     >
       <div className={classes.overlay} />
       <div className={classes.info_container}>
-        <p className={classes.city_name}>{p?.title}</p>
         <div className={classes.indicators}>
-          {p?.country && (
-            <div className={classes.single_indicator}>
-              <img className={classes.indicator_img} src={globe.src} />
-              <p>{p.country}</p>
-            </div>
-          )}
           {p?.days && (
             <div
               className={`${classes.single_indicator} ${classes.single_indicator_2}`}
@@ -54,6 +46,7 @@ function PlacesCards({ p, className, fitParent }) {
             </div>
           )}
         </div>
+        <p className={classes.city_name}>{p?.title}</p>
       </div>
       <div className={classes.info_section}></div>
       <img className={classes.bg_img} src={p?.service_img?.src ? p.service_img?.src : p.service_img} />

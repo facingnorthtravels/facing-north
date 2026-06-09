@@ -10,45 +10,59 @@
   text-align: left;
 }
 
-.content_container {
-  width: 80%;
-  height: fit-content;
+/* ===== Day selector tabs ===== */
+.day_tabs {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 30px;
-}
-
-.title {
-  font-size: 30px;
-  font-family: "f-m";
+  flex-wrap: wrap;
+  gap: 8px;
   width: 100%;
-  text-align: center;
+  margin-bottom: 26px;
 }
 
-.answer_section {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 14px 0 34px 0;
+.day_tab {
+  border: 1px solid #dfe5e5;
+  background: #ffffff;
+  color: #5a6b6b;
+  font-family: "f-m", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
 }
 
-/* ===== Day card — Find Your True North style with white fade ===== */
+.day_tab:hover {
+  border-color: #176060;
+  color: #176060;
+}
+
+.day_tab_active {
+  background: #176060;
+  border-color: #176060;
+  color: #ffffff;
+}
+
+/* ===== Single day card — full-height, sharp edges (Find Your True North style) ===== */
 .day_card {
   width: 100%;
   display: grid;
-  grid-template-columns: 1.05fr 1fr;
+  grid-template-columns: 1fr 1.1fr;
   background: #ffffff;
-  border: 1px solid #ececec;
-  border-radius: 18px;
+  border: none;
+  border-radius: 0;
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(23, 96, 96, 0.06);
+  height: 620px;
+  margin: 20px 0;
 }
 
 .day_image_wrap {
   position: relative;
-  min-height: 320px;
+  height: 100%;
   overflow: hidden;
+  /* image on the right like the homepage; text panel on the left */
+  order: 2;
 }
 
 .day_image {
@@ -57,19 +71,14 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 500ms ease-out;
 }
 
-.day_card:hover .day_image {
-  transform: scale(1.04);
-}
-
-/* White fade gradient (instead of black) — fades the image into the white text panel */
+/* White fade gradient — image on the right fades LEFT into the white text panel */
 .day_fade {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    105deg,
+    -100deg,
     rgba(255, 255, 255, 0) 0%,
     rgba(255, 255, 255, 0) 55%,
     rgba(255, 255, 255, 0.12) 66%,
@@ -81,12 +90,73 @@
   pointer-events: none;
 }
 
+/* ===== Nav arrows over image ===== */
+.day_nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.92);
+  color: #176060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transition: background 0.2s ease, transform 0.2s ease;
+  z-index: 3;
+}
+
+.day_nav:hover {
+  background: #176060;
+  color: #ffffff;
+}
+
+.day_nav_left {
+  left: 18px;
+}
+
+.day_nav_right {
+  right: 18px;
+}
+
+/* ===== Body — left column, fills full height ===== */
 .day_body {
-  padding: 40px 44px;
+  order: 1;
+  height: 100%;
+  padding: 56px 56px 56px 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  row-gap: 22px;
+  row-gap: 20px;
+  overflow-y: auto;
+}
+
+.day_header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.day_eyebrow {
+  font-family: "f-m", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #176060;
+}
+
+.day_title {
+  font-family: "b-ul";
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #1f2937;
+  margin: 0;
 }
 
 .day_desc {
@@ -103,7 +173,7 @@
   flex-direction: column;
   row-gap: 14px;
   border-top: 1px solid #eef1f1;
-  padding-top: 22px;
+  padding-top: 20px;
 }
 
 .day_detail_row {
@@ -128,76 +198,69 @@
   color: #3a4a4a;
 }
 
-.minus {
-  padding-top: 12px;
-}
-.plus {
-  padding-bottom: 3px;
-}
-.minus,
-.plus {
-  width: 20px;
-  height: 20px;
-  color: white;
-  font-weight: 700;
-  background-color: #176060;
+/* ===== Footer counter + arrows ===== */
+.day_footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  gap: 28px;
+  margin-top: 26px;
 }
 
-.divider {
-  margin-top: 20px;
-  width: 100%;
-  height: 0.5px;
-  background-color: grey;
-}
-
-.expandContainer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  margin-bottom: 20px;
-  gap: 10px;
-  margin-right: 10px;
-}
-
-.expandContainer button {
+.footer_nav {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   border: none;
-  cursor: pointer;
-  color: #176060;
   background: transparent;
+  color: #176060;
+  font-family: "f-m", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  padding: 6px 10px;
+  transition: opacity 0.2s ease;
 }
 
-.expandContainer button span {
-  padding-bottom: 0px;
+.footer_nav:hover {
+  opacity: 0.7;
+}
+
+.day_counter {
+  font-family: "f-m", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #5a6b6b;
+  min-width: 70px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1023px) {
   .day_card {
     grid-template-columns: 1fr;
+    height: auto;
   }
   .day_image_wrap {
-    min-height: 240px;
+    order: 1;
+    height: 280px;
   }
-  /* On stacked layout, fade downward into the text panel instead of sideways */
+  /* Stacked: image on top fades downward into the text panel below */
   .day_fade {
     background: linear-gradient(
       to bottom,
-      rgba(255, 255, 255, 0) 60%,
-      rgba(255, 255, 255, 0.5) 85%,
+      rgba(255, 255, 255, 0) 58%,
+      rgba(255, 255, 255, 0.5) 84%,
       rgba(255, 255, 255, 1) 100%
     );
   }
   .day_body {
-    padding: 30px 26px;
+    order: 2;
+    height: auto;
+    padding: 28px 24px;
+    overflow-y: visible;
   }
-  .detailLabel {
-    display: none;
+  .day_title {
+    font-size: 25px;
   }
 }

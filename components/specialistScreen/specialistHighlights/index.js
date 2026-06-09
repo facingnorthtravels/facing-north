@@ -2,27 +2,29 @@ import React from "react";
 import classes from "./specialistHighlights.module.css";
 
 function SpecialistHighlights({ profile }) {
+  const labels = profile?.highlight_labels || {};
+
   const items = [
     {
-      label: "Destinations",
+      label: labels.destinations || "Destinations",
       value: profile?.highlight_destinations,
     },
     {
-      label: "Years on the Ground",
+      label: labels.years || "Years on the Ground",
       value: profile?.highlight_years
         ? `${profile.highlight_years} years`
         : "",
     },
     {
-      label: "Languages",
+      label: labels.languages || "Languages",
       value: profile?.highlight_languages,
     },
     {
-      label: "Certifications",
+      label: labels.certifications || "Certifications",
       value: profile?.highlight_certifications,
     },
     {
-      label: "Specialisation",
+      label: labels.specialisation || "Specialisation",
       value: profile?.highlight_specialisation,
     },
   ].filter((item) => !!item.value);

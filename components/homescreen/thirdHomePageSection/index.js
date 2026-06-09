@@ -244,7 +244,7 @@ function ThirdHomePageSection() {
     <div className={classes.container}>
       <div className={classes.title_section}>
         <h2 data-aos="fade-down" className={classes.title}>
-          Explore Our Top Travel Destinations
+          Explore our handpicked itineraries
         </h2>
         <div className={classes.cards_container}>
           <Carousel

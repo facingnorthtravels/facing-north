@@ -33,7 +33,7 @@ const FeaturedToursSection = () => {
         name: najma.specialist_name,
         image: najma.specialist_photo,
       },
-      destinations: "Hunza, Skardu & Fairy Meadows",
+      destinations: "Hunza & Skardu",
       dates: "Sep & Oct 2026",
       statusClass: classes.openNow || classes.preLaunch,
       link: `/specialist-profile/${najma.specialist_slug}`,
