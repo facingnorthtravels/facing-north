@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"d:\\\\Facing North - travel\\\\public\\\\assets\\\\IMAGES\\\\tour-packages\\\\karakoram-wellness-culinary\")"
     ]
   }
 }

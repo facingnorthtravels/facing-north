@@ -10,7 +10,7 @@ function autoGeneratePitch(profile) {
   const tripCount = (profile?.itineraries || []).length;
 
   const parts = [
-    `${name} leads expert-led expeditions across ${destinations}.`,
+    `${name} leads curated, immersive journeys across ${destinations}.`,
     tripCount ? `${tripCount} upcoming trips.` : null,
     years ? `${years} years of expertise.` : null,
     max ? `Limited to ${max} travelers per departure.` : null,

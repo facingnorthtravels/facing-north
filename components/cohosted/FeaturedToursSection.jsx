@@ -2,10 +2,11 @@ import React from "react";
 import classes from "../../pages/community-trips/community-trips.module.css";
 import Link from "next/link";
 import { getAllCohostedProfiles } from "../../data/cohosted-profiles";
+import { getSpecialistProfileBySlug } from "../../data/specialist-profiles";
 
 const FeaturedToursSection = () => {
   const profiles = getAllCohostedProfiles();
-  
+
   const tours = profiles.map(profile => ({
     image: profile.heroImage,
     status: profile.tour.status,
@@ -20,6 +21,26 @@ const FeaturedToursSection = () => {
     button: profile.tour.button,
     buttonClass: profile.tour.buttonClass === 'openNow' ? classes.primaryTourButton : ""
   }));
+
+  // Najma Mehmood — Travel Specialist hosting women-led community trips.
+  // Links to her existing specialist profile rather than a cohosted page.
+  const najma = getSpecialistProfileBySlug("najma-mehmood-pakistan");
+  if (najma) {
+    tours.push({
+      image: najma.specialist_photo,
+      status: "Booking Open",
+      host: {
+        name: najma.specialist_name,
+        image: najma.specialist_photo,
+      },
+      destinations: "Hunza, Skardu & Fairy Meadows",
+      dates: "Sep & Oct 2026",
+      statusClass: classes.openNow || classes.preLaunch,
+      link: `/specialist-profile/${najma.specialist_slug}`,
+      button: "View Trips",
+      buttonClass: classes.primaryTourButton,
+    });
+  }
 
   return (
     <section id="tours" className={classes.toursSection}>

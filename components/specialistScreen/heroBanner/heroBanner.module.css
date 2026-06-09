@@ -51,6 +51,15 @@
   margin: 0 auto;
 }
 
+.tagline {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 15px !important;
+  color: #e5e7eb !important;
+  margin: 0 auto !important;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .hero_banner_container { height: 70vh; }
   .content h1 { font-size: 44px; line-height: 52px; }
@@ -60,4 +69,5 @@
 @media screen and (max-width: 480px) {
   .content h1 { font-size: 32px; line-height: 40px; }
   .content p { font-size: 15px; line-height: 24px; }
+  .tagline { font-size: 13px !important; letter-spacing: 2px; }
 }

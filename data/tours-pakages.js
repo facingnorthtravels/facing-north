@@ -8074,6 +8074,382 @@ export const TOUR_PAKAGE = [
 
   //   // mapImage: "",
   // },
+  // =========================================================
+  //  The Karakoram: Wellness & Culinary Journey
+  // =========================================================
+  {
+    category: [CATEGORIES.home, CATEGORIES.hunza, CATEGORIES.skardu, CATEGORIES.karakoram],
+    id: "the-karakoram-wellness-culinary-oct2026",
+    title: "The Karakoram: Wellness & Culinary Journey",
+    service_img: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/banner.jpg",
+    bg_position: "center",
+    link: "package-tour/the-karakoram-wellness-culinary-oct2026",
+    provincesCovered: "Gilgit Baltistan",
+    price: "£1,950",
+    days: "11",
+    description:
+      "A Women-Led Retreat. Hunza & Skardu. Calm, Mindful, and Deeply Sensory. In October, the Karakoram mountains are at their most theatrical: golden autumnal light, apple orchards heavy with fruit, the first dusting of snow on the peaks, and a stillness in the crisp air that invites deep reflection. This journey weaves wellness and culinary discovery into a daily rhythm timed perfectly to the mountains and the light. Mountain Wellness: Daily yoga, breathwork, and guided meditation (no prior experience required). Calm Pacing: No rushing. Every day has room for the soul to catch up with the body. Deep Culinary: Home-hosted meals, cooking classes, and curated dining showcasing authentic Hunza and Balti cuisine. Cultural Connection: Woman-to-woman exchanges and heritage explorations in Asia's most spectacular valleys.",
+    overview: {
+      location: "Islamabad, Hunza & Skardu",
+      people: "Women-only group",
+      bestTime: "October (Autumn)",
+      recommendation: "Highly recommended",
+      overviewImg: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/overview.jpg"
+    },
+    experiences: {
+      experience_points: [
+        {
+          pic: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/experience-hunza-valley.jpg",
+          title: "Golden Hunza Valley in Autumn",
+        },
+        {
+          pic: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/experience-baltit-fort.jpg",
+          title: "Heritage & History at Baltit Fort",
+        },
+        {
+          pic: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/experience-attabad-lake.jpg",
+          title: "Turquoise Waters of Attabad Lake",
+        },
+        {
+          pic: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/experience-passu-cones.jpg",
+          title: "Passu Cones & Glacier Views",
+        },
+        {
+          pic: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/experience-kachura-lake.jpg",
+          title: "Glacial Lakes of Skardu",
+        },
+        {
+          pic: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/experience-shigar-fort.jpg",
+          title: "Shigar Fort & Cold Desert",
+        },
+        {
+          pic: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/experience-mountain-yoga.jpg",
+          title: "Sunrise Yoga in the Mountains",
+        },
+        {
+          pic: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/experience-cooking-class.jpg",
+          title: "Hands-On Mountain Cooking",
+        },
+        {
+          pic: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/experience-textile-cooperative.jpg",
+          title: "Women-Led Textile Cooperative",
+        },
+        {
+          pic: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/experience-bonfire-night.jpg",
+          title: "Traditional Music & Bonfire Nights",
+        },
+      ],
+    },
+    iternaries: [
+      {
+        id: 0,
+        iternaries_img: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/day1-islamabad.jpg",
+        description: "Arrive at Islamabad Airport where our women-led team will warmly welcome you. Transfer to the serene Ambiance Hotel to rest and freshen up. Ease into the journey with a gentle city introduction—taking in the stunning architecture of Faisal Mosque, soaking in panoramic views from the Margalla Hills, or enjoying a relaxed, sensory walk through Rawalpindi's bustling old bazaar. KK leads an 'Evening Intentions Circle,' a safe space to set personal goals and ground yourself for the journey ahead. A curated welcome dinner focusing on the philosophy of 'mindful eating' and featuring Islamabad's finest seasonal cuisine.",
+        title: "Arrival & Intentions",
+        hotel: "Ambiance Hotel",
+        activities: "City introduction, Evening Intentions Circle, Welcome dinner",
+      },
+      {
+        id: 1,
+        iternaries_img: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/day2-skardu-flight.jpg",
+        description: "Begin with one of aviation's most extraordinary experiences: a 45-minute flight to Skardu. The aircraft threads its way between Nanga Parbat, the Karakoram, and the Hindu Kush, offering window views usually reserved for mountaineers. Upon landing, embark on a highly scenic drive north toward the Hunza Valley, tracing winding rivers and towering peaks. Arrive at the landmark Serena Hunza Hotel as the October afternoon light turns golden across the valley. Settle in with tea on the terrace while Rakaposhi fills the horizon. 'Air Grounding'—a brief breathwork exercise led by KK upon landing in Skardu, followed by a sunset reflection circle on the Serena terrace.",
+        title: "Flying into the Karakoram",
+        hotel: "Serena Hunza Hotel",
+        activities: "Domestic flight, Drive to Hunza Valley, Air Grounding breathwork",
+      },
+      {
+        id: 2,
+        iternaries_img: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/day3-baltit-fort.jpg",
+        description: "The day begins with sunrise yoga on the Serena terrace & after a nourishing breakfast, step back 700 years in time with a visit to Baltit Fort. Your guide brings the royal history of Hunza to life through captivating storytelling rather than standard sightseeing. Enjoy free time to wander the cobblestone lanes of Karimabad, observing local artisans and autumn colors, before heading to a local family's home for lunch. Home-hosted recipe exchange where Najma facilitates a genuine culinary conversation with local women, exploring apricot oil, dried mulberry chutney, and hand-rolled chapshoro. We gather for a private, women-only traditional Hunza musical night, complete with a crackling bonfire and warm chai under a canopy of October stars.",
+        title: "History in Central Hunza",
+        hotel: "Serena Hunza Hotel",
+        activities: "Sunrise Mountain Hatha, Baltit Fort tour, Home-hosted lunch, Musical night & bonfire",
+      },
+      {
+        id: 3,
+        iternaries_img: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/day4-mountain-kitchen.jpg",
+        description: "Visit Altit Fort and its surrounding village. Three centuries older than Baltit and perched above the river gorge, this is a quieter heritage site. We then venture into the Hopar Valley, walking among terraced orchards where apple and apricot trees burst with their autumn harvest. Head to a local family setting for an immersive, hands-on cooking demonstration. The late afternoon and evening are deliberately kept open and unstructured—a rare space to simply sit, breathe, and exist alongside the mountains. Exclusively arranged for the group as part of this itinerary, a signature wellness session within a Time Magazine World's Greatest Places property. Set at the foot of the Karakoram range, the Serena Spa offers a deeply restorative counterpoint to the days of exploration.",
+        title: "The Mountain Kitchen & Spa",
+        hotel: "Serena Hunza Hotel",
+        activities: "Altit Fort visit, Hopar Valley walk, Mountain Kitchen cooking class, Serena Spa",
+      },
+      {
+        id: 4,
+        iternaries_img: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/day5-attabad-lake.jpg",
+        description: "We journey into Upper Hunza's dramatic glacial scenery. Take a serene boat ride on Attabad Lake, its turquoise waters contrasting against ochre cliffs, before driving toward the iconic Passu Cones—cathedral-like granite spires. Visit a women-led textile cooperative, directly supporting local artisans who handweave traditional Wakhi carpets and intricate embroidered shawls. Najma leads a conversation at the cooperative regarding the intersection of food economics and ancient textile traditions in Upper Hunza. Arrive at your lakeside accommodation to unwind as the October light fades over the water. An open-sky meditation facing the Passu Cones, followed by a sunset lakeside yoga sequence at Zen by the Lake.",
+        title: "Lakes, Cones & Women's Craft",
+        hotel: "Zen by the Lake",
+        activities: "Attabad Lake boat ride, Passu Cones, Textile cooperative visit, Lakeside yoga",
+      },
+      {
+        id: 5,
+        iternaries_img: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/day6-moving-meditation.jpg",
+        description: "The day opens with a calm lakeside walk before we begin our drive south. We detour through the lush village of Minapin, taking a short, thrilling jeep ride to an elevated viewpoint for sweeping panoramas of Diran Peak and Rakaposhi. Enjoy a rich, community-rooted lunch in Minapin before continuing the drive. Arrive in Gilgit. Settle into the hotel and enjoy a leisurely riverside stroll or browse the old bazaar for local handicrafts. Curated lunch at Osho Thang featuring the distinct flavours of Gilgiti mountain cuisine introduced by the local host. KK frames the drive itself as a 'Moving Meditation,' encouraging periods of mindful silence and observation as the landscapes shift.",
+        title: "A Moving Meditation",
+        hotel: "Ramada Gilgit Hotel",
+        activities: "Lakeside walk, Minapin village & jeep ride, Mountain cuisine lunch, Moving Meditation",
+      },
+      {
+        id: 6,
+        iternaries_img: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/day7-into-baltistan.jpg",
+        description: "Trace the legendary Indus River through the geological heart of Asia. The landscape dramatically shifts from the lush greens of Hunza into the stark, mineral-rich ochres and silvers of Baltistan. Pause at Upper Kachura Lake for a short, easy walk through the forest to reach the hidden glacial waters, followed by a peaceful lunch near Lower Kachura Lake. Arrive at Hashupi Resort in Skardu. The evening is yours to rest, wander the gardens, and settle into the Balti pace of life. Morning breathwork before departing Gilgit, focusing on releasing travel fatigue and preparing the body for the high altitude of Skardu.",
+        title: "Into Baltistan",
+        hotel: "Hashupi Resort",
+        activities: "Indus River drive, Upper & Lower Kachura Lake walks, Altitude breathwork",
+      },
+      {
+        id: 7,
+        iternaries_img: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/day8-shigar-fort.jpg",
+        description: "Explore Shigar Fort, a 17th-century Balti Raja's residence lovingly restored by the Aga Khan Trust. Wander through carved wooden chambers and river-facing courtyard gardens. After a fort lunch, transition to the surreal Katpana Cold Desert to witness the extraordinary contrast of fine sand dunes rolling directly against 8,000-meter glaciated peaks. Return to Hashupi Resort as the sun sets behind the mountains for our evening bonfire. Lunch at Shigar Fort's atmospheric courtyard. Later, Najma presents the distinctive flavors of Skardu's food heritage during a curated Balti dinner. Evening Storytelling Circle. KK guides a profound group reflection by the bonfire, touching on vulnerability and the journey so far.",
+        title: "Heritage & High Altitudes",
+        hotel: "Hashupi Resort",
+        activities: "Shigar Fort tour, Katpana Cold Desert, Balti dinner, Storytelling Circle & bonfire",
+      },
+      {
+        id: 8,
+        iternaries_img: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/day9-balti-kitchen.jpg",
+        description: "Ascend to Kharpocho, the ancient Balti fortification. Unpack the fort's rich Silk Road history while taking in unparalleled panoramic views across the Skardu basin and the winding Indus River. Head to a local Skardu home for deep cultural and culinary immersion, learning the secrets of Baltistan's historic recipes. Celebrate the culmination of your time in the North with our final mountain feast. The 'Balti Kitchen' hands-on cooking class. Learn to cook marzan, chhurpe cheese, and barley bread baked on a mountain hearth. Evening brings a curated Farewell Skardu Feast. Sunrise yoga at Hashupi Resort as the morning sun hits the fort on the ridge above.",
+        title: "The Balti Kitchen",
+        hotel: "Hashupi Resort",
+        activities: "Kharpocho Fort visit, Balti Kitchen cooking class, Farewell mountain feast, All meals included",
+      },
+      {
+        id: 9,
+        iternaries_img: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/day10-shift-rhythm.jpg",
+        description: "A morning flight carries the group from the silence of Baltistan back into the capital. Checking in to the Ambiance Hotel followed with a short rest. Visit to Andhraun Rawalpindi, the living, breathing old city of Rawalpindi with its centuries old bazaars, spice markets, Shah Faisal Mosque views, and the extraordinary sensory energy that only an ancient South Asian marketplace can offer. As the sun sets over the Margalla Hills, the group makes their way to Monal Restaurant, Islamabad's most celebrated dining destination. Set on the Margalla Hills overlooking all of Islamabad, Monal is Pakistan's most famous destination restaurant—a fitting final evening as the mountains frame the city one last time. Outdoor terrace seating is arranged for the group. The farewell dinner is included in the package.",
+        title: "A Shift in Rhythm",
+        hotel: "Ambiance Hotel",
+        activities: "Morning flight to Islamabad, Rawalpindi old city visit, Farewell dinner at Monal, All meals included",
+      },
+      {
+        id: 10,
+        iternaries_img: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/day11-farewell.jpg",
+        description: "Our journey concludes with a leisurely, unhurried final breakfast together at the hotel. It's a morning for sharing memories and savoring the bonds forged over the past ten days. After our final closing sessions, guests will check out and take their individual transfers to Lahore Airport (LHE), carrying the spirit of the mountains home with them. KK leads the 'Closing Circle'—a guided meditation integrating the people, the mountains, and the journey within. Airport drop-off transfers are not included. Your hotel can arrange a taxi or ride-share on request.",
+        title: "Farewell To Pakistan",
+        hotel: "Ambiance Hotel",
+        activities: "Final breakfast, Closing Circle meditation, Individual airport transfers",
+      }
+    ],
+    includes: {
+      services: [
+        "10 nights in boutique/heritage lodges",
+        "Ambiance Islamabad Hotel (1 night)",
+        "Serena Hunza Hotel (3 nights)",
+        "Zen by the Lake (1 night)",
+        "Serena Gilgit Hotel (1 night)",
+        "Hashupi Resort, Skardu (3 nights)",
+        "Ambiance Hotel, Lahore (2 nights)",
+        "Return domestic flights Islamabad–Skardu",
+        "All meals included",
+        "All culinary workshops & demonstrations by Najma Qizilbash",
+        "Complimentary Serena Spa experience",
+        "All yoga, mindfulness & meditation sessions led by Kehkashan Nadeem",
+        "Private AC Coaster & 4×4 jeeps for all transfers",
+        "All entry fees, permits & site charges",
+        "Tips for drivers, local guides, hotel staff & restaurants",
+      ],
+    },
+    notIncluded: [
+      "International flights to/from Pakistan",
+      "Visa fees (e-visa usually applied online)",
+      "Travel insurance (mandatory; must cover high altitude)",
+      "Lunches on designated free days",
+      "Personal expenses, shopping & souvenirs",
+      "Airport drop-off on Day 11 (departure transfer)",
+      "Personal tip for tour leader (at guest's discretion)",
+    ],
+    cost: {
+      size: [
+        "10-14 pax",
+      ],
+      deluxePackage: [
+        "£1,950",
+      ],
+      premiumPackage: [
+        "£2,330",
+      ],
+    },
+    hostLeaders: [
+      {
+        name: "Najma Mehmood",
+        role: "Cultural Curator & Community Host",
+        bio: "UK-based cultural curator and community host dedicated to sharing the heritage, landscape, and warmth of Pakistan. Deep passion for creating restorative, nature-based spaces for women.",
+      },
+      {
+        name: "Kehkashan Nadeem",
+        role: "Yoga & Mindfulness Host",
+        bio: "Known affectionately as 'KK,' a pioneer in Pakistan's wellness landscape. Certified RYT 500-hour advanced teacher trainer with 20+ years of experience. Mountain sessions blend ancient technique with breathtaking natural settings.",
+      },
+    ],
+  },
+  // =========================================================
+  //  Women's Adventure & Cultural Tour
+  // =========================================================
+  {
+    category: [CATEGORIES.home, CATEGORIES.hunza, CATEGORIES.skardu, CATEGORIES.fairy, CATEGORIES.karakoram],
+    id: "womens-adventure-cultural-sep2026",
+    title: "Women's Adventure & Cultural Tour",
+    service_img: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/banner.jpg",
+    bg_position: "center",
+    link: "package-tour/womens-adventure-cultural-sep2026",
+    provincesCovered: "Gilgit Baltistan",
+    price: "£1,600",
+    days: "10",
+    description:
+      "Najma × Facing North Travels. 9 Nights / 10 Days · Women-Only. A welcoming, social, and relaxed journey through Pakistan's breathtaking North — designed especially for visitors and diaspora seeking to reconnect with their roots in comfort. This Cultural & Adventure itinerary combines stunning scenery with rich culture: light adventures, storytelling, and lighthearted exploration through the warmth of local communities. From the glacial lakes of Skardu and the royal forts of Hunza to the meadows beneath Nanga Parbat, we travel from Islamabad to Skardu, Karimabad, Upper Hunza and Fairy Meadows.",
+    overview: {
+      location: "Islamabad, Skardu, Hunza & Fairy Meadows",
+      people: "Women-only group",
+      bestTime: "September (25 Sept – 04 Oct 2026)",
+      recommendation: "Highly recommended",
+      overviewImg: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/overview.jpg"
+    },
+    experiences: {
+      experience_points: [
+        { pic: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/experience-1.jpg", title: "Glacial Kachura Lakes & Shangrila" },
+        { pic: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/experience-2.jpg", title: "Sarfaranga Cold Desert Sunset" },
+        { pic: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/experience-3.jpg", title: "Rakaposhi Viewpoint at Minapin" },
+        { pic: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/experience-4.jpg", title: "Baltit & Altit Forts, Karimabad" },
+        { pic: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/experience-5.jpg", title: "Musical Cottage Night & Bonfire" },
+        { pic: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/experience-6.jpg", title: "Passu Cones & Hussaini Bridge" },
+        { pic: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/experience-7.jpg", title: "Fairy Meadows & Nanga Parbat" },
+        { pic: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/experience-8.jpg", title: "Beyal Camp & Milky Way Stargazing" },
+        { pic: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/experience-9.jpg", title: "Traditional Hunza Cuisine" },
+        { pic: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/experience-1.jpg", title: "Lulusar Lake & Kaghan Valley" },
+      ],
+    },
+    iternaries: [
+      {
+        id: 0,
+        iternaries_img: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/day1.jpg",
+        description:
+          "The group arrives in Islamabad and is warmly welcomed by the Facing North team. After check-in and time to rest, the evening opens with a welcome dinner of seasonal Pakistani cuisine. This sets the tone for an adventure built on connection as much as landscape — with a journey briefing and an intentions circle to ground the days ahead.",
+        title: "Welcome & Intentions",
+        hotel: "Ambiance Hotel, Islamabad",
+        activities: "Arrive ISB, Transfer to hotel, Journey briefing, Intentions Circle, Welcome dinner",
+      },
+      {
+        id: 1,
+        iternaries_img: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/day2.jpg",
+        description:
+          "The 55-minute PIA flight is one of the most spectacular in the world, threading between the great peaks of the Karakoram with aerial views of K2 and Nanga Parbat. On arrival we visit the pristine, pine-fringed Upper Kachura Lake and enjoy a boat ride at Shangrila (Lower Kachura). The day closes with a golden sunset over the sand dunes of the Sarfaranga Cold Desert.",
+        title: "Islamabad → Skardu — Kachura Lakes & Desert Sunset",
+        hotel: "Hashupi Resort, Skardu",
+        activities: "Fly ISB → Skardu, Upper Kachura Lake, Shangrila boat ride, Sarfaranga Cold Desert sunset",
+      },
+      {
+        id: 2,
+        iternaries_img: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/day3.jpg",
+        description:
+          "We drive Skardu → Gilgit → Hunza along the Karakoram Highway, through dramatic Indus gorge landscapes. At midday we stop at the Rakaposhi viewpoint in Minapin for a full mountain panorama and photography. In the evening we check in at Ambiance Hunza and head up to Duikar (Eagle's Nest) for a panoramic sunset.",
+        title: "Skardu → Hunza via KKH — Rakaposhi Views",
+        hotel: "Ambiance Hotel, Hunza",
+        activities: "Drive via KKH, Indus gorge, Rakaposhi viewpoint, Duikar Eagle's Nest sunset",
+      },
+      {
+        id: 3,
+        iternaries_img: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/day4.jpg",
+        description:
+          "Today is Hunza at its fullest, exploring 700 years of royal history: Baltit Fort, a walk through Karimabad's old town, and Altit Fort and village exploration. We taste traditional Hunza cuisine — harissa, chapshuro, walnut chai and apricot preserves. The evening is a Musical Cottage Night: dinner at a local cottage with folk music and a bonfire.",
+        title: "Karimabad — Forts & Musical Cottage Night",
+        hotel: "Ambiance Hotel, Hunza",
+        activities: "Baltit Fort, Karimabad old town, Altit Fort, Traditional Hunza cuisine, Musical Cottage Night & bonfire",
+      },
+      {
+        id: 4,
+        iternaries_img: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/day5.jpg",
+        description:
+          "We visit a traditional Wakhi home in Gulmit for a guided tour, then head to the 'cathedral' rock spires of Passu and the thrilling Hussaini Suspension Bridge. Midday brings a hands-on cultural experience in weaving and embroidery heritage. We return to Aliabad early to pack bags for the Fairy Meadows departure.",
+        title: "Upper Hunza — Old Houses, Passu & Hussaini Bridge",
+        hotel: "Ambiance Hotel, Hunza",
+        activities: "Wakhi home in Gulmit, Passu Cones, Hussaini Bridge, Weaving & embroidery heritage",
+      },
+      {
+        id: 5,
+        iternaries_img: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/day6.jpg",
+        description:
+          "An early departure takes us to Raikot Bridge via the KKH South, then into local jeeps for a thrilling 15km cliff-road track. From Fairy Point we hike to Fairy Meadows (5km, ~2 hours through pine forest). We stay at Raikot Sarai, where Nanga Parbat is revealed at 3,300m.",
+        title: "Fairy Meadows — Early Departure",
+        hotel: "Raikot Sarai, Fairy Meadows",
+        activities: "KKH to Raikot Bridge, Jeep cliff-road track, Hike to Fairy Meadows, Nanga Parbat views",
+      },
+      {
+        id: 6,
+        iternaries_img: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/day7.jpg",
+        description:
+          "Morning brings a hike to Beyal Camp (3km) with the Raikot Glacier up-close and a hike to the German Viewpoint. In the evening we gather for a bonfire dinner at Raikot Sarai, Milky Way stargazing, and a reflection circle under the stars.",
+        title: "Beyal Camp — German Viewpoint & Bonfire Night",
+        hotel: "Raikot Sarai, Fairy Meadows",
+        activities: "Beyal Camp hike, Raikot Glacier, German Viewpoint, Bonfire dinner, Stargazing, Reflection circle",
+      },
+      {
+        id: 7,
+        iternaries_img: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/day8.jpg",
+        description:
+          "We rise for a final Nanga Parbat sunrise, then hike down Fairy Point and take the jeep back to Raikot Bridge. From there we drive to Naran via Lulusar Lake (3,400m), settling into the Green Park Hotel for the evening.",
+        title: "Jeep to Raikot → Drive to Naran",
+        hotel: "Green Park Hotel, Naran",
+        activities: "Nanga Parbat sunrise, Hike down Fairy Point, Jeep to Raikot, Drive via Lulusar Lake",
+      },
+      {
+        id: 8,
+        iternaries_img: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/day9.jpg",
+        description:
+          "We drive Naran → Balakot → Islamabad through the Kaghan Valley (~6 hours). The evening is a farewell dinner and a final group gathering to share memories and reflections from the journey.",
+        title: "Naran → Islamabad",
+        hotel: "Ambiance Hotel, Islamabad",
+        activities: "Drive via Kaghan Valley, Farewell dinner, Final group gathering",
+      },
+      {
+        id: 9,
+        iternaries_img: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/day10.jpg",
+        description:
+          "Our journey closes with a circle led by Najma, and the handover of the Journey Recipe Book and souvenirs. Guests then make their individual departures for international flights, with airport transfers included.",
+        title: "Farewell",
+        hotel: "Departure",
+        activities: "Closing Circle with Najma, Journey Recipe Book & souvenirs, Airport transfers included",
+      }
+    ],
+    includes: {
+      services: [
+        "9 nights boutique & alpine stays",
+        "Ambiance Hotel, Islamabad",
+        "Hashupi Resort, Skardu",
+        "Ambiance Hotel, Hunza",
+        "Raikot Sarai, Fairy Meadows",
+        "Green Park Hotel, Naran",
+        "Return domestic flight Islamabad–Skardu",
+        "All meals (Breakfast, Lunch, Dinner)",
+        "Toyota Coaster & local 4×4 jeeps (driver, guide & fuel)",
+        "All professional guides & entry fees",
+        "Airport transfers included",
+      ],
+    },
+    notIncluded: [
+      "International flights to/from Pakistan",
+      "Gratuities (at guest's discretion)",
+      "Travel insurance (strongly recommended)",
+      "Personal expenses, shopping & souvenirs",
+    ],
+    cost: {
+      size: [
+        "10-14 pax",
+      ],
+      deluxePackage: [
+        "£1,600",
+      ],
+      premiumPackage: [
+        "£2,080",
+      ],
+    },
+    hostLeaders: [
+      {
+        name: "Najma Mehmood",
+        role: "Cultural Curator & Community Host",
+        bio: "UK-based cultural curator and community host dedicated to sharing the heritage, landscape, and warmth of Pakistan. This cultural & adventure itinerary is crafted as a welcoming, social, and relaxed journey through Pakistan's breathtaking North.",
+      },
+    ],
+  },
 ];
 
 

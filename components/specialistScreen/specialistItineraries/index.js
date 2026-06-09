@@ -51,9 +51,11 @@ function SpecialistItineraries({ profile }) {
               it.itinerary_review_count > 0;
             const dotColor =
               DIFFICULTY_DOT[it.itinerary_difficulty] || "#9ca3af";
-            const linkHref = `/package-tour/${it.itinerary_slug}?specialist=${
-              profile?.specialist_slug || profile?.id
-            }`;
+            const linkHref =
+              it.itinerary_href ||
+              `/package-tour/${it.itinerary_slug}?specialist=${
+                profile?.specialist_slug || profile?.id
+              }`;
 
             return (
               <div key={it.id} className={classes.itinerary_card}>

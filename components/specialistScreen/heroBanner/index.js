@@ -3,6 +3,11 @@ import classes from "./heroBanner.module.css";
 
 function SpecialistHeroSection({ profile }) {
   const bg = profile?.hero_image || profile?.specialist_photo;
+  const name = profile?.specialist_name || "Facing North Travel Specialist";
+  const tagline =
+    profile?.specialisation_type
+      ? `${profile.specialisation_type} Specialist`
+      : "Travel Specialist";
 
   return (
     <div
@@ -11,14 +16,8 @@ function SpecialistHeroSection({ profile }) {
     >
       <div className={classes.overlay} />
       <div className={classes.content}>
-        <h1>Facing North Travel Specialists</h1>
-        <p>
-          Our Travel Specialists are destination experts, expedition leaders,
-          and cultural insiders who have spent years building deep knowledge of
-          their routes. They don&apos;t guide trips — they live them. Browse our
-          specialists, choose yours, and travel with someone who truly knows
-          the way.
-        </p>
+        <h1>{name}</h1>
+        <p className={classes.tagline}>{tagline}</p>
       </div>
     </div>
   );

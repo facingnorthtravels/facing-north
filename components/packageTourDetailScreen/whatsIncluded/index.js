@@ -155,10 +155,10 @@ const WhatsIncluded = ({ itineraryData, includeData, notIncluded }) => {
       </div>
       {notIncluded?.length > 0 && (
         <div className={classes.whats_not_included}>
-          <p>Please note, the following are NOT INCLUDED in our trip:</p>
+          <p>What&apos;s Not Included</p>
           <div className={classes.not_included_list}>
             {notIncluded?.map((e, i) => {
-              return <p key={`notIncluded${i}`}>• {e} </p>;
+              return <p key={`notIncluded${i}`}>{e}</p>;
             })}
           </div>
         </div>

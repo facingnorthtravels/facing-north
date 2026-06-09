@@ -16,45 +16,50 @@ function TourFaq({ FaqData, itineraryData }) {
     premiumHotel,
     deluxeHotel,
     activities,
+    hotel,
   }) => {
     return (
-      <>
-        <div className={classes.answer_section}>
-          <div className={classes.para_section}>
+      <div className={classes.answer_section}>
+        <div className={classes.day_card}>
+          <div className={classes.day_image_wrap}>
             <img
               src={itirnerary_img}
-              alt="itirnerary_img"
-              width="300px"
-              height="250px"
-              style={{ objectFit: "cover" }}
+              alt="Itinerary day"
+              className={classes.day_image}
             />
-            <div>
-              <p>{content}</p>
+            <div className={classes.day_fade} />
+          </div>
+          <div className={classes.day_body}>
+            <p className={classes.day_desc}>{content}</p>
+            <div className={classes.day_details}>
+              {hotel ? (
+                <div className={classes.day_detail_row}>
+                  <span className={classes.day_detail_label}>Overnight</span>
+                  <span className={classes.day_detail_value}>{hotel}</span>
+                </div>
+              ) : null}
               {premiumHotel ? (
-                <p>
-                  <b>Premium Hotel:</b> {premiumHotel}
-                </p>
-              ) : (
-                ""
-              )}
+                <div className={classes.day_detail_row}>
+                  <span className={classes.day_detail_label}>Premium Hotel</span>
+                  <span className={classes.day_detail_value}>{premiumHotel}</span>
+                </div>
+              ) : null}
               {deluxeHotel ? (
-                <p>
-                  <b>Deluxe Hotel:</b> {deluxeHotel}
-                </p>
-              ) : (
-                ""
-              )}
+                <div className={classes.day_detail_row}>
+                  <span className={classes.day_detail_label}>Deluxe Hotel</span>
+                  <span className={classes.day_detail_value}>{deluxeHotel}</span>
+                </div>
+              ) : null}
               {activities ? (
-                <p>
-                  <b>Activities:</b> {activities}
-                </p>
-              ) : (
-                ""
-              )}
+                <div className={classes.day_detail_row}>
+                  <span className={classes.day_detail_label}>Activities</span>
+                  <span className={classes.day_detail_value}>{activities}</span>
+                </div>
+              ) : null}
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
   };
 
@@ -69,6 +74,7 @@ function TourFaq({ FaqData, itineraryData }) {
             premiumHotel={e?.premiumHotel ? e?.premiumHotel : null}
             deluxeHotel={e?.deluxeHotel ? e?.deluxeHotel : null}
             activities={e?.activities ? e?.activities : null}
+            hotel={e?.hotel ? e?.hotel : null}
           />
         ),
       }))

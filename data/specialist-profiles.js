@@ -5,80 +5,64 @@
 export const SPECIALIST_PROFILES = [
   {
     id: "1",
-    specialist_name: "Ahmed Khan",
-    specialist_slug: "ahmed-khan-pakistan",
+    specialist_name: "Najma Mehmood",
+    specialist_slug: "najma-mehmood-pakistan",
     specialist_photo:
-      "/assets/cohosted_profile/cohost_lukas.jpg",
+      "/assets/cohosted_profile/najma.webp",
     specialist_og_image:
-      "/assets/specialist_profile/specialist_ahmed-khan-pakistan_og.jpg",
+      "/assets/specialist_profile/specialist_najma-mehmood-pakistan_og.jpg",
     hero_image: "/assets/cohosted_profile/coshost_card_image1.jpg",
     is_verified: true,
-    specialisation_type: "Trekking & Expedition",
+    specialisation_type: "Cultural & Women-Led Travel",
 
     bio_text:
-      "I'm Ahmed Khan, a trekking specialist and expedition leader based in Gilgit, Pakistan. I grew up in the shadow of Rakaposhi and have spent 14 years guiding climbers, trekkers, and cultural travelers through Gilgit-Baltistan, Chitral, and the Karakoram. My expeditions have taken groups to Concordia, K2 base camp, the Deosai Plateau, and dozens of routes that don't appear in any guidebook. I partner with Facing North because they understand what ground-level expertise actually means — and because the travelers they attract are the ones I want to take into these mountains.",
+      "I'm Najma, a UK-based community host and cultural curator with a deep love for culture, heritage and meaningful travel. My work is rooted in curating thoughtful journeys that bring people closer to places, history and themselves through connection, adventure and shared experience. Alongside travel, I've been passionate about creating greater access for women in outdoor and nature spaces through hiking and community-led experiences. Over the years, this has evolved into co-hosting and leading culturally immersive women's trips across destinations including Pakistan and Saudi Arabia. I'm drawn to travel that feels intentional, grounding and emotionally enriching — experiences that combine culture, wellness, adventure, storytelling and human connection in a meaningful way. Through the collaboration with Facing North, I hope to help others experience the warmth, beauty and depth of Pakistan in a way that feels inspiring, immersive and deeply personal.",
 
     usp_statement:
-      "I have guided 47 expeditions in Gilgit-Baltistan over 14 years. I speak Wakhi, Burushaski, Shina, and Urdu. My relationships with families along the Karakoram routes took a decade to build — and they are the reason our travelers access experiences no booking platform can replicate.",
+      "I curate culturally immersive, women-led journeys that combine culture, wellness, adventure and storytelling into something intentional and deeply personal. My work is about creating greater access for women in outdoor and nature spaces — and helping travellers experience the warmth, beauty and depth of Pakistan in a way no standard tour can replicate.",
 
     website_url: "",
     linkedin_url: "",
     instagram_url: "https://www.instagram.com/",
 
-    highlight_destinations: "Pakistan (Gilgit-Baltistan · Chitral · Karakoram)",
-    highlight_years: 14,
-    highlight_languages: "English, Urdu, Burushaski, Wakhi, Shina",
+    highlight_destinations: "Pakistan · Saudi Arabia",
+    highlight_years: null,
+    highlight_languages: "English, Urdu, Punjabi",
     highlight_certifications:
-      "Wilderness First Responder, Pakistan Alpine Club Certified Guide",
+      "Community Host, Cultural Storytelling, Group Travel Curation",
     highlight_specialisation:
-      "High-Altitude Trekking, K2 Region, Karakoram Glacier Routes, Cultural Heritage",
+      "Women-Led Travel, Heritage Journeys, Cultural Immersion, Wellness & Adventure Travel, Community Experiences",
 
     itineraries: [
       {
         id: 1,
-        itinerary_title: "Karakoram Crown Circuit",
-        itinerary_slug: "br-around-karakoram-SP26-01-jonas",
+        itinerary_title: "Women's Adventure & Cultural Tour",
+        itinerary_slug: "womens-adventure-cultural-sep2026",
         itinerary_image:
-          "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-jonas/banner.jpeg",
+          "/assets/IMAGES/tour-packages/autumn-in-skardu/banner.jpeg",
         itinerary_country: "Pakistan",
         itinerary_country_flag: "🇵🇰",
-        itinerary_dates: "Apr 9 – 18, 2026",
+        itinerary_dates: "Sep 25 – Oct 4, 2026",
         itinerary_duration: "10 days",
-        itinerary_group_size: "12 travelers max",
-        itinerary_difficulty: "Strenuous",
-        itinerary_price_from: "£2,950",
-        itinerary_rating: 5.0,
-        itinerary_review_count: 16,
+        itinerary_group_size: "Women-only · 10–14 travellers",
+        itinerary_difficulty: "Moderate",
+        itinerary_price_from: "£1,600",
+        itinerary_rating: 0,
+        itinerary_review_count: 0,
       },
       {
         id: 2,
-        itinerary_title: "Fairy Meadows & Nanga Parbat",
-        itinerary_slug: "br-around-karakoram-AT26-02-jonas",
+        itinerary_title: "The Karakoram: Wellness & Culinary Journey",
+        itinerary_slug: "the-karakoram-wellness-culinary-oct2026",
         itinerary_image:
-          "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-jonas/banner.jpg",
+          "/assets/IMAGES/tour-packages/autumn-in-skardu/banner.jpeg",
         itinerary_country: "Pakistan",
         itinerary_country_flag: "🇵🇰",
-        itinerary_dates: "Oct 21 – Nov 1, 2026",
-        itinerary_duration: "12 days",
-        itinerary_group_size: "10 travelers max",
+        itinerary_dates: "Oct 17 – 27, 2026",
+        itinerary_duration: "11 days",
+        itinerary_group_size: "Women-only · 10–14 travellers",
         itinerary_difficulty: "Moderate",
-        itinerary_price_from: "£2,450",
-        itinerary_rating: 4.8,
-        itinerary_review_count: 13,
-      },
-      {
-        id: 3,
-        itinerary_title: "Concordia & K2 Base Camp",
-        itinerary_slug: "br-around-karakoram-SP26-01-ogik",
-        itinerary_image:
-          "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-ogik/banner.jpg",
-        itinerary_country: "Pakistan",
-        itinerary_country_flag: "🇵🇰",
-        itinerary_dates: "Jul 12 – 28, 2026",
-        itinerary_duration: "17 days",
-        itinerary_group_size: "8 travelers max",
-        itinerary_difficulty: "Strenuous",
-        itinerary_price_from: "£3,850",
+        itinerary_price_from: "£1,950",
         itinerary_rating: 0,
         itinerary_review_count: 0,
       },
@@ -114,17 +98,17 @@ export const SPECIALIST_PROFILES = [
     specialist_video_url: "",
 
     gallery_quote:
-      "The moment we crested Khunjerab Pass at 4,693m and the entire valley opened below us, three people in my group started crying. I've been there 47 times. I still feel it.",
+      "Travel, for me, is about connection — to a place, its people, and to ourselves. When a group of women sit together over a home-cooked meal in a Hunza village, something shifts. That's the moment I do this for.",
 
     reviews: [
       {
         id: 1,
         review_rating: 5,
         review_text:
-          "Ahmed doesn't guide you through Pakistan. He takes you inside it. We had dinner with a nomadic family on night 3, were camped at 4,200m on night 6, and crossed a glacier on day 9 that I didn't know existed until we were on it. I've been traveling for 20 years. This was different.",
-        reviewer_name: "James K.",
-        reviewer_location: "Manchester, UK",
-        review_trip_name: "Karakoram Crown Circuit, September 2024",
+          "Najma created a space where I felt completely safe to explore. This wasn't a tour — it was an immersion. We shared meals in local homes, learned from women artisans, and I came back feeling more connected to my heritage than I ever expected. As a woman travelling solo, this was exactly what I needed.",
+        reviewer_name: "Sana A.",
+        reviewer_location: "London, UK",
+        review_trip_name: "Wellness & Culinary Retreat, October 2024",
         reviewer_photo: "",
         review_verified: true,
       },
@@ -132,10 +116,10 @@ export const SPECIALIST_PROFILES = [
         id: 2,
         review_rating: 5,
         review_text:
-          "I was nervous about a high-altitude trek with no prior mountaineering experience. Ahmed assessed my fitness honestly before we left, adjusted the pace on day 4 when altitude hit me, and had me at Concordia on day 8 feeling more capable than I've ever felt anywhere. He is the reason I want to go back.",
-        reviewer_name: "Priya S.",
-        reviewer_location: "London, UK",
-        review_trip_name: "Concordia & K2 Base Camp, July 2024",
+          "Every day felt intentional and beautifully paced. Najma's warmth and her deep knowledge of the culture made the journey personal in a way I haven't experienced anywhere else. The storytelling, the heritage sites, the connection with local communities — it all felt meaningful, never rushed.",
+        reviewer_name: "Hina R.",
+        reviewer_location: "Manchester, UK",
+        review_trip_name: "Cultural Journey through Pakistan, October 2024",
         reviewer_photo: "",
         review_verified: true,
       },

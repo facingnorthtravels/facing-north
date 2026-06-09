@@ -3,11 +3,10 @@
   width: 100%;
   height: fit-content;
   padding-top: 50px;
-  /* padding-bottom: 50px; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(240, 240, 240) !important;
+  background-color: #ffffff !important;
   text-align: left;
 }
 
@@ -19,21 +18,116 @@
   align-items: center;
   row-gap: 30px;
 }
+
 .title {
   font-size: 30px;
   font-family: "f-m";
   width: 100%;
   text-align: center;
 }
+
 .answer_section {
   width: 100%;
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
+  padding: 14px 0 34px 0;
 }
+
+/* ===== Day card — Find Your True North style with white fade ===== */
+.day_card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(23, 96, 96, 0.06);
+}
+
+.day_image_wrap {
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+}
+
+.day_image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease-out;
+}
+
+.day_card:hover .day_image {
+  transform: scale(1.04);
+}
+
+/* White fade gradient (instead of black) — fades the image into the white text panel */
+.day_fade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 55%,
+    rgba(255, 255, 255, 0.12) 66%,
+    rgba(255, 255, 255, 0.32) 76%,
+    rgba(255, 255, 255, 0.62) 86%,
+    rgba(255, 255, 255, 0.92) 95%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.day_body {
+  padding: 40px 44px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 22px;
+}
+
+.day_desc {
+  font-family: "f-m", sans-serif;
+  font-size: 15.5px;
+  line-height: 27px;
+  color: #4b5b5b;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.day_details {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  border-top: 1px solid #eef1f1;
+  padding-top: 22px;
+}
+
+.day_detail_row {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.day_detail_label {
+  font-family: "f-m", sans-serif;
+  font-size: 11px;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  color: #176060;
+  font-weight: 600;
+}
+
+.day_detail_value {
+  font-family: "f-m", sans-serif;
+  font-size: 14.5px;
+  line-height: 21px;
+  color: #3a4a4a;
+}
+
 .minus {
   padding-top: 12px;
 }
@@ -42,38 +136,25 @@
 }
 .minus,
 .plus {
-  /* padding: 2px 15px; */
   width: 20px;
   height: 20px;
   color: white;
   font-weight: 700;
-  background-color: #286675;
+  background-color: #176060;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.para_section {
-  width: 100%;
-  text-align: left;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: flex;
-  gap: 30px;
-  align-items: center;
-}
+
 .divider {
   margin-top: 20px;
   width: 100%;
   height: 0.5px;
   background-color: grey;
 }
-.para_section p {
-  line-height: 23px;
-  font-size: 15px;
-  white-space: pre-line;
-}
-.expandContainer{
+
+.expandContainer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -83,25 +164,40 @@
   margin-right: 10px;
 }
 
-.expandContainer button{
+.expandContainer button {
   display: flex;
   align-items: center;
   gap: 8px;
   border: none;
   cursor: pointer;
-  color: #286675;
+  color: #176060;
+  background: transparent;
 }
 
-.expandContainer button span{
+.expandContainer button span {
   padding-bottom: 0px;
 }
 
 @media screen and (max-width: 1023px) {
-  .para_section {
-    align-items: unset;
-    flex-direction: column;
+  .day_card {
+    grid-template-columns: 1fr;
   }
-  .detailLabel{
+  .day_image_wrap {
+    min-height: 240px;
+  }
+  /* On stacked layout, fade downward into the text panel instead of sideways */
+  .day_fade {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 60%,
+      rgba(255, 255, 255, 0.5) 85%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
+  .day_body {
+    padding: 30px 26px;
+  }
+  .detailLabel {
     display: none;
   }
 }
