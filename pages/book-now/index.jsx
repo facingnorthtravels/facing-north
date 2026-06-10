@@ -863,41 +863,24 @@ const BookNow = () => {
               
               {/* Rooming */}
               <div className={classes.trip_section}>
-                <h5>Rooming Preferences</h5>
+                <h5>Set Room Preference</h5>
                 <p className={classes.section_description}>
                   Please select your rooming requirements below.
                 </p>
-                <div className={classes.flex_input_field_container}>
+                <div className={classes.room_select_container}>
                   <select
+                    className={classes.room_select}
                     value={formData.room}
                     onChange={(e) => handleChange("room", e.target.value)}
                   >
                     <option value="Single Room not Required">Single Room not Required</option>
-                    <option value="Single Room Required" disabled>Single Room Required</option>
+                    <option value="Single Room Required">Single Room Required</option>
                   </select>
                 </div>
                 <p className={classes.info_text}>
-                  <strong>Note:</strong> A single room cannot necessarily be guaranteed
-                  for every night. Please refer to the trip itinerary for details.
+                  <strong>Note:</strong> An additional £650 shall be charged per
+                  single room supplement.
                 </p>
-              </div>
-
-              {/* Flight Quote */}
-              <div className={classes.trip_section}>
-                <h5>Flight Quote</h5>
-                <p className={classes.section_description}>
-                  We can provide obligation-free flight quotes from the UK and Europe
-                  in economy class on suggested group flights.
-                </p>
-                <div className={classes.flex_input_field_container}>
-                  <select
-                    value={formData.flight}
-                    onChange={(e) => handleChange("flight", e.target.value)}
-                  >
-                    <option value="Not flight quote required">Not flight quote required</option>
-                    <option value="Flight quote required" disabled>Flight quote required</option>
-                  </select>
-                </div>
               </div>
 
               {/* Additional Information */}
@@ -921,7 +904,16 @@ const BookNow = () => {
                     checked={formData.conditions}
                   />
                   <label htmlFor="conditions">
-                    I have read Facing North's Booking Conditions <span style={{ color: "#dc2626" }}>*</span>
+                    I have read Facing North's{" "}
+                    <a
+                      href="/terms-and-conditions"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={classes.terms_link}
+                    >
+                      Booking Conditions
+                    </a>{" "}
+                    <span style={{ color: "#dc2626" }}>*</span>
                   </label>
                 </p>
                 <p>

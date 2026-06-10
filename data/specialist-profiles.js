@@ -8,10 +8,10 @@ export const SPECIALIST_PROFILES = [
     specialist_name: "Najma Mehmood",
     specialist_slug: "najma-mehmood-pakistan",
     specialist_photo:
-      "/assets/cohosted_profile/najma.webp",
+      "/assets/cohosted_profile/najma2.webp",
     specialist_og_image:
       "/assets/specialist_profile/specialist_najma-mehmood-pakistan_og.jpg",
-    hero_image: "/assets/cohosted_profile/coshost_card_image1.jpg",
+    hero_image: "/assets/cohosted_profile/Najma3.png",
     is_verified: true,
     specialisation_type: "Cultural & Women-Led Travel",
 
@@ -22,7 +22,8 @@ export const SPECIALIST_PROFILES = [
 
     website_url: "",
     linkedin_url: "",
-    instagram_url: "https://www.instagram.com/",
+    instagram_url:
+      "https://www.instagram.com/chai_infused_adventures?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw%3D%3D",
 
     highlight_destinations: "",
     highlight_years: null,
@@ -41,8 +42,7 @@ export const SPECIALIST_PROFILES = [
         id: 1,
         itinerary_title: "Women's Adventure & Cultural Tour",
         itinerary_slug: "womens-adventure-cultural-sep2026",
-        itinerary_image:
-          "/assets/IMAGES/tour-packages/autumn-in-skardu/banner.jpeg",
+        itinerary_image: "/assets/Iternaries/adventure.jpg",
         itinerary_country: "Pakistan",
         itinerary_country_flag: "🇵🇰",
         itinerary_dates: "Sep 25 – Oct 4, 2026",
@@ -57,8 +57,7 @@ export const SPECIALIST_PROFILES = [
         id: 2,
         itinerary_title: "The Karakoram: Wellness & Culinary Journey",
         itinerary_slug: "the-karakoram-wellness-culinary-oct2026",
-        itinerary_image:
-          "/assets/IMAGES/tour-packages/autumn-in-skardu/banner.jpeg",
+        itinerary_image: "/assets/Iternaries/wellness.jpg",
         itinerary_country: "Pakistan",
         itinerary_country_flag: "🇵🇰",
         itinerary_dates: "Oct 17 – 27, 2026",
