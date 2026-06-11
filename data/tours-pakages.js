@@ -8411,6 +8411,10 @@ export const TOUR_PAKAGE = [
       }
     ],
     includes: {
+      premium: {
+        groupSizeMin: "10",
+        groupSizeMax: "14",
+      },
       services: [
         "9 nights boutique & alpine stays",
         "Ambiance Hotel, Islamabad",

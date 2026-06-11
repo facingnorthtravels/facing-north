@@ -10,9 +10,9 @@ import best_employee from "../../../public/assets/package_tour_assets/best-emplo
 import tickets from "../../../public/assets/package_tour_assets/tickets.png";
 import speed from "../../../public/assets/package_tour_assets/speed.png";
 import bonfire from "../../../public/assets/package_tour_assets/1_Bonfire.svg";
-import entry_tickets from "../../../public/assets/package_tour_assets/1_Entry tickets.svg";
 import souvenirs from "../../../public/assets/package_tour_assets/1_Souvenirs.svg";
 import musical_night from "../../../public/assets/package_tour_assets/1_musical night.svg";
+import culinary from "../../../public/assets/package_tour_assets/1_Culinary.svg";
 
 const WhatsIncluded = ({ itineraryData, includeData, notIncluded }) => {
   return (
@@ -143,12 +143,10 @@ const WhatsIncluded = ({ itineraryData, includeData, notIncluded }) => {
           </p> 
         </div>
         <div className={classes.Includes_card3}>
-          <Image src={entry_tickets} width={60} height={50} alt="Entry tickets" />
-          <h5>Entry tickets</h5>
+          <Image src={culinary} width={60} height={50} alt="Culinary experiences" />
+          <h5>Culinary experiences</h5>
           <p>
-            All Inclusive
-            {/* {includeData?.tickets ||
-              "All Flexible booking conditions regarding transfer and cancellations"} */}
+            Traditional Hunza & Balti cuisine
           </p>
         </div>
         {/* ///////////////////Next Line////////////////// */}

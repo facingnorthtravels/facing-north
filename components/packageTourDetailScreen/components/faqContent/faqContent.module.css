@@ -1,40 +1,56 @@
+/* Full-bleed: break out of the 80.6% parent to span the whole viewport */
 .container {
-  margin-top: 100px;
-  width: 100%;
-  height: fit-content;
-  padding-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #ffffff !important;
-  text-align: left;
+  margin-top: 70px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #ffffff;
+  padding: 44px 0;
 }
 
-/* ===== Day selector tabs ===== */
+/* Inner keeps content off the very edges, but card itself runs wide */
+.inner {
+  width: 92%;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Day selector — rectangular cards, flush row ===== */
 .day_tabs {
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
   width: 100%;
-  margin-bottom: 26px;
+  margin-bottom: 0;
 }
 
 .day_tab {
-  border: 1px solid #dfe5e5;
+  flex: 1 1 0;
+  min-width: 60px;
+  border: 1px solid #e2e8e8;
+  border-right: none;
   background: #ffffff;
   color: #5a6b6b;
   font-family: "f-m", sans-serif;
   font-size: 13px;
-  letter-spacing: 0.4px;
-  padding: 8px 16px;
-  border-radius: 999px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 14px 10px;
+  border-radius: 0;
   cursor: pointer;
   transition: all 0.2s ease;
   white-space: nowrap;
+  text-align: center;
+}
+
+.day_tab:last-child {
+  border-right: 1px solid #e2e8e8;
 }
 
 .day_tab:hover {
-  border-color: #176060;
   color: #176060;
 }
 
@@ -43,143 +59,89 @@
   border-color: #176060;
   color: #ffffff;
 }
-
-/* ===== Single day card — full-height, sharp edges (Find Your True North style) ===== */
-.day_card {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  background: #ffffff;
-  border: none;
-  border-radius: 0;
-  overflow: hidden;
-  height: 620px;
-  margin: 20px 0;
-}
-
-.day_image_wrap {
-  position: relative;
-  height: 100%;
-  overflow: hidden;
-  /* image on the right like the homepage; text panel on the left */
-  order: 2;
-}
-
-.day_image {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* White fade gradient — image on the right fades LEFT into the white text panel */
-.day_fade {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    -100deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0) 55%,
-    rgba(255, 255, 255, 0.12) 66%,
-    rgba(255, 255, 255, 0.32) 76%,
-    rgba(255, 255, 255, 0.62) 86%,
-    rgba(255, 255, 255, 0.92) 95%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  pointer-events: none;
-}
-
-/* ===== Nav arrows over image ===== */
-.day_nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(255, 255, 255, 0.92);
-  color: #176060;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
-  transition: background 0.2s ease, transform 0.2s ease;
-  z-index: 3;
-}
-
-.day_nav:hover {
-  background: #176060;
+.day_tab_active:hover {
   color: #ffffff;
 }
 
-.day_nav_left {
-  left: 18px;
+/* ===== Content card — one fixed height; text left, portrait image right ===== */
+.day_card {
+  position: relative;
+  width: 100%;
+  display: grid;
+  /* Image column sized to the portrait image width (3:4 of 520px ≈ 390px),
+     so there's no empty strip; text takes all remaining space */
+  grid-template-columns: 1fr 390px;
+  height: 520px;
+  border: 1px solid #ececec;
+  border-top: none;
+  background: #ffffff;
+  overflow: hidden;
 }
 
-.day_nav_right {
-  right: 18px;
-}
-
-/* ===== Body — left column, fills full height ===== */
+/* Left text column — vertically centred so the block stays balanced */
 .day_body {
-  order: 1;
   height: 100%;
-  padding: 56px 56px 56px 8px;
+  padding: 56px 64px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   row-gap: 20px;
-  overflow-y: auto;
-}
-
-.day_header {
-  display: flex;
-  flex-direction: column;
-  row-gap: 8px;
+  overflow: hidden;
 }
 
 .day_eyebrow {
   font-family: "f-m", sans-serif;
   font-size: 12px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
   color: #176060;
+  flex-shrink: 0;
 }
 
 .day_title {
   font-family: "b-ul";
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 300;
   line-height: 1.2;
   color: #1f2937;
   margin: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
+/* Description clamped to a fixed number of lines */
 .day_desc {
   font-family: "f-m", sans-serif;
   font-size: 15.5px;
-  line-height: 27px;
+  line-height: 28px;
   color: #4b5b5b;
   margin: 0;
   white-space: pre-line;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
+/* Details sit just below the description (block stays cohesive) */
 .day_details {
-  display: flex;
-  flex-direction: column;
-  row-gap: 14px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 36px;
   border-top: 1px solid #eef1f1;
-  padding-top: 20px;
+  padding-top: 22px;
+  margin-top: 8px;
+  flex-shrink: 0;
 }
 
 .day_detail_row {
   display: flex;
   flex-direction: column;
-  row-gap: 4px;
+  row-gap: 5px;
 }
 
 .day_detail_label {
@@ -191,76 +153,145 @@
   font-weight: 600;
 }
 
+/* Detail values clamped so long activity lists don't break layout */
 .day_detail_value {
   font-family: "f-m", sans-serif;
-  font-size: 14.5px;
-  line-height: 21px;
-  color: #3a4a4a;
-}
-
-/* ===== Footer counter + arrows ===== */
-.day_footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 28px;
-  margin-top: 26px;
-}
-
-.footer_nav {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  border: none;
-  background: transparent;
-  color: #176060;
-  font-family: "f-m", sans-serif;
   font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-  padding: 6px 10px;
-  transition: opacity 0.2s ease;
+  line-height: 20px;
+  color: #3a4a4a;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-.footer_nav:hover {
-  opacity: 0.7;
+/* Right image column — portrait card flush to the right edge, full height */
+.day_image_col {
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  background: #ffffff;
+}
+
+.day_image_card {
+  position: relative;
+  height: 100%;
+  aspect-ratio: 3 / 4;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.day_image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .day_counter {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
   font-family: "f-m", sans-serif;
-  font-size: 14px;
-  letter-spacing: 1px;
-  color: #5a6b6b;
-  min-width: 70px;
-  text-align: center;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  background: rgba(23, 96, 96, 0.9);
+  padding: 6px 12px;
+  z-index: 2;
 }
 
+/* ===== Minimal overlaid arrows ===== */
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: #176060;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 4;
+  transition: background 0.2s ease, color 0.2s ease;
+  backdrop-filter: blur(2px);
+}
+
+.nav:hover {
+  background: #176060;
+  color: #ffffff;
+}
+
+.nav_left {
+  left: 0;
+}
+
+.nav_right {
+  right: 0;
+}
+
+/* ===== Responsive ===== */
 @media screen and (max-width: 1023px) {
+  .inner {
+    width: 100%;
+    padding: 0 4%;
+  }
   .day_card {
     grid-template-columns: 1fr;
     height: auto;
   }
-  .day_image_wrap {
-    order: 1;
-    height: 280px;
-  }
-  /* Stacked: image on top fades downward into the text panel below */
-  .day_fade {
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0) 58%,
-      rgba(255, 255, 255, 0.5) 84%,
-      rgba(255, 255, 255, 1) 100%
-    );
-  }
   .day_body {
     order: 2;
     height: auto;
-    padding: 28px 24px;
-    overflow-y: visible;
+    padding: 32px 26px;
+    overflow: visible;
+  }
+  /* Let text flow fully on mobile — no clamping/pinning */
+  .day_desc {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+    display: block;
+  }
+  .day_detail_value {
+    -webkit-line-clamp: unset;
+    overflow: visible;
+    display: block;
+  }
+  .day_details {
+    margin-top: 8px;
+    max-width: none;
+  }
+  .day_desc {
+    max-width: none;
+  }
+  .day_image_col {
+    order: 1;
+    height: auto;
+    padding: 0;
+  }
+  .day_image_card {
+    height: auto;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+  .nav {
+    top: 150px;
   }
   .day_title {
-    font-size: 25px;
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .day_tab {
+    font-size: 11px;
+    padding: 11px 6px;
+    letter-spacing: 0.3px;
   }
 }
