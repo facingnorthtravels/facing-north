@@ -81,7 +81,7 @@
   padding: 10px 18px;
   min-width: 130px;
   cursor: pointer;
-  text-transform: uppercase;
+  letter-spacing: 0.3px;
   transition: 0.3s ease-in-out;
   text-align: center;
 }
@@ -101,7 +101,6 @@
   display: flex;
   gap: 12px;
   font-size: 16px;
-  text-transform: uppercase;
 }
 .nav_link {
   padding: 0px;
@@ -135,6 +134,10 @@
 .trip_price {
   font-size: 16px;
   font-weight: 600;
+}
+.price_prefix {
+  font-weight: 400;
+  opacity: 0.85;
 }
 
 /* Price with discount styles */

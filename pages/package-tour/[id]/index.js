@@ -18,6 +18,16 @@ import SpecialistAttributionStrip from "../../../components/specialistScreen/att
 import SEOHead from "../../../components/common/SEOHead";
 import { getTourPackageMetadata } from "../../../utils/seo";
 
+// Tours owned by Najma Mehmood — show her direct contact details.
+const NAJMA_TOUR_IDS = [
+  "womens-adventure-cultural-sep2026",
+  "the-karakoram-wellness-culinary-oct2026",
+];
+const NAJMA_CONTACT = {
+  number: "+44 7572 384219",
+  email: "Najma@facingnorthtravels.com",
+};
+
 export default function PackageTour({ tourDetailData, hostData: initialHostData }) {
   const router = useRouter();
   
@@ -60,6 +70,9 @@ export default function PackageTour({ tourDetailData, hostData: initialHostData 
     return null;
   };
   
+  // Najma's tours show her direct contact details
+  const isNajmaTour = NAJMA_TOUR_IDS.includes(tourDetailData?.id);
+
   // Generate metadata from static props
   const metadata = getTourPackageMetadata(tourDetailData);
 
@@ -157,6 +170,8 @@ export default function PackageTour({ tourDetailData, hostData: initialHostData 
         para={
           "Looking for a memorable travel experience? Let us help you plan your next adventure in Pakistan. Contact us for personalized travel recommendations and itinerary planning."
         }
+        number={isNajmaTour ? NAJMA_CONTACT.number : undefined}
+        contact_email={isNajmaTour ? NAJMA_CONTACT.email : undefined}
       />
       {/* <PositiveImpacts /> */}
       {/* <TemperatureGraph /> */}

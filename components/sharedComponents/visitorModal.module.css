@@ -170,10 +170,9 @@
     padding: 16px 28px;
     border-radius: 2px;
     font-family: 'segoe ui', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 2.4px;
+    letter-spacing: 0.4px;
     cursor: pointer;
     transition: background-color 0.25s ease, color 0.25s ease;
 }

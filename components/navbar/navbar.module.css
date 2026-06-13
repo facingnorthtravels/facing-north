@@ -122,10 +122,9 @@
   cursor: pointer;
   transition: color 200ms ease, opacity 200ms ease;
   font-family: "segoe ui", sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
+  letter-spacing: 0.4px;
   position: relative;
   padding: 4px 0;
   margin: 0;
@@ -153,10 +152,9 @@
 }
 .cta_pill {
   font-family: "segoe ui", sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
+  letter-spacing: 0.4px;
   padding: 10px 22px;
   border: 1px solid currentColor;
   border-radius: 10px;

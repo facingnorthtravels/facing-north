@@ -60,7 +60,7 @@ export const COHOSTED_PROFILES = [
     tour: {
       image: "/assets/cohosted/feature_cohosted_card.jpg",
       // status: "Pre-Launch",
-      status: "OPEN NOW",
+      status: "Open Now",
       destinations: "Around Karakoram, Hunza",
       dates: "April 2026 and October 2026",
       button: "Join Now",
@@ -211,7 +211,7 @@ export const COHOSTED_PROFILES = [
     ],
     tour: {
       image: "/assets/cohosted/feature_cohosted_card.jpg",
-      status: "OPEN NOW",
+      status: "Open Now",
       destinations: "Around Karakoram, Hunza",
       dates: "April 2026 and October 2026",
       button: "Join Now",
@@ -362,7 +362,7 @@ export const COHOSTED_PROFILES = [
     tour: {
       image: "/assets/cohosted/feature_cohosted_card.jpg",
       // status: "COMMING SOON",
-      status: "OPEN NOW",
+      status: "Open Now",
       destinations: "Around Karakoram, Hunza",
       dates: "April 2026 and October 2026",
       button: "Join Now",
@@ -514,7 +514,7 @@ export const COHOSTED_PROFILES = [
     ],
     tour: {
       image: "/assets/cohosted/feature_cohosted_card.jpg",
-      status: "OPEN NOW",
+      status: "Open Now",
       destinations: "Around Karakoram, Hunza",
       dates: "April 2026 and October 2026",
       button: "Join Now",

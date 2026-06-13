@@ -9,7 +9,9 @@
       "Bash(npm install *)",
       "Bash(git checkout *)",
       "Bash(git add *)",
-      "Bash(git commit -m 'Add real highlight photos to Women'\\\\''s Adventure tour *)"
+      "Bash(git commit -m 'Add real highlight photos to Women'\\\\''s Adventure tour *)",
+      "Bash(nslookup github.com)",
+      "Bash(ping -n 2 github.com)"
     ]
   }
 }

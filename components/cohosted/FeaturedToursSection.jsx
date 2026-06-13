@@ -28,7 +28,7 @@ const FeaturedToursSection = () => {
   if (najma) {
     tours.push({
       image: najma.specialist_photo,
-      status: "Booking Open",
+      status: "Open Now",
       host: {
         name: najma.specialist_name,
         image: najma.specialist_photo,
@@ -37,7 +37,7 @@ const FeaturedToursSection = () => {
       dates: "Sep & Oct 2026",
       statusClass: classes.openNow || classes.preLaunch,
       link: `/specialist-profile/${najma.specialist_slug}`,
-      button: "View Trips",
+      button: "Join Now",
       buttonClass: classes.primaryTourButton,
     });
   }

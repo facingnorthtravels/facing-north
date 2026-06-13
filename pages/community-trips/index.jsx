@@ -6,8 +6,6 @@ import AboutSection from "../../components/cohosted/AboutSection";
 import FeaturedToursSection from "../../components/cohosted/FeaturedToursSection";
 import WhyJoinSection from "../../components/cohosted/WhyJoinSection";
 import HowItWorksSection from "../../components/cohosted/HowItWorksSection";
-import BookingSection from "../../components/cohosted/BookingSection";
-import TravelerInfoSection from "../../components/cohosted/TravelerInfoSection";
 import GallerySection from "../../components/cohosted/GallerySection";
 import NewsletterSection from "../../components/cohosted/NewsletterSection";
 import PartnerSection from "../../components/cohosted/PartnerSection";
@@ -27,8 +25,6 @@ export default function CohostedTrips() {
       <FeaturedToursSection />
       <WhyJoinSection />
       <HowItWorksSection />
-      <BookingSection />
-      <TravelerInfoSection />
       <GallerySection />
       <NewsletterSection />
       <PartnerSection />

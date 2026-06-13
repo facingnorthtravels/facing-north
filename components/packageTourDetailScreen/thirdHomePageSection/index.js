@@ -3,7 +3,6 @@ import classes from "./thirdHomePageSection.module.css";
 import TourFaq from "../components/faqContent";
 import Link from "next/link";
 import { applyCoupon, formatPrice, parsePrice } from "../../../data/coupons";
-import { ADVANCE_PAYMENT_PERCENTAGE } from "../../../utils/constants";
 
 function ThirdHomePageSection({ 
   itineraryData, 
@@ -149,9 +148,19 @@ function ThirdHomePageSection({
         </div>
         <h4>Pakistan: {itineraryData?.title}</h4>
         <p className={classes.date_text}>
-          The prices below are based on two sharing and exclude international
-          flights. A {ADVANCE_PAYMENT_PERCENTAGE} deposit of the tour price is required at time of
-          booking.
+          All prices below are quoted on double occupancy and exclude
+          international flights. An advance of 50% is to be paid at the time of
+          booking and the remaining amount to be cleared prior to 30 days of
+          departure. Please{" "}
+          <a
+            href="/terms-and-conditions"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={classes.tc_link}
+          >
+            read the terms and conditions
+          </a>{" "}
+          carefully.
         </p>
 
         {/* Coupon Code Section */}

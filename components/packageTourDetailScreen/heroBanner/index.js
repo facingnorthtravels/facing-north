@@ -160,7 +160,10 @@ function HeroBanner({
                   <span className={classes.discounted_price}>{formatPrice(couponResult.finalPrice)}</span>
                 </div>
               ) : (
-                <span className={classes.trip_price}>{price || "0"}</span>
+                <span className={classes.trip_price}>
+                  <span className={classes.price_prefix}>Starting from </span>
+                  {price || "0"}
+                </span>
               )}
             </div>
           {/* )} */}

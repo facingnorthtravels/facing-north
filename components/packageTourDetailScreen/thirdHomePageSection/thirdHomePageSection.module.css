@@ -113,6 +113,15 @@
   max-width: 600px;
   text-align: center;
 }
+.tc_link {
+  color: #286675;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.tc_link:hover {
+  color: #1a4751;
+}
 .date_lists {
   width: 100%;
   margin-top: 30px;
@@ -149,8 +158,7 @@
 }
 .list_text h4 {
   color: #286675;
-  text-transform: uppercase;
-  font-size: 15px;
+  font-size: 16px;
 }
 .list_text p {
   font-size: 15px;
@@ -586,7 +594,6 @@
 }
 .cost_text_essential h2,
 .cost_text h2 {
-  text-transform: uppercase;
   font-size: 18px;
 }
 .cost_text_essential p,

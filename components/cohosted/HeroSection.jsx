@@ -75,9 +75,6 @@ const HeroSection = () => {
           <a href="#how-it-works" className={classes.nav_link}>
             How It Works
           </a>
-          <a href="#booking" className={classes.nav_link}>
-            Booking Info
-          </a>
         </div>
         <div className={classes.starting_btns}>
           <Link href="/book-now" className={classes.nav_contact_btn}>

@@ -47,7 +47,7 @@
 /* Hero title styles are defined in the nested h1 selector */
 
 .heroTitle h1 {
-  font-family: 'Butler', serif;
+  font-family: "b-ul", serif;
   font-weight: 300;
   font-size: 2rem;
   line-height: 1.2;
@@ -61,7 +61,7 @@
 }
 
 .heroDescription p {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "f-m", sans-serif;
   font-size: 1.125rem;
   line-height: 1.75;
   color: white;
@@ -78,7 +78,7 @@
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "f-m", sans-serif;
   font-size: 1rem;
   border: none;
   cursor: pointer;
@@ -95,7 +95,7 @@
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "f-m", sans-serif;
   font-size: 1rem;
   border: none;
   cursor: pointer;
@@ -143,7 +143,7 @@
   padding: 10px 20px;
   width: 215px;
   cursor: pointer;
-  text-transform: uppercase;
+  letter-spacing: 0.3px;
   transition: 0.3s ease-in-out;
   text-align: center;
 }
@@ -157,7 +157,7 @@
   display: flex;
   gap: 15px;
   font-size: 16px;
-  text-transform: uppercase;
+  letter-spacing: 0.3px;
 }
 
 .nav_link {
@@ -198,7 +198,7 @@
 }
 
 .sectionHeader h2 {
-  font-family: 'Butler', serif;
+  font-family: "b-ul", serif;
   font-weight: 300;
   font-size: 2rem;
   color: #1f2937;
@@ -212,7 +212,7 @@
 }
 
 .sectionDescription p {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "f-m", sans-serif;
   font-size: 1rem;
   color: #4b5563;
   line-height: 1.5;
@@ -254,7 +254,7 @@
 }
 
 .featureContent h3 {
-  font-family: 'Butler', serif;
+  font-family: "b-ul", serif;
   font-size: 16px;
   color: #1f2937;
   margin-bottom: 0.5rem;
@@ -262,7 +262,7 @@
 }
 
 .featureContent p {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "f-m", sans-serif;
   font-size: 1rem;
   color: #4b5563;
   line-height: 1.5;
@@ -275,7 +275,7 @@
 }
 
 .sectionFooter p {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "f-m", sans-serif;
   font-size: 1rem;
   color: #4b5563;
   line-height: 1.5;
@@ -295,58 +295,74 @@
 }
 
 .tourCard {
-  background-color: white;
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 4px;
   overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.tourCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(23, 96, 96, 0.1);
+  border-color: #e0e7e7;
 }
 
 .tourImageContainer {
   position: relative;
+  overflow: hidden;
 }
 
 .tourImage {
   width: 100%;
-  height: 15rem;
+  height: 16.5rem;
   object-fit: cover;
-  object-position: center 35%;
+  object-position: center 30%;
+  transition: transform 0.5s ease;
+}
+
+.tourCard:hover .tourImage {
+  transform: scale(1.05);
 }
 
 .tourStatus {
   position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
-  font-size: 0.75rem;
+  top: 0.85rem;
+  right: 0.85rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 2px;
+  font-family: "f-m", sans-serif;
+  font-size: 0.65rem;
   font-weight: 600;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
+  backdrop-filter: blur(2px);
 }
 
 .preLaunch {
-  background-color: #dc2626;
+  background-color: rgba(220, 38, 38, 0.92);
   color: white;
 }
 
 .openNow {
-  background-color: #10b981;
+  background-color: rgba(23, 96, 96, 0.92);
   color: white;
 }
 
 .comingSoon {
-  background-color: #f59e0b;
+  background-color: rgba(245, 158, 11, 0.92);
   color: white;
 }
 
 .tourContent {
-  padding: 1.5rem;
+  padding: 1.75rem;
 }
 
 .tourHost {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 }
 
 .hostImage {
@@ -357,22 +373,38 @@
 }
 
 .tourHost h3 {
-    font-family: 'Butler', serif;
-    font-size: 18px;
-    color: #1f2937;
+    font-family: "b-ul", serif;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    color: #181e1e;
 }
 
 .tourDetails {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin-bottom: 1.5rem;
+  gap: 0.7rem;
+  margin-bottom: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #f0f2f2;
 }
 
 .tourDetails p {
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1rem;
-  color: #4b5563;
+  font-family: "f-m", sans-serif;
+  font-size: 0.9rem;
+  color: #5a6b6b;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.tourDetails p strong {
+  color: #176060;
+  font-weight: 600;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  min-width: 88px;
+  align-self: center;
 }
 
 .statusPreLaunch {
@@ -389,29 +421,31 @@
 
 .tourButton {
   width: 100%;
-  background-color: #1f2937;
+  background-color: #176060;
   display: flex;
   justify-content: center;
   color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 0.875rem;
+  padding: 0.85rem 1rem;
+  border-radius: 2px;
+  font-family: "f-m", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .tourButton:hover {
-  background-color: rgba(31, 41, 55, 0.9);
+  background-color: #0f4a4a;
 }
 
 .primaryTourButton {
-  background-color: #286675;
+  background-color: #176060;
 }
 
 .primaryTourButton:hover {
-  background-color: rgba(40, 102, 117, 0.9);
+  background-color: #0f4a4a;
 }
 
 /* Why Join Section */
@@ -458,14 +492,14 @@
 }
 
 .benefitContent h3 {
-  font-family: 'Butler', serif;
+  font-family: "b-ul", serif;
   font-size: 16px;
   color: white;
   margin-bottom: 0.5rem;
 }
 
 .benefitContent p {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "f-m", sans-serif;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.5;
@@ -473,86 +507,165 @@
 
 /* How It Works Section */
 .howItWorksSection {
-  padding: 4rem 0;
-  background-color: #f9fafb;
-    scroll-margin-top:80px ;
-}
-
-.howItWorksSection .sectionHeader h2 {
-  color: black;
+  padding: 6.5rem 0;
+  background-color: #ffffff;
+  scroll-margin-top: 80px;
 }
 
 .highlight {
-  color: #286675;
+  color: #176060;
 }
 
-.stepsContainer {
+/* ===== Editorial header ===== */
+.howHeader {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 18px;
+}
+
+.howEyebrow {
+  font-family: "f-m", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #176060;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.howEyebrow::before,
+.howEyebrow::after {
+  content: "";
+  width: 26px;
+  height: 1px;
+  background-color: rgba(23, 96, 96, 0.4);
+}
+
+.howTitle {
+  font-family: "b-ul", serif;
+  font-size: 46px;
+  font-weight: 200;
+  line-height: 1.1;
+  color: #181e1e;
+  margin: 0;
+}
+
+.howIntro {
+  font-family: "f-m", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #6b7b7b;
+  margin: 0;
+}
+
+/* ===== Steps — borderless editorial row ===== */
+.stepsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  max-width: 1120px;
+  margin: 4.5rem auto 0;
   padding: 0 1rem;
 }
 
-.stepsColumn {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 2.5rem;
-}
-
 .step {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
+  padding: 36px 34px 8px;
+  border-top: 1px solid #e6ebeb;
 }
 
-.stepNumber {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+/* faint vertical divider between steps */
+.step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  right: 0;
+  bottom: 12px;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    rgba(23, 96, 96, 0.12),
+    rgba(23, 96, 96, 0)
+  );
 }
 
-.stepSvg {
-  width: 55px;
-  height: 55px;
-  object-fit: contain;
+.stepIndex {
+  font-family: "b-ul", serif;
+  font-size: 56px;
+  font-weight: 200;
+  line-height: 1;
+  color: #176060;
+  opacity: 0.32;
+  margin-bottom: 22px;
+  transition: opacity 0.35s ease;
 }
 
-.stepCircle {
-  position: relative;
-  width: 4rem;
-  height: 4rem;
-  background-color: #286675;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 1.5rem;
-  font-weight: 600;
+.step:hover .stepIndex {
+  opacity: 0.85;
 }
 
-.step h3 {
-  font-family: 'Butler', serif;
-  font-size: 1.125rem;
-  color: black;
-  margin-bottom: 0.5rem;
-  text-transform: capitalize;
+.stepTitle {
+  font-family: "b-ul", serif;
+  font-size: 22px;
   font-weight: 400;
+  line-height: 1.25;
+  color: #181e1e;
+  margin: 0 0 12px;
+  letter-spacing: 0.2px;
 }
 
-.step p {
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 0.875rem;
-  color: #374151;
-  line-height: 1.5;
-  max-width: 260px;
-  margin: 0 auto;
+.stepDesc {
+  font-family: "f-m", sans-serif;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #6b7b7b;
+  margin: 0;
+}
+
+.howCta {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+/* How It Works grid collapses: 4 -> 2 -> 1 */
+@media (max-width: 1023px) {
+  .stepsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 680px;
+    margin-top: 3.5rem;
+  }
+  /* drop the per-step vertical divider; keep only the top rule */
+  .step::after {
+    display: none;
+  }
+  .step {
+    padding: 32px 28px 8px;
+  }
+}
+
+@media (max-width: 560px) {
+  .stepsContainer {
+    grid-template-columns: 1fr;
+    max-width: 440px;
+  }
+  .howTitle {
+    font-size: 36px;
+  }
+  .stepIndex {
+    font-size: 48px;
+    margin-bottom: 16px;
+  }
 }
 
 .stepsImage {
@@ -607,14 +720,14 @@
 }
 
 .bookingContent h3 {
-  font-family: 'Butler', serif;
+  font-family: "b-ul", serif;
   font-size: 16px;
   color: black;
   margin-bottom: 0.5rem;
 }
 
 .bookingContent p {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "f-m", sans-serif;
   font-size: 1rem;
   color: #4b5563;
   line-height: 1.5;
@@ -638,7 +751,7 @@
   color: #4b5563;
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "f-m", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -650,38 +763,65 @@
 
 /* Gallery Section */
 .gallerySection {
-  padding: 4rem 0;
-  background-color: white;
+  padding: 6.5rem 0;
+  background-color: #ffffff;
 }
 
-.gallerySection .sectionHeader {
-  margin-bottom: 3.5rem;
-}
-
+/* Masonry-style gallery — handles mixed/portrait images cleanly */
 .gallery {
+  column-count: 4;
+  column-gap: 14px;
+  margin-top: 4rem;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr; /* mobile first */
-  grid-auto-rows: 200px; /* base row height for masonry spans */
-  gap: 3px; /* very tight gaps like reference */
-  margin: 0; /* remove side margins */
-  max-width: none; /* full width */
+}
+
+.galleryItem {
+  break-inside: avoid;
+  margin-bottom: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  background: #f0f2f2;
+}
+
+.galleryItem::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(23, 96, 96, 0);
+  transition: background 0.35s ease;
+}
+
+.galleryItem:hover::after {
+  background: rgba(23, 96, 96, 0.12);
 }
 
 .galleryImage {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  height: auto;
   display: block;
-  transition: all 0.3s ease;
+  object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.galleryImage:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-  filter: brightness(1.05);
+.galleryItem:hover .galleryImage {
+  transform: scale(1.04);
+}
+
+@media (max-width: 1024px) {
+  .gallery {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 700px) {
+  .gallery {
+    column-count: 2;
+    column-gap: 10px;
+  }
+  .galleryItem {
+    margin-bottom: 10px;
+  }
 }
 
 /* Newsletter Section */
@@ -736,7 +876,7 @@
 }
 
 .partnerTitle {
-  font-family: 'Inter', serif;
+  font-family: "b-ul", serif;
   font-weight: 800;
   font-size: 3rem;
   color: white;
@@ -744,7 +884,7 @@
 }
 
 .partnerSubtitle {
-  font-family: 'Inter', serif;
+  font-family: "b-ul", serif;
   font-weight: 800;
   font-size: 7rem;
   color: white;
@@ -753,7 +893,7 @@
 }
 
 .partnerText p {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "f-m", sans-serif;
   font-weight: 700;
   font-size: 1.125rem;
   color: white;
@@ -822,12 +962,6 @@
     height: 55px;
   }
 
-  /* Gallery: tablet */
-  .gallery {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 220px;
-    gap: 4px;
-  }
 }
 
 @media (min-width: 1024px) {
@@ -847,14 +981,6 @@
     grid-template-columns: repeat(3, 1fr);
   }
   
-  .stepsContainer {
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-    max-width: 90.6%;
-    padding: 0 1rem;
-  }
-  
   .stepsImage {
     width: 100%;
     max-width: 400px;
@@ -863,64 +989,6 @@
     margin: 0;
   }
   
-  
-  .stepsColumn {
-    width: 280px;
-    flex-shrink: 0;
-    gap: 2.5rem;
-  }
-  
-  .step {
-    text-align: left;
-    align-items: flex-start;
-  }
-  
-  .stepNumber {
-    justify-content: flex-start;
-  }
-  
-  .step h3 {
-    font-size: 22px;
-    margin-bottom: 0.5rem;
-  }
-  
-  .step p {
-    max-width: none;
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  
-  .stepSvg {
-    width: 40px;
-    height: 40px;
-  }
-  .leftColumn{
-      justify-content: right;
-      direction: rtl;
-    }
-  .leftColumn p, .leftColumn h3{
-    text-align: right;
-  }
-  /* Gallery: desktop - exact percentage positioning to match reference */
-  .gallery {
-    position: relative;
-    display: block;
-    aspect-ratio: 1895 / 1170; /* maintains proportions across screen sizes */
-    max-width: 100%;
-  }
-
-  .galleryImage {
-    position: absolute;
-  }
-
-  /* Percentages derived from the original pixel layout (1895x1170) */
-  .image1 { left: 0%; top: 0%; width: 29.38%; height: 39.74%; }
-  .image2 { left: 29.96%; top: 0%; width: 29.29%; height: 49.57%; }
-  .image3 { left: 59.94%; top: 0%; width: 41.32%; height: 49.57%; }
-  .image4 { left: 0%; top: 40.60%; width: 29.38%; height: 59.40%; }
-  .image5 { left: 29.96%; top: 50.43%; width: 41.79%; height: 49.57%; }
-  .image6 { left: 72.38%; top: 50.43%; width: 28.92%; height: 49.57%; }
   
   .partnerTitle {
     font-size: 4rem;
@@ -932,40 +1000,6 @@
   .inquiry {
     display: none;
   }
-.gallery {
-  position: relative;
-  display: block;
-  width: 100%;
-  aspect-ratio: 375 / 812; /* Mobile aspect ratio */
-  max-width: 100%;
-  margin-bottom: -60%;
-}
-
-.galleryImage {
-  position: absolute;
-  grid-column: unset;
-  grid-row: unset;
-}
-    .centerImage1 {
-    min-width: 278px;
-  }
-/* Mobile-specific percentage positioning to match screenshot */
-.image1 { left: 0%; top: 0%; width: 49.25%; height: 13.5%; }
-.image2 { left: 50.75%; top: 0%; width: 49.25%; height: 13.5%; }
-.image3 { left: 0%; top: 14%; width: 100% !important; height: 20%; }
-.image4 { left: 0%;
-  top: 34.5%;
-  width: 49.25%;
-  height: 20%; }
-.image5 { left: 0%;
-  top: 55.5%;
-  width: 100%;
-  height: 20%; }
-.image6 { left: 50.75%;
-  top: 34.5%;
-  width: 49.25%;
-  height: 20%;}
-.image7 { left: 0%; top: 48.5%; width: 100%; height: 20%; }
 }
 @media (max-width: 550px) {
   .heroButtons {
@@ -1025,16 +1059,6 @@
     width: 45px;
     height: 45px;
   }
-  
-  .step h3 {
-    font-size: 1rem;
-  }
-  
-  .step p {
-    font-size: 0.8rem;
-    max-width: 220px;
-  }
-  
 
 }
 
@@ -1065,23 +1089,9 @@
     padding: 0 0.5rem;
   }
   
-  .stepsColumn {
-    gap: 1.5rem;
-  }
-  
-  
   .stepSvg {
     width: 40px;
     height: 40px;
-  }
-  
-  .step h3 {
-    font-size: 0.95rem;
-  }
-  
-  .step p {
-    font-size: 0.75rem;
-    max-width: 200px;
   }
 }
 
@@ -1115,7 +1125,7 @@
 
 .formGroup label,
 .formGroupFull label {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "f-m", sans-serif;
   font-size: 0.95rem;
   font-weight: 500;
   color: #1f2937;
@@ -1132,7 +1142,7 @@
 .formGroupFull input,
 .formGroupFull select,
 .formGroupFull textarea {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "f-m", sans-serif;
   font-size: 1rem;
   padding: 0.75rem 1rem;
   border: 1.5px solid #d1d5db;
@@ -1179,7 +1189,7 @@
 }
 
 .errorMessage {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "f-m", sans-serif;
   font-size: 0.875rem;
   color: #dc2626;
   margin-top: -0.25rem;
