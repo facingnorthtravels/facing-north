@@ -299,6 +299,9 @@
   border: 1px solid #ececec;
   border-radius: 4px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
@@ -356,6 +359,9 @@
 
 .tourContent {
   padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .tourHost {
@@ -383,28 +389,31 @@
 .tourDetails {
   display: flex;
   flex-direction: column;
-  gap: 0.7rem;
+  gap: 1.1rem;
   margin-bottom: 1.75rem;
-  padding-top: 1.25rem;
+  padding-top: 1.4rem;
   border-top: 1px solid #f0f2f2;
+  flex: 1;
 }
 
+/* Stacked rows: small uppercase label over its value — identical on every card */
 .tourDetails p {
   font-family: "f-m", sans-serif;
-  font-size: 0.9rem;
-  color: #5a6b6b;
+  font-size: 0.92rem;
+  color: #2c3a3a;
   display: flex;
-  gap: 0.4rem;
+  flex-direction: column;
+  gap: 0.28rem;
+  line-height: 1.4;
+  margin: 0;
 }
 
 .tourDetails p strong {
   color: #176060;
   font-weight: 600;
-  font-size: 0.7rem;
-  letter-spacing: 1px;
+  font-size: 0.66rem;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
-  min-width: 88px;
-  align-self: center;
 }
 
 .statusPreLaunch {

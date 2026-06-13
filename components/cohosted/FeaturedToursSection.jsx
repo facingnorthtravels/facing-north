@@ -71,9 +71,9 @@ const FeaturedToursSection = () => {
                   <h3>{tour.host.name}</h3>
                 </div>
                 <div className={classes.tourDetails}>
-                  <p><strong>Destinations:</strong> {tour.destinations}</p>
-                  <p><strong>Dates:</strong> {tour.dates}</p>
-                  <p><strong>Status:</strong> <span>{tour.status}</span></p>
+                  <p><strong>Destinations</strong> <span>{tour.destinations}</span></p>
+                  <p><strong>Dates</strong> <span>{tour.dates}</span></p>
+                  <p><strong>Status</strong> <span>{tour.status}</span></p>
                 </div>
                 <Link href={tour.link} className={`${classes.tourButton} ${tour.buttonClass || ""}`}>
                   {tour.button}
