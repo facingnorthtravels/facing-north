@@ -84,7 +84,7 @@ export const parsePrice = (price) => {
  * @param {string} currency - The currency symbol (default: '$')
  * @returns {string} - Formatted price string
  */
-export const formatPrice = (amount, currency = '$') => {
+export const formatPrice = (amount, currency = '£') => {
   if (typeof amount !== 'number' || isNaN(amount)) return `${currency}0`;
   
   // Format with commas for thousands

@@ -11,7 +11,8 @@
       "Bash(git add *)",
       "Bash(git commit -m 'Add real highlight photos to Women'\\\\''s Adventure tour *)",
       "Bash(nslookup github.com)",
-      "Bash(ping -n 2 github.com)"
+      "Bash(ping -n 2 github.com)",
+      "Bash(git commit -m 'Fix PDF download resolving against current origin *)"
     ]
   }
 }

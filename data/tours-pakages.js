@@ -8135,10 +8135,6 @@ export const TOUR_PAKAGE = [
           pic: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/experience-textile-cooperative.jpg",
           title: "Women-Led Textile Cooperative",
         },
-        {
-          pic: "/assets/IMAGES/tour-packages/karakoram-wellness-culinary/experience-bonfire-night.jpg",
-          title: "Traditional Music & Bonfire Nights",
-        },
       ],
     },
     iternaries: [

@@ -122,7 +122,7 @@ const getCustomerEmailTemplate = (data) => `
                       </tr>
                       <tr>
                         <td style="padding: 6px 0; color: #666; font-size: 14px;">Price per Person</td>
-                        <td style="padding: 6px 0; color: #1a1a1a; font-size: 14px; text-align: right;">$${data.tourPricePerPerson?.toFixed(2) || data.originalPrice?.toFixed(2)}</td>
+                        <td style="padding: 6px 0; color: #1a1a1a; font-size: 14px; text-align: right;">£${data.tourPricePerPerson?.toFixed(2) || data.originalPrice?.toFixed(2)}</td>
                       </tr>
                       ${data.couponCode ? `
                       <tr>
@@ -133,12 +133,12 @@ const getCustomerEmailTemplate = (data) => `
                       ${data.discountAmount > 0 ? `
                       <tr>
                         <td style="padding: 6px 0; color: #666; font-size: 14px;">Discount</td>
-                        <td style="padding: 6px 0; color: #16a34a; font-size: 14px; text-align: right;">-$${data.discountAmount.toFixed(2)}</td>
+                        <td style="padding: 6px 0; color: #16a34a; font-size: 14px; text-align: right;">-£${data.discountAmount.toFixed(2)}</td>
                       </tr>
                       ` : ''}
                       <tr style="border-top: 2px solid #e5e5e5;">
                         <td style="padding: 16px 0 8px; color: #1a1a1a; font-size: 16px; font-weight: 700;">Total Paid</td>
-                        <td style="padding: 16px 0 8px; color: #059669; font-size: 20px; text-align: right; font-weight: 700;">$${data.amount.toFixed(2)} ${data.currency}</td>
+                        <td style="padding: 16px 0 8px; color: #059669; font-size: 20px; text-align: right; font-weight: 700;">£${data.amount.toFixed(2)} ${data.currency}</td>
                       </tr>
                     </table>
                   </td>

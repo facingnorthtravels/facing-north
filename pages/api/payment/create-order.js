@@ -287,7 +287,7 @@ export default async function handler(req, res) {
 
     const orderPayload = {
       amount: amountInCents,
-      currency: 'USD',
+      currency: 'GBP',
       customer_email: email,
       description: `Booking: ${tour.title} - ${travellers} traveller(s)`,
       metadata,
@@ -322,7 +322,7 @@ export default async function handler(req, res) {
       orderToken: orderToken, // Required for @revolut/checkout SDK
       checkoutUrl: checkoutUrl,
       amount: totalAmount,
-      currency: 'USD',
+      currency: 'GBP',
       tour: {
         id: tour.id,
         title: tour.title,
