@@ -1086,6 +1086,36 @@ const BookNow = () => {
                     <span>Travelers:</span>
                     <strong>{formData.numberOfTravellers || "1"}</strong>
                   </div>
+                  {(() => {
+                    const travellers = parseInt(formData.numberOfTravellers, 10) || 1;
+                    const perPerson = couponResult?.isValid
+                      ? couponResult.finalPrice
+                      : parsePrice(tourDetailData.price);
+                    const subtotal = perPerson * travellers;
+                    const onlineFee = Math.round(subtotal * 0.01 * 100) / 100;
+                    const total = subtotal + onlineFee;
+                    const deposit = Math.round(total * 0.5 * 100) / 100;
+                    return (
+                      <>
+                        <div className={classes.summary_item}>
+                          <span>Subtotal:</span>
+                          <strong>{formatPrice(subtotal)}</strong>
+                        </div>
+                        <div className={classes.summary_item}>
+                          <span>Online payment fee (1%):</span>
+                          <strong>{formatPrice(onlineFee)}</strong>
+                        </div>
+                        <div className={classes.summary_item}>
+                          <span>Full trip total:</span>
+                          <strong>{formatPrice(total)}</strong>
+                        </div>
+                        <div className={`${classes.summary_item} ${classes.summary_total}`}>
+                          <span>Deposit due now (50%):</span>
+                          <strong className={classes.final_price}>{formatPrice(deposit)}</strong>
+                        </div>
+                      </>
+                    );
+                  })()}
                 </div>
               )}
 
@@ -1110,10 +1140,16 @@ const BookNow = () => {
                           <path d="M21 4H3C1.89543 4 1 4.89543 1 6V18C1 19.1046 1.89543 20 3 20H21C22.1046 20 23 19.1046 23 18V6C23 4.89543 22.1046 4 21 4Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                           <path d="M1 10H23" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                         </svg>
-                        Pay Now - {couponResult?.isValid 
-                          ? formatPrice(couponResult.finalPrice * (parseInt(formData.numberOfTravellers, 10) || 1))
-                          : `${tourDetailData?.price} × ${formData.numberOfTravellers || 1}`
-                        }
+                        {(() => {
+                          const travellers = parseInt(formData.numberOfTravellers, 10) || 1;
+                          const perPerson = couponResult?.isValid
+                            ? couponResult.finalPrice
+                            : parsePrice(tourDetailData.price);
+                          const subtotal = perPerson * travellers;
+                          const total = subtotal + Math.round(subtotal * 0.01 * 100) / 100;
+                          const deposit = Math.round(total * 0.5 * 100) / 100;
+                          return `Pay 50% Deposit Now - ${formatPrice(deposit)}`;
+                        })()}
                       </>
                     )}
                   </button>

@@ -136,6 +136,12 @@ const getCustomerEmailTemplate = (data) => `
                         <td style="padding: 6px 0; color: #16a34a; font-size: 14px; text-align: right;">-£${data.discountAmount.toFixed(2)}</td>
                       </tr>
                       ` : ''}
+                      ${data.onlineFee > 0 ? `
+                      <tr>
+                        <td style="padding: 6px 0; color: #666; font-size: 14px;">Online payment fee (1%)</td>
+                        <td style="padding: 6px 0; color: #1a1a1a; font-size: 14px; text-align: right;">£${data.onlineFee.toFixed(2)}</td>
+                      </tr>
+                      ` : ''}
                       <tr style="border-top: 2px solid #e5e5e5;">
                         <td style="padding: 16px 0 8px; color: #1a1a1a; font-size: 16px; font-weight: 700;">Total Paid</td>
                         <td style="padding: 16px 0 8px; color: #059669; font-size: 20px; text-align: right; font-weight: 700;">£${data.amount.toFixed(2)} ${data.currency}</td>
@@ -541,12 +547,13 @@ export default async function handler(req, res) {
       // Pricing
       numberOfTravellers: parseInt(metadata.numberOfTravellers) || 1,
       amount: order.amount / 100,
-      currency: order.currency || 'USD',
+      currency: order.currency || 'GBP',
       originalPrice: parseFloat(metadata.originalPrice) || 0,
       finalPrice: parseFloat(metadata.finalPrice) || 0,
       couponCode: escapeHtml(metadata.couponCode || ''),
       discountAmount: parseFloat(metadata.discountAmount) || 0,
-      
+      onlineFee: parseFloat(metadata.onlineFee) || 0,
+
       // Host Info
       hostId: escapeHtml(metadata.hostId || ''),
       hostName: escapeHtml(metadata.hostName || ''),

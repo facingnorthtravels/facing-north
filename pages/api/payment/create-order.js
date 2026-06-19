@@ -192,11 +192,23 @@ export default async function handler(req, res) {
       });
     }
 
-    // Calculate total amount (per person * number of travellers)
-    const totalAmount = priceDetails.finalPrice * travellers;
-    
+    // Calculate subtotal (per person * number of travellers, after any discount)
+    const subtotalAmount = priceDetails.finalPrice * travellers;
+
+    // 1% online payment fee, applied to the discounted subtotal.
+    // Only added here because this route is the card/online payment path.
+    const ONLINE_FEE_RATE = 0.01;
+    const onlineFeeAmount = Math.round(subtotalAmount * ONLINE_FEE_RATE * 100) / 100;
+
+    // Final amount the customer pays
+    const totalAmount = subtotalAmount + onlineFeeAmount;
+
+    // Charge 50% deposit now; remainder due before trip
+    const DEPOSIT_RATE = 0.5;
+    const depositAmount = Math.round(totalAmount * DEPOSIT_RATE * 100) / 100;
+
     // Amount in minor units (cents)
-    const amountInCents = Math.round(totalAmount * 100);
+    const amountInCents = Math.round(depositAmount * 100);
 
     // =====================================
     // 4. IDEMPOTENCY CHECK (PREVENT DOUBLE PAYMENTS)
@@ -253,6 +265,8 @@ export default async function handler(req, res) {
       discountAmount: priceDetails.discountAmount,
       couponCode: priceDetails.couponCode || '',
       numberOfTravellers: travellers,
+      onlineFee: onlineFeeAmount,
+      subtotalBeforeFee: subtotalAmount,
       // Host Info
       hostId: hostDetails?.id || '',
       hostName: hostDetails?.name || '',
@@ -321,7 +335,7 @@ export default async function handler(req, res) {
       orderId: orderId,
       orderToken: orderToken, // Required for @revolut/checkout SDK
       checkoutUrl: checkoutUrl,
-      amount: totalAmount,
+      amount: depositAmount,
       currency: 'GBP',
       tour: {
         id: tour.id,
@@ -333,7 +347,11 @@ export default async function handler(req, res) {
         numberOfTravellers: travellers,
         subtotal: priceDetails.originalPrice * travellers,
         discount: priceDetails.discountAmount * travellers,
+        onlineFee: onlineFeeAmount,
+        onlineFeeRate: ONLINE_FEE_RATE,
         total: totalAmount,
+        depositRate: DEPOSIT_RATE,
+        depositAmount: depositAmount,
         couponApplied: priceDetails.couponApplied,
         couponCode: priceDetails.couponCode,
       },
