@@ -48,219 +48,225 @@ const getCustomerEmailTemplate = (data) => `
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Booking Confirmation</title>
+  <title>Official Booking Confirmation – Facing North Travels</title>
 </head>
-<body style="margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #f5f5f5;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f5f5f5; padding: 40px 20px;">
+<body style="margin: 0; padding: 0; font-family: Georgia, 'Times New Roman', serif; background-color: #f0f0ee;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f0f0ee; padding: 40px 20px;">
     <tr>
       <td align="center">
-        <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
-          <!-- Header -->
+        <table width="640" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border: 1px solid #ddd; border-radius: 4px;">
+
+          <!-- Logo -->
           <tr>
-            <td style="background: linear-gradient(135deg, #176060 0%, #176060 100%); padding: 40px; text-align: center;">
-              <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: 700;">🎉 Booking Confirmed!</h1>
-              <p style="color: #cccccc; margin: 10px 0 0; font-size: 16px;">Your adventure with Facing North awaits</p>
+            <td style="padding: 36px 48px 16px; text-align: center; border-bottom: 1px solid #e0e0e0;">
+              <img src="${data.siteUrl}/assets/logo.png" alt="Facing North Travels" width="90" style="display: block; margin: 0 auto 12px;" />
             </td>
           </tr>
-          
-          <!-- Content -->
+
+          <!-- Letter Title -->
           <tr>
-            <td style="padding: 40px;">
-              <p style="color: #333; font-size: 16px; line-height: 1.6; margin: 0 0 20px;">
-                Dear <strong>${data.customerName}</strong>,
+            <td style="padding: 28px 48px 0; text-align: center;">
+              <h1 style="margin: 0; font-size: 20px; font-weight: 700; letter-spacing: 1px; color: #1a1a1a; text-transform: uppercase;">Official Booking Confirmation Letter</h1>
+            </td>
+          </tr>
+
+          <!-- Company Info -->
+          <tr>
+            <td style="padding: 24px 48px 0;">
+              <p style="margin: 0; font-size: 14px; font-weight: 700; color: #1a1a1a;">Facing North Travels (Pvt) Ltd</p>
+              <p style="margin: 4px 0 0; font-size: 13px; color: #555;">License No. 10751 – DTS Registered</p>
+            </td>
+          </tr>
+
+          <!-- Salutation -->
+          <tr>
+            <td style="padding: 24px 48px 0;">
+              <p style="margin: 0; font-size: 14px; color: #1a1a1a;">Dear <strong>${data.customerName}</strong>,</p>
+            </td>
+          </tr>
+
+          <!-- Opening paragraph -->
+          <tr>
+            <td style="padding: 14px 48px 0;">
+              <p style="margin: 0; font-size: 14px; color: #333; line-height: 1.7;">
+                We are pleased to issue this official confirmation letter acknowledging your successful registration for the upcoming group expedition:
               </p>
-              <p style="color: #666; font-size: 16px; line-height: 1.6; margin: 0 0 30px;">
-                Thank you for booking with Facing North! We're thrilled to have you join us on this incredible adventure. Your payment has been successfully processed.
-              </p>
-              
-              <!-- Tour Details Box -->
-              <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f0fdf4; border-radius: 8px; margin-bottom: 24px;">
+            </td>
+          </tr>
+
+          <!-- Trip Summary -->
+          <tr>
+            <td style="padding: 20px 48px 0;">
+              <table cellpadding="0" cellspacing="0">
+                ${data.hostDate ? `
                 <tr>
-                  <td style="padding: 24px;">
-                    <h3 style="color: #166534; margin: 0 0 15px; font-size: 18px;">🏔️ Tour Details</h3>
-                    <table width="100%" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td style="padding: 6px 0; color: #666; font-size: 14px;">Tour Name</td>
-                        <td style="padding: 6px 0; color: #1a1a1a; font-size: 14px; text-align: right; font-weight: 600;">${data.tourTitle}</td>
-                      </tr>
-                      ${data.tourDuration ? `
-                      <tr>
-                        <td style="padding: 6px 0; color: #666; font-size: 14px;">Duration</td>
-                        <td style="padding: 6px 0; color: #1a1a1a; font-size: 14px; text-align: right;">${data.tourDuration}</td>
-                      </tr>
-                      ` : ''}
-                      ${data.hostName ? `
-                      <tr>
-                        <td style="padding: 6px 0; color: #666; font-size: 14px;">Hosted By</td>
-                        <td style="padding: 6px 0; color: #1a1a1a; font-size: 14px; text-align: right;">${data.hostName}</td>
-                      </tr>
-                      ` : ''}
-                      ${data.hostDate ? `
-                      <tr>
-                        <td style="padding: 6px 0; color: #666; font-size: 14px;">Trip Date</td>
-                        <td style="padding: 6px 0; color: #1a1a1a; font-size: 14px; text-align: right;">${data.hostDate}</td>
-                      </tr>
-                      ` : ''}
-                      <tr>
-                        <td style="padding: 6px 0; color: #666; font-size: 14px;">Number of Travellers</td>
-                        <td style="padding: 6px 0; color: #1a1a1a; font-size: 14px; text-align: right;">${data.numberOfTravellers}</td>
-                      </tr>
-                    </table>
-                  </td>
+                  <td style="padding: 3px 0; font-size: 14px; color: #1a1a1a; font-weight: 700; white-space: nowrap; padding-right: 8px;">Tour Dates:</td>
+                  <td style="padding: 3px 0; font-size: 14px; color: #1a1a1a;"><em>${data.hostDate}</em></td>
                 </tr>
-              </table>
-              
-              <!-- Order Details Box -->
-              <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f9f9f9; border-radius: 8px; margin-bottom: 24px;">
+                ` : ''}
+                ${data.tourDuration ? `
                 <tr>
-                  <td style="padding: 24px;">
-                    <h3 style="color: #1a1a1a; margin: 0 0 15px; font-size: 18px;">💳 Payment Details</h3>
-                    <table width="100%" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td style="padding: 6px 0; color: #666; font-size: 14px;">Order ID</td>
-                        <td style="padding: 6px 0; color: #1a1a1a; font-size: 12px; text-align: right; font-family: monospace;">${data.orderId}</td>
-                      </tr>
-                      <tr>
-                        <td style="padding: 6px 0; color: #666; font-size: 14px;">Price per Person</td>
-                        <td style="padding: 6px 0; color: #1a1a1a; font-size: 14px; text-align: right;">£${data.tourPricePerPerson?.toFixed(2) || data.originalPrice?.toFixed(2)}</td>
-                      </tr>
-                      ${data.couponCode ? `
-                      <tr>
-                        <td style="padding: 6px 0; color: #666; font-size: 14px;">Coupon Applied</td>
-                        <td style="padding: 6px 0; color: #16a34a; font-size: 14px; text-align: right; font-weight: 600;">${data.couponCode}</td>
-                      </tr>
-                      ` : ''}
-                      ${data.discountAmount > 0 ? `
-                      <tr>
-                        <td style="padding: 6px 0; color: #666; font-size: 14px;">Discount</td>
-                        <td style="padding: 6px 0; color: #16a34a; font-size: 14px; text-align: right;">-£${data.discountAmount.toFixed(2)}</td>
-                      </tr>
-                      ` : ''}
-                      ${data.onlineFee > 0 ? `
-                      <tr>
-                        <td style="padding: 6px 0; color: #666; font-size: 14px;">Online payment fee (1%)</td>
-                        <td style="padding: 6px 0; color: #1a1a1a; font-size: 14px; text-align: right;">£${data.onlineFee.toFixed(2)}</td>
-                      </tr>
-                      ` : ''}
-                      <tr style="border-top: 2px solid #e5e5e5;">
-                        <td style="padding: 16px 0 8px; color: #1a1a1a; font-size: 16px; font-weight: 700;">Total Paid</td>
-                        <td style="padding: 16px 0 8px; color: #059669; font-size: 20px; text-align: right; font-weight: 700;">£${data.amount.toFixed(2)} ${data.currency}</td>
-                      </tr>
-                    </table>
-                  </td>
+                  <td style="padding: 3px 0; font-size: 14px; color: #1a1a1a; font-weight: 700; white-space: nowrap; padding-right: 8px;">Duration:</td>
+                  <td style="padding: 3px 0; font-size: 14px; color: #1a1a1a;">${data.tourDuration}</td>
                 </tr>
-              </table>
-              
-              <!-- Passenger Details -->
-              <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f0f9ff; border-radius: 8px; margin-bottom: 24px;">
+                ` : ''}
                 <tr>
-                  <td style="padding: 24px;">
-                    <h3 style="color: #1a1a1a; margin: 0 0 15px; font-size: 18px;">👤 Passenger Details</h3>
-                    <table width="100%" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td style="padding: 4px 0; color: #666; font-size: 14px; width: 120px;">Full Name</td>
-                        <td style="padding: 4px 0; color: #1a1a1a; font-size: 14px;">${data.passengerFullName || data.customerName}</td>
-                      </tr>
-                      <tr>
-                        <td style="padding: 4px 0; color: #666; font-size: 14px;">Email</td>
-                        <td style="padding: 4px 0; color: #1a1a1a; font-size: 14px;">${data.passengerEmail || data.customerEmail}</td>
-                      </tr>
-                      ${data.passengerPhone || data.customerPhone ? `
-                      <tr>
-                        <td style="padding: 4px 0; color: #666; font-size: 14px;">Phone</td>
-                        <td style="padding: 4px 0; color: #1a1a1a; font-size: 14px;">${data.passengerPhone || data.customerPhone}</td>
-                      </tr>
-                      ` : ''}
-                      ${data.passportNumber ? `
-                      <tr>
-                        <td style="padding: 4px 0; color: #666; font-size: 14px;">Passport No.</td>
-                        <td style="padding: 4px 0; color: #1a1a1a; font-size: 14px;">${data.passportNumber}</td>
-                      </tr>
-                      ` : ''}
-                      ${data.gender ? `
-                      <tr>
-                        <td style="padding: 4px 0; color: #666; font-size: 14px;">Gender</td>
-                        <td style="padding: 4px 0; color: #1a1a1a; font-size: 14px;">${data.gender}</td>
-                      </tr>
-                      ` : ''}
-                      ${data.dateOfBirth ? `
-                      <tr>
-                        <td style="padding: 4px 0; color: #666; font-size: 14px;">Date of Birth</td>
-                        <td style="padding: 4px 0; color: #1a1a1a; font-size: 14px;">${data.dateOfBirth}</td>
-                      </tr>
-                      ` : ''}
-                      ${(data.city || data.country) ? `
-                      <tr>
-                        <td style="padding: 4px 0; color: #666; font-size: 14px;">Location</td>
-                        <td style="padding: 4px 0; color: #1a1a1a; font-size: 14px;">${[data.city, data.country].filter(Boolean).join(', ')}</td>
-                      </tr>
-                      ` : ''}
-                    </table>
-                  </td>
+                  <td style="padding: 3px 0; font-size: 14px; color: #1a1a1a; font-weight: 700; white-space: nowrap; padding-right: 8px;">Package Cost:</td>
+                  <td style="padding: 3px 0; font-size: 14px; color: #1a1a1a; font-weight: 700;">£${data.tourPricePerPerson?.toFixed(2) || data.originalPrice?.toFixed(2)} per person</td>
                 </tr>
-              </table>
-              
-              <!-- Trip Options -->
-              ${(data.roomPreference || data.flightPreference) ? `
-              <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #fefce8; border-radius: 8px; margin-bottom: 24px;">
                 <tr>
-                  <td style="padding: 24px;">
-                    <h3 style="color: #1a1a1a; margin: 0 0 15px; font-size: 18px;">⚙️ Your Preferences</h3>
-                    <table width="100%" cellpadding="0" cellspacing="0">
-                      ${data.roomPreference ? `
-                      <tr>
-                        <td style="padding: 4px 0; color: #666; font-size: 14px; width: 120px;">Room</td>
-                        <td style="padding: 4px 0; color: #1a1a1a; font-size: 14px;">${data.roomPreference}</td>
-                      </tr>
-                      ` : ''}
-                      ${data.flightPreference ? `
-                      <tr>
-                        <td style="padding: 4px 0; color: #666; font-size: 14px;">Flight Quote</td>
-                        <td style="padding: 4px 0; color: #1a1a1a; font-size: 14px;">${data.flightPreference}</td>
-                      </tr>
-                      ` : ''}
-                      ${data.additionalInfo ? `
-                      <tr>
-                        <td style="padding: 4px 0; color: #666; font-size: 14px; vertical-align: top;">Additional Info</td>
-                        <td style="padding: 4px 0; color: #1a1a1a; font-size: 14px;">${data.additionalInfo}</td>
-                      </tr>
-                      ` : ''}
-                    </table>
-                  </td>
+                  <td style="padding: 3px 0; font-size: 14px; color: #1a1a1a; font-weight: 700; white-space: nowrap; padding-right: 8px;">Room Basis:</td>
+                  <td style="padding: 3px 0; font-size: 14px; color: #1a1a1a;">${data.roomPreference || 'Standard'}</td>
                 </tr>
-              </table>
-              ` : ''}
-              
-              <!-- Next Steps -->
-              <h3 style="color: #1a1a1a; margin: 0 0 15px; font-size: 18px;">📋 What's Next?</h3>
-              <ul style="color: #666; font-size: 14px; line-height: 1.8; padding-left: 20px; margin: 0 0 30px;">
-                <li>You'll receive a detailed itinerary within 24-48 hours</li>
-                <li>Our team will contact you to confirm travel dates and arrangements</li>
-                <li>Please ensure your passport is valid for at least 6 months</li>
-                <li>Start preparing for your adventure!</li>
-              </ul>
-              
-              <!-- CTA Button -->
-              <table width="100%" cellpadding="0" cellspacing="0">
+                ${data.hostName ? `
                 <tr>
-                  <td align="center" style="padding: 20px 0;">
-                    <a href="${data.siteUrl}/contact" style="display: inline-block; background: linear-gradient(135deg, #176060 0%, #176060 100%); color: #ffffff; text-decoration: none; padding: 14px 40px; border-radius: 8px; font-size: 16px; font-weight: 600;">Contact Us</a>
+                  <td style="padding: 3px 0; font-size: 14px; color: #1a1a1a; font-weight: 700; white-space: nowrap; padding-right: 8px;">Hosted By:</td>
+                  <td style="padding: 3px 0; font-size: 14px; color: #1a1a1a;"><em>${data.hostName}</em></td>
+                </tr>
+                ` : ''}
+              </table>
+            </td>
+          </tr>
+
+          <!-- Deposit Paid Notice -->
+          <tr>
+            <td style="padding: 20px 48px 0;">
+              <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f0fdf4; border-left: 4px solid #176060; border-radius: 4px;">
+                <tr>
+                  <td style="padding: 14px 16px;">
+                    <p style="margin: 0; font-size: 13px; color: #166534; font-weight: 700;">Deposit Paid: £${data.amount.toFixed(2)} ${data.currency}</p>
+                    <p style="margin: 4px 0 0; font-size: 12px; color: #555;">50% deposit received. The remaining balance is due prior to departure.</p>
+                    ${data.couponCode ? `<p style="margin: 4px 0 0; font-size: 12px; color: #166534;">Coupon applied: ${data.couponCode} (saving £${data.discountAmount.toFixed(2)})</p>` : ''}
                   </td>
                 </tr>
               </table>
             </td>
           </tr>
-          
-          <!-- Footer -->
+
+          <!-- Guest Information -->
           <tr>
-            <td style="background-color: #1a1a1a; padding: 30px; text-align: center;">
-              <p style="color: #999; font-size: 14px; margin: 0 0 10px;">Facing North Travels - Adventure Tours</p>
-              <p style="color: #666; font-size: 12px; margin: 0;">
-                Questions? Reply to this email or contact us at<br>
+            <td style="padding: 32px 48px 0;">
+              <h2 style="margin: 0 0 14px; font-size: 17px; font-weight: 700; color: #1a1a1a; border-bottom: 2px solid #1a1a1a; padding-bottom: 6px;">Guest Information</h2>
+              <table cellpadding="0" cellspacing="4">
+                <tr>
+                  <td style="font-size: 14px; color: #1a1a1a; font-weight: 700; padding-right: 12px; white-space: nowrap; vertical-align: top; padding-bottom: 5px;">Full Name:</td>
+                  <td style="font-size: 14px; color: #333; padding-bottom: 5px;">${data.passengerFullName || data.customerName}</td>
+                </tr>
+                ${data.gender ? `
+                <tr>
+                  <td style="font-size: 14px; color: #1a1a1a; font-weight: 700; padding-right: 12px; white-space: nowrap; vertical-align: top; padding-bottom: 5px;">Gender:</td>
+                  <td style="font-size: 14px; color: #333; padding-bottom: 5px; text-transform: capitalize;">${data.gender}</td>
+                </tr>
+                ` : ''}
+                ${data.dateOfBirth ? `
+                <tr>
+                  <td style="font-size: 14px; color: #1a1a1a; font-weight: 700; padding-right: 12px; white-space: nowrap; vertical-align: top; padding-bottom: 5px;">Date of Birth:</td>
+                  <td style="font-size: 14px; color: #333; padding-bottom: 5px;">${data.dateOfBirth}</td>
+                </tr>
+                ` : ''}
+                ${data.country ? `
+                <tr>
+                  <td style="font-size: 14px; color: #1a1a1a; font-weight: 700; padding-right: 12px; white-space: nowrap; vertical-align: top; padding-bottom: 5px;">Nationality:</td>
+                  <td style="font-size: 14px; color: #333; padding-bottom: 5px;">${data.country}</td>
+                </tr>
+                ` : ''}
+                ${data.address ? `
+                <tr>
+                  <td style="font-size: 14px; color: #1a1a1a; font-weight: 700; padding-right: 12px; white-space: nowrap; vertical-align: top; padding-bottom: 5px;">Address:</td>
+                  <td style="font-size: 14px; color: #333; padding-bottom: 5px;">${[data.address, data.city, data.country].filter(Boolean).join(', ')}</td>
+                </tr>
+                ` : ''}
+                <tr>
+                  <td style="font-size: 14px; color: #1a1a1a; font-weight: 700; padding-right: 12px; white-space: nowrap; vertical-align: top; padding-bottom: 5px;">Email:</td>
+                  <td style="font-size: 14px; color: #333; padding-bottom: 5px;">${data.passengerEmail || data.customerEmail}</td>
+                </tr>
+                ${data.passengerPhone || data.customerPhone ? `
+                <tr>
+                  <td style="font-size: 14px; color: #1a1a1a; font-weight: 700; padding-right: 12px; white-space: nowrap; vertical-align: top; padding-bottom: 5px;">Phone:</td>
+                  <td style="font-size: 14px; color: #333; padding-bottom: 5px;">${data.passengerPhone || data.customerPhone}</td>
+                </tr>
+                ` : ''}
+                ${data.passportNumber ? `
+                <tr>
+                  <td style="font-size: 14px; color: #1a1a1a; font-weight: 700; padding-right: 12px; white-space: nowrap; vertical-align: top; padding-bottom: 5px;">Passport No.:</td>
+                  <td style="font-size: 14px; color: #333; padding-bottom: 5px;">${data.passportNumber}</td>
+                </tr>
+                ` : ''}
+              </table>
+            </td>
+          </tr>
+
+          <!-- Booking Status -->
+          <tr>
+            <td style="padding: 32px 48px 0;">
+              <h2 style="margin: 0 0 14px; font-size: 17px; font-weight: 700; color: #1a1a1a; border-bottom: 2px solid #1a1a1a; padding-bottom: 6px;">Booking Status</h2>
+              <table cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="font-size: 14px; color: #333; padding: 4px 0; vertical-align: top;">&#9679;&nbsp;&nbsp;</td>
+                  <td style="font-size: 14px; color: #333; padding: 4px 0;">Terms &amp; Conditions have been accepted</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 14px; color: #333; padding: 4px 0; vertical-align: top;">&#9679;&nbsp;&nbsp;</td>
+                  <td style="font-size: 14px; color: #333; padding: 4px 0;">Itinerary has been reviewed and agreed</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 14px; color: #333; padding: 4px 0; vertical-align: top;">&#9679;&nbsp;&nbsp;</td>
+                  <td style="font-size: 14px; color: #333; padding: 4px 0;">Travel guidelines have been acknowledged</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 14px; color: #333; padding: 4px 0; vertical-align: top;">&#9679;&nbsp;&nbsp;</td>
+                  <td style="font-size: 14px; color: #333; padding: 4px 0;">Flight arrangements are <em>not required</em> through Facing North${data.flightPreference && data.flightPreference !== 'Not flight quote required' ? ` (${data.flightPreference})` : ''}</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 14px; color: #333; padding: 4px 0; vertical-align: top;">&#9679;&nbsp;&nbsp;</td>
+                  <td style="font-size: 14px; color: #333; padding: 4px 0;">Room sharing preference has been confirmed</td>
+                </tr>
+                <tr>
+                  <td style="font-size: 14px; color: #333; padding: 4px 0; vertical-align: top;">&#9679;&nbsp;&nbsp;</td>
+                  <td style="font-size: 14px; color: #333; padding: 4px 0;">Your place on the tour is <strong>secured</strong></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Closing paragraph -->
+          <tr>
+            <td style="padding: 28px 48px 0;">
+              <p style="margin: 0; font-size: 14px; color: #333; line-height: 1.7;">
+                We thank you for choosing <strong>Facing North Travels</strong> and look forward to welcoming you on an unforgettable journey across the northern valleys of Pakistan.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 14px 48px 0;">
+              <p style="margin: 0; font-size: 14px; color: #333; line-height: 1.7;">
+                Should you require any additional assistance, please do not hesitate to contact us.
+              </p>
+            </td>
+          </tr>
+
+          <!-- Signature -->
+          <tr>
+            <td style="padding: 24px 48px 40px;">
+              <p style="margin: 0; font-size: 14px; color: #333;">Warm regards,</p>
+              <p style="margin: 8px 0 0; font-size: 14px; font-weight: 700; color: #1a1a1a;">Team Facing North</p>
+              <p style="margin: 2px 0 0; font-size: 13px; color: #555;">Facing North Travels (Pvt) Ltd</p>
+              <p style="margin: 2px 0 0; font-size: 13px; color: #555;">
                 <a href="mailto:info@facingnorthtravels.com" style="color: #176060; text-decoration: none;">info@facingnorthtravels.com</a>
               </p>
             </td>
           </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background-color: #176060; padding: 18px 48px; text-align: center;">
+              <p style="color: #cde8e8; font-size: 12px; margin: 0; font-family: Arial, sans-serif;">
+                Facing North Travels (Pvt) Ltd &nbsp;|&nbsp; License No. 10751 – DTS Registered &nbsp;|&nbsp;
+                <a href="mailto:info@facingnorthtravels.com" style="color: #ffffff; text-decoration: none;">info@facingnorthtravels.com</a>
+              </p>
+            </td>
+          </tr>
+
         </table>
       </td>
     </tr>
@@ -601,7 +607,7 @@ export default async function handler(req, res) {
     const { data: customerData, error: customerError } = await resend.emails.send({
       from: `${FROM_NAME} <${FROM_EMAIL}>`,
       to: [emailData.customerEmail],
-      subject: `🎉 Booking Confirmed - ${emailData.tourTitle}`,
+      subject: `Official Booking Confirmation – ${emailData.tourTitle} | Facing North Travels`,
       html: getCustomerEmailTemplate(emailData),
       reply_to: FROM_EMAIL,
     });
