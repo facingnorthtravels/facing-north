@@ -4,6 +4,48 @@
 
 export const SPECIALIST_PROFILES = [
   {
+    id: "2",
+    specialist_name: "Ali Imran",
+    specialist_slug: "ali-imran-pakistan",
+    specialist_photo: "/assets/cohosted_profile/ali-imran.webp",
+    specialist_og_image: "",
+    hero_image: "/assets/cohosted_profile/ali-imran-hero.jpg",
+    is_verified: true,
+    specialisation_type: "Adventure & Trekking",
+
+    bio_text:
+      "Placeholder bio for Ali Imran — travel guide and adventure specialist.",
+
+    usp_statement: "",
+
+    website_url: "",
+    linkedin_url: "",
+    instagram_url: "",
+
+    highlight_destinations: "",
+    highlight_years: null,
+    highlight_languages: "English, Urdu",
+    highlight_certifications: "",
+    highlight_specialisation: "",
+    highlight_labels: {
+      certifications: "Background",
+      specialisation: "Specialities",
+    },
+
+    itineraries: [],
+
+    gallery_images: [],
+
+    specialist_video_url: "",
+
+    gallery_quote: "",
+
+    reviews: [],
+
+    cta_pitch_text: "",
+    max_group_size: 14,
+  },
+  {
     id: "1",
     specialist_name: "Najma Mehmood",
     specialist_slug: "najma-mehmood-pakistan",

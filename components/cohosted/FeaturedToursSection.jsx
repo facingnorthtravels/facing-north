@@ -22,6 +22,25 @@ const FeaturedToursSection = () => {
     buttonClass: profile.tour.buttonClass === 'openNow' ? classes.primaryTourButton : ""
   }));
 
+  // Ali Imran — Travel Guide and adventure specialist.
+  const ali = getSpecialistProfileBySlug("ali-imran-pakistan");
+  if (ali) {
+    tours.push({
+      image: ali.specialist_photo,
+      status: "Coming Soon",
+      host: {
+        name: ali.specialist_name,
+        image: ali.specialist_photo,
+      },
+      destinations: "TBD",
+      dates: "TBD",
+      statusClass: classes.preLaunch,
+      link: `/specialist-profile/${ali.specialist_slug}`,
+      button: "Learn More",
+      buttonClass: "",
+    });
+  }
+
   // Najma Mehmood — Travel Specialist hosting women-led community trips.
   // Links to her existing specialist profile rather than a cohosted page.
   const najma = getSpecialistProfileBySlug("najma-mehmood-pakistan");

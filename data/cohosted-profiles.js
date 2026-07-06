@@ -62,18 +62,18 @@ export const COHOSTED_PROFILES = [
       // status: "Pre-Launch",
       status: "Open Now",
       destinations: "Around Karakoram, Hunza",
-      dates: "April 2026 and October 2026",
+      dates: "October 2026 and April 2027",
       button: "Join Now",
       // buttonClass: "preLaunch"
       buttonClass: "openNow",
     },
     upcomingItineraries: [
       {
-        sectionTitle: "Upcomming Spring & Autumn Itineraries 2026",
+        sectionTitle: "Upcoming Itineraries",
         itineraries: [
           {
             id: 1,
-            date: "April 9 – 18, 2026 (10 days)",
+            date: "April 9 – 18, 2027 (10 days)",
             title: "Journey Through the Heart of Karakoram",
             travelers: "12 travelers",
             rating: 5.0,
@@ -213,17 +213,17 @@ export const COHOSTED_PROFILES = [
       image: "/assets/cohosted/feature_cohosted_card.jpg",
       status: "Open Now",
       destinations: "Around Karakoram, Hunza",
-      dates: "April 2026 and October 2026",
+      dates: "October 2026 and April 2027",
       button: "Join Now",
       buttonClass: "openNow",
     },
     upcomingItineraries: [
       {
-        sectionTitle: "Upcomming Spring & Autumn Itineraries 2026",
+        sectionTitle: "Upcoming Itineraries",
         itineraries: [
           {
             id: 1,
-            date: "April 2 – 11, 2026 (10 days)",
+            date: "April 2 – 11, 2027 (10 days)",
             title: "Journey Through the Heart of Karakoram",
             travelers: "12 travelers",
             rating: 5.0,
@@ -364,18 +364,18 @@ export const COHOSTED_PROFILES = [
       // status: "COMMING SOON",
       status: "Open Now",
       destinations: "Around Karakoram, Hunza",
-      dates: "April 2026 and October 2026",
+      dates: "October 2026 and April 2027",
       button: "Join Now",
       // buttonClass: "comingSoon"
       buttonClass: "openNow",
     },
     upcomingItineraries: [
       {
-        sectionTitle: "Upcomming Spring & Autumn Itineraries 2026",
+        sectionTitle: "Upcoming Itineraries",
         itineraries: [
           {
             id: 1,
-            date: "April 2 – 11, 2026 (10 days)",
+            date: "April 2 – 11, 2027 (10 days)",
             title: "Journey Through the Heart of Karakoram",
             travelers: "12 travelers",
             rating: 5.0,
@@ -516,17 +516,17 @@ export const COHOSTED_PROFILES = [
       image: "/assets/cohosted/feature_cohosted_card.jpg",
       status: "Open Now",
       destinations: "Around Karakoram, Hunza",
-      dates: "April 2026 and October 2026",
+      dates: "October 2026 and April 2027",
       button: "Join Now",
       buttonClass: "openNow",
     },
     upcomingItineraries: [
       {
-        sectionTitle: "Upcomming Spring & Autumn Itineraries 2026",
+        sectionTitle: "Upcoming Itineraries",
         itineraries: [
           {
             id: 1,
-            date: "April 9 – 18, 2026 (10 days)",
+            date: "April 9 – 18, 2027 (10 days)",
             title: "Journey Through the Heart of Karakoram",
             travelers: "12 travelers",
             rating: 5.0,

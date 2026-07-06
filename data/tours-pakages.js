@@ -566,8 +566,8 @@ export const TOUR_PAKAGE = [
     link: "package-tour/br-around-karakoram-SP26-01-jonas",
     category: [CATEGORIES.naran],
     provincesCovered: "Gilgit Baltistan",
-    price: "$2,300",
-    singleOccupancy: "$650",
+    price: "£1,800",
+    singleOccupancy: "£500",
     days: "10",
     hosted: true,
     description:
@@ -853,7 +853,7 @@ export const TOUR_PAKAGE = [
         "Double Occupancy",
       ],
       deluxePackage: [
-        "$2,300",
+        "£1,800",
       ],
     },
   },
@@ -864,8 +864,8 @@ export const TOUR_PAKAGE = [
     link: "package-tour/br-around-karakoram-SP26-01-meths",
     category: [CATEGORIES.naran],
     provincesCovered: "Gilgit Baltistan",
-    price: "$2,300",
-    singleOccupancy: "$650",
+    price: "£1,800",
+    singleOccupancy: "£500",
     days: "10",
     hosted: true,
     description:
@@ -1147,7 +1147,7 @@ export const TOUR_PAKAGE = [
         "Double Occupancy",
       ],
       deluxePackage: [
-        "$2,300",
+        "£1,800",
       ],
     },
   },
@@ -1158,8 +1158,8 @@ export const TOUR_PAKAGE = [
     link: "package-tour/br-around-karakoram-SP26-01-lukas",
     category: [CATEGORIES.naran],
     provincesCovered: "Gilgit Baltistan",
-    price: "$2,300",
-    singleOccupancy: "$650",
+    price: "£1,800",
+    singleOccupancy: "£500",
     days: "10",
     hosted: true,
     description:
@@ -1442,7 +1442,7 @@ export const TOUR_PAKAGE = [
         "Double Occupancy",
       ],
       deluxePackage: [
-        "$2,300",
+        "£1,800",
       ],
     },
   },
@@ -1453,8 +1453,8 @@ export const TOUR_PAKAGE = [
     link: "package-tour/br-around-karakoram-SP26-01-ogik",
     category: [CATEGORIES.naran],
     provincesCovered: "Gilgit Baltistan",
-    price: "$2,300",
-    singleOccupancy: "$650",
+    price: "£1,800",
+    singleOccupancy: "£500",
     days: "10",
     hosted: true,
     description:
@@ -1739,7 +1739,7 @@ export const TOUR_PAKAGE = [
         "Double Occupancy",
       ],
       deluxePackage: [
-        "$2,300",
+        "£1,800",
       ],
     },
   },
