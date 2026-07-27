@@ -5,16 +5,17 @@
 export const SPECIALIST_PROFILES = [
   {
     id: "2",
-    specialist_name: "Ali Imran",
+    specialist_name: "Ali Imran Fazal",
     specialist_slug: "ali-imran-pakistan",
     specialist_photo: "/assets/cohosted_profile/ali-imran.webp",
-    specialist_og_image: "",
+    specialist_og_image:
+      "/assets/specialist_profile/specialist_ali-imran-pakistan_og.jpg",
     hero_image: "/assets/cohosted_profile/ali-imran-hero.jpg",
     is_verified: true,
     specialisation_type: "Adventure & Trekking",
 
     bio_text:
-      "Placeholder bio for Ali Imran — travel guide and adventure specialist.",
+      "My name is Ali Imran Fazal, born with wanderlust in my veins and mountains in my soul. For the last 15 years I have returned to the mountains of northern Pakistan every single year — not because I planned to, but because I simply cannot stay away. Whenever I am surrounded by the Himalaya and the Karakoram, I feel I am back home.\n\nFor me, travel has never been about destinations. It's about raw, unfiltered moments, where glaciers tell ancient stories, rivers speak without words, and the silence of a mountain pass says more than any conversation ever could.\n\nI don't just guide trips. I weave experiences, build connections, and share the stories that these lands have quietly been waiting to tell. I believe the most honest version of this earth lives in its rawest corners, and the most honest version of ourselves is found when we step into them.\n\nCome for the mountains. Leave with a story you'll tell for the rest of your life. Looking forward to amazing stories, travels and times with you all.",
 
     usp_statement: "",
 
@@ -22,17 +23,35 @@ export const SPECIALIST_PROFILES = [
     linkedin_url: "",
     instagram_url: "",
 
-    highlight_destinations: "",
+    highlight_destinations: "Hunza, Gilgit, Skardu & Deosai",
     highlight_years: null,
     highlight_languages: "English, Urdu",
-    highlight_certifications: "",
-    highlight_specialisation: "",
+    highlight_certifications:
+      "15 Years Returning to Northern Pakistan, Mountain Storytelling, Experience Design",
+    highlight_specialisation:
+      "Karakoram & Himalaya Journeys, Adventure & Trekking, Cultural Immersion, Storytelling",
     highlight_labels: {
       certifications: "Background",
       specialisation: "Specialities",
     },
 
-    itineraries: [],
+    itineraries: [
+      {
+        id: 1,
+        itinerary_title: "Discover Pakistan — The Classic Karakoram Journey",
+        itinerary_slug: "discover-pakistan-ali-imran",
+        itinerary_image: "/assets/Iternaries/karakoram.jpg",
+        itinerary_country: "Pakistan",
+        itinerary_country_flag: "🇵🇰",
+        itinerary_dates: "Year-round departures",
+        itinerary_duration: "10 days",
+        itinerary_group_size: "Small group · 2–15 travellers",
+        itinerary_difficulty: "Moderate",
+        itinerary_price_from: "£1,200",
+        itinerary_rating: 0,
+        itinerary_review_count: 0,
+      },
+    ],
 
     gallery_images: [],
 
@@ -43,7 +62,7 @@ export const SPECIALIST_PROFILES = [
     reviews: [],
 
     cta_pitch_text: "",
-    max_group_size: 14,
+    max_group_size: 15,
   },
   {
     id: "1",

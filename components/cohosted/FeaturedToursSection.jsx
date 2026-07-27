@@ -23,21 +23,25 @@ const FeaturedToursSection = () => {
   }));
 
   // Ali Imran — Travel Guide and adventure specialist.
+  // Links straight to his Karakoram tour, attributed back to his profile.
   const ali = getSpecialistProfileBySlug("ali-imran-pakistan");
   if (ali) {
+    const aliTour = ali.itineraries?.[0];
     tours.push({
       image: ali.specialist_photo,
-      status: "Coming Soon",
+      status: "Open Now",
       host: {
         name: ali.specialist_name,
         image: ali.specialist_photo,
       },
-      destinations: "TBD",
-      dates: "TBD",
-      statusClass: classes.preLaunch,
-      link: `/specialist-profile/${ali.specialist_slug}`,
-      button: "Learn More",
-      buttonClass: "",
+      destinations: ali.highlight_destinations || "TBD",
+      dates: aliTour?.itinerary_dates || "TBD",
+      statusClass: classes.openNow || classes.preLaunch,
+      link: aliTour
+        ? `/package-tour/${aliTour.itinerary_slug}?specialist=${ali.specialist_slug}`
+        : `/specialist-profile/${ali.specialist_slug}`,
+      button: aliTour ? "Join Now" : "Learn More",
+      buttonClass: aliTour ? classes.primaryTourButton : "",
     });
   }
 

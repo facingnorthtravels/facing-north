@@ -20,6 +20,7 @@ export const CATEGORIES = {
   fairy: "fairy",
   lahore: "lahore",
   islamabad: "islamabad",
+  gilgit: "gilgit",
   karakoram: "karakoram",
 };
 
@@ -8447,6 +8448,186 @@ export const TOUR_PAKAGE = [
         name: "Najma Mehmood",
         role: "Cultural Curator & Community Host",
         bio: "I'm Najma, a UK-based community host and cultural curator with a deep love for culture, heritage and meaningful travel. My work is rooted in curating thoughtful journeys that bring people closer to places, history and themselves through connection, adventure and shared experience.",
+      },
+    ],
+  },
+  // =========================================================
+  //  Discover Pakistan — The Classic Karakoram Journey
+  // =========================================================
+  {
+    category: [CATEGORIES.home, CATEGORIES.hunza, CATEGORIES.skardu, CATEGORIES.gilgit, CATEGORIES.karakoram],
+    id: "discover-pakistan-ali-imran",
+    title: "Discover Pakistan — The Classic Karakoram Journey",
+    service_img: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/banner.jpg",
+    bg_position: "center",
+    link: "package-tour/discover-pakistan-ali-imran",
+    pdf: "/assets/PDFS/discover-pakistan-ali-imran-itinerary.pdf",
+    provincesCovered: "Islamabad & Gilgit Baltistan",
+    price: "£1,200",
+    days: "10",
+    description:
+      "Ali Imran × Facing North Travels. 9 Nights / 10 Days · Deluxe & Premium · Year-Round. The classic Karakoram circuit, run end to end — Islamabad, Hunza, Gilgit and Skardu. This is the mountain itinerary Facing North is known for: the aerial flight past K2 and Nanga Parbat, seven centuries of fort history above Karimabad, the Rakaposhi panorama from the KOH G Track, a Bazam Night hosted by a Hunza family, and the 4,114m silence of the Deosai Plains. All-inclusive, women-friendly, with professional photography and content creation on every departure.",
+    overview: {
+      location: "Islamabad, Hunza, Gilgit & Skardu",
+      people: "Small group · 2–15 travellers",
+      bestTime: "Year-round departures (Deosai open May–Sept)",
+      recommendation: "Highly recommended",
+      overviewImg: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/overview.jpg"
+    },
+    experiences: {
+      experience_points: [
+        { pic: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/Highlights/hl-karakoram-flight.jpg", title: "Karakoram Aerial Flight to Skardu" },
+        { pic: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/Highlights/hl-baltit-fort.jpg", title: "Baltit & Altit Forts, Karimabad" },
+        { pic: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/Highlights/hl-eagles-nest.jpg", title: "Duikar Eagle's Nest Sunset" },
+        { pic: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/Highlights/hl-attabad-passu.jpg", title: "Attabad Lake & Passu Cones" },
+        { pic: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/Highlights/hl-rakaposhi.jpg", title: "KOH G Track — Rakaposhi Panorama" },
+        { pic: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/Highlights/hl-bazam-night.jpg", title: "Bazam Night in Hunza" },
+        { pic: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/Highlights/hl-deosai.jpg", title: "Deosai Plains & Sheosar Lake" },
+        { pic: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/Highlights/hl-shigar-fort.jpg", title: "Shigar Fort & Sarfaranga Cold Desert" },
+      ],
+    },
+    iternaries: [
+      {
+        id: 0,
+        iternaries_img: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/day1.jpg",
+        description:
+          "Guests arrive in Islamabad and are welcomed by the Facing North team. After check-in and time to settle, the evening opens with a welcome dinner featuring the finest Pakistani cuisine in the capital, and a full briefing for the journey ahead. Islamabad — clean, green and set at the foot of the Margalla Hills — is a gentle introduction to Pakistan before an early start for Skardu.",
+        title: "Arrive Islamabad — Welcome Dinner",
+        hotel: "Ambiance Hotel, Islamabad",
+        activities: "Airport pick-up, Transfer to hotel, Check-in & rest, Journey briefing with guide, Welcome dinner",
+      },
+      {
+        id: 1,
+        iternaries_img: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/day2.jpg",
+        description:
+          "The flight from Islamabad to Skardu is one of the most extraordinary short-haul routes on earth, threading between K2, Nanga Parbat and the great Karakoram peaks at close range. On landing we depart for Hunza along the Karakoram Highway, passing through the Gilgit valley as Rakaposhi grows on the horizon. We arrive at the Hunza hotel as the afternoon light turns golden across the valley.",
+        title: "Fly ISB → Skardu — Drive to Hunza via the KKH",
+        hotel: "Green Park Hotel, Hunza",
+        activities: "Fly Islamabad → Skardu, Karakoram aerial views, Drive to Hunza via KKH (~5 hrs), Gilgit valley & Rakaposhi views, Terrace tea on arrival",
+      },
+      {
+        id: 2,
+        iternaries_img: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/day3.jpg",
+        description:
+          "Karimabad is the ancient cultural heart of Hunza. Baltit Fort — the 700-year seat of the Hunza Mirs — is explored through storytelling by your guide, who brings the royal history of this mountain kingdom to life. Altit Fort, three centuries older and perched above the river gorge, has a quieter and more contemplative atmosphere. The day closes at Duikar Eagle's Nest, where the whole Hunza valley, Rakaposhi and Ultar Sar are visible in one sweeping sunset panorama.",
+        title: "Central Hunza — Baltit Fort, Altit Fort & Eagle's Nest",
+        hotel: "Green Park Hotel, Hunza",
+        activities: "Baltit Fort (700 yrs), Karimabad old bazaar, Apricot orchards, Altit Fort & village, Local craft cooperative, Duikar Eagle's Nest sunset",
+      },
+      {
+        id: 3,
+        iternaries_img: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/day4.jpg",
+        description:
+          "Upper Hunza delivers its most dramatic scenery today. The vivid turquoise of Attabad Lake, the extraordinary Passu Cones rock spires, Borith Lake and the legendary Hussaini Suspension Bridge above the rushing Hunza River are all visited in the morning. The afternoon brings the KOH G Track at Minapin — a guided viewpoint that delivers the finest unobstructed panorama of the full Rakaposhi massif (7,788m) and the Diran ridge on the entire Karakoram Highway.",
+        title: "Upper Hunza — Attabad Lake, Passu Cones & KOH G Track",
+        hotel: "Green Park Hotel, Hunza",
+        activities: "Attabad Lake, Passu Cones, Borith Lake, Hussaini Suspension Bridge, KOH G Track at Minapin, Rakaposhi & Diran panorama, Guide photography throughout",
+      },
+      {
+        id: 4,
+        iternaries_img: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/day5.jpg",
+        description:
+          "A leisurely morning in Hunza before the drive south to Gilgit. The cultural centrepiece of the journey is the Bazam Night, where a local family hosts a feast of traditional mountain cuisine — chapshuro, harissa, walnut chai, dried fruit and bread by firelight — with local musicians and folk dancers. Premium guests additionally enjoy a hands-on culinary exchange with the host family. Gilgit is reached in the afternoon for an overnight stay.",
+        title: "Bazam Night — Drive to Gilgit",
+        hotel: "Ramada Gilgit Hotel",
+        activities: "Bazam Night: traditional Hunza feast, Music, folk dance & storytelling, Premium: hands-on cooking with host family, Drive Hunza → Gilgit (~1.5 hrs)",
+      },
+      {
+        id: 5,
+        iternaries_img: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/day6.jpg",
+        description:
+          "The drive from Gilgit to Skardu follows the Indus River through one of the most dramatic gorge systems on earth, and the landscape transforms completely from the greens of Gilgit into the ochre and silver mineral world of Baltistan. The afternoon visits the twin Kachura Lakes — pristine Upper Kachura and the legendary Shangrila (Lower Kachura), the 'Heaven on Earth'. The day closes at the Sarfaranga Cold Desert as the white dunes glow gold against the Karakoram peaks.",
+        title: "Gilgit → Skardu — Kachura Lakes & Sarfaranga Desert",
+        hotel: "Khar Resort, Skardu",
+        activities: "Drive Gilgit → Skardu via KKH (~3.5 hrs), Indus gorge photography stops, Upper Kachura Lake, Shangrila Lower Kachura, Optional boat ride, Sarfaranga Cold Desert sunset",
+      },
+      {
+        id: 6,
+        iternaries_img: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/day7.jpg",
+        description:
+          "Deosai National Park at 4,114 metres is one of the highest and most extraordinary landscapes on earth — vast alpine grasslands, wildflowers, glacial streams and Sheosar Lake as a vivid mirror of sky. The resident Himalayan brown bear population is active in the summer meadows. The scale and the silence of Deosai make it one of the true highlights of the entire journey. We return to Skardu by late afternoon.",
+        title: "Deosai Plains — One of the World's Highest Plateaux",
+        hotel: "Khar Resort, Skardu",
+        activities: "Drive to Deosai entry point (~2.5 hrs), Altitude rises to 4,114m, Sheosar Lake, Himalayan brown bears & wildflowers, Return to Skardu by late afternoon",
+      },
+      {
+        id: 7,
+        iternaries_img: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/day8.jpg",
+        description:
+          "The final full day in Skardu covers three of the region's most rewarding experiences. Shigar Fort — a 17th-century Balti royal palace restored by the Aga Khan Trust — is one of the most beautiful heritage buildings in Pakistan. Blind Lake near Satpara is glacial and peaceful. Kharpocho Fort, the 'King of Forts', perches above the Indus with panoramic views across the entire Skardu basin. Premium guests enjoy an additional Skardu local food experience in the evening.",
+        title: "Skardu — Shigar Fort, Blind Lake & Kharpocho Fort",
+        hotel: "Khar Resort, Skardu",
+        activities: "Shigar Fort (17th century, Aga Khan Trust), Carved chambers & courtyard garden, Blind Lake at Satpara, Kharpocho Fort, Skardu bazaar, Premium: Balti kitchen food experience",
+      },
+      {
+        id: 8,
+        iternaries_img: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/day9.jpg",
+        description:
+          "An early flight from Skardu delivers the group back to Islamabad with a final aerial farewell to the Karakoram. The rest of the day is at leisure — a last opportunity to explore Islamabad, shop at Centaurus or Jinnah Super, or simply rest after nine extraordinary days in the mountains. The evening brings a farewell dinner in Islamabad, a relaxed and celebratory close to the journey.",
+        title: "Fly Skardu → Islamabad — Farewell Night",
+        hotel: "Ambiance Hotel, Islamabad",
+        activities: "Fly Skardu → Islamabad, Final Karakoram aerial views, Day at leisure in Islamabad, Centaurus & Jinnah Super, Farewell dinner",
+      },
+      {
+        id: 9,
+        iternaries_img: "/assets/IMAGES/tour-packages/discover-pakistan-ali-imran/day10.jpg",
+        description:
+          "A final breakfast at the hotel, where your guide delivers the content and photography package captured across the journey. The vehicle then transfers the group to Islamabad International Airport for international departures. The journey is complete — ten days across two of Pakistan's most extraordinary worlds: the Karakoram mountains and the warmth of the people who live in them.",
+        title: "End of Tour — International Departures",
+        hotel: "Departure",
+        activities: "Final breakfast & check-out, Guide delivers photography content, Transfer to Islamabad International Airport, All departures assisted",
+      }
+    ],
+    includes: {
+      premium: {
+        groupSizeMin: "2",
+        groupSizeMax: "15",
+      },
+      services: [
+        "9 nights accommodation throughout",
+        "Ambiance Hotel, Islamabad (Premium: Marriott Islamabad)",
+        "Green Park Hotel / Best Western, Hunza (Premium: Serena Hunza)",
+        "Ramada Gilgit Hotel (Premium: Serena Gilgit)",
+        "Khar Resort, Skardu (Premium: Hashupi Resort, Shigar Valley)",
+        "All meals — full board, 3 meals per day",
+        "Domestic flights: Islamabad–Skardu & Skardu–Islamabad",
+        "All ground transport — Grand Cabin or Coaster (Premium: Land Cruiser Prados)",
+        "Professional English-speaking guide",
+        "Professional photography & content creation",
+        "All entry fees & site permits",
+        "Bazam Night in Hunza — music, folk dance & feast",
+        "Premium only: local culinary experience in Hunza",
+        "Premium only: local food experience in Skardu",
+      ],
+    },
+    notIncluded: [
+      "International flights",
+      "Pakistan visa fees",
+      "Travel insurance (strongly recommended)",
+      "Gratuities (at guest's discretion)",
+    ],
+    cost: {
+      size: [
+        "2-6 pax",
+        "8-12 pax",
+        "15+ pax",
+      ],
+      deluxePackage: [
+        "£1,600",
+        "£1,400",
+        "£1,200",
+      ],
+      premiumPackage: [
+        "£1,800",
+        "£1,600",
+        "£1,400",
+      ],
+    },
+    hostLeaders: [
+      {
+        name: "Ali Imran Fazal",
+        role: "Adventure & Trekking Specialist",
+        bio: "Born with wanderlust in my veins and mountains in my soul — for the last 15 years I have returned to northern Pakistan every single year, not because I planned to, but because I simply cannot stay away. For me travel has never been about destinations. It's about raw, unfiltered moments, where glaciers tell ancient stories, rivers speak without words, and the silence of a mountain pass says more than any conversation ever could. I don't just guide trips: I weave experiences, build connections, and share the stories that these lands have quietly been waiting to tell. Come for the mountains. Leave with a story you'll tell for the rest of your life.",
       },
     ],
   },

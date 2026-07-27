@@ -24,6 +24,11 @@ function SpecialistProfileCard({ profile }) {
   const name = profile?.specialist_name;
   const verified = !!profile?.is_verified;
   const specialisation = profile?.specialisation_type;
+  // bio_text may hold several paragraphs separated by blank lines.
+  const bioParagraphs = (profile?.bio_text || "")
+    .split(/\n\s*\n/)
+    .map((para) => para.trim())
+    .filter(Boolean);
 
   return (
     <section className={classes.profile_section} id="about">
@@ -59,7 +64,9 @@ function SpecialistProfileCard({ profile }) {
 
               <div className={classes.about_section}>
                 <h3>About {name}</h3>
-                <p>{profile?.bio_text}</p>
+                {bioParagraphs.map((para, i) => (
+                  <p key={`bio-${i}`}>{para}</p>
+                ))}
 
                 {profile?.usp_statement && (
                   <figure className={classes.usp_block}>
