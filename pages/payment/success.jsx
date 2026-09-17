@@ -199,7 +199,7 @@ export default function PaymentSuccess() {
             </div>
             <div className={styles.detail_row}>
               <span>Total Paid</span>
-              <strong className={styles.amount}>${order.amount?.toFixed(2)} {order.currency}</strong>
+              <strong className={styles.amount}>£{order.amount?.toFixed(2)} {order.currency}</strong>
             </div>
           </div>
         )}

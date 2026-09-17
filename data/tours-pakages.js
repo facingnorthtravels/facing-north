@@ -567,7 +567,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.naran],
     provincesCovered: "Gilgit Baltistan",
     price: "£1,800",
-    singleOccupancy: "£500",
+    singleOccupancy: "£600",
     days: "10",
     hosted: true,
     description:
@@ -710,7 +710,7 @@ export const TOUR_PAKAGE = [
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_7.jpg",
-          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Ambiance, Zen by the Lake, and K2 GreenPak ",
+          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Best Western Premier, Zen by the Lake, and Hashupi/ Rivage Resort ",
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_6.jpg",
@@ -735,7 +735,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-jonas/Day 2.jpg",
         description: "The adventure continues with an early morning departure from Islamabad, taking one of the world's most breathtaking flights to Skardu. The 1-hour journey offers panoramic aerial views of majestic peaks, including the legendary Nanga Parbat. Upon landing, we begin a scenic 6-hour road trip towards Hunza Valley, passing through dramatic mountain landscapes and the historic city of Gilgit. A mid-day lunch break is planned at Ramada Gilgit, offering a comfortable and hygienic stop with warm hospitality and panoramic views. Along the way, we'll enjoy a short photo stop at the Rakaposhi Viewpoint, a perfect moment to capture the grandeur of the Karakoram. By evening, we check into our Hunza resort, where a cozy dinner awaits at the property, surrounded by the valley's enchanting night sky and mountain silhouettes, a peaceful close to a day immersed in natural beauty.",
         title: "Into the Mountains – Skies, Peaks & Valleys",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -743,7 +743,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-jonas/Day 3.jpg",
         description: "The day is dedicated to exploring the cultural heart of Hunza. We begin with a scenic heritage walk through the charming Karimabad Bazaar, gradually ascending towards the majestic Baltit Fort, a centuries-old symbol of Hunza's history and royal legacy. After a guided tour of the fort, we return to the bazaar before heading to the nearby Altit Fort, a beautifully restored monument surrounded by the ancient Altit Royal Gardens. A highlight of the visit is a stop at Khabasi Café, a hidden gem within the fort premises run entirely by local women, a remarkable initiative by Prince Aga Khan promoting female empowerment in the region. The day winds down with a relaxing evening stroll, a bit of souvenir shopping in Karimabad, and a peaceful return to the hotel to rest and recharge for the adventures ahead.",
         title: "Heritage, Forts & Empowerment in Hunza",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Relaxation, Day trip & Heritage walk",
       },
       {
@@ -767,7 +767,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-jonas/Day 6.jpg",
         description: "After breakfast, we set off on a scenic 4 hours journey to Skardu, venturing deep into the mountains of the majestic Baltistan region, passing through the historic Jaglot town. Our first stop is the enchanting Upper Kachura Lake, reached by a short 15-minute trek. Here, thrill-seekers can enjoy speed boating or take a daring dip in the ice-cold turquoise waters. We then head down to the serene Lower Kachura Lake, home to the iconic Shangrila Resort, where we'll enjoy lunch by the lake. In the afternoon, we venture to Soq Valley, a hidden gem just 45 minutes away, offering untouched beauty and peaceful surroundings. After soaking in the valley's charm, we return to the resort in Shigar for a relaxed evening and overnight stay.",
         title: "Lakeside Serenity & Hidden Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -775,7 +775,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-jonas/Day 7.jpg",
         description: "Today begins with an early breakfast before embarking on a day journey to Khaplu valley, crossing Guwari trees and sailing valley where the pristine water streams will take your breath away. Stopover at Kaiser suspension bridge. Continue to drive to Khaplu. Visit Khaplu palace. Lunch will be at Khaplu Palace. Leisure and return back to Skardu. The adventure continues with a horse ride through the mystical Sarfaranga Cold Desert, we'll enjoy a peaceful sunset over the desert horizon before returning to the resort for a restful overnight stay.",
         title: "Mountain Heights & Desert Calm",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Khaplu fort, Chaqchan Mosque & sailing village tour",
       },
       {
@@ -783,7 +783,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-jonas/Day 8.jpg",
         description: "After an early morning breakfast, we set off for a day tour to either Basho or Chunda Valley, both reachable via a 1.5-hour off-road journey from Skardu. These hidden gems are known for their breathtaking Spring landscapes, crystal-clear mountain streams, and majestic snow-capped backdrops. We'll spend the day enjoying short walks and light treks, immersing ourselves in the vibrant colors of blossom and pristine natural beauty. By evening, we return to Skardu for some leisure time, followed by dinner and an overnight stay at the resort.",
         title: "Spring Landscapes & Mountain Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -826,10 +826,10 @@ export const TOUR_PAKAGE = [
         "Toyota Coaster New Shape & Prado (2007)",
         "Yes",
         "Ambiance Resort (Premier Rooms)",
-        "Ambiance Resort (Premier Rooms)",
+        "Best Western Premier (Premier Rooms)",
         "Zen By The Lake (Deluxe Rooms)", 
         "Ramada Hotel (Deluxe Rooms)",
-        "GreenPak Resort (Deluxe Rooms)",
+        "Hashupi/ Rivage Resort (Deluxe Rooms)",
       ],
       premium: {
         meals: "3 Meals/Daily",
@@ -865,7 +865,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.naran],
     provincesCovered: "Gilgit Baltistan",
     price: "£1,800",
-    singleOccupancy: "£500",
+    singleOccupancy: "£600",
     days: "10",
     hosted: true,
     description:
@@ -1005,7 +1005,7 @@ export const TOUR_PAKAGE = [
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_7.jpg",
-          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Ambiance, Zen by the Lake, and K2 GreenPak ",
+          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Best Western Premier, Zen by the Lake, and Hashupi/ Rivage Resort ",
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_6.jpg",
@@ -1029,7 +1029,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-meths/Day 2.jpg",
         description: "The adventure continues with an early morning departure from Islamabad, taking one of the world's most breathtaking flights to Skardu. The 1-hour journey offers panoramic aerial views of majestic peaks, including the legendary Nanga Parbat. Upon landing, we begin a scenic 6-hour road trip towards Hunza Valley, passing through dramatic mountain landscapes and the historic city of Gilgit. A mid-day lunch break is planned at Ramada Gilgit, offering a comfortable and hygienic stop with warm hospitality and panoramic views. Along the way, we'll enjoy a short photo stop at the Rakaposhi Viewpoint, a perfect moment to capture the grandeur of the Karakoram. By evening, we check into our Hunza resort, where a cozy dinner awaits at the property, surrounded by the valley's enchanting night sky and mountain silhouettes, a peaceful close to a day immersed in natural beauty.",
         title: "Into the Mountains – Skies, Peaks & Valleys",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -1037,7 +1037,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-meths/Day 3.jpg",
         description: "The day is dedicated to exploring the cultural heart of Hunza. We begin with a scenic heritage walk through the charming Karimabad Bazaar, gradually ascending towards the majestic Baltit Fort, a centuries-old symbol of Hunza's history and royal legacy. After a guided tour of the fort, we return to the bazaar before heading to the nearby Altit Fort, a beautifully restored monument surrounded by the ancient Altit Royal Gardens. A highlight of the visit is a stop at Khabasi Café, a hidden gem within the fort premises run entirely by local women, a remarkable initiative by Prince Aga Khan promoting female empowerment in the region. The day winds down with a relaxing evening stroll, a bit of souvenir shopping in Karimabad, and a peaceful return to the hotel to rest and recharge for the adventures ahead.",
         title: "Heritage, Forts & Empowerment in Hunza",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Relaxation, Day trip & Heritage walk",
       },
       {
@@ -1061,7 +1061,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-meths/Day 6.jpg",
         description: "After breakfast, we set off on a scenic 4 hours journey to Skardu, venturing deep into the mountains of the majestic Baltistan region, passing through the historic Jaglot town. Our first stop is the enchanting Upper Kachura Lake, reached by a short 15-minute trek. Here, thrill-seekers can enjoy speed boating or take a daring dip in the ice-cold turquoise waters. We then head down to the serene Lower Kachura Lake, home to the iconic Shangrila Resort, where we'll enjoy lunch by the lake. In the afternoon, we venture to Soq Valley, a hidden gem just 45 minutes away, offering untouched beauty and peaceful surroundings. After soaking in the valley's charm, we return to the resort in Shigar for a relaxed evening and overnight stay.",
         title: "Lakeside Serenity & Hidden Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -1069,7 +1069,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-meths/Day 7.jpg",
         description: "Today begins with an early breakfast before embarking on a day journey to Khaplu valley, crossing Guwari trees and sailing valley where the pristine water streams will take your breath away. Stopover at Kaiser suspension bridge. Continue to drive to Khaplu. Visit Khaplu palace. Lunch will be at Khaplu Palace. Leisure and return back to Skardu. The adventure continues with a horse ride through the mystical Sarfaranga Cold Desert, we'll enjoy a peaceful sunset over the desert horizon before returning to the resort for a restful overnight stay.",
         title: "Mountain Heights & Desert Calm",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Khaplu fort, Chaqchan Mosque & sailing village tour",
       },
       {
@@ -1077,7 +1077,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-meths/Day 8.jpg",
         description: "After an early morning breakfast, we set off for a day tour to either Basho or Chunda Valley, both reachable via a 1.5-hour off-road journey from Skardu. These hidden gems are known for their breathtaking Spring landscapes, crystal-clear mountain streams, and majestic snow-capped backdrops. We'll spend the day enjoying short walks and light treks, immersing ourselves in the vibrant colors of blossom and pristine natural beauty. By evening, we return to Skardu for some leisure time, followed by dinner and an overnight stay at the resort.",
         title: "Spring Landscapes & Mountain Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -1120,10 +1120,10 @@ export const TOUR_PAKAGE = [
         "Toyota Coaster New Shape & Prado (2007)",
         "Yes",
         "Ambiance Resort (Premier Rooms)",
-        "Ambiance Resort (Premier Rooms)",
+        "Best Western Premier (Premier Rooms)",
         "Zen By The Lake (Deluxe Rooms)", 
         "Ramada Hotel (Deluxe Rooms)",
-        "GreenPak Resort (Deluxe Rooms)",
+        "Hashupi/ Rivage Resort (Deluxe Rooms)",
       ],
       premium: {
         meals: "3 Meals/Daily",
@@ -1159,7 +1159,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.naran],
     provincesCovered: "Gilgit Baltistan",
     price: "£1,800",
-    singleOccupancy: "£500",
+    singleOccupancy: "£600",
     days: "10",
     hosted: true,
     description:
@@ -1172,7 +1172,7 @@ export const TOUR_PAKAGE = [
       recommendation: "Highly recommended",
       overviewImg: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/overview.jpg"
     },
-    pdf: "/assets/PDFS/SP26-04-around-karakoram-lukas.pdf",
+    pdf: "/assets/PDFS/SP26-02-around-karakoram-lukas.pdf",
 
     internationalFlights: {
       routes: [
@@ -1300,7 +1300,7 @@ export const TOUR_PAKAGE = [
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_7.jpg",
-          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Ambiance, Zen by the Lake, and K2 GreenPak ",
+          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Best Western Premier, Zen by the Lake, and Hashupi/ Rivage Resort ",
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_6.jpg",
@@ -1324,7 +1324,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/Day 2.jpg",
         description: "The adventure continues with an early morning departure from Islamabad, taking one of the world's most breathtaking flights to Skardu. The 1-hour journey offers panoramic aerial views of majestic peaks, including the legendary Nanga Parbat. Upon landing, we begin a scenic 6-hour road trip towards Hunza Valley, passing through dramatic mountain landscapes and the historic city of Gilgit. A mid-day lunch break is planned at Ramada Gilgit, offering a comfortable and hygienic stop with warm hospitality and panoramic views. Along the way, we'll enjoy a short photo stop at the Rakaposhi Viewpoint, a perfect moment to capture the grandeur of the Karakoram. By evening, we check into our Hunza resort, where a cozy dinner awaits at the property, surrounded by the valley's enchanting night sky and mountain silhouettes, a peaceful close to a day immersed in natural beauty.",
         title: "Into the Mountains – Skies, Peaks & Valleys",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -1332,7 +1332,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/Day 3.jpg",
         description: "The day is dedicated to exploring the cultural heart of Hunza. We begin with a scenic heritage walk through the charming Karimabad Bazaar, gradually ascending towards the majestic Baltit Fort, a centuries-old symbol of Hunza's history and royal legacy. After a guided tour of the fort, we return to the bazaar before heading to the nearby Altit Fort, a beautifully restored monument surrounded by the ancient Altit Royal Gardens. A highlight of the visit is a stop at Khabasi Café, a hidden gem within the fort premises run entirely by local women, a remarkable initiative by Prince Aga Khan promoting female empowerment in the region. The day winds down with a relaxing evening stroll, a bit of souvenir shopping in Karimabad, and a peaceful return to the hotel to rest and recharge for the adventures ahead.",
         title: "Heritage, Forts & Empowerment in Hunza",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Relaxation, Day trip & Heritage walk",
       },
       {
@@ -1356,7 +1356,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/Day 6.jpg",
         description: "After breakfast, we set off on a scenic 4 hours journey to Skardu, venturing deep into the mountains of the majestic Baltistan region, passing through the historic Jaglot town. Our first stop is the enchanting Upper Kachura Lake, reached by a short 15-minute trek. Here, thrill-seekers can enjoy speed boating or take a daring dip in the ice-cold turquoise waters. We then head down to the serene Lower Kachura Lake, home to the iconic Shangrila Resort, where we'll enjoy lunch by the lake. In the afternoon, we venture to Soq Valley, a hidden gem just 45 minutes away, offering untouched beauty and peaceful surroundings. After soaking in the valley's charm, we return to the resort in Shigar for a relaxed evening and overnight stay.",
         title: "Lakeside Serenity & Hidden Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -1364,7 +1364,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/Day 7.jpg",
         description: "Today begins with an early breakfast before embarking on a day journey to Khaplu valley, crossing Guwari trees and sailing valley where the pristine water streams will take your breath away. Stopover at Kaiser suspension bridge. Continue to drive to Khaplu. Visit Khaplu palace. Lunch will be at Khaplu Palace. Leisure and return back to Skardu. The adventure continues with a horse ride through the mystical Sarfaranga Cold Desert, we'll enjoy a peaceful sunset over the desert horizon before returning to the resort for a restful overnight stay.",
         title: "Mountain Heights & Desert Calm",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Khaplu fort, Chaqchan Mosque & sailing village tour",
       },
       {
@@ -1372,7 +1372,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/Day 8.jpg",
         description: "After an early morning breakfast, we set off for a day tour to either Basho or Chunda Valley, both reachable via a 1.5-hour off-road journey from Skardu. These hidden gems are known for their breathtaking Spring landscapes, crystal-clear mountain streams, and majestic snow-capped backdrops. We'll spend the day enjoying short walks and light treks, immersing ourselves in the vibrant colors of blossom and pristine natural beauty. By evening, we return to Skardu for some leisure time, followed by dinner and an overnight stay at the resort.",
         title: "Spring Landscapes & Mountain Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -1415,10 +1415,10 @@ export const TOUR_PAKAGE = [
         "Toyota Coaster New Shape & Prado (2007)",
         "Yes",
         "Ambiance Resort (Premier Rooms)",
-        "Ambiance Resort (Premier Rooms)",
+        "Best Western Premier (Premier Rooms)",
         "Zen By The Lake (Deluxe Rooms)", 
         "Ramada Hotel (Deluxe Rooms)",
-        "GreenPak Resort (Deluxe Rooms)",
+        "Hashupi/ Rivage Resort (Deluxe Rooms)",
       ],
       premium: {
         meals: "3 Meals/Daily",
@@ -1597,7 +1597,7 @@ export const TOUR_PAKAGE = [
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_7.jpg",
-          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Ambiance, Zen by the Lake, and K2 GreenPak ",
+          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Best Western Premier, Zen by the Lake, and Hashupi/ Rivage Resort ",
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_6.jpg",
@@ -1621,7 +1621,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-ogik/Day 2.jpg",
         description: "The adventure continues with an early morning departure from Islamabad, taking one of the world's most breathtaking flights to Skardu. The 1-hour journey offers panoramic aerial views of majestic peaks, including the legendary Nanga Parbat. Upon landing, we begin a scenic 6-hour road trip towards Hunza Valley, passing through dramatic mountain landscapes and the historic city of Gilgit. A mid-day lunch break is planned at Ramada Gilgit, offering a comfortable and hygienic stop with warm hospitality and panoramic views. Along the way, we'll enjoy a short photo stop at the Rakaposhi Viewpoint, a perfect moment to capture the grandeur of the Karakoram. By evening, we check into our Hunza resort, where a cozy dinner awaits at the property, surrounded by the valley's enchanting night sky and mountain silhouettes, a peaceful close to a day immersed in natural beauty.",
         title: "Into the Mountains – Skies, Peaks & Valleys",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -1629,7 +1629,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-ogik/Day 3.jpg",
         description: "The day is dedicated to exploring the cultural heart of Hunza. We begin with a scenic heritage walk through the charming Karimabad Bazaar, gradually ascending towards the majestic Baltit Fort, a centuries-old symbol of Hunza's history and royal legacy. After a guided tour of the fort, we return to the bazaar before heading to the nearby Altit Fort, a beautifully restored monument surrounded by the ancient Altit Royal Gardens. A highlight of the visit is a stop at Khabasi Café, a hidden gem within the fort premises run entirely by local women, a remarkable initiative by Prince Aga Khan promoting female empowerment in the region. The day winds down with a relaxing evening stroll, a bit of souvenir shopping in Karimabad, and a peaceful return to the hotel to rest and recharge for the adventures ahead.",
         title: "Heritage, Forts & Empowerment in Hunza",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Relaxation, Day trip & Heritage walk",
       },
       {
@@ -1653,7 +1653,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-ogik/Day 6.jpg",
         description: "After breakfast, we set off on a scenic 4 hours journey to Skardu, venturing deep into the mountains of the majestic Baltistan region, passing through the historic Jaglot town. Our first stop is the enchanting Upper Kachura Lake, reached by a short 15-minute trek. Here, thrill-seekers can enjoy speed boating or take a daring dip in the ice-cold turquoise waters. We then head down to the serene Lower Kachura Lake, home to the iconic Shangrila Resort, where we'll enjoy lunch by the lake. In the afternoon, we venture to Soq Valley, a hidden gem just 45 minutes away, offering untouched beauty and peaceful surroundings. After soaking in the valley's charm, we return to the resort in Shigar for a relaxed evening and overnight stay.",
         title: "Lakeside Serenity & Hidden Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -1661,7 +1661,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-ogik/Day 7.jpg",
         description: "Today begins with an early breakfast before embarking on a day journey to Khaplu valley, crossing Guwari trees and sailing valley where the pristine water streams will take your breath away. Stopover at Kaiser suspension bridge. Continue to drive to Khaplu. Visit Khaplu palace. Lunch will be at Khaplu Palace. Leisure and return back to Skardu. The adventure continues with a horse ride through the mystical Sarfaranga Cold Desert, we'll enjoy a peaceful sunset over the desert horizon before returning to the resort for a restful overnight stay.",
         title: "Mountain Heights & Desert Calm",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Khaplu fort, Chaqchan Mosque & sailing village tour",
       },
       {
@@ -1669,7 +1669,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-ogik/Day 8.jpg",
         description: "After an early morning breakfast, we set off for a day tour to either Basho or Chunda Valley, both reachable via a 1.5-hour off-road journey from Skardu. These hidden gems are known for their breathtaking Spring landscapes, crystal-clear mountain streams, and majestic snow-capped backdrops. We'll spend the day enjoying short walks and light treks, immersing ourselves in the vibrant colors of blossom and pristine natural beauty. By evening, we return to Skardu for some leisure time, followed by dinner and an overnight stay at the resort.",
         title: "Spring Landscapes & Mountain Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -1712,10 +1712,10 @@ export const TOUR_PAKAGE = [
         "Toyota Coaster New Shape & Prado (2007)",
         "Yes",
         "Ambiance Resort (Premier Rooms)",
-        "Ambiance Resort (Premier Rooms)",
+        "Best Western Premier (Premier Rooms)",
         "Zen By The Lake (Deluxe Rooms)", 
         "Ramada Hotel (Deluxe Rooms)",
-        "GreenPak Resort (Deluxe Rooms)",
+        "Hashupi/ Rivage Resort (Deluxe Rooms)",
       ],
       premium: {
         meals: "3 Meals/Daily",
@@ -1752,8 +1752,8 @@ export const TOUR_PAKAGE = [
     link: "package-tour/br-around-karakoram-AT26-02-jonas",
     category: [CATEGORIES.karakoram],
     provincesCovered: "Gilgit Baltistan",
-    price: "$2,400",
-    singleOccupancy: "$650",
+    price: "£1,800",
+    singleOccupancy: "£600",
     days: "12",
     hosted: true,
     description:
@@ -1789,7 +1789,7 @@ export const TOUR_PAKAGE = [
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_7.jpg",
-          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Ambiance, Zen by the Lake, and K2 GreenPak ",
+          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Best Western Premier, Zen by the Lake, and Hashupi/ Rivage Resort ",
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_6.jpg",
@@ -1812,9 +1812,9 @@ export const TOUR_PAKAGE = [
       {
         id: 1,
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-jonas/Day 2.jpg",
-        description: "After an early breakfast, transfer to the airport for your Islamabad → Skardu flight, one of the world’s most spectacular aerial journeys offering sweeping views of the Karakoram. On arrival, begin your scenic drive toward Hunza Valley, passing terraced fields, cliffside roads, and dramatic autumn colours. Upon reaching Karimabad, check in at Ambiance Hunza and enjoy the rest of the day at leisure, taking in the golden hues of fall across the valley.",
+        description: "After an early breakfast, transfer to the airport for your Islamabad → Skardu flight, one of the world’s most spectacular aerial journeys offering sweeping views of the Karakoram. On arrival, begin your scenic drive toward Hunza Valley, passing terraced fields, cliffside roads, and dramatic autumn colours. Upon reaching Karimabad, check in at Best Western Premier and enjoy the rest of the day at leisure, taking in the golden hues of fall across the valley.",
         title: "Into the Mountains – Skies, Peaks & Valleys",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -1822,7 +1822,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-jonas/Day 3.jpg",
         description: "The day is dedicated to exploring the cultural heart of Hunza. We begin with a scenic heritage walk through the charming Karimabad Bazaar, gradually ascending towards the majestic Baltit Fort, a centuries-old symbol of Hunza's history and royal legacy. After a guided tour of the fort, we return to the bazaar before heading to the nearby Altit Fort, a beautifully restored monument surrounded by the ancient Altit Royal Gardens. A highlight of the visit is a stop at Khabasi Café, a hidden gem within the fort premises run entirely by local women, a remarkable initiative by Prince Aga Khan promoting female empowerment in the region. The day winds down with a relaxing evening stroll, a bit of souvenir shopping in Karimabad, and a peaceful return to the hotel to rest and recharge for the adventures ahead.",
         title: "Heritage, Forts & Empowerment in Hunza",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Relaxation, Day trip & Heritage walk",
       },
       {
@@ -1846,7 +1846,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-jonas/Day 6.jpg",
         description: "After breakfast, depart Gilgit toward Raikot Bridge via the Karakoram Highway. Transfer into 4x4 jeeps for the thrilling ascent to Tato Village, followed by a scenic 2.5–3 hour trek through forests glowing with warm fall colours. Arrive at Fairy Meadows and settle into your wooden cabins facing the mighty Nanga Parbat. Enjoy tea with spectacular views before a cozy dinner around a fireplace under the clear Himalayan sky.",
         title: "Journey To Fairy Meadows & Trek Into The Pines",
-        // premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        // premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         // activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -1854,7 +1854,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-jonas/Day 7.jpg",
         description: "Wake up to sunrise on the ninth highest mountain in the world, one of the most majestic morning views anywhere. After breakfast, choose to relax at the meadows or embark on an optional trek to Beyal Camp, offering closer views of Nanga Parbat and the Raikot Glacier. Enjoy a peaceful afternoon amid meadows, forests, and golden autumn scenery before dinner and another night in the mountains.",
         title: "Fairy Meadows & Optional Beyal Camp Trek",
-        // premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        // premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         // activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -1862,7 +1862,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-jonas/Day 8.png",
         description: "After breakfast, we set off on a scenic 4 hours journey to Skardu, venturing deep into the mountains of the majestic Baltistan region, passing through the historic Jaglot town. Our first stop is the enchanting Upper Kachura Lake, reached by a short 15-minute trek. Here, thrill-seekers can enjoy speed boating or take a daring dip in the ice-cold turquoise waters. We then head down to the serene Lower Kachura Lake, home to the iconic Shangrila Resort, where we'll enjoy lunch by the lake. In the afternoon, we venture to Soq Valley, a hidden gem just 45 minutes away, offering untouched beauty and peaceful surroundings. After soaking in the valley's charm, we return to the resort in Shigar for a relaxed evening and overnight stay.",
         title: "Lakeside Serenity & Hidden Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -1870,7 +1870,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-jonas/Day 9.jpg",
         description: "Today begins with an early breakfast before embarking on a day journey to Khaplu valley, crossing Guwari trees and sailing valley where the pristine water streams will take your breath away. Stopover at Kaiser suspension bridge. Continue to drive to Khaplu. Visit Khaplu palace. Lunch will be at Khaplu Palace. Leisure and return back to Skardu. The adventure continues with a horse ride through the mystical Sarfaranga Cold Desert, we'll enjoy a peaceful sunset over the desert horizon before returning to the resort for a restful overnight stay.",
         title: "Mountain Heights & Desert Calm",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Khaplu fort, Chaqchan Mosque & sailing village tour",
       },
       {
@@ -1878,7 +1878,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-jonas/Day 10.jpg",
         description: "After an early morning breakfast, we set off for a day tour to either Basho or Chunda Valley, both reachable via a 1.5-hour off-road journey from Skardu. These hidden gems are known for their breathtaking Autumn landscapes, crystal-clear mountain streams, and majestic snow-capped backdrops. We'll spend the day enjoying short walks and light treks, immersing ourselves in the vibrant colors of fall and pristine natural beauty. By evening, we return to Skardu for some leisure time, followed by dinner and an overnight stay at the resort.",
         title: "Autumn Landscapes & Mountain Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -1921,10 +1921,10 @@ export const TOUR_PAKAGE = [
         "Toyota Coaster New Shape & Prado (2007)",
         "Yes",
         "Ambiance Resort (Premier Rooms)",
-        "Ambiance Resort (Premier Rooms)",
+        "Best Western Premier (Premier Rooms)",
         "Zen By The Lake (Deluxe Rooms)", 
         "Ramada Hotel (Deluxe Rooms)",
-        "GreenPak Resort (Deluxe Rooms)",
+        "Hashupi/ Rivage Resort (Deluxe Rooms)",
       ],
       premium: {
         meals: "3 Meals/Daily",
@@ -1948,7 +1948,7 @@ export const TOUR_PAKAGE = [
         "Double Occupancy",
       ],
       deluxePackage: [
-        "$2,400",
+        "£1,800",
       ],
     },
   },
@@ -1960,8 +1960,8 @@ export const TOUR_PAKAGE = [
     link: "package-tour/br-around-karakoram-AT26-02-lukas",
     category: [CATEGORIES.karakoram],
     provincesCovered: "Gilgit Baltistan",
-    price: "$2,400",
-    singleOccupancy: "$650",
+    price: "£1,800",
+    singleOccupancy: "£600",
     days: "12",
     hosted: true,
     description:
@@ -1997,7 +1997,7 @@ export const TOUR_PAKAGE = [
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_7.jpg",
-          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Ambiance, Zen by the Lake, and K2 GreenPak ",
+          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Best Western Premier, Zen by the Lake, and Hashupi/ Rivage Resort ",
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_6.jpg",
@@ -2020,9 +2020,9 @@ export const TOUR_PAKAGE = [
       {
         id: 1,
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-lukas/Day 2.jpg",
-        description: "After an early breakfast, transfer to the airport for your Islamabad → Skardu flight, one of the world’s most spectacular aerial journeys offering sweeping views of the Karakoram. On arrival, begin your scenic drive toward Hunza Valley, passing terraced fields, cliffside roads, and dramatic autumn colours. Upon reaching Karimabad, check in at Ambiance Hunza and enjoy the rest of the day at leisure, taking in the golden hues of fall across the valley.",
+        description: "After an early breakfast, transfer to the airport for your Islamabad → Skardu flight, one of the world’s most spectacular aerial journeys offering sweeping views of the Karakoram. On arrival, begin your scenic drive toward Hunza Valley, passing terraced fields, cliffside roads, and dramatic autumn colours. Upon reaching Karimabad, check in at Best Western Premier and enjoy the rest of the day at leisure, taking in the golden hues of fall across the valley.",
         title: "Into the Mountains – Skies, Peaks & Valleys",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -2030,7 +2030,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-lukas/Day 3.jpeg",
         description: "The day is dedicated to exploring the cultural heart of Hunza. We begin with a scenic heritage walk through the charming Karimabad Bazaar, gradually ascending towards the majestic Baltit Fort, a centuries-old symbol of Hunza's history and royal legacy. After a guided tour of the fort, we return to the bazaar before heading to the nearby Altit Fort, a beautifully restored monument surrounded by the ancient Altit Royal Gardens. A highlight of the visit is a stop at Khabasi Café, a hidden gem within the fort premises run entirely by local women, a remarkable initiative by Prince Aga Khan promoting female empowerment in the region. The day winds down with a relaxing evening stroll, a bit of souvenir shopping in Karimabad, and a peaceful return to the hotel to rest and recharge for the adventures ahead.",
         title: "Heritage, Forts & Empowerment in Hunza",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Relaxation, Day trip & Heritage walk",
       },
       {
@@ -2054,7 +2054,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-lukas/Day 6.jpg",
         description: "After breakfast, depart Gilgit toward Raikot Bridge via the Karakoram Highway. Transfer into 4x4 jeeps for the thrilling ascent to Tato Village, followed by a scenic 2.5–3 hour trek through forests glowing with warm fall colours. Arrive at Fairy Meadows and settle into your wooden cabins facing the mighty Nanga Parbat. Enjoy tea with spectacular views before a cozy dinner around a fireplace under the clear Himalayan sky.",
         title: "Journey To Fairy Meadows & Trek Into The Pines",
-        // premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        // premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         // activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -2062,7 +2062,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-lukas/Day 7.jpeg",
         description: "Wake up to sunrise on the ninth highest mountain in the world, one of the most majestic morning views anywhere. After breakfast, choose to relax at the meadows or embark on an optional trek to Beyal Camp, offering closer views of Nanga Parbat and the Raikot Glacier. Enjoy a peaceful afternoon amid meadows, forests, and golden autumn scenery before dinner and another night in the mountains.",
         title: "Fairy Meadows & Optional Beyal Camp Trek",
-        // premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        // premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         // activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -2070,7 +2070,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-lukas/Day 8.jpg",
         description: "After breakfast, we set off on a scenic 4 hours journey to Skardu, venturing deep into the mountains of the majestic Baltistan region, passing through the historic Jaglot town. Our first stop is the enchanting Upper Kachura Lake, reached by a short 15-minute trek. Here, thrill-seekers can enjoy speed boating or take a daring dip in the ice-cold turquoise waters. We then head down to the serene Lower Kachura Lake, home to the iconic Shangrila Resort, where we'll enjoy lunch by the lake. In the afternoon, we venture to Soq Valley, a hidden gem just 45 minutes away, offering untouched beauty and peaceful surroundings. After soaking in the valley's charm, we return to the resort in Shigar for a relaxed evening and overnight stay.",
         title: "Lakeside Serenity & Hidden Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -2078,7 +2078,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-lukas/Day 9.jpg",
         description: "Today begins with an early breakfast before embarking on a day journey to Khaplu valley, crossing Guwari trees and sailing valley where the pristine water streams will take your breath away. Stopover at Kaiser suspension bridge. Continue to drive to Khaplu. Visit Khaplu palace. Lunch will be at Khaplu Palace. Leisure and return back to Skardu. The adventure continues with a horse ride through the mystical Sarfaranga Cold Desert, we'll enjoy a peaceful sunset over the desert horizon before returning to the resort for a restful overnight stay.",
         title: "Mountain Heights & Desert Calm",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Khaplu fort, Chaqchan Mosque & sailing village tour",
       },
       {
@@ -2086,7 +2086,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-lukas/Day 10.jpg",
         description: "After an early morning breakfast, we set off for a day tour to either Basho or Chunda Valley, both reachable via a 1.5-hour off-road journey from Skardu. These hidden gems are known for their breathtaking Autumn landscapes, crystal-clear mountain streams, and majestic snow-capped backdrops. We'll spend the day enjoying short walks and light treks, immersing ourselves in the vibrant colors of fall and pristine natural beauty. By evening, we return to Skardu for some leisure time, followed by dinner and an overnight stay at the resort.",
         title: "Autumn Landscapes & Mountain Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -2129,10 +2129,10 @@ export const TOUR_PAKAGE = [
         "Toyota Coaster New Shape & Prado (2007)",
         "Yes",
         "Ambiance Resort (Premier Rooms)",
-        "Ambiance Resort (Premier Rooms)",
+        "Best Western Premier (Premier Rooms)",
         "Zen By The Lake (Deluxe Rooms)", 
         "Ramada Hotel (Deluxe Rooms)",
-        "GreenPak Resort (Deluxe Rooms)",
+        "Hashupi/ Rivage Resort (Deluxe Rooms)",
       ],
       premium: {
         meals: "3 Meals/Daily",
@@ -2156,7 +2156,7 @@ export const TOUR_PAKAGE = [
         "Double Occupancy",
       ],
       deluxePackage: [
-        "$2,400",
+        "£1,800",
       ],
     },
   },
@@ -2168,8 +2168,8 @@ export const TOUR_PAKAGE = [
     link: "package-tour/br-around-karakoram-AT26-02-marius",
     category: [CATEGORIES.karakoram],
     provincesCovered: "Gilgit Baltistan",
-    price: "$2,400",
-    singleOccupancy: "$650",
+    price: "£1,800",
+    singleOccupancy: "£600",
     days: "12",
     hosted: true,
     description:
@@ -2205,7 +2205,7 @@ export const TOUR_PAKAGE = [
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_7.jpg",
-          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Ambiance, Zen by the Lake, and K2 GreenPak ",
+          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Best Western Premier, Zen by the Lake, and Hashupi/ Rivage Resort ",
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_6.jpg",
@@ -2228,9 +2228,9 @@ export const TOUR_PAKAGE = [
       {
         id: 1,
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-marius/Day 2.jpg",
-        description: "After an early breakfast, transfer to the airport for your Islamabad → Skardu flight, one of the world’s most spectacular aerial journeys offering sweeping views of the Karakoram. On arrival, begin your scenic drive toward Hunza Valley, passing terraced fields, cliffside roads, and dramatic autumn colours. Upon reaching Karimabad, check in at Ambiance Hunza and enjoy the rest of the day at leisure, taking in the golden hues of fall across the valley.",
+        description: "After an early breakfast, transfer to the airport for your Islamabad → Skardu flight, one of the world’s most spectacular aerial journeys offering sweeping views of the Karakoram. On arrival, begin your scenic drive toward Hunza Valley, passing terraced fields, cliffside roads, and dramatic autumn colours. Upon reaching Karimabad, check in at Best Western Premier and enjoy the rest of the day at leisure, taking in the golden hues of fall across the valley.",
         title: "Into the Mountains – Skies, Peaks & Valleys",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -2238,7 +2238,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-marius/Day 3.jpeg",
         description: "The day is dedicated to exploring the cultural heart of Hunza. We begin with a scenic heritage walk through the charming Karimabad Bazaar, gradually ascending towards the majestic Baltit Fort, a centuries-old symbol of Hunza's history and royal legacy. After a guided tour of the fort, we return to the bazaar before heading to the nearby Altit Fort, a beautifully restored monument surrounded by the ancient Altit Royal Gardens. A highlight of the visit is a stop at Khabasi Café, a hidden gem within the fort premises run entirely by local women, a remarkable initiative by Prince Aga Khan promoting female empowerment in the region. The day winds down with a relaxing evening stroll, a bit of souvenir shopping in Karimabad, and a peaceful return to the hotel to rest and recharge for the adventures ahead.",
         title: "Heritage, Forts & Empowerment in Hunza",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Relaxation, Day trip & Heritage walk",
       },
       {
@@ -2262,7 +2262,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-marius/Day 6.jpg",
         description: "After breakfast, depart Gilgit toward Raikot Bridge via the Karakoram Highway. Transfer into 4x4 jeeps for the thrilling ascent to Tato Village, followed by a scenic 2.5–3 hour trek through forests glowing with warm fall colours. Arrive at Fairy Meadows and settle into your wooden cabins facing the mighty Nanga Parbat. Enjoy tea with spectacular views before a cozy dinner around a fireplace under the clear Himalayan sky.",
         title: "Journey To Fairy Meadows & Trek Into The Pines",
-        // premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        // premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         // activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -2270,7 +2270,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-marius/Day 7.jpg",
         description: "Wake up to sunrise on the ninth highest mountain in the world, one of the most majestic morning views anywhere. After breakfast, choose to relax at the meadows or embark on an optional trek to Beyal Camp, offering closer views of Nanga Parbat and the Raikot Glacier. Enjoy a peaceful afternoon amid meadows, forests, and golden autumn scenery before dinner and another night in the mountains.",
         title: "Fairy Meadows & Optional Beyal Camp Trek",
-        // premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        // premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         // activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -2278,7 +2278,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-marius/Day 8.jpg",
         description: "After breakfast, we set off on a scenic 4 hours journey to Skardu, venturing deep into the mountains of the majestic Baltistan region, passing through the historic Jaglot town. Our first stop is the enchanting Upper Kachura Lake, reached by a short 15-minute trek. Here, thrill-seekers can enjoy speed boating or take a daring dip in the ice-cold turquoise waters. We then head down to the serene Lower Kachura Lake, home to the iconic Shangrila Resort, where we'll enjoy lunch by the lake. In the afternoon, we venture to Soq Valley, a hidden gem just 45 minutes away, offering untouched beauty and peaceful surroundings. After soaking in the valley's charm, we return to the resort in Shigar for a relaxed evening and overnight stay.",
         title: "Lakeside Serenity & Hidden Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -2286,7 +2286,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-marius/Day 9.jpg",
         description: "Today begins with an early breakfast before embarking on a day journey to Khaplu valley, crossing Guwari trees and sailing valley where the pristine water streams will take your breath away. Stopover at Kaiser suspension bridge. Continue to drive to Khaplu. Visit Khaplu palace. Lunch will be at Khaplu Palace. Leisure and return back to Skardu. The adventure continues with a horse ride through the mystical Sarfaranga Cold Desert, we'll enjoy a peaceful sunset over the desert horizon before returning to the resort for a restful overnight stay.",
         title: "Mountain Heights & Desert Calm",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Khaplu fort, Chaqchan Mosque & sailing village tour",
       },
       {
@@ -2294,7 +2294,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-marius/Day 10.jpg",
         description: "After an early morning breakfast, we set off for a day tour to either Basho or Chunda Valley, both reachable via a 1.5-hour off-road journey from Skardu. These hidden gems are known for their breathtaking Autumn landscapes, crystal-clear mountain streams, and majestic snow-capped backdrops. We'll spend the day enjoying short walks and light treks, immersing ourselves in the vibrant colors of fall and pristine natural beauty. By evening, we return to Skardu for some leisure time, followed by dinner and an overnight stay at the resort.",
         title: "Autumn Landscapes & Mountain Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -2337,10 +2337,10 @@ export const TOUR_PAKAGE = [
         "Toyota Coaster New Shape & Prado (2007)",
         "Yes",
         "Ambiance Resort (Premier Rooms)",
-        "Ambiance Resort (Premier Rooms)",
+        "Best Western Premier (Premier Rooms)",
         "Zen By The Lake (Deluxe Rooms)", 
         "Ramada Hotel (Deluxe Rooms)",
-        "GreenPak Resort (Deluxe Rooms)",
+        "Hashupi/ Rivage Resort (Deluxe Rooms)",
       ],
       premium: {
         meals: "3 Meals/Daily",
@@ -2364,7 +2364,7 @@ export const TOUR_PAKAGE = [
         "Double Occupancy",
       ],
       deluxePackage: [
-        "$2,400",
+        "£1,800",
       ],
     },
   },
@@ -2376,8 +2376,8 @@ export const TOUR_PAKAGE = [
     link: "package-tour/br-around-karakoram-AT26-02-ogik",
     category: [CATEGORIES.karakoram],
     provincesCovered: "Gilgit Baltistan",
-    price: "$2,400",
-    singleOccupancy: "$650",
+    price: "£1,800",
+    singleOccupancy: "£600",
     days: "12",
     hosted: true,
     description:
@@ -2413,7 +2413,7 @@ export const TOUR_PAKAGE = [
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_7.jpg",
-          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Ambiance, Zen by the Lake, and K2 GreenPak ",
+          title: "Evening bonfires, BBQs, and stays at top boutique resorts like Best Western Premier, Zen by the Lake, and Hashupi/ Rivage Resort ",
         },
         {
           pic: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_6.jpg",
@@ -2436,9 +2436,9 @@ export const TOUR_PAKAGE = [
       {
         id: 1,
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-ogik/Day 2.png",
-        description: "After an early breakfast, transfer to the airport for your Islamabad → Skardu flight, one of the world’s most spectacular aerial journeys offering sweeping views of the Karakoram. On arrival, begin your scenic drive toward Hunza Valley, passing terraced fields, cliffside roads, and dramatic autumn colours. Upon reaching Karimabad, check in at Ambiance Hunza and enjoy the rest of the day at leisure, taking in the golden hues of fall across the valley.",
+        description: "After an early breakfast, transfer to the airport for your Islamabad → Skardu flight, one of the world’s most spectacular aerial journeys offering sweeping views of the Karakoram. On arrival, begin your scenic drive toward Hunza Valley, passing terraced fields, cliffside roads, and dramatic autumn colours. Upon reaching Karimabad, check in at Best Western Premier and enjoy the rest of the day at leisure, taking in the golden hues of fall across the valley.",
         title: "Into the Mountains – Skies, Peaks & Valleys",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -2446,7 +2446,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-ogik/Day 3.jpg",
         description: "The day is dedicated to exploring the cultural heart of Hunza. We begin with a scenic heritage walk through the charming Karimabad Bazaar, gradually ascending towards the majestic Baltit Fort, a centuries-old symbol of Hunza's history and royal legacy. After a guided tour of the fort, we return to the bazaar before heading to the nearby Altit Fort, a beautifully restored monument surrounded by the ancient Altit Royal Gardens. A highlight of the visit is a stop at Khabasi Café, a hidden gem within the fort premises run entirely by local women, a remarkable initiative by Prince Aga Khan promoting female empowerment in the region. The day winds down with a relaxing evening stroll, a bit of souvenir shopping in Karimabad, and a peaceful return to the hotel to rest and recharge for the adventures ahead.",
         title: "Heritage, Forts & Empowerment in Hunza",
-        premiumHotel: "Ambiance Resort (Offers enhanced comfort and facilities)",
+        premiumHotel: "Best Western Premier (Offers enhanced comfort and facilities)",
         activities: "Relaxation, Day trip & Heritage walk",
       },
       {
@@ -2470,7 +2470,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-ogik/Day 6.jpg",
         description: "After breakfast, depart Gilgit toward Raikot Bridge via the Karakoram Highway. Transfer into 4x4 jeeps for the thrilling ascent to Tato Village, followed by a scenic 2.5–3 hour trek through forests glowing with warm fall colours. Arrive at Fairy Meadows and settle into your wooden cabins facing the mighty Nanga Parbat. Enjoy tea with spectacular views before a cozy dinner around a fireplace under the clear Himalayan sky.",
         title: "Journey To Fairy Meadows & Trek Into The Pines",
-        // premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        // premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         // activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -2478,7 +2478,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-ogik/Day 7.jpg",
         description: "Wake up to sunrise on the ninth highest mountain in the world, one of the most majestic morning views anywhere. After breakfast, choose to relax at the meadows or embark on an optional trek to Beyal Camp, offering closer views of Nanga Parbat and the Raikot Glacier. Enjoy a peaceful afternoon amid meadows, forests, and golden autumn scenery before dinner and another night in the mountains.",
         title: "Fairy Meadows & Optional Beyal Camp Trek",
-        // premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        // premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         // activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -2486,7 +2486,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-ogik/Day 8.jpg",
         description: "After breakfast, we set off on a scenic 4 hours journey to Skardu, venturing deep into the mountains of the majestic Baltistan region, passing through the historic Jaglot town. Our first stop is the enchanting Upper Kachura Lake, reached by a short 15-minute trek. Here, thrill-seekers can enjoy speed boating or take a daring dip in the ice-cold turquoise waters. We then head down to the serene Lower Kachura Lake, home to the iconic Shangrila Resort, where we'll enjoy lunch by the lake. In the afternoon, we venture to Soq Valley, a hidden gem just 45 minutes away, offering untouched beauty and peaceful surroundings. After soaking in the valley's charm, we return to the resort in Shigar for a relaxed evening and overnight stay.",
         title: "Lakeside Serenity & Hidden Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Upper Kachura Lake, Lower Kachura, Shangri-La Resort & Soq Valley",
       },
       {
@@ -2494,7 +2494,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-ogik/Day 9.jpg",
         description: "Today begins with an early breakfast before embarking on a day journey to Khaplu valley, crossing Guwari trees and sailing valley where the pristine water streams will take your breath away. Stopover at Kaiser suspension bridge. Continue to drive to Khaplu. Visit Khaplu palace. Lunch will be at Khaplu Palace. Leisure and return back to Skardu. The adventure continues with a horse ride through the mystical Sarfaranga Cold Desert, we'll enjoy a peaceful sunset over the desert horizon before returning to the resort for a restful overnight stay.",
         title: "Mountain Heights & Desert Calm",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Khaplu fort, Chaqchan Mosque & sailing village tour",
       },
       {
@@ -2502,7 +2502,7 @@ export const TOUR_PAKAGE = [
         iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AT26-02-ogik/Day 10.png",
         description: "After an early morning breakfast, we set off for a day tour to either Basho or Chunda Valley, both reachable via a 1.5-hour off-road journey from Skardu. These hidden gems are known for their breathtaking Autumn landscapes, crystal-clear mountain streams, and majestic snow-capped backdrops. We'll spend the day enjoying short walks and light treks, immersing ourselves in the vibrant colors of fall and pristine natural beauty. By evening, we return to Skardu for some leisure time, followed by dinner and an overnight stay at the resort.",
         title: "Autumn Landscapes & Mountain Valleys",
-        premiumHotel: "K-2 GreenPak (Offers enhanced comfort and facilities)",
+        premiumHotel: "Hashupi/ Rivage Resort (Offers enhanced comfort and facilities)",
         activities: "Long Drive, Photo stops",
       },
       {
@@ -2545,10 +2545,10 @@ export const TOUR_PAKAGE = [
         "Toyota Coaster New Shape & Prado (2007)",
         "Yes",
         "Ambiance Resort (Premier Rooms)",
-        "Ambiance Resort (Premier Rooms)",
+        "Best Western Premier (Premier Rooms)",
         "Zen By The Lake (Deluxe Rooms)", 
         "Ramada Hotel (Deluxe Rooms)",
-        "GreenPak Resort (Deluxe Rooms)",
+        "Hashupi/ Rivage Resort (Deluxe Rooms)",
       ],
       premium: {
         meals: "3 Meals/Daily",
@@ -2572,7 +2572,7 @@ export const TOUR_PAKAGE = [
         "Double Occupancy",
       ],
       deluxePackage: [
-        "$2,400",
+        "£1,800",
       ],
     },
   },
@@ -8450,7 +8450,7 @@ export const TOUR_PAKAGE = [
       },
     ],
   },
-];
+].filter((tour) => tour.id !== "br-around-karakoram-SP26-01-ogik");
 
 
 export const EXPERIENCE = [

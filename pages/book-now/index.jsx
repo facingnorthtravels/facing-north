@@ -1092,7 +1092,7 @@ const BookNow = () => {
                       ? couponResult.finalPrice
                       : parsePrice(tourDetailData.price);
                     const subtotal = perPerson * travellers;
-                    const onlineFee = Math.round(subtotal * 0.01 * 100) / 100;
+                    const onlineFee = Math.round(subtotal * 0.02 * 100) / 100;
                     const total = subtotal + onlineFee;
                     const deposit = Math.round(total * 0.5 * 100) / 100;
                     return (
@@ -1102,7 +1102,7 @@ const BookNow = () => {
                           <strong>{formatPrice(subtotal)}</strong>
                         </div>
                         <div className={classes.summary_item}>
-                          <span>Online payment fee (1%):</span>
+                          <span>Online payment fee (2%):</span>
                           <strong>{formatPrice(onlineFee)}</strong>
                         </div>
                         <div className={classes.summary_item}>
@@ -1146,7 +1146,7 @@ const BookNow = () => {
                             ? couponResult.finalPrice
                             : parsePrice(tourDetailData.price);
                           const subtotal = perPerson * travellers;
-                          const total = subtotal + Math.round(subtotal * 0.01 * 100) / 100;
+                          const total = subtotal + Math.round(subtotal * 0.02 * 100) / 100;
                           const deposit = Math.round(total * 0.5 * 100) / 100;
                           return `Pay 50% Deposit Now - ${formatPrice(deposit)}`;
                         })()}

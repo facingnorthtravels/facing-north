@@ -106,7 +106,7 @@ const calculateFinalPrice = (tourPrice, couponCode) => {
       discountPercentage: 0,
       couponApplied: false,
       couponCode: null,
-      couponError: `Minimum purchase of $${coupon.minPurchase} required`,
+      couponError: `Minimum purchase of £${coupon.minPurchase} required`,
     };
   }
 
@@ -195,9 +195,9 @@ export default async function handler(req, res) {
     // Calculate subtotal (per person * number of travellers, after any discount)
     const subtotalAmount = priceDetails.finalPrice * travellers;
 
-    // 1% online payment fee, applied to the discounted subtotal.
+    // 2% online payment fee, applied to the discounted subtotal.
     // Only added here because this route is the card/online payment path.
-    const ONLINE_FEE_RATE = 0.01;
+    const ONLINE_FEE_RATE = 0.02;
     const onlineFeeAmount = Math.round(subtotalAmount * ONLINE_FEE_RATE * 100) / 100;
 
     // Final amount the customer pays

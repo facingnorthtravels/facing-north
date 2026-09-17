@@ -61,8 +61,8 @@ export const COHOSTED_PROFILES = [
       image: "/assets/cohosted/feature_cohosted_card.jpg",
       // status: "Pre-Launch",
       status: "Open Now",
-      destinations: "Around Karakoram, Hunza",
-      dates: "October 2026 and April 2027",
+      destinations: "Around Karakoram, Hunza and Skardu",
+      dates: "April 2027 and October 2027",
       button: "Join Now",
       // buttonClass: "preLaunch"
       buttonClass: "openNow",
@@ -86,7 +86,7 @@ export const COHOSTED_PROFILES = [
           {
             id: 2,
             title: "Adventure Across Mountains & Meadows",
-            date: "Oct 21 – 1 Nov, 2026 (12 days)",
+            date: "Oct 21 – 1 Nov, 2027 (12 days)",
             travelers: "14 travelers",
             rating: 4.8,
             reviews: 13,
@@ -212,8 +212,8 @@ export const COHOSTED_PROFILES = [
     tour: {
       image: "/assets/cohosted/feature_cohosted_card.jpg",
       status: "Open Now",
-      destinations: "Around Karakoram, Hunza",
-      dates: "October 2026 and April 2027",
+      destinations: "Around Karakoram, Hunza and Skardu",
+      dates: "April 2027 and October 2027",
       button: "Join Now",
       buttonClass: "openNow",
     },
@@ -236,7 +236,7 @@ export const COHOSTED_PROFILES = [
           {
             id: 2,
             title: "Adventure Across Mountains & Meadows",
-            date: "Oct 28 – 8 Nov, 2026 (12 days)",
+            date: "Oct 28 – 8 Nov, 2027 (12 days)",
             travelers: "14 travelers",
             rating: 4.8,
             reviews: 13,
@@ -363,8 +363,8 @@ export const COHOSTED_PROFILES = [
       image: "/assets/cohosted/feature_cohosted_card.jpg",
       // status: "COMMING SOON",
       status: "Open Now",
-      destinations: "Around Karakoram, Hunza",
-      dates: "October 2026 and April 2027",
+      destinations: "Around Karakoram, Hunza and Skardu",
+      dates: "April 2027 and October 2027",
       button: "Join Now",
       // buttonClass: "comingSoon"
       buttonClass: "openNow",
@@ -388,7 +388,7 @@ export const COHOSTED_PROFILES = [
           {
             id: 2,
             title: "Adventure Across Mountains & Meadows",
-            date: "Oct 28 – 8 Nov, 2026 (12 days)",
+            date: "Oct 28 – 8 Nov, 2027 (12 days)",
             travelers: "14 travelers",
             rating: 4.8,
             reviews: 13,
@@ -515,8 +515,8 @@ export const COHOSTED_PROFILES = [
     tour: {
       image: "/assets/cohosted/feature_cohosted_card.jpg",
       status: "Open Now",
-      destinations: "Around Karakoram, Hunza",
-      dates: "October 2026 and April 2027",
+      destinations: "Around Karakoram, Hunza and Skardu",
+      dates: "October 2027",
       button: "Join Now",
       buttonClass: "openNow",
     },
@@ -525,21 +525,9 @@ export const COHOSTED_PROFILES = [
         sectionTitle: "Upcoming Itineraries",
         itineraries: [
           {
-            id: 1,
-            date: "April 9 – 18, 2027 (10 days)",
-            title: "Journey Through the Heart of Karakoram",
-            travelers: "12 travelers",
-            rating: 5.0,
-            reviews: 16,
-            image:
-              "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-ogik/banner.jpg",
-            link: "/package-tour/br-around-karakoram-SP26-01-ogik",
-            itineraryId: "br-around-karakoram-SP26-01-ogik",
-          },
-          {
             id: 2,
             title: "Adventure Across Mountains & Meadows",
-            date: "Oct 21 – 1 Nov, 2026 (12 days)",
+            date: "Oct 21 – 1 Nov, 2027 (12 days)",
             travelers: "14 travelers",
             rating: 4.8,
             reviews: 13,

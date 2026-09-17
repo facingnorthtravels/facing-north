@@ -81,7 +81,7 @@ export const parsePrice = (price) => {
 /**
  * Formats a number as a price string with currency symbol
  * @param {number} amount - The amount to format
- * @param {string} currency - The currency symbol (default: '$')
+ * @param {string} currency - The currency symbol (default: '£')
  * @returns {string} - Formatted price string
  */
 export const formatPrice = (amount, currency = '£') => {

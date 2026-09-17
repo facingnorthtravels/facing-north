@@ -157,7 +157,7 @@ export default function CheckoutPage() {
 
         // Mount Revolut Pay button
         payments.revolutPay.mount(revolutPayRef.current, {
-          currency: order.currency || 'USD',
+          currency: order.currency || 'GBP',
           totalAmount: Math.round((order.amount || 0) * 100), // Amount in cents
           createOrder: async () => {
             // Return the existing order token (already created)
@@ -239,7 +239,7 @@ export default function CheckoutPage() {
         // Create the payment request instance
         // The SDK automatically detects if Apple Pay or Google Pay is available
         const paymentRequestInstance = payments.paymentRequest(expressPaymentTarget, {
-          currency: order.currency || 'USD',
+          currency: order.currency || 'GBP',
           amount: Math.round((order.amount || 0) * 100), // Amount in cents
           createOrder: async () => {
             // Return the existing order token (already created)
@@ -390,7 +390,7 @@ export default function CheckoutPage() {
               
               <div className={styles.order_total}>
                 <span>Total</span>
-                <strong>${order.amount?.toFixed(2)} {order.currency}</strong>
+                <strong>£{order.amount?.toFixed(2)} {order.currency}</strong>
               </div>
             </div>
           )}
@@ -437,7 +437,7 @@ export default function CheckoutPage() {
                   Processing...
                 </>
               ) : (
-                `Pay $${order?.amount?.toFixed(2) || '0.00'}`
+                `Pay £${order?.amount?.toFixed(2) || '0.00'}`
               )}
             </button>
           </div>

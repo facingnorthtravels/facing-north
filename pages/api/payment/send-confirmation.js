@@ -303,7 +303,7 @@ const getAdminEmailTemplate = (data) => `
                 <tr>
                   <td style="padding: 20px; text-align: center;">
                     <p style="color: #166534; font-size: 14px; margin: 0 0 5px; text-transform: uppercase; letter-spacing: 1px;">Payment Received</p>
-                    <p style="color: #059669; font-size: 36px; margin: 0; font-weight: 700;">$${data.amount.toFixed(2)} ${data.currency}</p>
+                    <p style="color: #059669; font-size: 36px; margin: 0; font-weight: 700;">£${data.amount.toFixed(2)} ${data.currency}</p>
                   </td>
                 </tr>
               </table>
@@ -430,7 +430,7 @@ const getAdminEmailTemplate = (data) => `
                 </tr>
                 <tr>
                   <td style="padding: 6px 0; color: #666; font-size: 14px;">Price per Person</td>
-                  <td style="padding: 6px 0; color: #1a1a1a; font-size: 14px;">$${data.tourPricePerPerson?.toFixed(2) || data.originalPrice?.toFixed(2)}</td>
+                  <td style="padding: 6px 0; color: #1a1a1a; font-size: 14px;">£${data.tourPricePerPerson?.toFixed(2) || data.originalPrice?.toFixed(2)}</td>
                 </tr>
                 <tr>
                   <td style="padding: 6px 0; color: #666; font-size: 14px;">Duration</td>
@@ -460,11 +460,11 @@ const getAdminEmailTemplate = (data) => `
               <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 24px;">
                 <tr>
                   <td style="padding: 6px 0; color: #666; font-size: 14px; width: 160px;">Original Price</td>
-                  <td style="padding: 6px 0; color: #1a1a1a; font-size: 14px;">$${data.originalPrice?.toFixed(2)}</td>
+                  <td style="padding: 6px 0; color: #1a1a1a; font-size: 14px;">£${data.originalPrice?.toFixed(2)}</td>
                 </tr>
                 <tr>
                   <td style="padding: 6px 0; color: #666; font-size: 14px;">Final Price</td>
-                  <td style="padding: 6px 0; color: #059669; font-size: 14px; font-weight: 600;">$${data.finalPrice?.toFixed(2) || data.amount.toFixed(2)}</td>
+                  <td style="padding: 6px 0; color: #059669; font-size: 14px; font-weight: 600;">£${data.finalPrice?.toFixed(2) || data.amount.toFixed(2)}</td>
                 </tr>
                 <tr>
                   <td style="padding: 6px 0; color: #666; font-size: 14px;">Coupon Code</td>
@@ -473,7 +473,7 @@ const getAdminEmailTemplate = (data) => `
                 ${data.discountAmount > 0 ? `
                 <tr>
                   <td style="padding: 6px 0; color: #666; font-size: 14px;">Discount Amount</td>
-                  <td style="padding: 6px 0; color: #16a34a; font-size: 14px; font-weight: 600;">-$${data.discountAmount.toFixed(2)}</td>
+                  <td style="padding: 6px 0; color: #16a34a; font-size: 14px; font-weight: 600;">-£${data.discountAmount.toFixed(2)}</td>
                 </tr>
                 ` : ''}
               </table>
@@ -623,7 +623,7 @@ export default async function handler(req, res) {
     const { data: adminData, error: adminError } = await resend.emails.send({
       from: `${FROM_NAME} Bookings <${FROM_EMAIL}>`,
       to: [adminEmail],
-      subject: `💰 New Booking: ${emailData.customerName} - $${emailData.amount.toFixed(2)}`,
+      subject: `💰 New Booking: ${emailData.customerName} - £${emailData.amount.toFixed(2)}`,
       html: getAdminEmailTemplate(emailData),
       reply_to: emailData.customerEmail, // Reply goes to customer
     });

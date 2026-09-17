@@ -161,8 +161,8 @@ export default function PackageTour({ tourDetailData, hostData: initialHostData 
         couponResult={couponResult}
         setCouponResult={setCouponResult}
       />
-      {/* International Flight Scheduled */}
-      {tourDetailData?.internationalFlights && (
+      {/* International Flight Scheduled — hidden on all package tour detail pages */}
+      {false && tourDetailData?.internationalFlights && (
         <InternationalFlightSection flightData={tourDetailData.internationalFlights} />
       )}
       <ContactNow
