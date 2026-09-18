@@ -44,7 +44,7 @@ const OPERATORS = [
   {
     name: "Facing North Adventures",
     type: "Local Pakistan Specialist",
-    priceFrom: "$800 (£630)",
+    priceFrom: "£800",
     groupSize: "8–12 / Private available",
     destinations: "Hunza, Skardu, Swat, Chitral, Fairy Meadows, Naran",
     ukVisa: "✅ Free LOI provided",
@@ -57,7 +57,7 @@ const OPERATORS = [
   {
     name: "Intrepid Travel",
     type: "International Group Tour Operator",
-    priceFrom: "~$2,000 (£1,600)",
+    priceFrom: "~£2,000",
     groupSize: "12–16",
     destinations: "Lahore, Hunza, Karimabad",
     ukVisa: "❌ Self-arranged",
@@ -70,7 +70,7 @@ const OPERATORS = [
   {
     name: "G Adventures",
     type: "International Group Tour Operator",
-    priceFrom: "~$1,800 (£1,430)",
+    priceFrom: "~£1,800",
     groupSize: "12–16",
     destinations: "Lahore, Islamabad, Hunza",
     ukVisa: "❌ Self-arranged",
@@ -83,7 +83,7 @@ const OPERATORS = [
   {
     name: "Exodus Travels",
     type: "UK Adventure Travel Company",
-    priceFrom: "~$2,500 (£2,000)",
+    priceFrom: "~£2,500",
     groupSize: "12–16",
     destinations: "Hunza, Karakoram Highway",
     ukVisa: "❌ Self-arranged",
@@ -208,7 +208,7 @@ export default function BestPakistanTourOperators() {
               "Free Letter of Invitation (LOI) for UK visa applications",
               "Private and group tours — full itinerary flexibility",
               "Covers 60+ Northern Pakistan destinations",
-              "Prices from $800 USD (£630 GBP) — best value for quality",
+              "Prices from £800 GBP — best value for quality",
               "Direct WhatsApp support throughout your trip",
             ],
             cons: [

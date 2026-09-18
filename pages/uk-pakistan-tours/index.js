@@ -65,7 +65,7 @@ const jsonLd = [
         "acceptedAnswer": {
           "@type": "Answer",
           "text":
-            "Facing North Adventures tour packages start from approximately $800 USD (around £630 GBP), not including international flights. A typical 10–14 day Northern Pakistan tour costs $1,200–$2,500 USD (£950–£2,000 GBP) including accommodation, meals, transport within Pakistan, and guided activities.",
+            "Facing North Adventures tour packages start from approximately £800 GBP, not including international flights. A typical 10–14 day Northern Pakistan tour costs £1,200–£2,500 GBP including accommodation, meals, transport within Pakistan, and guided activities.",
         },
       },
       {
@@ -242,7 +242,7 @@ export default function UKPakistanTours() {
             },
             {
               q: "How much does a Pakistan tour cost from the UK?",
-              a: "Facing North tours start from ~$800 USD (£630 GBP), excluding international flights. A 10–14 day Northern Pakistan tour typically costs £950–£2,000 including accommodation, meals, local transport, and guides.",
+              a: "Facing North tours start from ~£800 GBP, excluding international flights. A 10–14 day Northern Pakistan tour typically costs £950–£2,000 including accommodation, meals, local transport, and guides.",
             },
             {
               q: "What is the best month for UK travellers to visit?",

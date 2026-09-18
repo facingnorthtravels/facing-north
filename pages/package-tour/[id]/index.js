@@ -90,7 +90,7 @@ export default function PackageTour({ tourDetailData, hostData: initialHostData 
       "offers": {
         "@type": "Offer",
         "price": tourDetailData?.price?.replace(/[^0-9.]/g, '') || undefined,
-        "priceCurrency": "USD",
+        "priceCurrency": "GBP",
         "availability": "https://schema.org/InStock",
         "url": `https://facingnorthtravels.com/package-tour/${tourDetailData?.id}`
       },

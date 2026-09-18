@@ -152,7 +152,7 @@ const VisitorModal = ({ isOpen, onClose, onPermanentDismiss }) => {
                 value={formData.budget}
                 onChange={handleChange}
                 required
-                placeholder="e.g. $2000"
+                placeholder="e.g. £2000"
               />
             </div>
           </div>

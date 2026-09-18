@@ -65,7 +65,7 @@ export const validateCoupon = (code) => {
 
 /**
  * Parses a price string and extracts the numeric value
- * Handles formats like "$1,800", "€1,800", "1800", etc.
+ * Handles formats like "£1,800", "€1,800", "1800", etc.
  * @param {string|number} price - The price to parse
  * @returns {number} - The numeric price value
  */

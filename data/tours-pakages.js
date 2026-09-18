@@ -37,7 +37,7 @@ export const TOUR_PAKAGE = [
     bg_position: "bottom",
     link: "package-tour/journey-around-karakoram-paki-10",
     provincesCovered: "Gilgit Baltistan",
-    price: "$1,800",
+    price: "£1,800",
     days: "11",
     description:
       "Pakistan is a country full of diversity in every means whether you talk about landscape, food, culture or our traditions. Islamabad is the capital of Pakistan where our journey starts, Islamabad is surrounded by beautiful Margalla Hills which are the start of our mountain ranges. In the extreme North-East of Pakistan, at an altitude of 8200 ft., Skardu District is located in Gilgit-Baltistan and is the center of trekking, trailing and climbing journeys.",
@@ -264,8 +264,8 @@ export const TOUR_PAKAGE = [
         "12-16 pax",
       ],
       deluxePackage: [
-        "$2,400",
-        "$2,000",
+        "£2,400",
+        "£2,000",
       ],
     },
     // accommodation: "Hotels on Double Occupancy",
@@ -281,7 +281,7 @@ export const TOUR_PAKAGE = [
     link: "package-tour/br-around-karakoram-pk24-10",
     category: [CATEGORIES.naran],
     provincesCovered: "Gilgit Baltistan",
-    price: "$1,800",
+    price: "£1,800",
     days: "15",
     description:
       "Pakistan is a country full of diversity in every means whether you talk about landscape, food, culture or our traditions. Islamabad is the capital of Pakistan where our journey starts, Islamabad is surrounded by beautiful Margalla Hills which are the start of our mountain ranges. In the extreme North-East of Pakistan, at an altitude of 8200 ft., Skardu District is located in Gilgit-Baltistan and is the center of trekking, trailing and climbing journeys. In an epitome of beauty of its lakes, rivers and waterfalls, serenity of valleys and wilderness of the mountains",
@@ -548,8 +548,8 @@ export const TOUR_PAKAGE = [
         "12-16 pax",
       ],
       deluxePackage: [
-        "$2,400",
-        "$2,000",
+        "£2,400",
+        "£2,000",
       ],
     },
     // accommodation: "Hotels on Double Occupancy",
@@ -2589,7 +2589,7 @@ export const TOUR_PAKAGE = [
     service_img: swat_banner,
     link: "package-tour/swat-valley-pk-09",
     provincesCovered: "KPK & Federal",
-    price: "$700",
+    price: "£700",
     days: "8",
     description:
       "Pakistan is a country full of diversity in every means whether that’s the landscape, food, culture or our traditions. Swat is known as the Switzerland of Pakistan. The river Swat is a clear water river, starting from the Ushu range of mountains to the valley of Swat. It is one of the greenest valleys of Northern Pakistan and is well connected to the rest of the country. The valley of Swat is in the foothills of the Hindu Kush mountain range. The main town of the valley is Mingora and Saidu Sharif.",
@@ -2758,8 +2758,8 @@ export const TOUR_PAKAGE = [
     ],
     cost: {
       size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-      deluxePackage: ["$1,100", "$1,000", "$900", "$800", "$700"],
-      premiumPackage: ["$1,350", "$1,250", "$1,150", "$1,050", "$950"],
+      deluxePackage: ["£1,100", "£1,000", "£900", "£800", "£700"],
+      premiumPackage: ["£1,350", "£1,250", "£1,150", "£1,050", "£950"],
     },
     accommodation: "Hotels on Double Occupancy",
     essential:
@@ -2775,7 +2775,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.home, CATEGORIES.chitral, CATEGORIES.swat],
     link: "package-tour/wonders-of-hindukush",
     provincesCovered: "KPK, Federal & Punjab",
-    price: "$1,100",
+    price: "£1,100",
     days: "10",
     description:
       "Pakistan is a country full of diversity in every means whether that’s the landscape, food, culture or our traditions. Lying in the mountains of the Hindu Kush, Chitral is famous for its rich culture, traditions and beautiful valleys. The town of Chitral is the main town in the district and serves as its capital. It is situated on the west bank of the Chitral River (also known as the Kunar River) at the foot of Tirich Mir which at 7,708 m (25,289 ft) is the highest peak of the Hindu Kush.",
@@ -2957,7 +2957,7 @@ export const TOUR_PAKAGE = [
     cost: {
       size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
       // deluxePackage: [],
-      premiumPackage: ["$1,500", "$1,400", "$1,300", "$1,200", "$1,100"],
+      premiumPackage: ["£1,500", "£1,400", "£1,300", "£1,200", "£1,100"],
     },
     accommodation: "Hotels on Double Occupancy",
     essential:
@@ -2978,7 +2978,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.home, CATEGORIES.hunza, CATEGORIES.naran],
     link: "package-tour/an-escape-to-hunza-pk23-01",
     provincesCovered: "KPK & GB",
-    price: "$1,100",
+    price: "£1,100",
     days: "12",
     description:
       "Pakistan is a country full of diversity in every means whether that is the landscape, food, culture, or traditions. Islamabad is the capital of Pakistan where our journey starts. Experience the breathtaking beauty of Hunza Valley with our exciting 12-day itinerary. Explore the rich culture and history of the region as you visit ancient forts, royal baths, and unique mosques. Enjoy thrilling off-road drives to hidden gems and taste organic ice from the thousands of years old glacier. Witness the border ceremony between India and Pakistan at Wagah Border and take an hour-long air safari over the majestic Karakoram and Kaghan region.",
@@ -3194,8 +3194,8 @@ export const TOUR_PAKAGE = [
     ],
     cost: {
       size: ["6 Pax", "8 Pax", "12 Pax", "16 Pax", "20 Pax"],
-      deluxePackage: ["$1,400", "$1,500", "$1,300", "$1,200", "$1,100"],
-      premiumPackage: ["$1,700", "$1,600", "$1,500", "$1,400", "$1,300"],
+      deluxePackage: ["£1,400", "£1,500", "£1,300", "£1,200", "£1,100"],
+      premiumPackage: ["£1,700", "£1,600", "£1,500", "£1,400", "£1,300"],
     },
     // accommodation: "Hotels on Double Occupancy",
     essential:
@@ -3212,7 +3212,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.home, CATEGORIES.hunza, CATEGORIES.naran],
     link: "package-tour/air-journey-to-silk-route-pk23-02",
     provincesCovered: " KPK & GB",
-    price: "$1,100",
+    price: "£1,100",
     days: "11",
     description:
       "Pakistan is a country full of diversity in every means whether that’s the landscape, food, culture, or our traditions. Islamabad is the capital of Pakistan where our journey starts. Islamabad is surrounded by the beautiful Margalla Hills which are the beginning of our mountain ranges. In the North-East of Pakistan, at an altitude of 8200 ft,. lies Hunza District in Gilgit-Baltistan. An epitome of beauty, its lakes, rivers and waterfalls, serenity of valleys and wilderness of the mountains make it the center of trekking, trailing, and climbing journeys. Kaghan Valley is situated far north of KPK province, which connects to Gilgit-Baltistan through Babusar Top. It is different from snow-covered mountains which are 4000 meters higher than the ocean level. It contains about 370 large and small villages. ",
@@ -3435,8 +3435,8 @@ export const TOUR_PAKAGE = [
     ],
     cost: {
       size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-      deluxePackage: ["$1,500", "$1,400", "$1,300", "$1,200", "$1,100"],
-      premiumPackage: ["$1,800", "$1,700", "$1,600", "$1,500", "$1,400"],
+      deluxePackage: ["£1,500", "£1,400", "£1,300", "£1,200", "£1,100"],
+      premiumPackage: ["£1,800", "£1,700", "£1,600", "£1,500", "£1,400"],
     },
     // accommodation: "Hotels on Double Occupancy",
     essential:
@@ -3452,7 +3452,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.hunza, CATEGORIES.fairy],
     link: "package-tour/hunza-fairy-meadows",
     provincesCovered: "Punjab & GB ",
-    price: "$1,500",
+    price: "£1,500",
     days: "11",
     description:
       "Pakistan is a country full of diversity in every means whether that’s landscape, food, culture or our traditions. Islamabad is the capital of Pakistan where our journey starts. Islamabad is surrounded by the beautiful Margalla Hills which are the start of our mountain ranges. In the North-East of Pakistan, at an altitude of 8200 ft. lies Hunza District in Gilgit-Baltistan. An epitome of beauty, its lakes, rivers and waterfalls",
@@ -3676,8 +3676,8 @@ export const TOUR_PAKAGE = [
     ],
     cost: {
       size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-      deluxePackage: ["$1,500", "$1,400", "$1,300", "$1,200", "$1,100"],
-      premiumPackage: ["$1,800", "$1,700", "$1,600", "$1,500", "$1,400"],
+      deluxePackage: ["£1,500", "£1,400", "£1,300", "£1,200", "£1,100"],
+      premiumPackage: ["£1,800", "£1,700", "£1,600", "£1,500", "£1,400"],
     },
     // accommodation: "Hotels on Double Occupancy",
     essential:
@@ -3694,7 +3694,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.hunza, CATEGORIES.lahore],
     link: "package-tour/hunza-lahore-autumn",
     provincesCovered: "Punjab & GB",
-    price: "$1,100",
+    price: "£1,100",
     days: "11",
     description:
       "Pakistan is a country full of diversity in every means whether that’s the landscape, food, culture or traditions. Islamabad is the capital of Pakistan where our journey starts. Experience the breathtaking beauty of Hunza Valley in Autumn with our exciting 11-day itinerary. Explore the rich culture and history of the region as you visit ancient forts, royal baths, and unique mosques. Enjoy thrilling off-road drives to hidden gems and taste the organic ice from the thousand-year-old glacier.",
@@ -3905,8 +3905,8 @@ export const TOUR_PAKAGE = [
     ],
     cost: {
       size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-      deluxePackage: ["$1,750", "$1,650", "$1,550", "$1,450", "$1,350"],
-      premiumPackage: ["$2,000", "$1,900", "$1,800", "$1,700", "$1,600"],
+      deluxePackage: ["£1,750", "£1,650", "£1,550", "£1,450", "£1,350"],
+      premiumPackage: ["£2,000", "£1,900", "£1,800", "£1,700", "£1,600"],
     },
     // accommodation: "Hotels on Double Occupancy",
     essential:
@@ -3922,7 +3922,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.hunza],
     link: "package-tour/hunza-autumn",
     provincesCovered: "Punjab & GB",
-    price: "$1,000",
+    price: "£1,000",
     days: "9",
     description:
       "Pakistan is a country full of diversity in every means whether that is the landscape, food, culture or traditions. Islamabad is the capital of Pakistan where our journey starts. Islamabad is surrounded by the beautiful Margalla Hills which are the start of our mountain ranges. In the North-East of Pakistan, at an altitude of 8200 ft. lies Hunza District in Gilgit-Baltistan. An epitome of beauty, its lakes, rivers and waterfalls, serenity of valleys and wilderness of the mountains make it the center of trekking, trailing and climbing journeys.",
@@ -4108,8 +4108,8 @@ export const TOUR_PAKAGE = [
     ],
     cost: {
       size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-      deluxePackage: ["$1,400", "$1,300", "$1,200", "$1,100", "$1,000"],
-      premiumPackage: ["$1,800", "$1,700", "$1,600", "$1,500", "$1,400"],
+      deluxePackage: ["£1,400", "£1,300", "£1,200", "£1,100", "£1,000"],
+      premiumPackage: ["£1,800", "£1,700", "£1,600", "£1,500", "£1,400"],
     },
     // accommodation: "Hotels on Double Occupancy",
     essential:
@@ -4126,7 +4126,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.hunza, CATEGORIES.lahore],
     link: "package-tour/hunza-lahore-springs",
     provincesCovered: "Punjab & GB",
-    price: "$1,450",
+    price: "£1,450",
     days: "11 ",
     description:
       "Pakistan is a country full of diversity in every means whether that’s the landscape, food, culture or traditions. Islamabad is the capital of Pakistan where our journey starts. Islamabad is surrounded by the beautiful Margalla Hills which are the start of our mountain ranges. In the North-East of Pakistan, at an altitude of 8200 ft. lies Hunza District in Gilgit-Baltistan. An epitome of beauty, its lakes, rivers and waterfalls, serenity of valleys and wilderness of the mountains make it the center of trekking, trailing and climbing journeys.",
@@ -4341,8 +4341,8 @@ export const TOUR_PAKAGE = [
     ],
     cost: {
       size: ["6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-      deluxePackage: ["$1,750", "$1,650", "$1,550", "$1,450"],
-      premiumPackage: ["$2,000", "$1,900", "$1,800", "$1,700"],
+      deluxePackage: ["£1,750", "£1,650", "£1,550", "£1,450"],
+      premiumPackage: ["£2,000", "£1,900", "£1,800", "£1,700"],
     },
     // accommodation: "Hotels on Double Occupancy",
     essential:
@@ -4358,7 +4358,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.hunza],
     link: "package-tour/hunza-springs",
     provincesCovered: "Punjab & GB",
-    price: "$1,000",
+    price: "£1,000",
     days: "9",
     description:
       "Pakistan is a country full of diversity in every means whether that is the landscape, food, culture or traditions. Islamabad is the capital of Pakistan where our journey starts. Islamabad is surrounded by the beautiful Margalla Hills which are the start of our mountain ranges. In the North-East of Pakistan, at an altitude of 8200 ft. lies Hunza District in Gilgit-Baltistan. An epitome of beauty, its lakes, rivers and waterfalls, serenity of valleys and wilderness of the mountains make it the center of trekking, trailing and climbing journeys.",
@@ -4551,8 +4551,8 @@ export const TOUR_PAKAGE = [
     ],
     cost: {
       size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-      deluxePackage: ["$1,400", "$1,300", "$1,200", "$1,100", "$1,000"],
-      premiumPackage: ["$1,800", "$1,700", "$1,600", "$1,500", "$1,400"],
+      deluxePackage: ["£1,400", "£1,300", "£1,200", "£1,100", "£1,000"],
+      premiumPackage: ["£1,800", "£1,700", "£1,600", "£1,500", "£1,400"],
     },
     // accommodation: "Hotels on Double Occupancy",
     essential:
@@ -4572,7 +4572,7 @@ export const TOUR_PAKAGE = [
     service_img: "/assets/IMAGES/tour-packages/hunza-photography-workshop-pk23-04/banner.jpg",
     link: "package-tour/hunza-photography-workshop-pk23-04",
     provincesCovered: "Punjab & GB",
-    price: "$1950",
+    price: "£1950",
     days: "11",
     description:
       "Pakistan is a country full of diversity in every means whether that is the landscape, food, culture or traditions. Islamabad is the capital of Pakistan where our journey starts, Islamabad is surrounded by beautiful Margalla Hills which are the start of our mountain ranges. In the North-East of Pakistan, at an altitude of 8200 ft., Hunza District lies in Gilgit-Baltistan. An epitome of beauty, its lakes, rivers and waterfalls, serenity of valleys and wilderness of the mountains make it the center for trekking, trailing and climbing journeys.",
@@ -4777,8 +4777,8 @@ export const TOUR_PAKAGE = [
     ],
     // cost: {
     //   size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-    //   deluxePackage: ["$1,600", "$1,500", "$1,400", "$1,300", "$1,200"],
-    //   premiumPackage: ["$1,850", "$1,750", "$1,650", "$1,550", "$1,450"],
+    //   deluxePackage: ["£1,600", "£1,500", "£1,400", "£1,300", "£1,200"],
+    //   premiumPackage: ["£1,850", "£1,750", "£1,650", "£1,550", "£1,450"],
     // },
     // accommodation: "All Accommodations will be on double occupancy",
     essential:
@@ -4793,7 +4793,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.home],
     link: "package-tour/hunza-photography-excursion-pk23-04",
     provincesCovered: "Punjab & GB",
-    price: "$2,600",
+    price: "£2,600",
     days: "11",
     description:
       "Pakistan is a country full of diversity in every means whether that's the landscape, food, culture or traditions. Islamabad is the capital of Pakistan where our journey starts. Our Hunza landscape photography excursion will take you on a journey through some of the most stunning locations in the region. You will have the opportunity to capture breathtaking shots of the Hunza Valley, Passu Cones, and Attabad Lake",
@@ -5007,8 +5007,8 @@ export const TOUR_PAKAGE = [
     ],
     // cost: {
     //   size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-    //   deluxePackage: ["$1,600", "$1,500", "$1,400", "$1,300", "$1,200"],
-    //   premiumPackage: ["$1,850", "$1,750", "$1,650", "$1,550", "$1,450"],
+    //   deluxePackage: ["£1,600", "£1,500", "£1,400", "£1,300", "£1,200"],
+    //   premiumPackage: ["£1,850", "£1,750", "£1,650", "£1,550", "£1,450"],
     // },
     // accommodation: "All Accommodations will be on double occupancy",
     essential:
@@ -5023,7 +5023,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.home],
     link: "package-tour/skardu-photography-excursion-pk23-05",
     provincesCovered: "Punjab  & GB",
-    price: "$2,600",
+    price: "£2,600",
     days: "11",
     description:
       "Pakistan is a country full of diversity in every means whether that is the  landscape, food, culture or traditions. Islamabad is the capital of Pakistan where our journey starts, surrounded by the beautiful Margalla Hills. Our Skardu landscape photography excursion offers a unique opportunity to capture the stunning natural beauty of Gilgit-Baltistan. Starting with a flight from Islamabad to Skardu.",
@@ -5230,7 +5230,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.home],
     link: "package-tour/pk23-13-sikh-yatra",
     provincesCovered: "Federal & Punjab",
-    price: "$1,700",
+    price: "£1,700",
     days: "8",
     description:
       "Pakistan is a mystical land of faith and heritage, and in the spiritual Punjab, history, religion, and culture converge beautifully. Travelling through Sheikhupura, Lahore, Hassan Abdal, and the fairy-tale regions of the snow-clad Himalayas, you will learn the history, experience the culture, and appreciate the influences of nature on the soul. Witness traditional Sikh ceremonies and experience ritualistic rites at temples, villages, and even at the residence of faithful followers.",
@@ -5367,7 +5367,7 @@ export const TOUR_PAKAGE = [
         "Yes",
         "Yes",
         "Yes",
-        "$1,700",
+        "£1,700",
       ],
       premiumPackage: [
         "Toyota Coaster",
@@ -5381,7 +5381,7 @@ export const TOUR_PAKAGE = [
         "Yes",
         "Yes",
         "Yes",
-        "$1,900",
+        "£1,900",
       ],
     },
     notIncluded: [
@@ -5394,8 +5394,8 @@ export const TOUR_PAKAGE = [
     ],
     // cost: {
     //   size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-    //   deluxePackage: ["$1,600", "$1,500", "$1,400", "$1,300", "$1,200"],
-    //   premiumPackage: ["$1,850", "$1,750", "$1,650", "$1,550", "$1,450"],
+    //   deluxePackage: ["£1,600", "£1,500", "£1,400", "£1,300", "£1,200"],
+    //   premiumPackage: ["£1,850", "£1,750", "£1,650", "£1,550", "£1,450"],
     // },
     accommodation: "All Accommodations will be on double occupancy",
     // essential:
@@ -5414,7 +5414,7 @@ export const TOUR_PAKAGE = [
   //   service_img: hunza_banner,
   //   link: "package-tour/pk24-14-sacred-trails",
   //   provincesCovered: "Federal & KPK",
-  //   price: "$1,500",
+  //   price: "£1,500",
   //   days: "9",
   //   description:
   //     "Pakistan is a mystical land of faith and heritage. The tour starts in Islamabad and on to Taxila and Peshawar, where ancient Buddhist remains and artifacts are discovered. Once a major Buddhist center, Swat Valley presents a cultural tapestry made of Butkara Stupa and Udegram. A UNESCO World Heritage monument, Takht-i-Bahi represents the pinnacle of Gandharan devotion. ",
@@ -5580,7 +5580,7 @@ export const TOUR_PAKAGE = [
   //       "Yes",
   //       "Yes",
   //       "Yes",
-  //       "$1,500",
+  //       "£1,500",
   //     ],
   //     premiumPackage: [
   //       "Toyota Coaster",
@@ -5595,7 +5595,7 @@ export const TOUR_PAKAGE = [
   //       "Yes",
   //       "Yes",
   //       "Yes",
-  //       "$1,800",
+  //       "£1,800",
   //     ],
   //   },
   //   notIncluded: [
@@ -5622,7 +5622,7 @@ export const TOUR_PAKAGE = [
     service_img: "/assets/IMAGES/tour-packages/autumn-in-skardu-and-lahore/banner.jpg",
     link: "package-tour/autumn-in-skardu-and-lahore",
     provincesCovered: " Punjab, KPK & GB",
-    price: "$1,150",
+    price: "£1,150",
     days: "10",
     description:
       "Pakistan is a country full of diversity in every means whether that is the landscape, food, culture or traditions. Islamabad is the capital of Pakistan where our journey starts. This travel itinerary offers a unique opportunity to explore the natural beauty, rich culture, and history of Pakistan. From the stunning Himalayan peaks of Skardu and Khaplu to the bustling streets and ancient sites of Lahore.",
@@ -5829,8 +5829,8 @@ export const TOUR_PAKAGE = [
     ],
     cost: {
       size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-      deluxePackage: ["$1,550", "$1,450", "$1,350", "$1,250", "$1,150"],
-      premiumPackage: ["$1,950", "$1,850", "$1,750", "$1,650", "$1,550"],
+      deluxePackage: ["£1,550", "£1,450", "£1,350", "£1,250", "£1,150"],
+      premiumPackage: ["£1,950", "£1,850", "£1,750", "£1,650", "£1,550"],
     },
     accommodation: "Hotels (Double Occupancy)",
     essential:
@@ -5845,7 +5845,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.skardu],
     link: "package-tour/autumn-in-Skardu",
     provincesCovered: " Punjab, KPK & GB",
-    price: "$1,200",
+    price: "£1,200",
     days: "9",
     description:
       "Pakistan is a country full of diversity in every means whether that is the landscape, food, culture or traditions. Islamabad is the capital of Pakistan where our journey starts. This travel itinerary offers a unique opportunity to explore the natural beauty, rich culture, and history of Pakistan.",
@@ -6001,8 +6001,8 @@ export const TOUR_PAKAGE = [
     },
     cost: {
       size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-      deluxePackage: ["$1,600", "$1,500", "$1,400", "$1,300", "$1,200"],
-      premiumPackage: ["$1,850", "$1,750", "$1,650", "$1,550", "$1,450"],
+      deluxePackage: ["£1,600", "£1,500", "£1,400", "£1,300", "£1,200"],
+      premiumPackage: ["£1,850", "£1,750", "£1,650", "£1,550", "£1,450"],
     },
     accommodation: "Hotels (Double Occupancy)",
     essential:
@@ -6018,7 +6018,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.lahore, CATEGORIES.skardu, CATEGORIES.lahore],
     link: "package-tour/blossom-in-lahore-and-skardu",
     provincesCovered: "Punjab, KPK & GB",
-    price: "$1,500",
+    price: "£1,500",
     days: "11",
     description:
       "Pakistan is a country full of diversity in every means whether that is the landscape, food, culture or traditions. Islamabad is the capital of Pakistan where our journey starts. This travel itinerary offers a unique opportunity to explore the natural beauty, rich culture, and history of Pakistan. From the stunning Himalayan peaks of Skardu and Khaplu to the bustling streets and ancient sites of Lahore, you will experience the diversity and richness of Pakistan's landscapes and traditions.",
@@ -6221,8 +6221,8 @@ export const TOUR_PAKAGE = [
     ],
     cost: {
       size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-      deluxePackage: ["$1,900", "$1,800", "$1,700", "$1,600", "$1,500"],
-      premiumPackage: ["$2,200", "$2,100", "$2,000", "$1,900", "$1,800"],
+      deluxePackage: ["£1,900", "£1,800", "£1,700", "£1,600", "£1,500"],
+      premiumPackage: ["£2,200", "£2,100", "£2,000", "£1,900", "£1,800"],
     },
     accommodation: "Hotels (Double Occupancy)",
     essential:
@@ -6237,7 +6237,7 @@ export const TOUR_PAKAGE = [
     category: [CATEGORIES.skardu],
     link: "package-tour/blossom-in-skardu",
     provincesCovered: "GB",
-    price: "$1,200",
+    price: "£1,200",
     days: "9",
     description:
       "Pakistan is a country full of diversity in every means whether that is the landscape, food, culture or traditions. Islamabad is the capital of Pakistan where our journey starts. This travel itinerary offers a unique opportunity to explore the natural beauty, rich culture, and history of Pakistan.",
@@ -6419,8 +6419,8 @@ export const TOUR_PAKAGE = [
     ],
     cost: {
       size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-      deluxePackage: ["$1,600", "$1,500", "$1,400", "$1,300", "$1,200"],
-      premiumPackage: ["$1,850", "$1,750", "$1,650", "$1,550", "$1,450"],
+      deluxePackage: ["£1,600", "£1,500", "£1,400", "£1,300", "£1,200"],
+      premiumPackage: ["£1,850", "£1,750", "£1,650", "£1,550", "£1,450"],
     },
     accommodation: "Hotels (Double Occupancy)",
     essential:
@@ -6435,7 +6435,7 @@ export const TOUR_PAKAGE = [
     link: "package-tour/fairy-meadows-baltistan",
     category: [CATEGORIES.fairy, CATEGORIES.skardu],
     provincesCovered: "Punjab & GB",
-    price: "$1,800",
+    price: "£1,800",
     days: "11",
     description:
       "Pakistan is a country full of diversity in every means whether that is the landscape, food, culture or traditions. Islamabad is the capital of Pakistan where our journey starts. Embark on a journey of a lifetime and explore the breathtaking landscapes of Northern Pakistan on this 12-day tour. From the serene lakes of Skardu to the majestic mountains of Fairy Meadows, witness the beauty of nature in its purest form. Immerse yourself in the rich culture of the Balti people and indulge in local cuisine. With comfortable accommodations and experienced guides, this tour promises an unforgettable adventure.",
@@ -6675,16 +6675,16 @@ export const TOUR_PAKAGE = [
         "14 Pax",
       ],
       deluxePackage: [
-        "$1,700",
-        "$1,600",
-        "$1,500",
-        "$1,400",
+        "£1,700",
+        "£1,600",
+        "£1,500",
+        "£1,400",
       ],
       premiumPackage: [
-        "$2,100",
-        "$2,000",
-        "$1,900",
-        "$1,800",
+        "£2,100",
+        "£2,000",
+        "£1,900",
+        "£1,800",
       ],
     },
     // accommodation: "Hotels on Double Occupancy",
@@ -6701,7 +6701,7 @@ export const TOUR_PAKAGE = [
     link: "package-tour/throne-of-karakoram-skardu",
     category: [CATEGORIES.skardu, CATEGORIES.fairy],
     provincesCovered: "Punjab, KPK & GB",
-    price: "$1,600",
+    price: "£1,600",
     days: "10",
     description:
       "Pakistan is a country full of diversity in every means whether that is the landscape, food, culture or traditions. Islamabad is the capital of Pakistan where our journey starts. Islamabad is surrounded by the beautiful Margalla Hills which are the start of our mountain ranges. In the extreme North-East of Pakistan, at an altitude of 8200 ft., lies Skardu District in Gilgit-Baltistan and is the center of trekking, trailing and climbing journeys.",
@@ -6890,8 +6890,8 @@ export const TOUR_PAKAGE = [
     ],
     cost: {
       size: ["4 Pax", "6 Pax", "10 Pax", "14 Pax", "18 Pax"],
-      deluxePackage: ["$1,600", "$1,500", "$1,400", "$1,300", "$1,200"],
-      premiumPackage: ["$1,950", "$1,850", "$1,750", "$1,650", "$1,550"],
+      deluxePackage: ["£1,600", "£1,500", "£1,400", "£1,300", "£1,200"],
+      premiumPackage: ["£1,950", "£1,850", "£1,750", "£1,650", "£1,550"],
     },
     accommodation: "Hotels (Double Occupancy)",
     essential:
@@ -6909,7 +6909,7 @@ export const TOUR_PAKAGE = [
     service_img: "/assets/IMAGES/tour-packages/pakistan-food-journey/banner.jpg",
     link: "package-tour/pakistan-food-journey",
     provincesCovered: "Federal,Punjab & GB",
-    price: "$1,800",
+    price: "£1,800",
     days: "11",
     description:
       "Pakistan is a country full of diversity in every aspect, whether that’s landscape, food, culture or traditions. Islamabad, the capital, is where our journey starts. Islamabad is surrounded by the beautiful Margalla Hills which is where our mountain ranges begin. In the North-East of Pakistan, at an altitude of 8200 ft., lies Hunza District in Gilgit-Baltistan. An epitome of beauty are its lakes, rivers and waterfalls, serenity of valleys and wilderness of the mountain making it the center for trekking.",
@@ -7096,7 +7096,7 @@ export const TOUR_PAKAGE = [
         "Yes",
         "Yes",
         "Yes",
-        "$1,800",
+        "£1,800",
       ],
       premiumPackage: [
         "Toyota Coaster & Jeeps",
@@ -7114,7 +7114,7 @@ export const TOUR_PAKAGE = [
         "Yes",
         "Yes",
         "Yes",
-        "$2,100",
+        "£2,100",
       ],
     },
     notIncluded: [
@@ -7133,8 +7133,8 @@ export const TOUR_PAKAGE = [
     //     "Entry to all forts, Museum & Boating or  any other activity ",
     //     "Package cost per person ",
     //   ],
-    //   deluxePackage: ["Yes", "Yes", "Yes", "Yes", "$1,800"],
-    //   premiumPackage: ["Yes", "Yes", "Yes", "Yes", "$2,100"],
+    //   deluxePackage: ["Yes", "Yes", "Yes", "Yes", "£1,800"],
+    //   premiumPackage: ["Yes", "Yes", "Yes", "Yes", "£2,100"],
 
     //   // mapImage: "",
     // },
@@ -7154,7 +7154,7 @@ export const TOUR_PAKAGE = [
     service_img: "/assets/IMAGES/tour-packages/rakaposhi-basecamp-pk24-06/cover.jpg",
     link: "package-tour/rakaposhi-basecamp-pk24-06",
     provincesCovered: "Gilgit Baltistan",
-    price: "$1,500",
+    price: "£1,500",
     days: "12",
     description:
       "Rakaposhi Base Camp trek route is in the region of Minapin Village in the Nagar Valley of Northern Areas Gilgit-Baltistan. This trek has quite easy access from Karakoram Highway (KKH). It is one of the easiest treks in the Karakorum that suits all levels of physical fitness and age. It gives all the taste of walking, including crossing the glacier. This is one of the shortest and easiest treks leading to above 7000M Karakoram peaks base camps with sweeping view from Rakaposhi to Diran.",
@@ -7356,8 +7356,8 @@ export const TOUR_PAKAGE = [
         "13 to 16 Pax",
         "17 Above",
       ],
-      deluxePackage: ["$1,500", "$1,300", "$1,100"],
-      //   premiumPackage: ["$1,800", "$1,700", "$1,600", "$1,500", "$1,400"],
+      deluxePackage: ["£1,500", "£1,300", "£1,100"],
+      //   premiumPackage: ["£1,800", "£1,700", "£1,600", "£1,500", "£1,400"],
     },
     // accommodation: "Hotels on Double Occupancy",
     essential:
@@ -7372,7 +7372,7 @@ export const TOUR_PAKAGE = [
     service_img: "/assets/IMAGES/tour-packages/pk24-07-ultimate-peaks-escape/cover.jpg",
     link: "package-tour/pk24-07-ultimate-peaks-escape",
     provincesCovered: "Punjab & GB",
-    price: "$1,800",
+    price: "£1,800",
     days: "15",
     description:
       "Pakistan is a country full of diversity in every means whether you talk about landscape, food, culture or our traditions. Islamabad is the capital of Pakistan where our journey starts. Islamabad is surrounded by beautiful Margalla Hills which are the start of our mountain ranges. In the North-East of Pakistan, at an altitude of 8200 ftHunza District is in Gilgit-Baltistan and is the center of trekking, trailing and climbing journeys. An epitome of beauty are its lakes, rivers and waterfalls, serenity of valleys and wilderness of the mountains. Fairy Meadows, named by German climbers and locally known as Joot, is a grassland near one of the base camp sites of the Nanga Parbat, located in Diamer District, Gilgit-Baltistan, Pakistan.",
@@ -7595,8 +7595,8 @@ export const TOUR_PAKAGE = [
       size: [
         "14+ Pax",
       ],
-      deluxePackage: ["$1,600"],
-      //   premiumPackage: ["$1,800", "$1,700", "$1,600", "$1,500", "$1,400"],
+      deluxePackage: ["£1,600"],
+      //   premiumPackage: ["£1,800", "£1,700", "£1,600", "£1,500", "£1,400"],
     },
     // accommodation: "Hotels on Double Occupancy",
     essential:
@@ -7616,7 +7616,7 @@ export const TOUR_PAKAGE = [
     service_img: "/assets/IMAGES/tour-packages/hunza-wellness-retreat-pk24-11/banner.jpg",
     link: "package-tour/hunza-wellness-retreat-pk24-11",
     provincesCovered: "Gilgit Baltistan",
-    price: "$1,800",
+    price: "£1,800",
     days: "11",
     description:
       "Our wellness retreat aims to create good vibes, guide people to be at their best, and support individual power. We face challenges we cannot control, affecting our mental and physical health. The retreat provides a space to step back, recharge and rediscover ourselves amidst nature. Through meditation, exercise, and mindfulness, we can break our habits and reconnect with healing powers. Recharge your soul and unlock your potential energy this summer with us in the mountains for a balanced life.",
@@ -7817,8 +7817,8 @@ export const TOUR_PAKAGE = [
         "Package cost per person single occupancy ",
         "Package cost per person double occupancy",
       ],
-      deluxePackage: ["$32,00", "$2,500"],
-      //   premiumPackage: ["$1,800", "$1,700", "$1,600", "$1,500", "$1,400"],
+      deluxePackage: ["£32,00", "£2,500"],
+      //   premiumPackage: ["£1,800", "£1,700", "£1,600", "£1,500", "£1,400"],
     },
     // accommodation: "Hotels on Double Occupancy",
     essential:
@@ -7838,7 +7838,7 @@ export const TOUR_PAKAGE = [
   //   bg_position: "bottom",
   //   link: "package-tour/journey-around-karakoram-paki-10",
   //   provincesCovered: "Gilgit Baltistan",
-  //   price: "$1",
+  //   price: "£1",
   //   days: "11",
   //   description:
   //     "Pakistan is a country full of diversity in every means whether you talk about landscape, food, culture or our traditions. Islamabad is the capital of Pakistan where our journey starts, Islamabad is surrounded by beautiful Margalla Hills which are the start of our mountain ranges. In the extreme North-East of Pakistan, at an altitude of 8200 ft., Skardu District is located in Gilgit-Baltistan and is the center of trekking, trailing and climbing journeys.",
@@ -8065,8 +8065,8 @@ export const TOUR_PAKAGE = [
   //       "12-16 pax",
   //     ],
   //     deluxePackage: [
-  //       "$2,400",
-  //       "$2,000",
+  //       "£2,400",
+  //       "£2,000",
   //     ],
   //   },
   //   // accommodation: "Hotels on Double Occupancy",
