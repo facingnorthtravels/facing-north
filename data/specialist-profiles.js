@@ -99,6 +99,7 @@ export const SPECIALIST_PROFILES = [
         id: 2,
         itinerary_title: "The Karakoram: Wellness & Culinary Journey",
         itinerary_slug: "the-karakoram-wellness-culinary-oct2026",
+        hidden: true, // October tours hidden from Community Trips
         itinerary_image: "/assets/Iternaries/wellness.jpg",
         itinerary_country: "Pakistan",
         itinerary_country_flag: "🇵🇰",
@@ -125,9 +126,16 @@ export const SPECIALIST_PROFILES = [
   },
 ];
 
+// Drop itineraries flagged `hidden: true` so they don't appear anywhere on the site.
+const withVisibleItineraries = (profile) =>
+  profile && {
+    ...profile,
+    itineraries: (profile.itineraries || []).filter((it) => !it.hidden),
+  };
+
 export const getSpecialistProfileBySlug = (slugOrId) => {
   if (!slugOrId) return null;
-  return (
+  return withVisibleItineraries(
     SPECIALIST_PROFILES.find(
       (profile) =>
         profile.specialist_slug === slugOrId || profile.id === slugOrId
@@ -135,4 +143,5 @@ export const getSpecialistProfileBySlug = (slugOrId) => {
   );
 };
 
-export const getAllSpecialistProfiles = () => SPECIALIST_PROFILES;
+export const getAllSpecialistProfiles = () =>
+  SPECIALIST_PROFILES.map(withVisibleItineraries);

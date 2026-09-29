@@ -62,7 +62,7 @@ export const COHOSTED_PROFILES = [
       // status: "Pre-Launch",
       status: "Open Now",
       destinations: "Around Karakoram, Hunza and Skardu",
-      dates: "April 2027 and October 2027",
+      dates: "April 2027",
       button: "Join Now",
       // buttonClass: "preLaunch"
       buttonClass: "openNow",
@@ -86,6 +86,7 @@ export const COHOSTED_PROFILES = [
           {
             id: 2,
             title: "Adventure Across Mountains & Meadows",
+            hidden: true, // October tours hidden from Community Trips
             date: "Oct 21 – 1 Nov, 2027 (12 days)",
             travelers: "14 travelers",
             rating: 4.8,
@@ -213,7 +214,7 @@ export const COHOSTED_PROFILES = [
       image: "/assets/cohosted/feature_cohosted_card.jpg",
       status: "Open Now",
       destinations: "Around Karakoram, Hunza and Skardu",
-      dates: "April 2027 and October 2027",
+      dates: "April 2027",
       button: "Join Now",
       buttonClass: "openNow",
     },
@@ -236,6 +237,7 @@ export const COHOSTED_PROFILES = [
           {
             id: 2,
             title: "Adventure Across Mountains & Meadows",
+            hidden: true, // October tours hidden from Community Trips
             date: "Oct 28 – 8 Nov, 2027 (12 days)",
             travelers: "14 travelers",
             rating: 4.8,
@@ -326,7 +328,8 @@ export const COHOSTED_PROFILES = [
       countries: 25,
     },
     // videoUrl: "https://youtu.be/EPoL0p9AwbY",
-    introURL: "https://youtu.be/EPoL0p9AwbY",
+    // introURL: "https://youtu.be/EPoL0p9AwbY", // previous intro video
+    introURL: "/assets/cohosted_profile/Pakistan-LukasRichter.mp4",
     about:
       "I’m Lukas Richter, a travel and outdoor creator from southern Germany. After finishing my photography apprenticeship, I started sharing my travels and love for nature online — which slowly turned into my full-time job. Today, I work with brands and destinations around the world, creating authentic visuals that capture real moments outdoors. I speak both German and English and have visited over 25 countries so far. For me, it’s all about exploring new places, staying active, and inspiring others to spend more time outside.",
     socialLinks: [
@@ -364,7 +367,7 @@ export const COHOSTED_PROFILES = [
       // status: "COMMING SOON",
       status: "Open Now",
       destinations: "Around Karakoram, Hunza and Skardu",
-      dates: "April 2027 and October 2027",
+      dates: "April 2027",
       button: "Join Now",
       // buttonClass: "comingSoon"
       buttonClass: "openNow",
@@ -388,6 +391,7 @@ export const COHOSTED_PROFILES = [
           {
             id: 2,
             title: "Adventure Across Mountains & Meadows",
+            hidden: true, // October tours hidden from Community Trips
             date: "Oct 28 – 8 Nov, 2027 (12 days)",
             travelers: "14 travelers",
             rating: 4.8,
@@ -527,6 +531,7 @@ export const COHOSTED_PROFILES = [
           {
             id: 2,
             title: "Adventure Across Mountains & Meadows",
+            hidden: true, // October tours hidden from Community Trips
             date: "Oct 21 – 1 Nov, 2027 (12 days)",
             travelers: "14 travelers",
             rating: 4.8,
@@ -604,10 +609,30 @@ export const COHOSTED_PROFILES = [
   },
 ];
 
+// Drop itineraries flagged `hidden: true` so they don't appear anywhere on the site.
+const withVisibleItineraries = (profile) =>
+  profile && {
+    ...profile,
+    upcomingItineraries: (profile.upcomingItineraries || []).map((section) => ({
+      ...section,
+      itineraries: (section.itineraries || []).filter((it) => !it.hidden),
+    })),
+  };
+
+const hasVisibleItineraries = (profile) =>
+  profile.upcomingItineraries.some((section) => section.itineraries.length > 0);
+
 export const getCohostedProfileById = (id) => {
-  return COHOSTED_PROFILES.find((profile) => profile.id === id);
+  return withVisibleItineraries(
+    COHOSTED_PROFILES.find((profile) => profile.id === id)
+  );
 };
 
 export const getAllCohostedProfiles = () => {
-  return COHOSTED_PROFILES;
+  return COHOSTED_PROFILES.map(withVisibleItineraries);
+};
+
+// Profiles to list on Community Trips / home page — hosts with no visible tours are left out.
+export const getListedCohostedProfiles = () => {
+  return getAllCohostedProfiles().filter(hasVisibleItineraries);
 };

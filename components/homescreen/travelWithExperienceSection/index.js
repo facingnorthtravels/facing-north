@@ -3,7 +3,7 @@ import classes from "./travelWithExperienceSection.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { getAllCohostedProfiles } from "../../../data/cohosted-profiles";
+import { getListedCohostedProfiles } from "../../../data/cohosted-profiles";
 import { getSpecialistProfileBySlug } from "../../../data/specialist-profiles";
 
 // Najma is a Travel Specialist (not a cohost) — build a card entry for her
@@ -43,7 +43,7 @@ function countUpcomingTrips(profile) {
 }
 
 function TravelWithExperienceSection() {
-  const cohosts = getAllCohostedProfiles();
+  const cohosts = getListedCohostedProfiles();
   const najmaCard = buildNajmaCard();
   // Najma first, then the existing cohosts
   const profiles = najmaCard ? [najmaCard, ...cohosts] : cohosts;

@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "../../pages/community-trips/community-trips.module.css";
 import Link from "next/link";
-import { getAllCohostedProfiles } from "../../data/cohosted-profiles";
+import { getListedCohostedProfiles } from "../../data/cohosted-profiles";
 import { getSpecialistProfileBySlug } from "../../data/specialist-profiles";
 
 const FeaturedToursSection = () => {
-  const profiles = getAllCohostedProfiles();
+  const profiles = getListedCohostedProfiles();
 
   const tours = profiles.map(profile => ({
     image: profile.heroImage,
@@ -53,7 +53,7 @@ const FeaturedToursSection = () => {
         image: najma.specialist_photo,
       },
       destinations: "Hunza & Skardu",
-      dates: "Sep & Oct 2026",
+      dates: "Sep 2026",
       statusClass: classes.openNow || classes.preLaunch,
       link: `/specialist-profile/${najma.specialist_slug}`,
       button: "Join Now",
