@@ -150,7 +150,7 @@ export default function PackageTour({ tourDetailData, hostData: initialHostData 
         notIncluded={tourDetailData?.notIncluded}
       />
       {/* <div style={{ marginTop: "100px" }} /> */}
-      <MapSection />
+      <MapSection mapImage={tourDetailData?.mapImage} />
       <ThirdHomePageSection
         host={hostData}
         itineraryData={tourDetailData}

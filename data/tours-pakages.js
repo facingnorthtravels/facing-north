@@ -581,6 +581,7 @@ export const TOUR_PAKAGE = [
       overviewImg: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-jonas/overview.jpg"
     },
     pdf: "/assets/PDFS/AKS-27-03-around-karakoram-jonas.pdf",
+    mapImage: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-jonas/map.webp",
 
     internationalFlights: {
       routes: [
@@ -884,6 +885,7 @@ export const TOUR_PAKAGE = [
       overviewImg: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-meths/overview.jpg"
     },
     pdf: "/assets/PDFS/AKS-27-02-around-karakoram-marius.pdf",
+    mapImage: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-meths/map.webp",
     internationalFlights: {
       routes: [
         {
@@ -1183,6 +1185,7 @@ export const TOUR_PAKAGE = [
       overviewImg: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/overview.jpg"
     },
     pdf: "/assets/PDFS/AKS-27-01-around-karakoram-lukas.pdf",
+    mapImage: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/map.webp",
 
     internationalFlights: {
       routes: [
