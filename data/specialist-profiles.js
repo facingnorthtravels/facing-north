@@ -7,6 +7,7 @@ export const SPECIALIST_PROFILES = [
     id: "2",
     specialist_name: "Ali Imran",
     specialist_slug: "ali-imran-pakistan",
+    hidden: true, // inactive for now — remove to bring the profile, cards and URL back
     specialist_photo: "/assets/cohosted_profile/ali-imran.webp",
     specialist_og_image: "",
     hero_image: "/assets/cohosted_profile/ali-imran-hero.jpg",
@@ -49,6 +50,7 @@ export const SPECIALIST_PROFILES = [
     id: "1",
     specialist_name: "Najma Mehmood",
     specialist_slug: "najma-mehmood-pakistan",
+    hidden: true, // inactive for now — remove to bring the profile, cards and URL back
     specialist_photo:
       "/assets/cohosted_profile/najma2.webp",
     specialist_og_image:
@@ -133,10 +135,13 @@ const withVisibleItineraries = (profile) =>
     itineraries: (profile.itineraries || []).filter((it) => !it.hidden),
   };
 
+// Profiles flagged `hidden: true` are treated as if they do not exist: no cards, and their URL 404s.
+const VISIBLE_PROFILES = SPECIALIST_PROFILES.filter((profile) => !profile.hidden);
+
 export const getSpecialistProfileBySlug = (slugOrId) => {
   if (!slugOrId) return null;
   return withVisibleItineraries(
-    SPECIALIST_PROFILES.find(
+    VISIBLE_PROFILES.find(
       (profile) =>
         profile.specialist_slug === slugOrId || profile.id === slugOrId
     ) || null
@@ -144,4 +149,4 @@ export const getSpecialistProfileBySlug = (slugOrId) => {
 };
 
 export const getAllSpecialistProfiles = () =>
-  SPECIALIST_PROFILES.map(withVisibleItineraries);
+  VISIBLE_PROFILES.map(withVisibleItineraries);

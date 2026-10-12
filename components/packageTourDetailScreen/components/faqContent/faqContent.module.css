@@ -21,6 +21,12 @@
 }
 
 /* ===== Day selector — rectangular cards, flush row ===== */
+/* Dropdown + pager are mobile-only (see max-width: 685px) */
+.day_select_wrap,
+.day_pager {
+  display: none;
+}
+
 .day_tabs {
   display: flex;
   width: 100%;
@@ -176,6 +182,8 @@
 
 .day_image_card {
   position: relative;
+  /* horizontal swipes change the day; the browser keeps vertical scrolling */
+  touch-action: pan-y;
   height: 100%;
   aspect-ratio: 3 / 4;
   max-width: 100%;
@@ -280,18 +288,159 @@
     width: 100%;
     aspect-ratio: 4 / 3;
   }
+  /* Arrows sit on the vertical centre of the 4:3 image (image is ~92vw wide) */
   .nav {
-    top: 150px;
+    top: 34.5vw;
   }
   .day_title {
     font-size: 27px;
   }
 }
 
-@media screen and (max-width: 600px) {
-  .day_tab {
-    font-size: 11px;
-    padding: 11px 6px;
+/* Heading stacks above this block from here down (see thirdHomePageSection) */
+@media screen and (max-width: 685px) {
+  .container {
+    margin-top: 20px;
+    padding: 0 0 28px;
+  }
+  .inner {
+    padding: 0;
+  }
+  /* Ten-plus tabs do not fit a phone — swap them for a dropdown */
+  .day_tabs {
+    display: none;
+  }
+  .day_select_wrap {
+    display: block;
+    position: relative;
+    margin: 16px 5%;
+  }
+  .day_select_wrap::after {
+    content: "";
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    border-right: 1.5px solid #ffffff;
+    border-bottom: 1.5px solid #ffffff;
+    transform: translateY(-70%) rotate(45deg);
+    pointer-events: none;
+  }
+  /* Invisible native control covering the face — it takes the tap and opens the picker */
+  .day_select {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 2;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    /* 16px keeps iOS from zooming the page on focus */
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .day_select:focus-visible + .day_select_face {
+    outline: 2px solid #8fd0d0;
+    outline-offset: 2px;
+  }
+  .day_select_face {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 64px;
+    padding: 10px 44px 10px 16px;
+    background: #176060;
+    color: #ffffff;
+    text-align: left;
+  }
+  .day_select_day {
+    flex-shrink: 0;
+    font-family: "f-m", sans-serif;
+    font-size: 21px;
+    line-height: 1;
     letter-spacing: 0.3px;
+    white-space: nowrap;
+    padding-right: 14px;
+    border-right: 1px solid rgba(255, 255, 255, 0.35);
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+  }
+  .day_select_title {
+    font-family: "f-m", sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 0.92);
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .day_card {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #ececec;
+  }
+  .day_pager {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 18px 5% 0;
+  }
+  .day_pager_btn {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 48px;
+    border: 1px solid #176060;
+    background: #ffffff;
+    color: #176060;
+    font-family: "f-m", sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .day_pager_btn svg {
+    width: 20px;
+    height: 20px;
+  }
+  .day_pager_next {
+    background: #176060;
+    color: #ffffff;
+  }
+  .day_pager_btn:disabled {
+    opacity: 0.35;
+    cursor: default;
+  }
+  .day_body {
+    padding: 26px 20px 30px;
+    row-gap: 14px;
+    text-align: left;
+  }
+  .day_title {
+    font-size: 25px;
+    -webkit-line-clamp: unset;
+    display: block;
+  }
+  .day_desc {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .day_details {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding-top: 18px;
+  }
+  .nav {
+    width: 40px;
+    height: 40px;
+    top: 37.5vw;
   }
 }

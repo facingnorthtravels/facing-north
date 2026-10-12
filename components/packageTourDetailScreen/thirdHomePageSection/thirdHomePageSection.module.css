@@ -704,14 +704,31 @@
   }
 }
 @media screen and (max-width: 685px) {
+  /* Heading sits in normal flow above the day tabs, with the duration badge beside it */
   .itinerary_heading_container {
-    top: 0;
-    width: 70%;
+    position: static;
+    width: 100%;
     margin-left: 0;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px 14px;
+  }
+  .itinerary_heading_container .heading_container {
+    width: auto;
+    margin-bottom: 0;
+  }
+  .duration_container {
+    padding: 7px 12px;
+  }
+  .duration_container p {
+    font-size: 12px;
+    letter-spacing: 0.5px;
   }
   .itinerary_section {
     width: 90%;
+    margin-top: 48px;
   }
   .table_col {
     padding: 30px 25px;
