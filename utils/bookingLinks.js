@@ -36,9 +36,3 @@ export function resolveBookingLink(slug) {
 
   return "/community-trips";
 }
-
-/** Every short number and tour id, for static generation. */
-export const allTourIds = () => [
-  ...TOUR_PAKAGE.filter((t) => t.bookingNo != null).map((t) => String(t.bookingNo)),
-  ...TOUR_PAKAGE.map((t) => t.id),
-];
