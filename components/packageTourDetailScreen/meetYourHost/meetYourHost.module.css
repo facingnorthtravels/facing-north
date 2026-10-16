@@ -89,6 +89,50 @@
   max-width: 550px;
 }
 
+/* Bio: 7 lines, then "… Read more" sitting at the end of the 7th line */
+.descriptionWrap {
+  position: relative;
+  max-width: 550px;
+}
+
+.clamped {
+  display: -webkit-box;
+  -webkit-line-clamp: 7;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.readToggle {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  font-size: inherit;
+  font-weight: 600;
+  color: #286675;
+  cursor: pointer;
+}
+
+.readToggle:hover {
+  text-decoration: underline;
+}
+
+.readMoreInline {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 16px;
+  line-height: 1.8;
+  padding-left: 48px;
+  /* fade the clamped text into the button so it reads "…text … Read more" */
+  background: linear-gradient(to right, rgba(250, 251, 251, 0), #fafbfb 40%);
+}
+
+.ellipsis {
+  color: #555;
+  font-weight: 400;
+}
+
 .stats {
   display: flex;
   gap: 40px;
@@ -280,6 +324,14 @@
     max-width: 100%;
   }
 
+  .descriptionWrap {
+    max-width: 100%;
+  }
+
+  .readMoreInline {
+    font-size: 15px;
+  }
+
   .stats {
     gap: 30px;
     justify-content: space-between;
@@ -344,6 +396,11 @@
   }
 
   .description {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .readMoreInline {
     font-size: 14px;
     line-height: 1.6;
   }

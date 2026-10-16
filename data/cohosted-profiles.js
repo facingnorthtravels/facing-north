@@ -318,7 +318,7 @@ export const COHOSTED_PROFILES = [
     name: "Lukas Richter",
     title: "Travel & Outdoor Creator",
     profileImage: "/assets/cohosted_profile/cohost_lukas.jpg",
-    heroImage: "/assets/cohosted_profile/coshost_card_image3.jpg",
+    heroImage: "/assets/cohosted_profile/coshost_card_image3.webp",
     verified: true,
     rating: 4.9,
     reviewCount: 32,

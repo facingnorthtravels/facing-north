@@ -55,7 +55,15 @@ function UpcomingItineraries({ profile }) {
                         />
                         <span>{itinerary.travelers}</span>
                       </div>
-                  
+
+                      {itinerary.price && (
+                        <div className={classes.detail_item}>
+                          <span>From {itinerary.price} per person</span>
+                        </div>
+                      )}
+
+                      {/* no stars until a trip actually has reviews */}
+                      {itinerary.rating > 0 && (
                       <div className={classes.rating_item}>
                         <div className={classes.stars}>
                           {Array.from({ length: 5 }, (_, index) => (
@@ -73,8 +81,9 @@ function UpcomingItineraries({ profile }) {
                           {itinerary.rating} ({itinerary.reviews} reviews)
                         </span>
                       </div>
+                      )}
                     </div>
-                    <Link href={`${itinerary.link}?host=${profile?.id}` || "#"}>
+                    <Link href={`${itinerary.link}?${profile?.itineraryQuery || `host=${profile?.id}`}`}>
                       <button className={classes.view_button}>
                         View Itinerary
                       </button>

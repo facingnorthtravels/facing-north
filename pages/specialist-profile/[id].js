@@ -1,15 +1,17 @@
-import SpecialistHeroSection from "../../components/specialistScreen/heroBanner";
-import SpecialistProfileCard from "../../components/specialistScreen/profileCard";
-import SpecialistHighlights from "../../components/specialistScreen/specialistHighlights";
-import SpecialistItineraries from "../../components/specialistScreen/specialistItineraries";
+import CohostedHeroSection from "../../components/cohostedScreen/heroBanner";
+import ProfileCard from "../../components/cohostedScreen/profileCard";
+import HostHighlights from "../../components/cohostedScreen/hostHighlights";
+import UpcomingItineraries from "../../components/cohostedScreen/upcomingItineraries";
+import CallToAction from "../../components/cohostedScreen/callToAction";
 import SpecialistGallery from "../../components/specialistScreen/specialistGallery";
-import SpecialistTestimonials from "../../components/specialistScreen/specialistTestimonials";
-import SpecialistCallToAction from "../../components/specialistScreen/callToAction";
 import SEOHead from "../../components/common/SEOHead";
 import { getSpecialistProfileMetadata } from "../../utils/seo";
 
-export default function SpecialistProfilePage({ profile }) {
-  if (!profile) return null;
+// Specialist profiles use the same components as cohosted profiles
+// (pages/cohosted-profile/[id].js). The host video slot shows the photo
+// gallery instead, when the specialist has one.
+export default function SpecialistProfilePage({ profile, cohost }) {
+  if (!profile || !cohost) return null;
 
   const metadata = getSpecialistProfileMetadata(profile);
 
@@ -17,13 +19,12 @@ export default function SpecialistProfilePage({ profile }) {
     <div>
       <SEOHead metadata={metadata} />
 
-      <SpecialistHeroSection profile={profile} />
-      <SpecialistProfileCard profile={profile} />
-      <SpecialistHighlights profile={profile} />
-      <SpecialistItineraries profile={profile} />
-      <SpecialistGallery profile={profile} />
-      <SpecialistTestimonials profile={profile} />
-      <SpecialistCallToAction profile={profile} />
+      <CohostedHeroSection profile={cohost} />
+      <ProfileCard profile={cohost} />
+      {cohost.highlights.length > 0 && <HostHighlights profile={cohost} />}
+      <UpcomingItineraries profile={cohost} />
+      <SpecialistGallery profile={cohost} />
+      <CallToAction profile={cohost} />
     </div>
   );
 }
@@ -53,7 +54,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const { getSpecialistProfileBySlug } = await import(
+  const { getSpecialistProfileBySlug, toCohostProfile } = await import(
     "../../data/specialist-profiles"
   );
   const decodedId = decodeURIComponent(params.id || "");
@@ -66,6 +67,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       profile,
+      cohost: toCohostProfile(profile),
     },
   };
 }

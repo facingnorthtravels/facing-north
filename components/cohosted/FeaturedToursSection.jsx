@@ -1,65 +1,24 @@
 import React from "react";
 import classes from "../../pages/community-trips/community-trips.module.css";
 import Link from "next/link";
-import { getListedCohostedProfiles } from "../../data/cohosted-profiles";
-import { getSpecialistProfileBySlug } from "../../data/specialist-profiles";
+import { getListedHosts } from "../../data/hosts";
 
 const FeaturedToursSection = () => {
-  const profiles = getListedCohostedProfiles();
-
-  const tours = profiles.map(profile => ({
-    image: profile.heroImage,
-    status: profile.tour.status,
+  // Every Community Trip host (cohosts + specialists) comes from data/hosts.js
+  const tours = getListedHosts().map((host) => ({
+    image: host.cardImage,
+    status: host.listing.status,
     host: {
-      name: profile.name,
-      image: profile.profileImage
+      name: host.name,
+      image: host.cardImage,
     },
-    destinations: profile.tour.destinations,
-    dates: profile.tour.dates,
-    statusClass: classes[profile.tour.buttonClass] || classes.preLaunch,
-    link: `/cohosted-profile/${profile.id}`,
-    button: profile.tour.button,
-    buttonClass: profile.tour.buttonClass === 'openNow' ? classes.primaryTourButton : ""
+    destinations: host.listing.destinations,
+    dates: host.listing.dates,
+    statusClass: host.listing.open ? classes.openNow : classes.preLaunch,
+    link: host.profileUrl,
+    button: host.listing.button,
+    buttonClass: host.listing.open ? classes.primaryTourButton : "",
   }));
-
-  // Ali Imran — Travel Guide and adventure specialist.
-  const ali = getSpecialistProfileBySlug("ali-imran-pakistan");
-  if (ali) {
-    tours.push({
-      image: ali.specialist_photo,
-      status: "Coming Soon",
-      host: {
-        name: ali.specialist_name,
-        image: ali.specialist_photo,
-      },
-      destinations: "TBD",
-      dates: "TBD",
-      statusClass: classes.preLaunch,
-      link: `/specialist-profile/${ali.specialist_slug}`,
-      button: "Learn More",
-      buttonClass: "",
-    });
-  }
-
-  // Najma Mehmood — Travel Specialist hosting women-led community trips.
-  // Links to her existing specialist profile rather than a cohosted page.
-  const najma = getSpecialistProfileBySlug("najma-mehmood-pakistan");
-  if (najma) {
-    tours.push({
-      image: najma.specialist_photo,
-      status: "Open Now",
-      host: {
-        name: najma.specialist_name,
-        image: najma.specialist_photo,
-      },
-      destinations: "Hunza & Skardu",
-      dates: "Sep 2026",
-      statusClass: classes.openNow || classes.preLaunch,
-      link: `/specialist-profile/${najma.specialist_slug}`,
-      button: "Join Now",
-      buttonClass: classes.primaryTourButton,
-    });
-  }
 
   return (
     <section id="tours" className={classes.toursSection}>
@@ -71,10 +30,12 @@ const FeaturedToursSection = () => {
           {tours.map((tour, idx) => (
             <div className={classes.tourCard} key={idx}>
               <div className={classes.tourImageContainer}>
-                <img 
+                <img
                   src={tour.host.image}
                   alt={tour.host.name + " tour"}
                   className={classes.tourImage}
+                  loading="lazy"
+                  decoding="async"
                 />
                 <div className={`${classes.tourStatus} ${tour.statusClass}`}>
                   {tour.status}

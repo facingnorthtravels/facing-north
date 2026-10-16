@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import classes from "./meetYourHost.module.css";
 import { useRouter } from "next/router";
 
 const MeetYourHost = ({ host }) => {
   const router = useRouter();
+  // Bio is clamped to 7 lines; "Read more" shows only when it actually overflows
+  const descRef = useRef(null);
+  const [expanded, setExpanded] = useState(false);
+  const [overflows, setOverflows] = useState(false);
+
+  useEffect(() => {
+    const el = descRef.current;
+    if (!el || expanded) return;
+    const check = () => setOverflows(el.scrollHeight - el.clientHeight > 2);
+    check();
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, [expanded, host?.about]);
 
   if (!host) return null;
 
   const handleViewProfile = () => {
-    router.push(`/cohosted-profile/${host.id}`);
+    router.push(host.profileUrl || `/cohosted-profile/${host.id}`);
   };
 
   return (
@@ -38,11 +51,30 @@ const MeetYourHost = ({ host }) => {
             <p className={classes.hostTitle}>{host.title}</p>
           </div>
 
-          <p className={classes.description}>
-            {host.about || 
-              `Travel with ${host.name}, an experienced local guide who brings authentic insights and unforgettable experiences to every journey. With deep knowledge of the region and passion for cultural immersion, your adventure will be both safe and memorable.`
-            }
-          </p>
+          <div className={classes.descriptionWrap}>
+            <p
+              ref={descRef}
+              className={`${classes.description} ${expanded ? "" : classes.clamped}`}
+            >
+              {host.about ||
+                `Travel with ${host.name}, an experienced local guide who brings authentic insights and unforgettable experiences to every journey. With deep knowledge of the region and passion for cultural immersion, your adventure will be both safe and memorable.`
+              }
+              {expanded && (
+                <button type="button" className={classes.readToggle} onClick={() => setExpanded(false)}>
+                  {" "}Read less
+                </button>
+              )}
+            </p>
+            {!expanded && overflows && (
+              <button
+                type="button"
+                className={`${classes.readToggle} ${classes.readMoreInline}`}
+                onClick={() => setExpanded(true)}
+              >
+                <span className={classes.ellipsis}>… </span>Read more
+              </button>
+            )}
+          </div>
 
           <button className={classes.profileButton} onClick={handleViewProfile}>
             View Profile
@@ -70,6 +102,8 @@ const MeetYourHost = ({ host }) => {
               src={host.profileImage || host.heroImage || "/assets/placeholder-host.jpg"}
               alt={host.name}
               className={classes.hostImage}
+              loading="lazy"
+              decoding="async"
             />
             {host.verified && (
               <div className={classes.verifiedBadge}>

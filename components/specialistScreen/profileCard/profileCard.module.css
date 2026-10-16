@@ -149,12 +149,14 @@
   .name_section h2 { font-size: 28px; line-height: 32px; }
   .pro_links { justify-content: center; }
   .usp_block { padding: 4px 0 4px 20px; text-align: left; }
+  .profile_card { padding: 32px 0; }
 }
 
 @media screen and (max-width: 480px) {
   .profile_section { padding: 40px 0 0; }
-  .container { width: 90.6%; }
-  .profile_card { padding: 28px 22px; }
+  /* one 16px gutter only — the card is white on white, so it needs no side padding of its own */
+  .container { width: 100%; padding: 0 16px; }
+  .profile_card { padding: 28px 0; }
   .name_section h2 { font-size: 24px; line-height: 28px; }
   .about_section p { font-size: 15px; line-height: 24px; }
   .usp_quote { font-size: 17px; line-height: 26px; }

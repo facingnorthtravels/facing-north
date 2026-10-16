@@ -3,26 +3,7 @@ import classes from "./travelWithExperienceSection.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { getListedCohostedProfiles } from "../../../data/cohosted-profiles";
-import { getSpecialistProfileBySlug } from "../../../data/specialist-profiles";
-
-// Najma is a Travel Specialist (not a cohost) — build a card entry for her
-// that matches the carousel's shape and links to her specialist profile.
-function buildNajmaCard() {
-  const najma = getSpecialistProfileBySlug("najma-mehmood-pakistan");
-  if (!najma) return null;
-  return {
-    id: najma.specialist_slug,
-    name: najma.specialist_name,
-    title: najma.specialisation_type
-      ? `${najma.specialisation_type} Specialist`
-      : "Travel Specialist",
-    profileImage: najma.specialist_photo,
-    href: `/specialist-profile/${najma.specialist_slug}`,
-    category: "Women-Led",
-    upcomingCount: (najma.itineraries || []).length,
-  };
-}
+import { getListedHosts } from "../../../data/hosts";
 
 function deriveCategory(profile) {
   const t = (profile?.title || "").toLowerCase();
@@ -34,19 +15,9 @@ function deriveCategory(profile) {
   return "Travel";
 }
 
-function countUpcomingTrips(profile) {
-  if (!profile?.upcomingItineraries) return 0;
-  return profile.upcomingItineraries.reduce(
-    (sum, s) => sum + (s.itineraries?.length || 0),
-    0
-  );
-}
-
 function TravelWithExperienceSection() {
-  const cohosts = getListedCohostedProfiles();
-  const najmaCard = buildNajmaCard();
-  // Najma first, then the existing cohosts
-  const profiles = najmaCard ? [najmaCard, ...cohosts] : cohosts;
+  // All hosts from data/hosts.js — specialists first, then cohosts
+  const profiles = getListedHosts({ specialistsFirst: true });
   const router = useRouter();
   const [index, setIndex] = useState(0);
   const current = profiles[index];
@@ -60,13 +31,9 @@ function TravelWithExperienceSection() {
     setIndex((i) => (i + 1) % profiles.length);
   };
 
-  // Najma's card carries its own category/count/href; cohosts derive theirs
   const category = current?.category || deriveCategory(current);
-  const upcomingCount =
-    current?.upcomingCount != null
-      ? current.upcomingCount
-      : countUpcomingTrips(current);
-  const cardHref = current?.href || `/cohosted-profile/${current.id}`;
+  const upcomingCount = current?.upcomingCount || 0;
+  const cardHref = current?.profileUrl;
 
   return (
     <div className={classes.container}>

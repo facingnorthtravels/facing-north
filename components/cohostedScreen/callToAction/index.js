@@ -18,11 +18,20 @@ function CallToAction({ profile }) {
       <div className={classes.overlay} />
       <div className={classes.container}>
         <div className={classes.content}>
-          <h2>Join {profile?.name || "Ray"} on His Next Adventure</h2>
-          <p>
-            Experience Pakistan's stunning landscapes and rich culture with {profile?.name || "Ray"}. Benefit from his photography<br className={classes.lineBreak} />
-            mentorship. Limited spots available for upcoming tours.
-          </p>
+          {profile?.cta ? (
+            <>
+              <h2>{profile.cta.title}</h2>
+              <p>{profile.cta.text}</p>
+            </>
+          ) : (
+            <>
+              <h2>Join {profile?.name || "Ray"} on His Next Adventure</h2>
+              <p>
+                Experience Pakistan's stunning landscapes and rich culture with {profile?.name || "Ray"}. Benefit from his photography<br className={classes.lineBreak} />
+                mentorship. Limited spots available for upcoming tours.
+              </p>
+            </>
+          )}
           <div className={classes.buttons}>
             {/* <button 
               className={classes.primary_button}

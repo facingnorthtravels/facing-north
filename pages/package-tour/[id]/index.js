@@ -4,56 +4,26 @@ import ThirdHomePageSection from "../../../components/packageTourDetailScreen/th
 import styles from "./destination_detail.module.css";
 import MapSection from "../../../components/packageTourDetailScreen/mapSection";
 import TestimonialSection from "../../../components/testimonialSection";
-import { useRouter } from "next/router";
 import { TOUR_PAKAGE } from "../../../data/tours-pakages";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import TopDestinations from "../../../components/packageTourScreen/topDestinations";
 import ContactNow from "../../../components/common/contactNow";
 import WhatsIncluded from "../../../components/packageTourDetailScreen/whatsIncluded";
-import { getCohostedProfileById } from "../../../data/cohosted-profiles";
-import { getSpecialistProfileBySlug } from "../../../data/specialist-profiles";
+import { getHostForTour } from "../../../data/hosts";
 import MeetYourHost from "../../../components/packageTourDetailScreen/meetYourHost";
 import InternationalFlightSection from "../../../components/packageTourDetailScreen/internationalFlightSection";
-import SpecialistAttributionStrip from "../../../components/specialistScreen/attributionStrip";
+import HostAttributionStrip from "../../../components/specialistScreen/attributionStrip";
 import SEOHead from "../../../components/common/SEOHead";
 import { getTourPackageMetadata } from "../../../utils/seo";
 
-// Tours owned by Najma Mehmood — show her direct contact details.
-const NAJMA_TOUR_IDS = [
-  "womens-adventure-cultural-sep2026",
-  "the-karakoram-wellness-culinary-oct2026",
-];
-const NAJMA_CONTACT = {
-  number: "+44 7572 384219",
-  email: "Najma@facingnorthtravels.com",
-};
-
-export default function PackageTour({ tourDetailData, hostData: initialHostData }) {
-  const router = useRouter();
+export default function PackageTour({ tourDetailData, hostData }) {
   
   // Coupon state - lifted to share between HeroBanner and ThirdHomePageSection
   const [couponCode, setCouponCode] = useState("");
   const [couponResult, setCouponResult] = useState(null);
   
-  // Host state - fetched from query params
-  const [hostData, setHostData] = useState(initialHostData);
-  const [specialistData, setSpecialistData] = useState(null);
-
-  // Fetch host data from query params
-  useEffect(() => {
-    if (router?.query?.host) {
-      const hostProfile = getCohostedProfileById(router.query.host);
-      setHostData(hostProfile);
-    }
-    if (router?.query?.specialist) {
-      const specialistProfile = getSpecialistProfileBySlug(
-        router.query.specialist
-      );
-      setSpecialistData(specialistProfile);
-    } else {
-      setSpecialistData(null);
-    }
-  }, [router?.query]);
+  // The host is resolved at build time from the tour id (data/hosts.js), so the
+  // host sections render on every visit — no ?host= / ?specialist= needed.
 
   // Get host itinerary date
   const getHostItineraryDate = () => {
@@ -70,8 +40,8 @@ export default function PackageTour({ tourDetailData, hostData: initialHostData 
     return null;
   };
   
-  // Najma's tours show her direct contact details
-  const isNajmaTour = NAJMA_TOUR_IDS.includes(tourDetailData?.id);
+  // Hosts with their own contact details (e.g. Najma) show them instead of the office's
+  const hostContact = hostData?.contact || null;
 
   // Generate metadata from static props
   const metadata = getTourPackageMetadata(tourDetailData);
@@ -126,11 +96,8 @@ export default function PackageTour({ tourDetailData, hostData: initialHostData 
         couponResult={couponResult}
         hostItineraryDate={getHostItineraryDate()}
       />
-      {/* Specialist attribution strip — only when ?specialist= present */}
-      {specialistData && (
-        <SpecialistAttributionStrip specialist={specialistData} />
-      )}
-      {/* Meet Your Host Section - Only shows if host exists */}
+      {/* Host strip with "Back to profile" + Meet Your Host — every hosted tour */}
+      {hostData && <HostAttributionStrip host={hostData} />}
       {hostData && <MeetYourHost host={hostData} />}
       <SecondHomePageSection
         data={tourDetailData?.overview}
@@ -170,8 +137,8 @@ export default function PackageTour({ tourDetailData, hostData: initialHostData 
         para={
           "Looking for a memorable travel experience? Let us help you plan your next adventure in Pakistan. Contact us for personalized travel recommendations and itinerary planning."
         }
-        number={isNajmaTour ? NAJMA_CONTACT.number : undefined}
-        contact_email={isNajmaTour ? NAJMA_CONTACT.email : undefined}
+        number={hostContact?.number}
+        contact_email={hostContact?.email}
       />
       {/* <PositiveImpacts /> */}
       {/* <TemperatureGraph /> */}
@@ -206,11 +173,10 @@ export async function getStaticProps({ params, query }) {
     };
   }
 
-  // Note: Host data is fetched client-side from query params since it's optional
   return {
     props: {
       tourDetailData,
-      hostData: null, // Will be populated client-side if ?host= param exists
+      hostData: getHostForTour(tourDetailData.id),
     },
   };
 }

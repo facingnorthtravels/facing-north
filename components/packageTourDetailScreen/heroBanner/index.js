@@ -182,7 +182,7 @@ function HeroBanner({
           <Link
             className={`${classes.nav_contact_btn} ${classes.book_now_btn}`}
             href={`/book-now?tour=${id}${
-              host ? `&host=${host?.id || ""}` : ""
+              host?.bookingHost ? `&host=${host.bookingHost}` : ""
             }${couponResult?.isValid ? `&coupon=${couponCode}` : ""}`}
           >
             Book Now

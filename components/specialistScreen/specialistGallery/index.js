@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useCallback } from "react";
 import classes from "./specialistGallery.module.css";
 
-const INITIAL_VISIBLE = 9;
+// Collapsed view: 4 photos — two tall on the left, two stacked on the right
+const INITIAL_VISIBLE = 4;
 
 function SpecialistGallery({ profile }) {
   const images = profile?.gallery_images || [];
@@ -47,7 +48,13 @@ function SpecialistGallery({ profile }) {
       <div className={classes.container}>
         <h2>On the Ground with {firstName}</h2>
 
-        <div className={classes.masonry}>
+        <div
+          className={
+            !expanded && visibleImages.length === INITIAL_VISIBLE
+              ? classes.feature_grid
+              : classes.masonry
+          }
+        >
           {visibleImages.map((img, idx) => (
             <button
               type="button"

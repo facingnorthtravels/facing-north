@@ -5,23 +5,47 @@
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1080px;
   width: 80.6%;
   margin: 0 auto;
 }
 
 .container h2 {
   font-family: "b-ul";
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
-  line-height: 48px;
+  line-height: 38px;
   color: #1f2937;
-  margin: 0 0 40px 0;
+  margin: 0 0 28px 0;
+  text-align: center;
 }
 
 .masonry {
   column-count: 3;
   column-gap: 20px;
+}
+
+/* Collapsed 4-photo layout: two tall tiles, then two stacked on the right */
+.feature_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 230px);
+  gap: 16px;
+}
+
+.feature_grid .tile {
+  margin: 0;
+  height: 100%;
+}
+
+.feature_grid .tile:nth-child(1),
+.feature_grid .tile:nth-child(2) {
+  grid-row: span 2;
+}
+
+.feature_grid .tile img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .tile {
@@ -184,21 +208,27 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .container h2 { font-size: 36px; line-height: 44px; }
+  .container h2 { font-size: 28px; line-height: 36px; }
   .masonry { column-count: 2; }
+  .feature_grid { grid-template-rows: repeat(2, 190px); }
 }
 
 @media screen and (max-width: 768px) {
   .gallery_section { padding: 60px 0; }
-  .container h2 { font-size: 32px; line-height: 38px; margin-bottom: 30px; }
+  .container h2 { font-size: 26px; line-height: 32px; margin-bottom: 24px; }
   .editorial_quote blockquote { font-size: 22px; line-height: 32px; }
+  /* tablet: 2x2 grid */
+  .feature_grid { grid-template-columns: repeat(2, 1fr); grid-template-rows: repeat(2, 220px); }
+  .feature_grid .tile:nth-child(1),
+  .feature_grid .tile:nth-child(2) { grid-row: auto; }
 }
 
 @media screen and (max-width: 480px) {
   .gallery_section { padding: 48px 0; }
   .container { width: 90.6%; }
-  .container h2 { font-size: 28px; line-height: 34px; }
+  .container h2 { font-size: 24px; line-height: 30px; }
   .masonry { column-count: 1; column-gap: 0; }
+  .feature_grid { gap: 10px; grid-template-rows: repeat(2, 170px); }
   .lightbox { padding: 16px; }
   .lightbox_prev, .lightbox_next { width: 40px; height: 40px; font-size: 22px; }
 }

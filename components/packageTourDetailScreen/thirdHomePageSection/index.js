@@ -273,7 +273,7 @@ function ThirdHomePageSection({
                 >
                   <Link
                     href={`/book-now?tour=${id}${
-                      host ? `&host=${host?.id || ""}` : ""
+                      host?.bookingHost ? `&host=${host.bookingHost}` : ""
                     }${couponResult?.isValid ? `&coupon=${couponCode}` : ""}`}
                   >
                     BOOK NOW
