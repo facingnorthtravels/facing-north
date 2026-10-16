@@ -561,6 +561,7 @@ export const TOUR_PAKAGE = [
   // BR Around Karakoram SP26-01 Jonas
   {
     id: "br-around-karakoram-SP26-01-jonas",
+    bookingNo: 1, // short booking link: facingnorthtravels.com/book/1
     title: "Journey Through the Heart of Karakoram",
     service_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-jonas/banner.jpeg",
     link: "package-tour/br-around-karakoram-SP26-01-jonas",
@@ -865,6 +866,7 @@ export const TOUR_PAKAGE = [
   },
   {
     id: "br-around-karakoram-SP26-01-meths",
+    bookingNo: 2, // short booking link: facingnorthtravels.com/book/2
     title: "Journey Through the Heart of Karakoram",
     service_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-meths/banner.jpg",
     link: "package-tour/br-around-karakoram-SP26-01-meths",
@@ -1165,6 +1167,7 @@ export const TOUR_PAKAGE = [
   },
   {
     id: "br-around-karakoram-SP26-01-lukas",
+    bookingNo: 3, // short booking link: facingnorthtravels.com/book/3
     title: "Journey Through the Heart of Karakoram",
     service_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/banner.jpg",
     link: "package-tour/br-around-karakoram-SP26-01-lukas",
@@ -8305,6 +8308,7 @@ export const TOUR_PAKAGE = [
   {
     category: [CATEGORIES.home, CATEGORIES.hunza, CATEGORIES.skardu, CATEGORIES.karakoram],
     id: "womens-adventure-cultural-sep2026",
+    bookingNo: 4, // short booking link: facingnorthtravels.com/book/4
     title: "Around Karakoram: A Woman-Led Journey",
     service_img: "/assets/IMAGES/tour-packages/womens-adventure-cultural-sep2026/banner.jpg",
     bg_position: "center",
@@ -8495,6 +8499,7 @@ export const TOUR_PAKAGE = [
   {
     category: [CATEGORIES.home, CATEGORIES.hunza, CATEGORIES.skardu, CATEGORIES.karakoram],
     id: "br-around-karakoram-AK27-04-ali",
+    bookingNo: 5, // short booking link: facingnorthtravels.com/book/5
     title: "Around Karakoram with Ali Imran",
     service_img: "/assets/IMAGES/tour-packages/br-around-karakoram-AK27-04-ali/banner.webp",
     bg_position: "center",
