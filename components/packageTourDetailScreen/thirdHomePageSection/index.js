@@ -3,6 +3,7 @@ import classes from "./thirdHomePageSection.module.css";
 import TourFaq from "../components/faqContent";
 import Link from "next/link";
 import { applyCoupon, formatPrice, parsePrice } from "../../../data/coupons";
+import usePdfDownload from "../../../utils/usePdfDownload";
 
 function ThirdHomePageSection({ 
   itineraryData, 
@@ -93,33 +94,8 @@ function ThirdHomePageSection({
     return null;
   };
 
-  const handleDownload = async () => {
-    if (!pdfUrl) return;
-    const downloadURL = `${process.env.NEXT_PUBLIC_SITE_URL}/${pdfUrl}`
-    // console.log("Download Url: ", downloadURL)
-    // window.open(downloadURL, "_blank");
-    try {
-      const response = await fetch(`${downloadURL}`, {
-        method: "GET",
-      });
-
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-
-      const fileName = pdfUrl.split('/').pop() || 'trip.pdf';
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = fileName;
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-      window.URL.revokeObjectURL(url);
-    } catch (error) {
-      console.error("Download failed:", error);
-      // Fallback: open in new tab
-      window.open(downloadURL, "_blank");
-    }
-  };
+  // Download with progress + confirmation (utils/usePdfDownload.js)
+  const pdfDownload = usePdfDownload(pdfUrl);
 
   return (
     <div className={classes.container}>
@@ -279,10 +255,15 @@ function ThirdHomePageSection({
                     BOOK NOW
                   </Link>
                   {pdfUrl ? (
-                    <div className={classes.btn}
-                      onClick={handleDownload}
+                    <div
+                      className={`${classes.btn} ${pdfDownload.isDownloading ? classes.is_downloading : ""}`}
+                      onClick={pdfDownload.download}
+                      role="button"
+                      aria-busy={pdfDownload.isDownloading}
+                      aria-live="polite"
                     >
-                      DOWNLOAD TRIP
+                      {pdfDownload.isDownloading && <span className={classes.spinner} aria-hidden="true" />}
+                      {pdfDownload.label ? pdfDownload.label.toUpperCase() : "DOWNLOAD TRIP"}
                     </div>
                   ) : (
                     <Link href={`/contact-form`}>CONTACT US</Link>

@@ -3,6 +3,7 @@ import classes from "./heroBanner.module.css";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { formatPrice } from "../../../data/coupons";
+import usePdfDownload from "../../../utils/usePdfDownload";
 
 function HeroBanner({
   title,
@@ -64,34 +65,8 @@ function HeroBanner({
     };
   }, []);
 
-  const handleDownload = async () => {
-    if (!pdfUrl) return;
-    // pdfUrl is already a root-relative path (e.g. /assets/PDFS/foo.pdf),
-    // so resolve it against the current origin — works locally and in prod.
-    const downloadURL = pdfUrl.startsWith("http")
-      ? pdfUrl
-      : `${window.location.origin}${pdfUrl.startsWith("/") ? "" : "/"}${pdfUrl}`;
-    try {
-      const response = await fetch(downloadURL, { method: "GET" });
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-
-      const fileName = pdfUrl.split("/").pop() || "trip.pdf";
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = fileName;
-      document.body.appendChild(link);
-      link.click();
-      link.remove();
-      window.URL.revokeObjectURL(url);
-    } catch (error) {
-      console.error("Download failed:", error);
-      // Fallback: open in new tab
-      window.open(downloadURL, "_blank");
-    }
-  };
+  // Download with progress + confirmation (utils/usePdfDownload.js)
+  const pdfDownload = usePdfDownload(pdfUrl);
 
   return (
     <div
@@ -169,10 +144,13 @@ function HeroBanner({
           {/* )} */}
           {pdfUrl ? (
             <button
-              onClick={handleDownload}
-              className={classes.nav_contact_btn}
+              onClick={pdfDownload.download}
+              className={`${classes.nav_contact_btn} ${pdfDownload.isDownloading ? classes.is_downloading : ""}`}
+              aria-busy={pdfDownload.isDownloading}
+              aria-live="polite"
             >
-              Download
+              {pdfDownload.isDownloading && <span className={classes.spinner} aria-hidden="true" />}
+              {pdfDownload.label || "Download"}
             </button>
           ) : (
             <Link className={classes.nav_contact_btn} href={`/contact-form`}>

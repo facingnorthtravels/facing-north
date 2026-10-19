@@ -270,3 +270,28 @@
     padding: 8px 10px;
   }
 }
+
+/* Download button feedback (utils/usePdfDownload.js) */
+.is_downloading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 175px;
+  cursor: progress;
+  font-variant-numeric: tabular-nums;
+}
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: download_spin 0.7s linear infinite;
+}
+
+@keyframes download_spin {
+  to { transform: rotate(360deg); }
+}

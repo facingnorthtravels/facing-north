@@ -567,8 +567,8 @@ export const TOUR_PAKAGE = [
     link: "package-tour/br-around-karakoram-SP26-01-jonas",
     category: [CATEGORIES.naran],
     provincesCovered: "Gilgit Baltistan",
-    price: "£1,750",
-    singleOccupancy: "£600",
+    price: "£1,650",
+    singleOccupancy: "£650",
     days: "10",
     hosted: true,
     description:
@@ -860,7 +860,7 @@ export const TOUR_PAKAGE = [
         "Double Occupancy",
       ],
       deluxePackage: [
-        "£1,750",
+        "£1,650",
       ],
     },
   },
@@ -872,8 +872,8 @@ export const TOUR_PAKAGE = [
     link: "package-tour/br-around-karakoram-SP26-01-meths",
     category: [CATEGORIES.naran],
     provincesCovered: "Gilgit Baltistan",
-    price: "£1,750",
-    singleOccupancy: "£600",
+    price: "£1,650",
+    singleOccupancy: "£650",
     days: "10",
     hosted: true,
     description:
@@ -1161,7 +1161,7 @@ export const TOUR_PAKAGE = [
         "Double Occupancy",
       ],
       deluxePackage: [
-        "£1,750",
+        "£1,650",
       ],
     },
   },
@@ -1173,8 +1173,8 @@ export const TOUR_PAKAGE = [
     link: "package-tour/br-around-karakoram-SP26-01-lukas",
     category: [CATEGORIES.naran],
     provincesCovered: "Gilgit Baltistan",
-    price: "£1,750",
-    singleOccupancy: "£600",
+    price: "£1,650",
+    singleOccupancy: "£650",
     days: "10",
     hosted: true,
     description:
@@ -1465,7 +1465,7 @@ export const TOUR_PAKAGE = [
         "Double Occupancy",
       ],
       deluxePackage: [
-        "£1,750",
+        "£1,650",
       ],
     },
   },
@@ -8314,8 +8314,8 @@ export const TOUR_PAKAGE = [
     bg_position: "center",
     link: "package-tour/womens-adventure-cultural-sep2026",
     provincesCovered: "Gilgit Baltistan",
-    price: "£1,750",
-    singleOccupancy: "£600",
+    price: "£1,650",
+    singleOccupancy: "£650",
     days: "10",
     hosted: true,
     description:
@@ -8482,7 +8482,7 @@ export const TOUR_PAKAGE = [
         "Double Occupancy",
       ],
       deluxePackage: [
-        "£1,750",
+        "£1,650",
       ],
     },
     hostLeaders: [
@@ -8505,8 +8505,8 @@ export const TOUR_PAKAGE = [
     bg_position: "center",
     link: "package-tour/br-around-karakoram-AK27-04-ali",
     provincesCovered: "Gilgit Baltistan",
-    price: "£2,000",
-    singleOccupancy: "£600",
+    price: "£1,850",
+    singleOccupancy: "£650",
     days: "10",
     hosted: true,
     description:
@@ -8675,7 +8675,7 @@ export const TOUR_PAKAGE = [
         "Double Occupancy",
       ],
       deluxePackage: [
-        "£2,000",
+        "£1,850",
       ],
     },
     hostLeaders: [
