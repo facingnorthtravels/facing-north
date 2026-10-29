@@ -331,7 +331,9 @@ export const COHOSTED_PROFILES = [
     // introURL: "https://youtu.be/EPoL0p9AwbY", // previous intro video
     introURL: "/assets/cohosted_profile/Pakistan-LukasRichter.mp4",
     about:
-      "I’m Lukas Richter, a travel and outdoor creator from southern Germany. After finishing my photography apprenticeship, I started sharing my travels and love for nature online — which slowly turned into my full-time job. Today, I work with brands and destinations around the world, creating authentic visuals that capture real moments outdoors. I speak both German and English and have visited over 25 countries so far. For me, it’s all about exploring new places, staying active, and inspiring others to spend more time outside.",
+      "I'm Lukas Richter, a German landscape and nature photographer who has travelled to over 35 countries. But even after seeing so much of the world, no country has surprised me quite like Pakistan. I still can't put into words what it felt like to see an 8,000-metre mountain with my own eyes for the first time. The scale of the landscape, the people I met and the experiences I had made Pakistan a place I'll never forget. I've put together a short video to share a little bit of my passion for this project, why I want to return, and what you can expect from our 10-day journey through the Karakoram.",
+    // about:
+    //   "I’m Lukas Richter, a travel and outdoor creator from southern Germany. After finishing my photography apprenticeship, I started sharing my travels and love for nature online — which slowly turned into my full-time job. Today, I work with brands and destinations around the world, creating authentic visuals that capture real moments outdoors. I speak both German and English and have visited over 25 countries so far. For me, it’s all about exploring new places, staying active, and inspiring others to spend more time outside.",
     socialLinks: [
       {
         icon: "/assets/cohosted_profile/svgs/instagram.svg",
