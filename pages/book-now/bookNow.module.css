@@ -959,3 +959,30 @@
   }
 }
 
+
+@media screen and (max-width: 480px) {
+  .card_container {
+    width: 94%;
+    margin-top: 42px;
+    gap: 16px;
+  }
+
+  .img {
+    height: 190px;
+  }
+
+  .card_text {
+    padding: 0 16px 18px;
+    gap: 6px;
+    line-height: 24px;
+  }
+
+  .card_text span {
+    font-size: 22px;
+    overflow-wrap: anywhere;
+  }
+
+  .card_text p {
+    font-size: 15px;
+  }
+}

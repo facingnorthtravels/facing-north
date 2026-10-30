@@ -6,3 +6,13 @@
   scroll-behavior: smooth;
   transition: 1s all;
 }
+
+.includesSection {
+  padding-bottom: 64px;
+}
+
+@media screen and (max-width: 768px) {
+  .includesSection {
+    padding-bottom: 40px;
+  }
+}

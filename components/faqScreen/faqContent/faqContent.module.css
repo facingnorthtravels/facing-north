@@ -63,3 +63,18 @@
     padding-bottom: 16px;
   }
 }
+
+/* Used when the FAQ is embedded lower on a tour page */
+.compact {
+  margin-top: 0;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+@media screen and (max-width: 768px) {
+  .compact {
+    margin-top: 0;
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+}

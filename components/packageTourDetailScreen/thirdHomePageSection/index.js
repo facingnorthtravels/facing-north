@@ -10,6 +10,7 @@ function ThirdHomePageSection({
   includeData, 
   id, 
   host,
+  anchorId,
   // Coupon props from parent
   couponCode,
   setCouponCode,
@@ -80,8 +81,7 @@ function ThirdHomePageSection({
   const pdfUrl = itineraryData?.pdf;
 
   const getHostItinerary = () => {
-    if (!host?.upcomingItineraries?.length || host?.pastItineraries?.length < 1)
-      return null;
+    if (!host?.upcomingItineraries?.length) return null;
     const allHostItineraries = host.upcomingItineraries.flatMap(
       (section) => section.itineraries || []
     );
@@ -98,7 +98,10 @@ function ThirdHomePageSection({
   const pdfDownload = usePdfDownload(pdfUrl);
 
   return (
-    <div className={classes.container}>
+    <div
+      className={`${classes.container} ${anchorId ? classes.hostJourney : ""}`}
+      id={anchorId}
+    >
       <div className={classes.itinerary_section}>
         <div className={classes.itinerary_heading_container}>
           <div className={classes.heading_container}>

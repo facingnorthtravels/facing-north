@@ -461,3 +461,78 @@
     height: 20px;
   }
 }
+
+/* Host-journey variant: desktop text/photo side by side, mobile photo → text → video */
+.stacked {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 36px;
+  justify-items: center;
+}
+
+.stacked .textSection {
+  width: 100%;
+  max-width: 720px;
+}
+
+.stacked .imageSection {
+  width: 100%;
+  max-width: 420px;
+}
+
+.stacked .description,
+.stacked .descriptionWrap {
+  max-width: 720px;
+}
+
+.videoRow {
+  width: 100%;
+  max-width: 1100px;
+  margin: 48px auto 0;
+}
+
+@media (max-width: 768px) {
+  .stacked {
+    gap: 24px;
+  }
+
+  .stacked .imageSection {
+    max-width: 100%;
+  }
+
+  .videoRow {
+    margin-top: 28px;
+  }
+}
+
+@media (min-width: 769px) {
+  .stacked {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 60px;
+    align-items: center;
+    justify-items: stretch;
+  }
+
+  .stacked .textSection {
+    order: 1;
+    max-width: 100%;
+  }
+
+  .stacked .imageSection {
+    order: 2;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .hostJourney {
+    padding-top: 64px;
+    padding-bottom: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hostJourney {
+    padding-top: 44px;
+    padding-bottom: 36px;
+  }
+}

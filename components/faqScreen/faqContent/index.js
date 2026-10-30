@@ -2,7 +2,12 @@ import React from "react";
 import classes from "./faqContent.module.css";
 import Faq from "react-faq-component";
 
-function FaqContent() {
+function FaqContent({
+  excludeTitles = [],
+  includeTitles = [],
+  id,
+  compact = false,
+}) {
   const AnswerSection = ({ content }) => {
     return (
       <>
@@ -216,8 +221,16 @@ function FaqContent() {
     ],
   };
 
+  const rows = data.rows.filter((row) => {
+    if (includeTitles.length > 0) return includeTitles.includes(row.title);
+    return !excludeTitles.includes(row.title);
+  });
+
   return (
-    <div className={classes.container}>
+    <div
+      className={`${classes.container} ${compact ? classes.compact : ""}`}
+      id={id}
+    >
       <div className={classes.content_container}>
         <p className={classes.title}>FAQ</p>
         <Faq
@@ -225,7 +238,7 @@ function FaqContent() {
             titleTextColor: "#176060",
             rowTitleColor: "#176060",
           }}
-          data={data}
+          data={{ ...data, rows }}
         />
       </div>
     </div>

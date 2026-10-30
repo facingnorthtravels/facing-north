@@ -1190,6 +1190,112 @@ export const TOUR_PAKAGE = [
     pdf: "/assets/PDFS/AKS-27-01-around-karakoram-lukas.pdf",
     mapImage: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/map.webp",
 
+    // Opt-in layout used only by this tour. Every other itinerary keeps the
+    // existing detail page composition.
+    detailLayout: "hostJourney",
+    detailHeroImage:
+      "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/hero.jpg",
+    tripSnapshot: [
+      { label: "Duration", value: "10 days / 9 nights" },
+      { label: "Dates", value: "April 2 – 11, 2027" },
+      { label: "Group size", value: "8–12 travellers" },
+      { label: "Fitness level", value: "Moderate" },
+      { label: "Host", span: 2, value: "Lukas Richter, Travel & Outdoor Creator" },
+      { label: "Meals", value: "26 meals: 9 breakfasts, 8 lunches, 9 dinners" },
+      { label: "Price", value: "From £1,650 per person, double occupancy" },
+      {
+        label: "Hotels",
+        span: 2,
+        value:
+          "Ambience Hotel Islamabad · Ambience Hotel Hunza (3 nights) · Ramada Gilgit · PC Legacy Skardu (3 nights)",
+      },
+      {
+        label: "Main experiences",
+        span: 2,
+        value:
+          "Baltit & Altit Forts · Attabad Lake · Passu Glacier · Rakaposhi cricket ground · Shigar Fort · Sarfaranga Cold Desert · K2 Museum · Chunda Valley",
+      },
+    ],
+    includesDetail: [
+      {
+        key: "meals",
+        title: "Meals",
+        text:
+          "26 meals, including local cuisine: 9 breakfasts, 8 lunches and 9 dinners, with opportunities to experience traditional Hunza and Balti food.",
+        image:
+          "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/includes/meals.jpg",
+      },
+      {
+        key: "transport",
+        title: "Transport",
+        text:
+          "All transport during the itinerary: Toyota Grand Cabin and 4x4 jeeps where the route calls for them, with the group exploring the region together.",
+        image:
+          "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/includes/transport.jpg",
+      },
+      {
+        key: "accommodation",
+        title: "Accommodation",
+        text:
+          "9 nights in hand-picked hotels: 2 nights Islamabad, 3 nights Hunza, 1 night Gilgit and 3 nights Skardu. Twin/double share; single supplement available.",
+        image:
+          "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/includes/accommodation.jpg",
+      },
+      {
+        key: "group",
+        title: "Group size",
+        text:
+          "8–12 travellers, hosted by Lukas and supported by a local guide and film crew.",
+        image:
+          "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/includes/group.jpg",
+      },
+      {
+        key: "team",
+        title: "Expert team",
+        text:
+          "English-speaking guide, local mountain guides and a content creator travelling with the group throughout.",
+        image:
+          "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/includes/team.jpg",
+      },
+      {
+        key: "flight",
+        title: "Domestic flight",
+        text: "Return Islamabad–Skardu flight, weather permitting.",
+        image:
+          "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/includes/flight.jpg",
+      },
+      {
+        key: "cultural",
+        title: "Cultural experiences",
+        text:
+          "Traditional musical night, bonfire, souvenirs and a Hunza/Balti culinary experience.",
+        image:
+          "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/includes/cultural.jpg",
+      },
+      {
+        key: "fitness",
+        title: "Fitness rating",
+        text:
+          "Moderate: short walks, uneven ground and altitudes up to about 2,600 m.",
+        image:
+          "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/includes/fitness.jpg",
+      },
+      {
+        key: "entrance",
+        title: "Entrance fees",
+        text: "Not included",
+        image:
+          "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/includes/entrance.jpg",
+      },
+      {
+        key: "confidence",
+        title: "Book with confidence",
+        text: "Flexible booking and cancellation terms; see T&Cs.",
+        image:
+          "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/includes/confidence.jpg",
+      },
+    ],
+
     internationalFlights: {
       routes: [
         {
@@ -1329,7 +1435,7 @@ export const TOUR_PAKAGE = [
     iternaries: [
       {
         id: 0,
-        iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_1.jpg",
+        iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/Day 1.jpg",
         description: "Arrival at Islamabad International. Your guide meets the group in arrivals and the vehicle is already waiting. Transfer to the Ambience Hotel, check in, and time to shower off the flight before the city opens up. Faisal Mosque first – Vedat Dalokay's Bedouin-tent design folded into the foot of the Margalla Hills, and one of the largest mosques in the world. Then the Pakistan Monument on Shakarparian ridge, four granite petals opening over the city, and Saidpur Village, a 500-year-old Mughal-era settlement swallowed whole by the modern capital. Up the Margalla Hills road to Monal for the arrival dinner, with Islamabad laid out below you in a grid of lights. Your guide runs the route briefing over dinner. Back to the Ambience for an early night – tomorrow is a dawn flight.",
         title: "The Capital, Before the Mountains",
         premiumHotel: "Ambience Hotel, Islamabad",
@@ -1401,7 +1507,7 @@ export const TOUR_PAKAGE = [
       },
       {
         id: 9,
-        iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-pk24-10/Day_10.jpg",
+        iternaries_img: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/Day 10.jpg",
         description: "Breakfast at the hotel and check out at a time that suits your flight. Private transfer to Islamabad International, with your guide staying until the group is through check-in. The complete photo and video package travels home with you – ten days, three valleys, four forts, five peaks over seven thousand metres, and a set of memories to cherish.",
         title: "Homeward",
         deluxeHotel: "",
@@ -1448,13 +1554,7 @@ export const TOUR_PAKAGE = [
         "Pakistan visa fees – we prepare the documentation, you pay the fee",
         "Travel and medical insurance – strongly recommended",
         "Entry tickets, site permits and museum fees",
-        "Optional activities – speed boating and zip lines at Kachura and Hussaini, polo match entry",
-        "Spa and wellness treatments on Day 9",
         "Lunch on Day 1, and lunch and dinner on Day 10",
-        "Beverages outside the included meals",
-        "Laundry, telephone, paid Wi-Fi and personal items",
-        "Personal shopping and souvenirs",
-        "Tips for guide, driver and crew, at your discretion",
         "Medical costs, evacuation and rescue",
         "Costs from landslides, road closures, weather or flight delays",
         "Anything not explicitly listed as included",

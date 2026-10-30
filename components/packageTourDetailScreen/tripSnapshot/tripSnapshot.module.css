@@ -1,0 +1,247 @@
+.section {
+  width: 100%;
+  padding: 68px 20px;
+  background: #ffffff;
+}
+
+.inner {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8a9a9e;
+}
+
+.title {
+  font-family: "Butler", serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #1e4f5c;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px 20px 22px;
+  background: #ffffff;
+  border: 1px solid #e6ecec;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(40, 102, 117, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(40, 102, 117, 0.09);
+}
+
+.span1 {
+  grid-column: span 1;
+}
+
+.span2 {
+  grid-column: span 2;
+}
+
+.span3 {
+  grid-column: span 3;
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 42px;
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: #edf4f5;
+  color: #286675;
+}
+
+.body {
+  min-width: 0;
+}
+
+.label {
+  margin: 0 0 5px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8a9a9e;
+}
+
+.value {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.55;
+  color: #2e2e2e;
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    padding: 56px 18px;
+  }
+
+  .title {
+    font-size: 34px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .span2,
+  .span3 {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .section {
+    padding: 44px 16px;
+  }
+
+  .header {
+    margin-bottom: 24px;
+  }
+
+  .title {
+    font-size: 29px;
+  }
+
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .span2,
+  .span3 {
+    grid-column: auto;
+  }
+
+  .card {
+    padding: 16px 16px 18px;
+  }
+
+  .icon {
+    flex-basis: 38px;
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.headerNote {
+  display: none;
+}
+
+/* Desktop: one editorial panel instead of floating cards */
+@media screen and (min-width: 1025px) {
+  .section {
+    padding: 76px 20px;
+  }
+
+  .header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 56px;
+    text-align: left;
+    margin-bottom: 26px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e6ecec;
+  }
+
+  .headerCopy {
+    flex: 0 1 auto;
+  }
+
+  .title {
+    font-size: 43px;
+  }
+
+  .headerNote {
+    display: block;
+    flex: 0 1 360px;
+    margin: 0 0 3px;
+    font-size: 14px;
+    line-height: 1.65;
+    color: #5a6b6b;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1px;
+    background: #e6ecec;
+    border: 1px solid #e6ecec;
+    border-radius: 18px;
+    overflow: hidden;
+  }
+
+  .card {
+    padding: 24px 26px 26px;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: #ffffff;
+  }
+
+  .card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .icon {
+    flex-basis: 40px;
+    width: 40px;
+    height: 40px;
+    background: #f2f7f7;
+  }
+
+  .label {
+    margin-bottom: 6px;
+  }
+
+  .value {
+    font-size: 14.5px;
+  }
+
+  .priceCard {
+    background: #f3f8f8;
+  }
+
+  .priceCard .label {
+    color: #286675;
+  }
+
+  .priceCard .value {
+    font-weight: 600;
+    color: #1e4f5c;
+  }
+
+  .priceCard .icon {
+    background: #deedee;
+    color: #1e4f5c;
+  }
+}

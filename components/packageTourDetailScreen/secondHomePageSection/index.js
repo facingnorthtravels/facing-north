@@ -1,9 +1,14 @@
 import React from "react";
 import classes from "./secondHomePageSection.module.css";
 
-function SecondHomePageSection({ data, desc }) {
+function SecondHomePageSection({ data, desc, variant }) {
   return (
-    <div className={classes.container} id="overview">
+    <div
+      className={`${classes.container} ${
+        variant === "hostJourney" ? classes.hostJourney : ""
+      }`}
+      id="overview"
+    >
 
       <div className={classes.single_row}>
         <div className={classes.left_panel}>

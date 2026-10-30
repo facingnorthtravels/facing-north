@@ -18,6 +18,10 @@ function fromCohost(p) {
     cardImage: p.profileImage || null,
     heroImage: p.heroImage || null,
     verified: !!p.verified,
+    rating: p.rating ?? null,
+    reviewCount: p.reviewCount ?? 0,
+    reviews: p.reviews || [],
+    introURL: p.introURL || null,
     profileUrl: `/cohosted-profile/${p.id}`,
     bookingHost: p.id, // ?host= on the booking form
     contact: null,

@@ -13,6 +13,9 @@ import { getHostForTour } from "../../../data/hosts";
 import MeetYourHost from "../../../components/packageTourDetailScreen/meetYourHost";
 import InternationalFlightSection from "../../../components/packageTourDetailScreen/internationalFlightSection";
 import HostAttributionStrip from "../../../components/specialistScreen/attributionStrip";
+import TripSnapshot from "../../../components/packageTourDetailScreen/tripSnapshot";
+import BookNowCta from "../../../components/packageTourDetailScreen/bookNowCta";
+import FaqContent from "../../../components/faqScreen/faqContent";
 import SEOHead from "../../../components/common/SEOHead";
 import { getTourPackageMetadata } from "../../../utils/seo";
 
@@ -80,6 +83,20 @@ export default function PackageTour({ tourDetailData, hostData }) {
     }
   ];
 
+  const isHostJourney = tourDetailData?.detailLayout === "hostJourney";
+  const bannerImage = isHostJourney
+    ? tourDetailData?.detailHeroImage || tourDetailData?.service_img
+    : tourDetailData?.service_img;
+  const itineraryReviews =
+    tourDetailData?.testimonials || tourDetailData?.reviews || [];
+  const itineraryTestimonials = itineraryReviews
+    .map((review) => ({
+      name: review.name || review.author || "Traveller",
+      text: review.text || review.review || review.content || "",
+      img: review.img || review.avatar || review.image,
+    }))
+    .filter((review) => review.text);
+
   return (
     <div className={styles.container}>
       <SEOHead metadata={metadata} jsonLd={jsonLd} />
@@ -89,63 +106,125 @@ export default function PackageTour({ tourDetailData, hostData }) {
         host={hostData}
         price={tourDetailData?.price}
         days={tourDetailData?.days}
-        banner_img={tourDetailData?.service_img}
+        banner_img={bannerImage}
         bgPosition={tourDetailData?.bg_position}
         pdfUrl={tourDetailData?.pdf}
         couponCode={couponCode}
         couponResult={couponResult}
         hostItineraryDate={getHostItineraryDate()}
+        itineraryHref={isHostJourney ? "#itinerary" : "#map-&-itinery"}
+        itineraryLabel={isHostJourney ? "itinerary" : "map & itinery"}
       />
       {/* Host strip with "Back to profile" + Meet Your Host — every hosted tour */}
       {hostData && <HostAttributionStrip host={hostData} />}
-      {hostData && <MeetYourHost host={hostData} />}
+      {hostData && (
+        <MeetYourHost
+          host={hostData}
+          showVideo={isHostJourney}
+          layout={isHostJourney ? "stacked" : undefined}
+          useVideoThumbnail={false}
+        />
+      )}
       <SecondHomePageSection
         data={tourDetailData?.overview}
         desc={tourDetailData?.description}
+        variant={isHostJourney ? "hostJourney" : undefined}
       />
-      {/* <Experience data={tourDetailData?.experiences} /> */}
-      <TopDestinations
-        description={true}
-        title={"What you will experience"}
-        isTourDetail
-        CardData={tourDetailData?.experiences}
-        bg={`rgb(240, 240, 240)`}
-      />
-      <WhatsIncluded
-        itineraryData={tourDetailData}
-        includeData={tourDetailData?.includes}
-        notIncluded={tourDetailData?.notIncluded}
-      />
-      {/* <div style={{ marginTop: "100px" }} /> */}
-      <MapSection mapImage={tourDetailData?.mapImage} />
-      <ThirdHomePageSection
-        host={hostData}
-        itineraryData={tourDetailData}
-        includeData={tourDetailData?.includes}
-        id={tourDetailData?.id}
-        couponCode={couponCode}
-        setCouponCode={setCouponCode}
-        couponResult={couponResult}
-        setCouponResult={setCouponResult}
-      />
-      {/* International Flight Scheduled — hidden on all package tour detail pages */}
-      {false && tourDetailData?.internationalFlights && (
-        <InternationalFlightSection flightData={tourDetailData.internationalFlights} />
+      {isHostJourney ? (
+        <>
+          <TripSnapshot items={tourDetailData?.tripSnapshot} />
+          <div className={styles.includesSection}>
+            <WhatsIncluded
+              itineraryData={tourDetailData}
+              includeData={tourDetailData?.includes}
+              notIncluded={tourDetailData?.notIncluded}
+            />
+          </div>
+          <ThirdHomePageSection
+            anchorId="itinerary"
+            host={hostData}
+            itineraryData={tourDetailData}
+            includeData={tourDetailData?.includes}
+            id={tourDetailData?.id}
+            couponCode={couponCode}
+            setCouponCode={setCouponCode}
+            couponResult={couponResult}
+            setCouponResult={setCouponResult}
+          />
+          <TestimonialSection
+            data={itineraryTestimonials}
+            autoplay
+            autoplaySpeed={6000}
+            pauseOnHover
+          />
+          <BookNowCta
+            id={tourDetailData?.id}
+            host={hostData}
+            price={tourDetailData?.price}
+            hostItineraryDate={getHostItineraryDate()}
+            couponCode={couponCode}
+            couponResult={couponResult}
+          />
+          <FaqContent
+            id="faq"
+            compact
+            includeTitles={[
+              "How can I confirm my booking?",
+              "What happens if I have to cancel my booking?",
+              "What does the tour cost cover?",
+              "Do you provide travel insurance?",
+              "How can I apply for a visa to Pakistan?",
+              "How many people will be on a group tour?",
+            ]}
+          />
+        </>
+      ) : (
+        <>
+          {/* <Experience data={tourDetailData?.experiences} /> */}
+          <TopDestinations
+            description={true}
+            title={"What you will experience"}
+            isTourDetail
+            CardData={tourDetailData?.experiences}
+            bg={`rgb(240, 240, 240)`}
+          />
+          <WhatsIncluded
+            itineraryData={tourDetailData}
+            includeData={tourDetailData?.includes}
+            notIncluded={tourDetailData?.notIncluded}
+          />
+          {/* <div style={{ marginTop: "100px" }} /> */}
+          <MapSection mapImage={tourDetailData?.mapImage} />
+          <ThirdHomePageSection
+            host={hostData}
+            itineraryData={tourDetailData}
+            includeData={tourDetailData?.includes}
+            id={tourDetailData?.id}
+            couponCode={couponCode}
+            setCouponCode={setCouponCode}
+            couponResult={couponResult}
+            setCouponResult={setCouponResult}
+          />
+          {/* International Flight Scheduled — hidden on all package tour detail pages */}
+          {false && tourDetailData?.internationalFlights && (
+            <InternationalFlightSection flightData={tourDetailData.internationalFlights} />
+          )}
+          <ContactNow
+            title={"Start planning your trip With Us"}
+            para={
+              "Looking for a memorable travel experience? Let us help you plan your next adventure in Pakistan. Contact us for personalized travel recommendations and itinerary planning."
+            }
+            number={hostContact?.number}
+            contact_email={hostContact?.email}
+          />
+          {/* <PositiveImpacts /> */}
+          {/* <TemperatureGraph /> */}
+          {/* <LargeBannerCarousel isWhite={true} /> */}
+          {/* <TestimonialSection isWhite={true} isOnlyFirstSection={true} /> */}
+          {/* <Contact_info /> */}
+          <TestimonialSection />
+        </>
       )}
-      <ContactNow
-        title={"Start planning your trip With Us"}
-        para={
-          "Looking for a memorable travel experience? Let us help you plan your next adventure in Pakistan. Contact us for personalized travel recommendations and itinerary planning."
-        }
-        number={hostContact?.number}
-        contact_email={hostContact?.email}
-      />
-      {/* <PositiveImpacts /> */}
-      {/* <TemperatureGraph /> */}
-      {/* <LargeBannerCarousel isWhite={true} /> */}
-      {/* <TestimonialSection isWhite={true} isOnlyFirstSection={true} /> */}
-      {/* <Contact_info /> */}
-      <TestimonialSection />
     </div>
   );
 }

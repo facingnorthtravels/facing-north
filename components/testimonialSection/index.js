@@ -13,16 +13,25 @@ import Next from "../testimonialArrows/next";
 import Prev from "../testimonialArrows/prev";
 import { useWindowSize } from "../../utils";
 
-function TestimonialSection({ isWhite, isOnlyFirstSection }) {
+function TestimonialSection({
+  isWhite,
+  isOnlyFirstSection,
+  data,
+  autoplay = false,
+  autoplaySpeed = 4000,
+  pauseOnHover = false,
+}) {
   const { width } = useWindowSize();
+  const testimonials = data?.length ? data : TESTIMONIALS;
 
   const settings = {
     dots: false,
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
-    autoplaySpeed: 4000,
+    autoplay,
+    autoplaySpeed,
+    pauseOnHover,
     // centerMode: true,
     nextArrow: <Next />,
     prevArrow: <Prev />,
@@ -43,7 +52,7 @@ function TestimonialSection({ isWhite, isOnlyFirstSection }) {
         </h1>
         <div className={classes.card_section}>
           <Slider arrows={true} {...settings}>
-            {TESTIMONIALS?.map((testimonial, index) => (
+            {testimonials?.map((testimonial, index) => (
               <div
                 style={{ backgroundColor: isWhite && "#eaeeef" }}
                 key={index}

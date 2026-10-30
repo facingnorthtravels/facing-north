@@ -134,3 +134,32 @@
     /* padding-bottom: 150px; */
   }
 }
+
+/* Host-journey variant: tighter vertical rhythm */
+.hostJourney {
+  padding-bottom: 56px;
+}
+
+.hostJourney .single_row {
+  margin-top: 64px;
+}
+
+@media screen and (max-width: 1024px) {
+  .hostJourney {
+    padding-bottom: 40px;
+  }
+
+  .hostJourney .single_row {
+    margin-top: 44px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hostJourney {
+    padding-bottom: 24px;
+  }
+
+  .hostJourney .single_row {
+    margin-top: 32px;
+  }
+}

@@ -523,6 +523,13 @@ const BookNow = () => {
     }
   };
 
+  const isHostJourney = tourDetailData?.detailLayout === "hostJourney";
+  const tourImage =
+    (isHostJourney && tourDetailData?.detailHeroImage) ||
+    (typeof tourDetailData?.service_img === "string"
+      ? tourDetailData.service_img
+      : tourDetailData?.service_img?.src || card_img.src);
+
   return (
     <div className={classes.book_now_container}>
       <Head>
@@ -536,7 +543,7 @@ const BookNow = () => {
       {tourDetailData && (
         <div className={classes.card_container}>
           <img
-            src={tourDetailData?.service_img.src || card_img.src}
+            src={tourImage}
             alt={tourDetailData?.title || "Tour package"}
             className={classes.img}
           />
@@ -568,9 +575,11 @@ const BookNow = () => {
               {/* )} */}
               {host && (<p>Hosted by: {host?.name}</p>)}
               <p>{host ? (<>Date: {getHostItinerary()?.date}</>) : `Duration: ${tourDetailData?.days || 10} Days`}</p>
-              <p className="text-two-line">
-                Description: {tourDetailData?.description}
-              </p>
+              {!isHostJourney && (
+                <p className="text-two-line">
+                  Description: {tourDetailData?.description}
+                </p>
+              )}
               {/* <p>Starts: 14 Jun 2024 | Finishes: 28 Jun 2024</p> */}
             </div>
           </div>
