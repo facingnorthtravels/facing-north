@@ -1183,7 +1183,7 @@ export const TOUR_PAKAGE = [
       people: "8+",
       bestTime: "April (Spring - Blossom)",
       recommendation: "Highly recommended",
-      overviewImg: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/hero.jpg"
+      overviewImg: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/overview.jpg"
     },
     pdf: "/assets/PDFS/AKS-27-01-around-karakoram-lukas.pdf",
     mapImage: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/map.webp",
