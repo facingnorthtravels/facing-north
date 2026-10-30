@@ -118,6 +118,7 @@ function ThirdHomePageSection({
           itineraryImg={itineraryData}
         />
       </div>
+      {!anchorId && (
       <div className={classes.dates_section} id="dates-and-prices">
         <div
           className={classes.heading_container}
@@ -277,6 +278,7 @@ function ThirdHomePageSection({
           })}
         </div>
       </div>
+      )}
     </div>
   );
 }

@@ -22,6 +22,8 @@ function HeroBanner({
   // Host-journey variant: point nav at the itinerary anchor instead of the map
   itineraryHref = "#map-&-itinery",
   itineraryLabel = "map & itinery",
+  datesHref = "#dates-and-prices",
+  datesLabel = "dates and prices",
 }) {
   const container = {
     hidden: { opacity: 1, scale: 0 },
@@ -122,8 +124,8 @@ function HeroBanner({
           <a href={itineraryHref} className={classes.nav_link}>
             {itineraryLabel}
           </a>
-          <a href="#dates-and-prices" className={classes.nav_link}>
-            dates and prices
+          <a href={datesHref} className={classes.nav_link}>
+            {datesLabel}
           </a>
         </div>
         <div className={classes.starting_btns}>

@@ -386,7 +386,7 @@ export const COHOSTED_PROFILES = [
             rating: 5.0,
             reviews: 16,
             image:
-              "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/hero.jpg",
+              "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/header.jpg",
             link: "/package-tour/br-around-karakoram-SP26-01-lukas",
             itineraryId: "br-around-karakoram-SP26-01-lukas",
           },

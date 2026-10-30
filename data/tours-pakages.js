@@ -843,7 +843,6 @@ export const TOUR_PAKAGE = [
         "International flights to and from Islamabad",
         "Pakistan visa fees – we prepare the documentation, you pay the fee",
         "Travel and medical insurance – strongly recommended",
-        "Optional activities – zip lines at Upper Kachura and Hussaini Bridge, polo match entry",
         "Spa and wellness treatments on Day 9",
         "Lunch on Day 1, and lunch and dinner on Day 10",
         "Beverages outside the included meals",
@@ -1144,7 +1143,6 @@ export const TOUR_PAKAGE = [
         "International flights to and from Islamabad",
         "Pakistan visa fees – we prepare the documentation, you pay the fee",
         "Travel and medical insurance – strongly recommended",
-        "Optional activities – zip lines at Upper Kachura and Hussaini Bridge, polo match entry",
         "Spa and wellness treatments on Day 9",
         "Lunch on Day 1, and lunch and dinner on Day 10",
         "Beverages outside the included meals",
@@ -1185,7 +1183,7 @@ export const TOUR_PAKAGE = [
       people: "8+",
       bestTime: "April (Spring - Blossom)",
       recommendation: "Highly recommended",
-      overviewImg: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/overview.jpg"
+      overviewImg: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/hero.jpg"
     },
     pdf: "/assets/PDFS/AKS-27-01-around-karakoram-lukas.pdf",
     mapImage: "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/map.webp",
@@ -1194,7 +1192,7 @@ export const TOUR_PAKAGE = [
     // existing detail page composition.
     detailLayout: "hostJourney",
     detailHeroImage:
-      "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/hero.jpg",
+      "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/header.jpg",
     tripSnapshot: [
       { label: "Duration", value: "10 days / 9 nights" },
       { label: "Dates", value: "April 2 – 11, 2027" },
@@ -1283,7 +1281,7 @@ export const TOUR_PAKAGE = [
       {
         key: "entrance",
         title: "Entrance fees",
-        text: "Not included",
+        text: "Included in the tour price",
         image:
           "/assets/IMAGES/tour-packages/br-around-karakoram-SP26-01-lukas/includes/entrance.jpg",
       },
@@ -1546,14 +1544,13 @@ export const TOUR_PAKAGE = [
         groupSizeMin: "8",
         groupSizeMax: "12 pax",
       },
-      entery_fees: "Not included",
+      entery_fees: "Included in the tour price",
     },
 
     notIncluded: [
         "International flights to and from Islamabad",
         "Pakistan visa fees – we prepare the documentation, you pay the fee",
         "Travel and medical insurance – strongly recommended",
-        "Entry tickets, site permits and museum fees",
         "Lunch on Day 1, and lunch and dinner on Day 10",
         "Medical costs, evacuation and rescue",
         "Costs from landslides, road closures, weather or flight delays",
@@ -8565,7 +8562,6 @@ export const TOUR_PAKAGE = [
         "International flights to and from Islamabad",
         "Pakistan visa fees – we prepare the documentation, you pay the fee",
         "Travel and medical insurance – strongly recommended",
-        "Optional activities – zip lines at Upper Kachura and Hussaini Bridge, polo match entry",
         "Spa and wellness treatments on Day 9",
         "Lunch on Day 1, and lunch and dinner on Day 10",
         "Beverages outside the included meals",
@@ -8758,7 +8754,6 @@ export const TOUR_PAKAGE = [
         "International flights to and from Islamabad",
         "Pakistan visa fees – we prepare the documentation, you pay the fee",
         "Travel and medical insurance – strongly recommended",
-        "Optional activities – zip lines at Upper Kachura and Hussaini Bridge, polo match entry",
         "Spa and wellness treatments on Day 9",
         "Lunch on Day 1, and lunch and dinner on Day 10",
         "Beverages outside the included meals",

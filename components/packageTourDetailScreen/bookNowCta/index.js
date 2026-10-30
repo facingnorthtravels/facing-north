@@ -16,7 +16,7 @@ function BookNowCta({
   }${couponResult?.isValid ? `&coupon=${couponCode}` : ""}`;
 
   return (
-    <section className={classes.section}>
+    <section className={classes.section} id="join-lukas">
       <div className={classes.inner}>
         <p className={classes.eyebrow}>Ready for the Karakoram?</p>
         <h2 className={classes.title}>Join Lukas in April 2027</h2>

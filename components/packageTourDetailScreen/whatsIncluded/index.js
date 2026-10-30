@@ -97,7 +97,7 @@ const WhatsIncluded = ({ itineraryData, includeData, notIncluded }) => {
           <h5>ENTRANCE FEES</h5>
           <p>
             {includeData?.entery_fees ||
-              "entrance fees for sights mentioned in the itinerary"}
+              "Included in the tour price"}
           </p>
         </div>
         <div className={classes.Includes_card2}>

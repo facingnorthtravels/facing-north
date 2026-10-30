@@ -114,6 +114,8 @@ export default function PackageTour({ tourDetailData, hostData }) {
         hostItineraryDate={getHostItineraryDate()}
         itineraryHref={isHostJourney ? "#itinerary" : "#map-&-itinery"}
         itineraryLabel={isHostJourney ? "itinerary" : "map & itinery"}
+        datesHref={isHostJourney ? "#join-lukas" : "#dates-and-prices"}
+        datesLabel={isHostJourney ? "join lukas" : "dates and prices"}
       />
       {/* Host strip with "Back to profile" + Meet Your Host — every hosted tour */}
       {hostData && <HostAttributionStrip host={hostData} />}
@@ -151,12 +153,6 @@ export default function PackageTour({ tourDetailData, hostData }) {
             couponResult={couponResult}
             setCouponResult={setCouponResult}
           />
-          <TestimonialSection
-            data={itineraryTestimonials}
-            autoplay
-            autoplaySpeed={6000}
-            pauseOnHover
-          />
           <BookNowCta
             id={tourDetailData?.id}
             host={hostData}
@@ -164,6 +160,12 @@ export default function PackageTour({ tourDetailData, hostData }) {
             hostItineraryDate={getHostItineraryDate()}
             couponCode={couponCode}
             couponResult={couponResult}
+          />
+          <TestimonialSection
+            data={itineraryTestimonials}
+            autoplay
+            autoplaySpeed={6000}
+            pauseOnHover
           />
           <FaqContent
             id="faq"
